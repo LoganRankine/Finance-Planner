@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\logan\\source\\repos\\LoganRankine\\Finance-Planner\\Finance-Planner\\Finance-Planner.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\logan\\source\\repos\\LoganRankine\\Finance-Planner\\Finance-Planner\\Finance-Planner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\logan\\source\\repos\\LoganRankine\\Finance-Planner\\Finance-Planner\\Finance-Planner.csproj",
+        "projectName": "Finance-Planner",
+        "projectPath": "C:\\Users\\logan\\source\\repos\\LoganRankine\\Finance-Planner\\Finance-Planner\\Finance-Planner.csproj",
+        "packagesPath": "C:\\Users\\logan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\logan\\source\\repos\\LoganRankine\\Finance-Planner\\Finance-Planner\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
