@@ -132,6 +132,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="SceneDelegate.cs" />
+    <Compile Include="SQLiteHelper.cs" />
     <Compile Include="UserBudgetInfo.cs" />
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
