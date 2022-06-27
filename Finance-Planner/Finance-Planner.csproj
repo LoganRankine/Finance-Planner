@@ -129,9 +129,11 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Data.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="SceneDelegate.cs" />
+    <Compile Include="Sqlite_Database\UserBudget.cs" />
     <Compile Include="SQLiteHelper.cs" />
     <Compile Include="UserBudgetInfo.cs" />
     <Compile Include="ViewController.cs" />
