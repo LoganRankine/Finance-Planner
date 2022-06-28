@@ -7,7 +7,7 @@ namespace Demo
     public class Application
     {
         // This is the main entry point of the application.
-        private static Database database;
+        /*private static Database database;
 
         public static Database Database
         {
@@ -22,6 +22,7 @@ namespace Demo
                 return database;
             }
         }
+        */
 
         static void Main(string[] args)
         {
