@@ -9,8 +9,8 @@ using System.CodeDom.Compiler;
 
 namespace Demo
 {
-	[Register ("CreateViewController")]
-	partial class CreateViewController
+	[Register ("ExistingViewController")]
+	partial class ExistingViewController
 	{
 		
 		void ReleaseDesignerOutlets ()

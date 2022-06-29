@@ -11,6 +11,11 @@ namespace Demo
 	{
 		public CreateViewController (IntPtr handle) : base (handle)
 		{
-		} 
+        }
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            //View.BackgroundColor = UIColor.Gray;
+        }
     }
 }
