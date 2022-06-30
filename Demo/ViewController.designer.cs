@@ -20,6 +20,9 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UILabel MainTitleDate { get; set; }
+
+		[Outlet]
+		UIKit.UITextView ShowDatabase { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -36,6 +39,11 @@ namespace Demo
 			if (MainTitleDate != null) {
 				MainTitleDate.Dispose ();
 				MainTitleDate = null;
+			}
+
+			if (ShowDatabase != null) {
+				ShowDatabase.Dispose ();
+				ShowDatabase = null;
 			}
 		}
 	}

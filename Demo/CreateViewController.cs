@@ -28,13 +28,36 @@ namespace Demo
             }
             ));
 
-            Budget_TextField.EditingDidEnd += Budget_TextField_EditingDidEnd;
+            //Budget_TextField.EditingDidEnd += Budget_TextField_EditingDidEnd;
+
+            Submit.TouchDown += Submit_TouchDown;
         }
 
+        private void Submit_TouchDown(object sender, EventArgs e)
+        {
+            Person BudgetName = new Person();
+            BudgetName.m_Name = Budget_TextField.Text.ToString();
+            
+            BudgetName.m_StartDate = RemoveSpaces(StartDate.Date.ToString()); 
+            BudgetName.m_EndDate = RemoveSpaces(EndDate.Date.ToString());
+            BudgetName.m_Money = int.Parse(Money.Text.ToString());
+            ViewController.AddToView(BudgetName);
+        }
+        private string RemoveSpaces(string date)
+        {
+            string[] datea = date.Split(" ");
+            return datea[0];
+
+        }
+        /*
         private void Budget_TextField_EditingDidEnd(object sender, EventArgs e)
         {
             budgetName = Budget_TextField.Text.ToString();
+            Person budget_Name = new Person();
+            budget_Name.name = budgetName;
+            ViewController.AddToView(budget_Name);
         }
+        */
 
         //Method that when button pressed it'll go to home menu
         private void BackButton_TouchDown(object sender, EventArgs e)

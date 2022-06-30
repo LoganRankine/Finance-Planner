@@ -2,14 +2,16 @@
 using System;
 using System.IO;
 using UIKit;
+using System.Collections.Generic;
 
 namespace Demo
 {
     public partial class ViewController : UIViewController
     {
+
+        private static Database database;
         
 
-        
         UIViewController CreateViewController;
         public ViewController (IntPtr handle) : base (handle)
         {
@@ -25,6 +27,12 @@ namespace Demo
 
             Create.TouchDown += CreateButton_TouchInside;
             Existing.TouchDown += Existing_TouchDown;
+
+            if(database != null)
+            {
+                ShowDatabase.Text = Database.GetPeopleAsync().ToString();
+            }
+            
             
        
         }
@@ -35,9 +43,26 @@ namespace Demo
             existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
             PresentViewController(existingViewController, true, null);
         }
-        
-        
-        
+
+        public static void AddToView(Person user)
+        {
+            Database.SavePersonAsync(user);
+        }
+
+        public static Database Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new Database(Path.Combine(Environment.GetFolderPath(
+                    Environment.SpecialFolder.LocalApplicationData), "database"));
+
+                }
+                return database;
+            }
+        }
+
         public override void DidReceiveMemoryWarning ()
         {       
             base.DidReceiveMemoryWarning ();

@@ -18,6 +18,18 @@ namespace Demo
 		[Outlet]
 		UIKit.UITextField Budget_TextField { get; set; }
 
+		[Outlet]
+		UIKit.UIDatePicker EndDate { get; set; }
+
+		[Outlet]
+		UIKit.UITextField Money { get; set; }
+
+		[Outlet]
+		UIKit.UIDatePicker StartDate { get; set; }
+
+		[Outlet]
+		UIKit.UIButton Submit { get; set; }
+
 		[Action ("EditingEnd_BudgetName:")]
 		partial void EditingEnd_BudgetName (Foundation.NSObject sender);
 		
@@ -31,6 +43,26 @@ namespace Demo
 			if (Budget_TextField != null) {
 				Budget_TextField.Dispose ();
 				Budget_TextField = null;
+			}
+
+			if (StartDate != null) {
+				StartDate.Dispose ();
+				StartDate = null;
+			}
+
+			if (Submit != null) {
+				Submit.Dispose ();
+				Submit = null;
+			}
+
+			if (EndDate != null) {
+				EndDate.Dispose ();
+				EndDate = null;
+			}
+
+			if (Money != null) {
+				Money.Dispose ();
+				Money = null;
 			}
 		}
 	}

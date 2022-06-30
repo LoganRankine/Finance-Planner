@@ -12,7 +12,9 @@ namespace Demo
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string name { get; set; }
-        //public DateTime date { get; set; }
+        public string m_Name { get; set; }
+        public string m_StartDate { get; set; }
+        public string m_EndDate { get; set; }
+        public int m_Money { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Demo
         {
             get
             {
-                if(database == null)
+                if (database == null)
                 {
                     database = new Database(Path.Combine(Environment.GetFolderPath(
                     Environment.SpecialFolder.LocalApplicationData), "database"));
@@ -22,7 +22,7 @@ namespace Demo
                 return database;
             }
         }
-        
+
 
         static void Main(string[] args)
         {
