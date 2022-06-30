@@ -9,6 +9,7 @@ namespace Demo
 {
 	public partial class CreateViewController : UIViewController
 	{
+        private string budgetName;
 		public CreateViewController (IntPtr handle) : base (handle)
 		{
         }
@@ -16,6 +17,31 @@ namespace Demo
         {
             base.ViewDidLoad();
             //View.BackgroundColor = UIColor.Gray;
+
+            BackButton.TouchDown += BackButton_TouchDown;
+
+            //When you click away from keyboard it goes away
+            View.UserInteractionEnabled = true;
+            View.AddGestureRecognizer(new UITapGestureRecognizer(()=>
+            {
+                this.View.EndEditing(true);
+            }
+            ));
+
+            Budget_TextField.EditingDidEnd += Budget_TextField_EditingDidEnd;
+        }
+
+        private void Budget_TextField_EditingDidEnd(object sender, EventArgs e)
+        {
+            budgetName = Budget_TextField.Text.ToString();
+        }
+
+        //Method that when button pressed it'll go to home menu
+        private void BackButton_TouchDown(object sender, EventArgs e)
+        {
+            ViewController viewController = Storyboard.InstantiateViewController(identifier: "ViewController") as ViewController;
+            viewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            PresentViewController(viewController, true, null);
         }
     }
 }

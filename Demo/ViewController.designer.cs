@@ -17,6 +17,9 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UIButton Existing { get; set; }
+
+		[Outlet]
+		UIKit.UILabel MainTitleDate { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -28,6 +31,11 @@ namespace Demo
 			if (Existing != null) {
 				Existing.Dispose ();
 				Existing = null;
+			}
+
+			if (MainTitleDate != null) {
+				MainTitleDate.Dispose ();
+				MainTitleDate = null;
 			}
 		}
 	}

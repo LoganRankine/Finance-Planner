@@ -13,6 +13,6 @@ namespace Demo
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string name { get; set; }
-        public DateTime date { get; set; }
+        //public DateTime date { get; set; }
     }
 }

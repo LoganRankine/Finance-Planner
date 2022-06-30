@@ -12,9 +12,23 @@ namespace Demo
 	[Register ("ExistingViewController")]
 	partial class ExistingViewController
 	{
+		[Outlet]
+		UIKit.UIButton BackToMain { get; set; }
+
+		[Outlet]
+		UIKit.UILabel DateText { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (BackToMain != null) {
+				BackToMain.Dispose ();
+				BackToMain = null;
+			}
+
+			if (DateText != null) {
+				DateText.Dispose ();
+				DateText = null;
+			}
 		}
 	}
 }

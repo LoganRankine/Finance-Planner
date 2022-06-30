@@ -12,5 +12,18 @@ namespace Demo
 		public ExistingViewController (IntPtr handle) : base (handle)
 		{
 		}
-	}
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            BackToMain.TouchDown += BackToMain_TouchDown;
+            DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
+        }
+
+        private void BackToMain_TouchDown(object sender, EventArgs e)
+        {
+            ViewController viewController = Storyboard.InstantiateViewController(identifier: "ViewController") as ViewController;
+            viewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            PresentViewController(viewController, true, null);
+        }
+    }
 }

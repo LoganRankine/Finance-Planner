@@ -1,5 +1,7 @@
-﻿using Foundation;
+﻿using System.IO;
+using Foundation;
 using UIKit;
+using System;
 
 namespace Demo
 {
@@ -7,7 +9,7 @@ namespace Demo
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
     [Register ("AppDelegate")]
     public class AppDelegate : UIResponder, IUIApplicationDelegate {
-    
+
         [Export("window")]
         public UIWindow Window { get; set; }
 

@@ -12,9 +12,26 @@ namespace Demo
 	[Register ("CreateViewController")]
 	partial class CreateViewController
 	{
+		[Outlet]
+		UIKit.UIButton BackButton { get; set; }
+
+		[Outlet]
+		UIKit.UITextField Budget_TextField { get; set; }
+
+		[Action ("EditingEnd_BudgetName:")]
+		partial void EditingEnd_BudgetName (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (BackButton != null) {
+				BackButton.Dispose ();
+				BackButton = null;
+			}
+
+			if (Budget_TextField != null) {
+				Budget_TextField.Dispose ();
+				Budget_TextField = null;
+			}
 		}
 	}
 }
