@@ -10,6 +10,8 @@ namespace Demo
     [Register ("AppDelegate")]
     public class AppDelegate : UIResponder, IUIApplicationDelegate {
 
+        public static string FilePath;
+
         [Export("window")]
         public UIWindow Window { get; set; }
 
@@ -18,6 +20,11 @@ namespace Demo
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+            FilePath = Path.Combine(Environment.GetFolderPath(
+                    Environment.SpecialFolder.LocalApplicationData), "database");
+            // database
+            //string filePath = ;
+
             return true;
         }
 

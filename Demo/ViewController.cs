@@ -3,16 +3,14 @@ using System;
 using System.IO;
 using UIKit;
 using System.Collections.Generic;
+using SQLite;
+using System.Linq;
 
 namespace Demo
 {
     public partial class ViewController : UIViewController
     {
 
-        private static Database database;
-        
-
-        UIViewController CreateViewController;
         public ViewController (IntPtr handle) : base (handle)
         {
         }
@@ -20,47 +18,37 @@ namespace Demo
         public override void ViewDidLoad ()
         {
             base.ViewDidLoad ();
+            //Title = "Hello";
+            // Perform any additional setup after loading the view, typically from a nib.
+            ShowBudgets();
 
             MainTitleDate.Text += DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
-            // Perform any additional setup after loading the view, typically from a nib.
-
             Create.TouchDown += CreateButton_TouchInside;
-            Existing.TouchDown += Existing_TouchDown;
 
-            if(database != null)
-            {
-                ShowDatabase.Text = Database.GetPeopleAsync().ToString();
-            }
-            
-            
+            Existing.TouchDown += Existing_TouchDown;         
        
+        }
+
+        private void ShowBudgets()
+        {
+            using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+            
+                var users = conn.Table<Person>().ToList();
+                foreach(var user in users)
+                {
+                    ShowDatabase.Text += $"\r\n {user.m_Name}";
+                }
+            }
         }
 
         private void Existing_TouchDown(object sender, EventArgs e)
         {
             ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
-            existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-            PresentViewController(existingViewController, true, null);
-        }
-
-        public static void AddToView(Person user)
-        {
-            Database.SavePersonAsync(user);
-        }
-
-        public static Database Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new Database(Path.Combine(Environment.GetFolderPath(
-                    Environment.SpecialFolder.LocalApplicationData), "database"));
-
-                }
-                return database;
-            }
+            //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            //PresentViewController(existingViewController, true, null);
+            NavigationController.PushViewController(existingViewController, true);
         }
 
         public override void DidReceiveMemoryWarning ()
@@ -73,12 +61,12 @@ namespace Demo
         {
 
             CreateViewController createViewController = Storyboard.InstantiateViewController(identifier: "CreateViewController") as CreateViewController;
-            createViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-            PresentViewController(createViewController, true, null);
+            //createViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            //PresentViewController(createViewController, true, null);
+            NavigationController.PushViewController(createViewController, true);
             //ViewController(createViewController, true, null);
         }
 
-        
         /*
         public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
         {
@@ -90,6 +78,5 @@ namespace Demo
             return base.ShouldPerformSegue(segueIdentifier, sender);
         }
         */
-
     }
 }
