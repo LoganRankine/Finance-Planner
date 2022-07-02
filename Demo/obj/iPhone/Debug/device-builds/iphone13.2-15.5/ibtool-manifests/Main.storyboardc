@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.ibtool.document.errors</key>
+	<dict/>
+	<key>com.apple.ibtool.document.notices</key>
+	<dict/>
+	<key>com.apple.ibtool.document.warnings</key>
+	<dict>
+		<key>2FV-xx-5t3</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>2FV-xx-5t3</string>
+				</array>
+				<key>message</key>
+				<string>Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>5PF-vN-7Ri</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>5PF-vN-7Ri</string>
+				</array>
+				<key>message</key>
+				<string>Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>9MI-p2-AKO</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>9MI-p2-AKO</string>
+				</array>
+				<key>message</key>
+				<string>Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>AMd-QF-xg4</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>AMd-QF-xg4</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>HKK-v9-rTO</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>HKK-v9-rTO</string>
+				</array>
+				<key>message</key>
+				<string>Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>OY4-0U-gTg</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>OY4-0U-gTg</string>
+				</array>
+				<key>message</key>
+				<string>Button Style before iOS 15.0</string>
+				<key>type</key>
+				<string>IBIssueTypeAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

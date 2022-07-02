@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="Demo.app/Demo">
+      <BCSymbolMapName>Demo.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>Demo.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/mtouch-symbols.list</SymbolFile>
+      <DSymName>Demo.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

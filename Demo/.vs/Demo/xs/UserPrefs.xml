@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5ED53AED-55E3-421C-84E1-674FA4DB92A0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+    <Files>
+      <File FileName="Main.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Demo" expanded="True">
+            <Node name="Demo" expanded="True">
+              <Node name="Main.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
