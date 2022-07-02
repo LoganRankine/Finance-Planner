@@ -25,6 +25,7 @@ namespace Demo
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
                 many = conn.Table<Person>().ToList().Count();
+                //many = conn.Table<Person>().ToList().Count();
             }
             return many;
         }
