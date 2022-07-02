@@ -18,8 +18,8 @@ namespace Demo
         {
             base.ViewDidLoad();
             configure();
-            Title = "Creating Tracker";
-            BackButton.TouchDown += BackButton_TouchDown;
+            Title = "Create New Tracker";
+            //BackButton.TouchDown += BackButton_TouchDown;
 
             Budget_TextField.EditingDidEnd += Budget_TextField_EditingDidEnd;
             StartDate.EditingDidEnd += StartDate_EditingDidEnd;
@@ -72,22 +72,24 @@ namespace Demo
         private void Submit_TouchDown(object sender, EventArgs e)
         {
             //creates object person and gets input from user and populates objects variables
-            Person BudgetName = new Person();
-            BudgetName.m_Name = Budget_TextField.Text.ToString();         
-            BudgetName.m_StartDate = RemoveSpaces(StartDate.Date.ToString()); 
-            BudgetName.m_EndDate = RemoveSpaces(EndDate.Date.ToString());
-            BudgetName.m_Money = int.Parse(Money.Text.ToString());
+            Person BudgetName = new Person
+            {
+                m_Name = Budget_TextField.Text.ToString(),
+                m_StartDate = RemoveSpaces(StartDate.Date.ToString()),
+                m_EndDate = RemoveSpaces(EndDate.Date.ToString()),
+                m_Money = int.Parse(Money.Text.ToString())
+            };
 
             //Adds object created into SQLite database
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
                 conn.CreateTable<Person>();
-
+                conn.Insert(BudgetName);
                 //if(debugging == true)
                 //{
                 //    int rows = conn.Insert(BudgetName);
                 //}
-                
+                Submit.TintColor = UIColor.Green;
             }
         }
         private string RemoveSpaces(string date)

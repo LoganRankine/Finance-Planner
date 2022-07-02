@@ -14,14 +14,18 @@ namespace Demo
         public ViewController (IntPtr handle) : base (handle)
         {
         }
-        
-        public override void ViewDidLoad ()
+
+        public override void ViewDidLoad()
         {
-            base.ViewDidLoad ();
-            //Title = "Hello";
+            base.ViewDidLoad();
+            //Title = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
             // Perform any additional setup after loading the view, typically from a nib.
             ShowBudgets();
-
+            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                var users = conn.Table<Person>().ToList();
+            }
+            
             MainTitleDate.Text += DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
             Create.TouchDown += CreateButton_TouchInside;
@@ -32,14 +36,22 @@ namespace Demo
 
         private void ShowBudgets()
         {
+            
             using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
-            
-                var users = conn.Table<Person>().ToList();
-                foreach(var user in users)
+                try
                 {
-                    ShowDatabase.Text += $"\r\n {user.m_Name}";
+                    var users = conn.Table<Person>().ToList();
+                    foreach (var user in users)
+                    {
+                        ShowDatabase.Text += $"\r\n {user.m_Name}";
+                    }
                 }
+                catch
+                {
+                    ShowDatabase.Text += "No Existing Budgets";
+                }
+                
             }
         }
 

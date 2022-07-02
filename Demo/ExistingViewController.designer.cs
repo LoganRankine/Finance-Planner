@@ -17,6 +17,9 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UILabel DateText { get; set; }
+
+		[Outlet]
+		UIKit.UITableView ListDataBase { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -28,6 +31,11 @@ namespace Demo
 			if (DateText != null) {
 				DateText.Dispose ();
 				DateText = null;
+			}
+
+			if (ListDataBase != null) {
+				ListDataBase.Dispose ();
+				ListDataBase = null;
 			}
 		}
 	}
