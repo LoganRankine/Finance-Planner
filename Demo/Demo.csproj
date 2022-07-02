@@ -150,6 +150,7 @@
       <DependentUpon>ExistingViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\BudgetInfo.cs" />
+    <Compile Include="ListDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\.DS_Store" />

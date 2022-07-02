@@ -1,16 +1,17 @@
-﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5ED53AED-55E3-421C-84E1-674FA4DB92A0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C39335D1-6541-47AE-B425-7A1CF3E3067D" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Main.cs" Line="1" Column="1" />
+      <File FileName="ViewController.cs" Line="67" Column="14" />
+      <File FileName="ExistingViewController.cs" Line="31" Column="35" />
+      <File FileName="ListDatabase.cs" Line="41" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
-            <Node name="Demo" expanded="True">
-              <Node name="Main.cs" selected="True" />
-            </Node>
+            <Node name="Demo" expanded="True" />
           </Node>
         </State>
       </Pad>

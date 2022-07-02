@@ -20,11 +20,11 @@ namespace Demo
             base.ViewDidLoad();
             //Title = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
             // Perform any additional setup after loading the view, typically from a nib.
-            ShowBudgets();
-            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
-            {
-                var users = conn.Table<Person>().ToList();
-            }
+            //ShowBudgets();
+            //using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            //{
+            //    var users = conn.Table<Person>().ToList();
+            //}
             
             MainTitleDate.Text += DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
@@ -34,33 +34,47 @@ namespace Demo
        
         }
 
-        private void ShowBudgets()
-        {
+        //private void ShowBudgets()
+        //{
             
-            using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
-            {
-                try
-                {
-                    var users = conn.Table<Person>().ToList();
-                    foreach (var user in users)
-                    {
-                        ShowDatabase.Text += $"\r\n {user.m_Name}";
-                    }
-                }
-                catch
-                {
-                    ShowDatabase.Text += "No Existing Budgets";
-                }
+        //    using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+        //    {
+        //        try
+        //        {
+        //            var users = conn.Table<Person>().ToList();
+        //            foreach (var user in users)
+        //            {
+        //                ShowDatabase.Text += $"\r\n {user.m_Name}";
+        //            }
+        //        }
+        //        catch
+        //        {
+        //            ShowDatabase.Text += "No Existing Budgets";
+        //        }
                 
-            }
-        }
+        //    }
+        //}
 
         private void Existing_TouchDown(object sender, EventArgs e)
         {
-            ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
-            //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-            //PresentViewController(existingViewController, true, null);
-            NavigationController.PushViewController(existingViewController, true);
+            int rows;
+            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                rows = conn.Table<Person>().Count();
+                //conn.DeleteAll<Person>();
+            }
+            if(rows > 0)
+            {
+                ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
+                //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+                //PresentViewController(existingViewController, true, null);
+                NavigationController.PushViewController(existingViewController, true);
+
+            }
+            //ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
+            ////existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            ////PresentViewController(existingViewController, true, null);
+            //NavigationController.PushViewController(existingViewController, true);
         }
 
         public override void DidReceiveMemoryWarning ()

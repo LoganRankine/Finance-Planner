@@ -5,29 +5,48 @@ using SQLite;
 using System.Linq;
 using Foundation;
 using UIKit;
+using System.Collections.Generic;
 
 namespace Demo
 {
 	public partial class ExistingViewController : UIViewController
 	{
+        List<Person> trackers = new List<Person>();
 		public ExistingViewController (IntPtr handle) : base (handle)
 		{
 		}
         public override void ViewDidLoad()
         {
-            base.ViewDidLoad();          
+            base.ViewDidLoad();
+            //this.ListDataBase.DataSource = (IUITableViewDataSource)this;
+            //this.ListDataBase.Delegate = (IUITableViewDelegate)this;
+            
+            string[] data = new string[10];
+            numberOfBudgetsSaved();
+            //foreach(Person tracker in trackers)
+            //{
+            //    tracker.m_Name += data;
+            //}
+            
             DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
+
+            UITableView _table;
+            _table = new UITableView
+            {
+                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height), Source = new ListDatabase(trackers)
+            };
+
+            View.AddSubview(_table);
+
         }
 
-        private int numberOfBudgetsSaved()
-        {
-            int many;
+        private void numberOfBudgetsSaved()
+        {         
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
-                many = conn.Table<Person>().ToList().Count();
+                trackers = conn.Table<Person>().ToList();
                 //many = conn.Table<Person>().ToList().Count();
             }
-            return many;
         }
     }
 }
