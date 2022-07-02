@@ -6,6 +6,11 @@
       <LogicalName>Main.storyboardc/11K-hf-tWk-view-wLt-eY-wVC.nib</LogicalName>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc/TrackerViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/TrackerViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc/ViewController.nib">
       <Optimize>false</Optimize>
       <LogicalName>Main.storyboardc/ViewController.nib</LogicalName>
@@ -39,6 +44,11 @@
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib">
       <Optimize>false</Optimize>
       <LogicalName>Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc/bRv-4p-frS-view-0uO-ed-erd.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/bRv-4p-frS-view-0uO-ed-erd.nib</LogicalName>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool-link/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib">

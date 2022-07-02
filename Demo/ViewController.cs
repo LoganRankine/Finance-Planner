@@ -63,18 +63,18 @@ namespace Demo
                 rows = conn.Table<Person>().Count();
                 //conn.DeleteAll<Person>();
             }
-            if(rows > 0)
-            {
-                ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
-                //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-                //PresentViewController(existingViewController, true, null);
-                NavigationController.PushViewController(existingViewController, true);
+            //if(rows > 0)
+            //{
+            //    ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
+            //    //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            //    //PresentViewController(existingViewController, true, null);
+            //    NavigationController.PushViewController(existingViewController, true);
 
-            }
-            //ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
-            ////existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-            ////PresentViewController(existingViewController, true, null);
-            //NavigationController.PushViewController(existingViewController, true);
+            //}
+            ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
+            //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            //PresentViewController(existingViewController, true, null);
+            NavigationController.PushViewController(existingViewController, true);
         }
 
         public override void DidReceiveMemoryWarning ()

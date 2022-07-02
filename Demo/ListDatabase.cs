@@ -26,9 +26,15 @@ namespace Demo
             //new UIAlertView("Alert", "You touch that: " + tableItems[indexPath.Row], null, "ok", null).Show();
           
             tableView.DeselectRow(indexPath,true);
-             
+            ExistingViewController.db_int = indexPath.Row;
+            ExistingViewController.tru = true;
+           
         }
-
+        public bool changeScreen(bool tru)
+        {
+            bool choice = true;
+            return choice;
+        }
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifer);

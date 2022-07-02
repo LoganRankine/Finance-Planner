@@ -9,25 +9,27 @@ using System.Collections.Generic;
 
 namespace Demo
 {
-	public partial class ExistingViewController : UIViewController
-	{
+    public partial class ExistingViewController : UIViewController
+    {
+        public static string db_string;
+        public static int db_int;
+        public static bool tru = false;
+
         List<Person> trackers = new List<Person>();
-		public ExistingViewController (IntPtr handle) : base (handle)
-		{
-		}
+        public ExistingViewController(IntPtr handle) : base(handle)
+        {
+        }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            Title = "Open Tracker";
             //this.ListDataBase.DataSource = (IUITableViewDataSource)this;
             //this.ListDataBase.Delegate = (IUITableViewDelegate)this;
-            
-            string[] data = new string[10];
+
             numberOfBudgetsSaved();
-            //foreach(Person tracker in trackers)
-            //{
-            //    tracker.m_Name += data;
-            //}
-            
+            changeView();
+
             DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
             UITableView _table;
@@ -38,6 +40,40 @@ namespace Demo
 
             View.AddSubview(_table);
 
+            if(tru == true)
+            {
+                TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+                NavigationController.PushViewController(tracker, true);
+            }
+            //if(db_int != 999999)
+            //{
+            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //    NavigationController.PushViewController(tracker, true);
+            //}
+            //View.UserInteractionEnabled = true;
+            //View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
+            //{
+            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //    NavigationController.PushViewController(tracker, true);
+            //    //this.View.EndEditing(true);
+            //}
+            //));
+
+
+        }
+        
+            
+        public void changeView()
+        {
+            if(tru == true)
+            {
+                TrackerViewController trackerViewController = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+                //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+                //PresentViewController(existingViewController, true, null);
+                NavigationController.PushViewController(trackerViewController, true);
+                tru = false;
+            }
+            
         }
 
         private void numberOfBudgetsSaved()

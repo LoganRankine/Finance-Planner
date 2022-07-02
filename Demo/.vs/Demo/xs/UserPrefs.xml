@@ -1,17 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
   <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C39335D1-6541-47AE-B425-7A1CF3E3067D" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TrackerViewController.cs">
     <Files>
+      <File FileName="CreateViewController.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="TrackerViewController.cs" Line="41" Column="57" IsPinned="True" />
       <File FileName="Main.cs" Line="1" Column="1" />
-      <File FileName="ViewController.cs" Line="67" Column="14" />
-      <File FileName="ExistingViewController.cs" Line="31" Column="35" />
-      <File FileName="ListDatabase.cs" Line="41" Column="1" />
+      <File FileName="ViewController.cs" Line="71" Column="87" />
+      <File FileName="ExistingViewController.cs" Line="43" Column="9" />
+      <File FileName="ListDatabase.cs" Line="28" Column="51" />
+      <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
+      <File FileName="Database/Person.cs" Line="18" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
-            <Node name="Demo" expanded="True" />
+            <Node name="Demo" expanded="True">
+              <Node name="Database" expanded="True" />
+              <Node name="TrackerViewController.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

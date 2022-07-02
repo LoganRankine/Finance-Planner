@@ -151,6 +151,10 @@
     </Compile>
     <Compile Include="Database\BudgetInfo.cs" />
     <Compile Include="ListDatabase.cs" />
+    <Compile Include="TrackerViewController.cs" />
+    <Compile Include="TrackerViewController.designer.cs">
+      <DependentUpon>TrackerViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\.DS_Store" />
