@@ -57,12 +57,33 @@ namespace Demo
 
         private void Existing_TouchDown(object sender, EventArgs e)
         {
-            int rows;
-            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            int rows = 0;
+            try
             {
-                rows = conn.Table<Person>().Count();
-                //conn.DeleteAll<Person>();
+                using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+                {
+                    rows = conn.Table<Person>().Count();
+                    //conn.DeleteAll<Person>();
+                }
             }
+            catch
+            {
+                ShowDatabase.TextColor = UIColor.Red;
+                ShowDatabase.Text += "No Trackers saved";
+            }
+            if (rows != 0)
+            {
+                ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
+                //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+                //PresentViewController(existingViewController, true, null);
+                NavigationController.PushViewController(existingViewController, true);
+            }
+            //else
+            //{
+            //    ShowDatabase.TextColor = UIColor.Red;
+            //    ShowDatabase.Text += "No Trackers saved";
+
+            //}
             //if(rows > 0)
             //{
             //    ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
@@ -71,10 +92,7 @@ namespace Demo
             //    NavigationController.PushViewController(existingViewController, true);
 
             //}
-            ExistingViewController existingViewController = Storyboard.InstantiateViewController(identifier: "ExistingViewController") as ExistingViewController;
-            //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-            //PresentViewController(existingViewController, true, null);
-            NavigationController.PushViewController(existingViewController, true);
+
         }
 
         public override void DidReceiveMemoryWarning ()

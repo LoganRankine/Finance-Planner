@@ -9,7 +9,7 @@
       <dSYMInfoPlistRelativePath>Demo.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
       <SymbolFile>obj/iPhone/Debug/device-builds/iphone13.2-15.5/mtouch-symbols.list</SymbolFile>
       <DSymName>Demo.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo</SourceProjectPath>
+      <SourceProjectPath>/Users/loganrankine/Projects/Finance-Planner/Demo</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

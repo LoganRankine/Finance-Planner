@@ -2,17 +2,17 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <_CodesignBundle Include="Demo.app">
-      <CodesignSigningKey>6B6DA35299559C1E7B8FBFF79A6A696F02A6A091</CodesignSigningKey>
-      <CodesignEntitlements>/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/Entitlements.xcent</CodesignEntitlements>
+      <CodesignSigningKey>8C8ED1AD889CE7B32A558D8AD5F33EC0FCC051AF</CodesignSigningKey>
+      <CodesignEntitlements>/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
-      <CodesignAllocate>/Volumes/HDD/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <RequireCodeSigning>true</RequireCodeSigning>
       <CodesignExtraArgs></CodesignExtraArgs>
       <CodesignResourceRules></CodesignResourceRules>
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo</SourceProjectPath>
+      <SourceProjectPath>/Users/loganrankine/Projects/Finance-Planner/Demo</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

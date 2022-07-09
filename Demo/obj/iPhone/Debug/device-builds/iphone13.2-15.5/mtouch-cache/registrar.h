@@ -9,12 +9,16 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @class SceneDelegate;
 @class AppDelegate;
 @class ViewController;
 @class CreateViewController;
 @class ExistingViewController;
+@class UITableViewSource;
+@class Demo_ListDatabase;
+@class TrackerViewController;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSSynchronizationContextDispatcher;
 @class Foundation_NSAsyncDispatcher;
@@ -23,6 +27,8 @@
 @class __NSObject_Disposer;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
+@class UIKit_UIScrollView__UIScrollViewDelegate;
+@class UIKit_UITextView__UITextViewDelegate;
 
 @interface SceneDelegate : UIResponder<UIWindowSceneDelegate> {
 }
@@ -132,6 +138,40 @@
 	-(void) setBackToMain:(UIButton *)p0;
 	-(UILabel *) DateText;
 	-(void) setDateText:(UILabel *)p0;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface UITableViewSource : NSObject<UIScrollViewDelegate, UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Demo_ListDatabase : NSObject<UIScrollViewDelegate, UIScrollViewDelegate, UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface TrackerViewController : UIViewController {
+}
+	@property (nonatomic, assign) UILabel * TrackerName;
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UILabel *) TrackerName;
+	-(void) setTrackerName:(UILabel *)p0;
 	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end

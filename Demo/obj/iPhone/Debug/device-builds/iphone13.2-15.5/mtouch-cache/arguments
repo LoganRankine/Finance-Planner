@@ -4,17 +4,17 @@
 	--sgen-conc \
 	'/target-framework:Xamarin.iOS,Version=v1.0' \
 	--http-message-handler=NSUrlSessionHandler \
-	--cache=/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/mtouch-cache \
-	--root-assembly=/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhone/Debug/Demo.exe \
-	--sdkroot=/Volumes/HDD/Xcode.app/Contents/Developer \
-	--targetver=14.0 \
-	--dev=/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhone/Debug/device-builds/iphone13.2-15.5/Demo.app \
+	--cache=/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/mtouch-cache \
+	--root-assembly=/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhone/Debug/Demo.exe \
+	--sdkroot=/Applications/Xcode.app/Contents/Developer \
+	--targetver=15.0 \
+	--dev=/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhone/Debug/device-builds/iphone13.2-15.5/Demo.app \
 	--executable=Demo \
 	--linksdkonly \
 	--sdk=15.5 \
 	--aot-options=-O=-float32 \
 	--abi=arm64 \
-	--symbollist=/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/mtouch-symbols.list \
+	--symbollist=/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/mtouch-symbols.list \
 	--dsym=no \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
@@ -174,4 +174,4 @@
 	--reference=/Users/loganrankine/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.4/lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll \
 	--reference=/Users/loganrankine/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll \
 	--reference=/Users/loganrankine/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll \
-	@/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/response-file.rsp \
+	@/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/response-file.rsp \

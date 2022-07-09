@@ -27,7 +27,7 @@ namespace Demo
           
             tableView.DeselectRow(indexPath,true);
             ExistingViewController.db_int = indexPath.Row;
-            ExistingViewController.tru = true;
+            //ExistingViewController.tru = true;
            
         }
         public bool changeScreen(bool tru)

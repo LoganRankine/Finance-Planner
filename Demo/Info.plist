@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Demo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.LoganRankine.Demo</string>
+	<string>LoganRankine.Demo</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -32,7 +32,7 @@
 		</dict>
 	</dict>
 	<key>MinimumOSVersion</key>
-	<string>14.0</string>
+	<string>15.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>

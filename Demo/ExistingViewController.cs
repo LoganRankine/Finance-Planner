@@ -40,6 +40,8 @@ namespace Demo
 
             View.AddSubview(_table);
 
+            
+           
             if(tru == true)
             {
                 TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
@@ -50,14 +52,15 @@ namespace Demo
             //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
             //    NavigationController.PushViewController(tracker, true);
             //}
-            //View.UserInteractionEnabled = true;
-            //View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
-            //{
-            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-            //    NavigationController.PushViewController(tracker, true);
-            //    //this.View.EndEditing(true);
-            //}
-            //));
+            _table.UserInteractionEnabled = true;
+            _table.AddGestureRecognizer(new UITapGestureRecognizer(() =>
+            {
+                TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+                TrackerViewController.db_int = db_int;
+                NavigationController.PushViewController(tracker, true);
+                //this.View.EndEditing(true);
+            }
+            ));
 
 
         }

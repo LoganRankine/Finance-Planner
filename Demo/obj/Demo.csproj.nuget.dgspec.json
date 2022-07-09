@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/Demo.csproj": {}
+    "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj": {}
   },
   "projects": {
-    "/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/Demo.csproj": {
+    "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/Demo.csproj",
+        "projectUniqueName": "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj",
         "projectName": "Demo",
-        "projectPath": "/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/Demo.csproj",
+        "projectPath": "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj",
         "packagesPath": "/Users/loganrankine/.nuget/packages/",
-        "outputPath": "/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/",
+        "outputPath": "/Users/loganrankine/Projects/Finance-Planner/Demo/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

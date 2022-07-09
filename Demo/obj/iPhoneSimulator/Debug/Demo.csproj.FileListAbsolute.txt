@@ -1,26 +1,25 @@
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Demo.exe
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Demo.pdb
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLite-net.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.nativelibrary.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.dynamic_cdecl.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CoreCompileInputs.cache
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CopyComplete
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.exe
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.pdb
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.AssemblyReference.cache
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/actool/_PartialAppManifest.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/actool/_BundleResourceWithLogicalName.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/actool/_ProcessedImageAssetsPath.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool/_BundleResourceWithLogicalName.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/ibtool/_ProcessedInterfaceDefinitionsPath.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/coremlc/_PartialAppManifest.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/coremlc/_BundleResourceWithLogicalName.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/_ProcessedBundleResourcesPath.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/_ProcessedContentPath.items
-/Users/loganrankine/Desktop/Finance/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/device-builds/iphone 12-15.5/optimized/
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Demo.exe
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Demo.pdb
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLite-net.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.nativelibrary.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/optimized/
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CoreCompileInputs.cache
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CopyComplete
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.exe
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.pdb

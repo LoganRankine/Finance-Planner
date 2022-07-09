@@ -12,6 +12,7 @@ namespace Demo
 	{
         List<Person> user = new List<Person>();
         List<BudgetInfo> Info = new List<BudgetInfo>();
+        public static int db_int;
         public TrackerViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -22,6 +23,15 @@ namespace Demo
             
             ConnectToDB();
             TrackerName.Text += user[ExistingViewController.db_int].m_Name;
+
+            UITableView _Budget;
+            _Budget = new UITableView
+            {
+                Frame = new CoreGraphics.CGRect(0, 100, View.Bounds.Width, View.Bounds.Height),
+                Source = new ListSpent(Info)
+            };
+
+            View.AddSubview(_Budget);
             ShowMoney();
 
             configure();
@@ -42,7 +52,7 @@ namespace Demo
         {
             using (SQLiteConnection conn1 = new SQLiteConnection(AppDelegate.FilePath))
             {
-                user = conn1.Table<Person>().ToList();
+                Info = conn1.Table<BudgetInfo>().ToList();
             }
             //using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             //{
