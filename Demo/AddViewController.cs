@@ -26,7 +26,8 @@ namespace Demo
             {
                 m_Reason = Reason.Text,
                 m_spent = float.Parse(Cost.Text),
-                m_Date = RemoveSpaces(Date.Date.ToString())
+                m_Date = RemoveSpaces(Date.Date.ToString()),
+                userId = db_int
             };
         }
         private string RemoveSpaces(string date)
