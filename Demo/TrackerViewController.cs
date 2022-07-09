@@ -32,10 +32,19 @@ namespace Demo
             };
 
             View.AddSubview(_Budget);
+
+            AddToBudget.TouchDown += AddToBudget_TouchDown;
             ShowMoney();
 
             configure();
 
+        }
+
+        private void AddToBudget_TouchDown(object sender, EventArgs e)
+        {
+            AddViewController tracker = Storyboard.InstantiateViewController(identifier: "AddViewController") as AddViewController;
+            AddViewController.db_int = db_int;
+            NavigationController.PushViewController(tracker, true);
         }
 
         private void configure()

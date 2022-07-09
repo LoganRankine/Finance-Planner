@@ -9,8 +9,32 @@ namespace Demo
 {
 	public partial class AddViewController : UIViewController
 	{
+        public static int db_int;
 		public AddViewController (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            AddToDB();
+        }
+        public void AddToDB()
+        {
+            BudgetInfo budget = new BudgetInfo
+            {
+                m_Reason = Reason.Text,
+                m_spent = float.Parse(Cost.Text),
+                m_Date = RemoveSpaces(Date.Date.ToString())
+            };
+        }
+        private string RemoveSpaces(string date)
+        {
+            string[] datea = date.Split(" ");
+            return datea[0];
+
+        }
+
+    }
 }
