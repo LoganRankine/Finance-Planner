@@ -12,13 +12,15 @@ namespace Demo
     public partial class ExistingViewController : UIViewController
     {
         public static string db_string;
-        public static int db_int;
+        public static int db_int = 999;
         public static bool tru = false;
 
         List<Person> trackers = new List<Person>();
         public ExistingViewController(IntPtr handle) : base(handle)
         {
         }
+
+        
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -40,31 +42,44 @@ namespace Demo
 
             View.AddSubview(_table);
 
-            
-           
-            if(tru == true)
+            if(db_int != 999)
             {
-                TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-                NavigationController.PushViewController(tracker, true);
+                changeView();
             }
+
+            
+            //if(tru == true)
+            //{
+            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //    NavigationController.PushViewController(tracker, true);
+            //}
             //if(db_int != 999999)
             //{
             //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
             //    NavigationController.PushViewController(tracker, true);
             //}
-            _table.UserInteractionEnabled = true;
-            _table.AddGestureRecognizer(new UITapGestureRecognizer(() =>
-            {
-                TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-                TrackerViewController.db_int = db_int;
-                NavigationController.PushViewController(tracker, true);
-                //this.View.EndEditing(true);
-            }
-            ));
+            //_table.UserInteractionEnabled = true;
+            //_table.AddGestureRecognizer(new UITapGestureRecognizer(() =>
+            //{
+            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //    TrackerViewController.db_int = db_int;
+            //    NavigationController.PushViewController(tracker, true);
+            //    //this.View.EndEditing(true);
+            //}
+            //));
 
 
         }
-        
+
+        static public void update(int selection)
+        {
+            db_int = selection;
+            TrackerViewController.update(db_int);
+            UINavigationController ui = new UINavigationController();
+            UIStoryboard story = new UIStoryboard();
+            TrackerViewController track = story.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            ui.PushViewController(track, true);
+        }
             
         public void changeView()
         {
@@ -74,7 +89,7 @@ namespace Demo
                 //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
                 //PresentViewController(existingViewController, true, null);
                 NavigationController.PushViewController(trackerViewController, true);
-                tru = false;
+                //tru = false;
             }
             
         }

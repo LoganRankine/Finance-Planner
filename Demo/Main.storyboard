@@ -225,18 +225,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlM-lG-Oav">
-                                <rect key="frame" x="297" y="96" width="50" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Add"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OYh-0Y-hPa"/>
                     <connections>
-                        <outlet property="AddToBudget" destination="ZlM-lG-Oav" id="Jjk-Qg-Nmv"/>
                         <outlet property="TrackerName" destination="eJp-9I-fTT" id="73b-lh-Eqd"/>
                     </connections>
                 </viewController>

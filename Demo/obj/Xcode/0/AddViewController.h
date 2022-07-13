@@ -1,21 +1,24 @@
-//
-//  AddViewController.h
-//  Demo
-//
-//  Created by Logan Rankine on 09/07/2022.
-//
+// WARNING
+// This file has been generated automatically by Visual Studio to
+// mirror C# types. Changes in this file made by drag-connecting
+// from the UI designer will be synchronized back to C#, but
+// more complex manual changes may not transfer correctly.
 
+
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface AddViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *Reason;
-@property (weak, nonatomic) IBOutlet UITextField *Cost;
+@interface AddViewController : UIViewController {
+	UITextField *_Cost;
+	UIDatePicker *_Date;
+	UITextField *_Reason;
+}
 
-@property (weak, nonatomic) IBOutlet UIDatePicker *Date;
+@property (nonatomic, retain) IBOutlet UITextField *Cost;
 
+@property (nonatomic, retain) IBOutlet UIDatePicker *Date;
+
+@property (nonatomic, retain) IBOutlet UITextField *Reason;
 
 @end
-
-NS_ASSUME_NONNULL_END

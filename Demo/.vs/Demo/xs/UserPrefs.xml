@@ -1,18 +1,13 @@
 ﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E771BC4-38F2-4C3E-84AF-3D7FD7E6B0C6" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E771BC4-38F2-4C3E-84AF-3D7FD7E6B0C6" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CreateViewController.cs">
     <Files>
-      <File FileName="CreateViewController.cs" Line="1" Column="1" IsPinned="True" />
-      <File FileName="TrackerViewController.cs" Line="41" Column="35" IsPinned="True" />
-      <File FileName="Main.cs" Line="1" Column="1" />
-      <File FileName="ViewController.cs" Line="71" Column="87" />
+      <File FileName="CreateViewController.cs" Line="21" Column="28" IsPinned="True" />
+      <File FileName="TrackerViewController.cs" Line="41" Column="10" IsPinned="True" />
+      <File FileName="Main.cs" Line="17" Column="2" />
+      <File FileName="ViewController.cs" Line="71" Column="54" />
       <File FileName="ExistingViewController.cs" Line="43" Column="9" />
       <File FileName="ListDatabase.cs" Line="28" Column="51" />
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
@@ -25,6 +20,7 @@
           <Node name="Demo" expanded="True">
             <Node name="Demo" expanded="True">
               <Node name="Database" expanded="True" />
+              <Node name="CreateViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -34,4 +30,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
 </Properties>

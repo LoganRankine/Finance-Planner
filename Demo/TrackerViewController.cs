@@ -19,37 +19,52 @@ namespace Demo
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            Title = "Tracker";
+            connectToPeople();
+            Title = user[db_int].m_Name;
             
             ConnectToDB();
-            TrackerName.Text += user[ExistingViewController.db_int].m_Name;
+            //TrackerName.Text += user[ExistingViewController.db_int].m_Name;
 
             UITableView _Budget;
             _Budget = new UITableView
             {
-                Frame = new CoreGraphics.CGRect(0, 100, View.Bounds.Width, View.Bounds.Height),
+                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height),
                 Source = new ListSpent(Info)
             };
 
             View.AddSubview(_Budget);
 
-            AddToBudget.TouchDown += AddToBudget_TouchDown;
             ShowMoney();
 
             configure();
+            NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
 
         }
 
-        private void AddToBudget_TouchDown(object sender, EventArgs e)
+        private void connectToPeople()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                user = conn.Table<Person>().ToList();
+            }
+        }
+
+        static public void update(int selection)
+        {
+            db_int = selection;
+        }
+        // when plus button pressed takes you to page
+        private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
             AddViewController tracker = Storyboard.InstantiateViewController(identifier: "AddViewController") as AddViewController;
             AddViewController.db_int = db_int;
             NavigationController.PushViewController(tracker, true);
         }
 
+        // adds plus button to navigation bar
         private void configure()
         {
-            
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Add, target: View, action: null);
         }
 
         private void ShowMoney()
@@ -59,10 +74,18 @@ namespace Demo
 
         private void ConnectToDB()
         {
-            using (SQLiteConnection conn1 = new SQLiteConnection(AppDelegate.FilePath))
+            try
             {
-                Info = conn1.Table<BudgetInfo>().ToList();
+                using (SQLiteConnection conn1 = new SQLiteConnection(AppDelegate.FilePath))
+                {
+                    Info = conn1.Table<BudgetInfo>().ToList();
+                }
             }
+            catch
+            {
+
+            }
+            
             //using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             //{
             //    Info = conn.Table<BudgetInfo>().ToList();

@@ -13,9 +13,6 @@ namespace Demo
 	partial class TrackerViewController
 	{
 		[Outlet]
-		UIKit.UIButton AddToBudget { get; set; }
-
-		[Outlet]
 		UIKit.UILabel TrackerName { get; set; }
 		
 		void ReleaseDesignerOutlets ()
@@ -23,11 +20,6 @@ namespace Demo
 			if (TrackerName != null) {
 				TrackerName.Dispose ();
 				TrackerName = null;
-			}
-
-			if (AddToBudget != null) {
-				AddToBudget.Dispose ();
-				AddToBudget = null;
 			}
 		}
 	}

@@ -1,31 +1,16 @@
-//
-//  AddViewController.m
-//  Demo
-//
-//  Created by Logan Rankine on 09/07/2022.
-//
+// WARNING
+// This file has been generated automatically by Visual Studio to
+// mirror C# types. Changes in this file made by drag-connecting
+// from the UI designer will be synchronized back to C#, but
+// more complex manual changes may not transfer correctly.
+
 
 #import "AddViewController.h"
 
-@interface AddViewController ()
-
-@end
-
 @implementation AddViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+@synthesize Cost = _Cost;
+@synthesize Date = _Date;
+@synthesize Reason = _Reason;
 
 @end
