@@ -84,6 +84,7 @@ namespace Demo
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
                 conn.CreateTable<Person>();
+                conn.CreateTable<BudgetInfo>();
                 conn.Insert(BudgetName);
                 //if(debugging == true)
                 //{

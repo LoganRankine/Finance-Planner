@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using SQLite;
 using System.Linq;
 
+
 namespace Demo
 {
     public partial class ViewController : UIViewController
@@ -28,6 +29,15 @@ namespace Demo
             
             MainTitleDate.Text += DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
+            //DateTime.ParseExact("08092001", "dddd mm yy",)
+            string cool = "01/09/2001";
+            DateTime date = Convert.ToDateTime(cool);
+            cool = date.ToLongDateString();
+            
+            NSDateFormatter dateFormatter = new NSDateFormatter();
+            dateFormatter.DateStyle = NSDateFormatterStyle.Medium;
+            dateFormatter.DateStyle = NSDateFormatterStyle.None;
+                
             Create.TouchDown += CreateButton_TouchInside;
 
             Existing.TouchDown += Existing_TouchDown;         

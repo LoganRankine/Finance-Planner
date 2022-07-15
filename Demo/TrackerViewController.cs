@@ -11,7 +11,9 @@ namespace Demo
 	public partial class TrackerViewController : UIViewController
 	{
         List<Person> user = new List<Person>();
+        List<BudgetInfo> tempInfo = new List<BudgetInfo>();
         List<BudgetInfo> Info = new List<BudgetInfo>();
+        UITableView _Budget;
         public static int db_int;
         public TrackerViewController (IntPtr handle) : base (handle)
 		{
@@ -21,25 +23,42 @@ namespace Demo
             base.ViewDidLoad();
             connectToPeople();
             Title = user[db_int].m_Name;
-            
+            AddViewController.db_int = db_int;
             ConnectToDB();
             //TrackerName.Text += user[ExistingViewController.db_int].m_Name;
 
-            UITableView _Budget;
-            _Budget = new UITableView
-            {
-                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height),
-                Source = new ListSpent(Info)
-            };
 
-            View.AddSubview(_Budget);
-
-            ShowMoney();
+            LoadMoney();
+            //Reload.TouchesEnded +=
+            
+            
 
             configure();
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
+            NavigationItem.RightBarButtonItems[1].Clicked += RefreshClicked;
+            //NavigationItem.RightBarButtonItem.
 
         }
+        private void LoadMoney()
+        {
+            _Budget = new UITableView
+            {
+                Frame = new CoreGraphics.CGRect(0, 100, View.Bounds.Width, View.Bounds.Height),
+                Source = new ListSpent(Info)
+            };
+            //_Budget.ReloadData();
+            View.AddSubview(_Budget);
+        }
+        private void RefreshClicked(object sender, EventArgs e)
+        {
+            _Budget.RemoveFromSuperview();
+            Info.RemoveRange(0, Info.Count);
+            //_Budget.ReloadData();
+            ConnectToDB();
+            LoadMoney();
+        }
+
+       
 
         private void connectToPeople()
         {
@@ -64,13 +83,17 @@ namespace Demo
         // adds plus button to navigation bar
         private void configure()
         {
-            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Add, target: View, action: null);
+             
+            var refreshButton = new UIBarButtonItem(UIBarButtonSystemItem.Add, target: View,action: null);
+            var addButton = new UIBarButtonItem(UIBarButtonSystemItem.Refresh, target: View, action: null);
+         
+            UIBarButtonItem[] button = { refreshButton, addButton };
+            NavigationItem.SetRightBarButtonItems(button, true);
+            //NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.FastForward, target: View, null);
+            //NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Add, target: View, action: null);
         }
 
-        private void ShowMoney()
-        {
-
-        }
+        
 
         private void ConnectToDB()
         {
@@ -78,7 +101,15 @@ namespace Demo
             {
                 using (SQLiteConnection conn1 = new SQLiteConnection(AppDelegate.FilePath))
                 {
-                    Info = conn1.Table<BudgetInfo>().ToList();
+                    //conn1.CreateTable<BudgetInfo>();
+                    tempInfo = conn1.Table<BudgetInfo>().ToList();
+                    foreach(BudgetInfo spent in tempInfo)
+                    {
+                        if(spent.userId == db_int)
+                        {
+                            Info.Add(spent);
+                        }
+                    }
                 }
             }
             catch

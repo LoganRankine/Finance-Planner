@@ -13,6 +13,9 @@ namespace Demo
 	partial class AddViewController
 	{
 		[Outlet]
+		UIKit.UIButton AddToDB { get; set; }
+
+		[Outlet]
 		UIKit.UITextField Cost { get; set; }
 
 		[Outlet]
@@ -23,9 +26,9 @@ namespace Demo
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (Reason != null) {
-				Reason.Dispose ();
-				Reason = null;
+			if (AddToDB != null) {
+				AddToDB.Dispose ();
+				AddToDB = null;
 			}
 
 			if (Cost != null) {
@@ -36,6 +39,11 @@ namespace Demo
 			if (Date != null) {
 				Date.Dispose ();
 				Date = null;
+			}
+
+			if (Reason != null) {
+				Reason.Dispose ();
+				Reason = null;
 			}
 		}
 	}

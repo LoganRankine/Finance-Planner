@@ -21,12 +21,25 @@ namespace Demo
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
             }
             //cell.TextLabel.Text = tableItems[indexPath.Row];
-            cell.TextLabel.Text = BudgetInfo[indexPath.Row].m_Reason;
-            cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+            cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
+            //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+            string date = BudgetInfo[indexPath.Row].m_Date;
+            DateTime convert = Convert.ToDateTime(date);
+            date = convert.ToLongDateString();
+            cell.DetailTextLabel.Text = date;
+            cell.BackgroundColor = UIColor.Green;
+            //cell.AccessibilityLabel = BudgetInfo[indexPath.Row].m_spent.ToString();
             
             return cell;
         }
-
+        public override nfloat EstimatedHeightForHeader(UITableView tableView, nint section)
+        {
+            return (nfloat)1000.00;
+        }
+        public override nint NumberOfSections(UITableView tableView)
+        {
+            return 5;
+        }
         public override nint RowsInSection(UITableView tableview, nint section)
         {
             return BudgetInfo.Count;

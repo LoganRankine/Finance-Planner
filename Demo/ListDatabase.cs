@@ -24,11 +24,12 @@ namespace Demo
         {
             //base.RowSelected(tableView, indexPath);
             //new UIAlertView("Alert", "You touch that: " + tableItems[indexPath.Row], null, "ok", null).Show();
-          
+            
+
             tableView.DeselectRow(indexPath,true);
             ExistingViewController.update(indexPath.Row);
-            //ExistingViewController.db_int = indexPath.Row;
-            //ExistingViewController.tru = true;
+            
+           
            
         }
         public bool changeScreen(bool tru)

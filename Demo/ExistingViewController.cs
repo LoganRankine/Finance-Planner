@@ -20,7 +20,13 @@ namespace Demo
         {
         }
 
-        
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+
+            
+        }
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -30,70 +36,59 @@ namespace Demo
             //this.ListDataBase.Delegate = (IUITableViewDelegate)this;
 
             numberOfBudgetsSaved();
-            changeView();
 
             DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
+            ListDatabase data = new ListDatabase(trackers);
             UITableView _table;
             _table = new UITableView
             {
-                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height), Source = new ListDatabase(trackers)
+                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height), Source = data
             };
-
             View.AddSubview(_table);
+            _table.ReloadData();
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
 
+            NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
             if(db_int != 999)
             {
-                changeView();
+                change();
             }
 
+           
+            //recalls ViewDidLoad to refresh any data
+            //this.ViewDidLoad();
+
             
-            //if(tru == true)
-            //{
-            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-            //    NavigationController.PushViewController(tracker, true);
-            //}
-            //if(db_int != 999999)
-            //{
-            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-            //    NavigationController.PushViewController(tracker, true);
-            //}
             //_table.UserInteractionEnabled = true;
             //_table.AddGestureRecognizer(new UITapGestureRecognizer(() =>
             //{
-            //    TrackerViewController tracker = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-            //    TrackerViewController.db_int = db_int;
-            //    NavigationController.PushViewController(tracker, true);
-            //    //this.View.EndEditing(true);
+            //    this.ViewDidLoad();
             //}
             //));
 
 
         }
 
+        private void RightBarButtonItem_Clicked(object sender, EventArgs e)
+        {
+            change();
+        }
+
         static public void update(int selection)
         {
             db_int = selection;
-            TrackerViewController.update(db_int);
-            UINavigationController ui = new UINavigationController();
-            UIStoryboard story = new UIStoryboard();
-            TrackerViewController track = story.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-            ui.PushViewController(track, true);
-        }
+            TrackerViewController.update(selection);
             
-        public void changeView()
+        }
+     
+        public void change()
         {
-            if(tru == true)
-            {
-                TrackerViewController trackerViewController = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
-                //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-                //PresentViewController(existingViewController, true, null);
-                NavigationController.PushViewController(trackerViewController, true);
-                //tru = false;
-            }
-            
+            TrackerViewController trackerViewController = Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //existingViewController.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+            //PresentViewController(existingViewController, true, null);
+            NavigationController.PushViewController(trackerViewController, true);
         }
-
         private void numberOfBudgetsSaved()
         {         
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
