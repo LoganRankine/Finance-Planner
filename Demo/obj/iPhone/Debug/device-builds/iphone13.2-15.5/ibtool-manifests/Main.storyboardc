@@ -8,51 +8,6 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
-		<key>2FV-xx-5t3</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>2FV-xx-5t3</string>
-				</array>
-				<key>message</key>
-				<string>Button Style before iOS 15.0</string>
-				<key>type</key>
-				<string>IBIssueTypeAttributeUnavailable</string>
-				<key>type-value</key>
-				<integer>5</integer>
-			</dict>
-		</array>
-		<key>5PF-vN-7Ri</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>5PF-vN-7Ri</string>
-				</array>
-				<key>message</key>
-				<string>Button Style before iOS 15.0</string>
-				<key>type</key>
-				<string>IBIssueTypeAttributeUnavailable</string>
-				<key>type-value</key>
-				<integer>5</integer>
-			</dict>
-		</array>
-		<key>9MI-p2-AKO</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>9MI-p2-AKO</string>
-				</array>
-				<key>message</key>
-				<string>Button Style before iOS 15.0</string>
-				<key>type</key>
-				<string>IBIssueTypeAttributeUnavailable</string>
-				<key>type-value</key>
-				<integer>5</integer>
-			</dict>
-		</array>
 		<key>AMd-QF-xg4</key>
 		<array>
 			<dict>
@@ -68,34 +23,34 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>HKK-v9-rTO</key>
+		<key>FQQ-Bl-Ihh</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>HKK-v9-rTO</string>
+					<string>FQQ-Bl-Ihh</string>
 				</array>
 				<key>message</key>
-				<string>Button Style before iOS 15.0</string>
+				<string>“Navigation Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
 				<key>type</key>
-				<string>IBIssueTypeAttributeUnavailable</string>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>
-				<integer>5</integer>
+				<integer>9</integer>
 			</dict>
 		</array>
-		<key>OY4-0U-gTg</key>
+		<key>hJi-rb-5vQ</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>OY4-0U-gTg</string>
+					<string>hJi-rb-5vQ</string>
 				</array>
 				<key>message</key>
-				<string>Button Style before iOS 15.0</string>
+				<string>“Navigation Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
 				<key>type</key>
-				<string>IBIssueTypeAttributeUnavailable</string>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>
-				<integer>5</integer>
+				<integer>9</integer>
 			</dict>
 		</array>
 	</dict>

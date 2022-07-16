@@ -25,13 +25,8 @@ namespace Demo
             Title = user[db_int].m_Name;
             AddViewController.db_int = db_int;
             ConnectToDB();
-            //TrackerName.Text += user[ExistingViewController.db_int].m_Name;
-
-
+            
             LoadMoney();
-            //Reload.TouchesEnded +=
-            
-            
 
             configure();
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;

@@ -1,21 +1,28 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExistingViewController.cs">
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DirectDBViewController.cs">
     <Files>
-      <File FileName="CreateViewController.cs" Line="21" Column="28" IsPinned="True" />
-      <File FileName="TrackerViewController.cs" Line="23" Column="1" IsPinned="True" />
+      <File FileName="CreateViewController.cs" Line="36" Column="13" IsPinned="True" />
+      <File FileName="TrackerViewController.cs" Line="82" Column="33" IsPinned="True" />
       <File FileName="Main.cs" Line="17" Column="2" />
-      <File FileName="ViewController.cs" Line="71" Column="54" />
-      <File FileName="ExistingViewController.cs" Line="62" Column="19" />
-      <File FileName="ListDatabase.cs" Line="30" Column="15" />
+      <File FileName="ViewController.cs" Line="86" Column="166" />
+      <File FileName="ExistingViewController.cs" Line="48" Column="37" />
+      <File FileName="ListDatabase.cs" Line="34" Column="1" />
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
       <File FileName="Database/Person.cs" Line="18" Column="41" />
+      <File FileName="AddViewController.cs" Line="27" Column="1" />
+      <File FileName="ListSpent.cs" Line="45" Column="9" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.Shared.targets" Line="1655" Column="3" />
+      <File FileName="Database/DirectDebits.cs" Line="2" Column="15" />
+      <File FileName="CreateViewController.designer.cs" Line="40" Column="1" />
       <File FileName="Info.plist" />
-      <File FileName="AddViewController.cs" Line="25" Column="1" />
+      <File FileName="DirectDBViewController.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,6 +30,7 @@
           <Node name="Demo" expanded="True">
             <Node name="Demo" expanded="True">
               <Node name="Database" expanded="True" />
+              <Node name="DirectDBViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -32,7 +40,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

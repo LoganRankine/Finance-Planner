@@ -34,11 +34,6 @@
 /Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhone/Debug/System.Runtime.CompilerServices.Unsafe.dll
 /Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhone/Debug/Xamarin.Essentials.dll
 /Users/loganrankine/Projects/Finance-Planner/Demo/bin/iPhone/Debug/Xamarin.Essentials.pdb
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.AssemblyReference.cache
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CoreCompileInputs.cache
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CopyComplete
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.exe
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.pdb
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/actool/_PartialAppManifest.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/actool/_BundleResourceWithLogicalName.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/actool/_ProcessedImageAssetsPath.items
@@ -50,3 +45,8 @@
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/_ProcessedBundleResourcesPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/_ProcessedContentPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/optimized/
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CoreCompileInputs.cache
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CopyComplete
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.exe
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.pdb
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.AssemblyReference.cache

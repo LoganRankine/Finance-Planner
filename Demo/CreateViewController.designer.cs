@@ -5,11 +5,10 @@
 // Manual changes to this file may not be handled correctly.
 //
 using Foundation;
-using System.CodeDom.Compiler;
 
 namespace Demo
 {
-	[Register ("CreateViewController")]
+    [Register ("CreateViewController")]
 	partial class CreateViewController
 	{
 		[Outlet]
@@ -17,6 +16,9 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UITextField Budget_TextField { get; set; }
+
+		[Outlet]
+		UIKit.UIButton DirectDebit { get; set; }
 
 		[Outlet]
 		UIKit.UIDatePicker EndDate { get; set; }
@@ -28,13 +30,26 @@ namespace Demo
 		UIKit.UIDatePicker StartDate { get; set; }
 
 		[Outlet]
-		UIKit.UIButton Submit { get; set; }
+		UIKit.UISwitch Switch_DirectDebit { get; set; }
+
+		
+
+		[Action ("DirectDebitSwitch:")]
+		partial void DirectDebitSwitch (UIKit.UISwitch sender);
 
 		[Action ("EditingEnd_BudgetName:")]
 		partial void EditingEnd_BudgetName (Foundation.NSObject sender);
+
+		[Action ("Switch_Clicked:")]
+		partial void Switch_Clicked (UIKit.UISwitch sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (Switch_DirectDebit != null) {
+				Switch_DirectDebit.Dispose ();
+				Switch_DirectDebit = null;
+			}
+
 			if (BackButton != null) {
 				BackButton.Dispose ();
 				BackButton = null;
@@ -45,15 +60,7 @@ namespace Demo
 				Budget_TextField = null;
 			}
 
-			if (StartDate != null) {
-				StartDate.Dispose ();
-				StartDate = null;
-			}
-
-			if (Submit != null) {
-				Submit.Dispose ();
-				Submit = null;
-			}
+			
 
 			if (EndDate != null) {
 				EndDate.Dispose ();
@@ -63,6 +70,11 @@ namespace Demo
 			if (Money != null) {
 				Money.Dispose ();
 				Money = null;
+			}
+
+			if (StartDate != null) {
+				StartDate.Dispose ();
+				StartDate = null;
 			}
 		}
 	}

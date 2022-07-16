@@ -19,12 +19,16 @@
 @class UITableViewSource;
 @class Demo_ListDatabase;
 @class TrackerViewController;
+@class Demo_ListSpent;
+@class AddViewController;
+@class DirectDBViewController;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSSynchronizationContextDispatcher;
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class UIKit_UIControlEventProxy;
 @class __NSObject_Disposer;
+@class UIKit_UIBarButtonItem_Callback;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
@@ -98,10 +102,11 @@
 }
 	@property (nonatomic, assign) UIButton * BackButton;
 	@property (nonatomic, assign) UITextField * Budget_TextField;
+	@property (nonatomic, assign) UIButton * DirectDebit;
 	@property (nonatomic, assign) UIDatePicker * EndDate;
 	@property (nonatomic, assign) UITextField * Money;
 	@property (nonatomic, assign) UIDatePicker * StartDate;
-	@property (nonatomic, assign) UIButton * Submit;
+	@property (nonatomic, assign) UISwitch * Switch_DirectDebit;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
@@ -112,15 +117,18 @@
 	-(void) setBackButton:(UIButton *)p0;
 	-(UITextField *) Budget_TextField;
 	-(void) setBudget_TextField:(UITextField *)p0;
+	-(UIButton *) DirectDebit;
+	-(void) setDirectDebit:(UIButton *)p0;
 	-(UIDatePicker *) EndDate;
 	-(void) setEndDate:(UIDatePicker *)p0;
 	-(UITextField *) Money;
 	-(void) setMoney:(UITextField *)p0;
 	-(UIDatePicker *) StartDate;
 	-(void) setStartDate:(UIDatePicker *)p0;
-	-(UIButton *) Submit;
-	-(void) setSubmit:(UIButton *)p0;
+	-(UISwitch *) Switch_DirectDebit;
+	-(void) setSwitch_DirectDebit:(UISwitch *)p0;
 	-(void) viewDidLoad;
+	-(void) Switch_Clicked:(UISwitch *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
@@ -138,6 +146,7 @@
 	-(void) setBackToMain:(UIButton *)p0;
 	-(UILabel *) DateText;
 	-(void) setDateText:(UILabel *)p0;
+	-(void) viewDidAppear:(BOOL)p0;
 	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
@@ -173,6 +182,54 @@
 	-(UILabel *) TrackerName;
 	-(void) setTrackerName:(UILabel *)p0;
 	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Demo_ListSpent : NSObject<UIScrollViewDelegate, UIScrollViewDelegate, UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface AddViewController : UIViewController {
+}
+	@property (nonatomic, assign) UIButton * AddToDB;
+	@property (nonatomic, assign) UITextField * Cost;
+	@property (nonatomic, assign) UIDatePicker * Date;
+	@property (nonatomic, assign) UITextField * Reason;
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIButton *) AddToDB;
+	-(void) setAddToDB:(UIButton *)p0;
+	-(UITextField *) Cost;
+	-(void) setCost:(UITextField *)p0;
+	-(UIDatePicker *) Date;
+	-(void) setDate:(UIDatePicker *)p0;
+	-(UITextField *) Reason;
+	-(void) setReason:(UITextField *)p0;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface DirectDBViewController : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

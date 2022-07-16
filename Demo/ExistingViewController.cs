@@ -47,14 +47,13 @@ namespace Demo
             };
             View.AddSubview(_table);
             _table.ReloadData();
+            //NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
+
             NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
-
+            NavigationItem.RightBarButtonItem.Title = "Next";
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
-            if(db_int != 999)
-            {
-                change();
-            }
-
+            
+            
            
             //recalls ViewDidLoad to refresh any data
             //this.ViewDidLoad();

@@ -26,7 +26,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>iOS Team Provisioning Profile: com.LoganMaroonRankine.Demo</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: LoganRankine.Demo</CodesignProvision>
     <CodesignKey>Apple Development: loganrankine@live.co.uk (YW585A7KBB)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -161,6 +161,11 @@
     <Compile Include="AddViewController.designer.cs">
       <DependentUpon>AddViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="DirectDBViewController.cs" />
+    <Compile Include="DirectDBViewController.designer.cs">
+      <DependentUpon>DirectDBViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DirectDebits.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\.DS_Store" />

@@ -25,24 +25,32 @@ namespace Demo
             //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
             string date = BudgetInfo[indexPath.Row].m_Date;
             DateTime convert = Convert.ToDateTime(date);
+            //convert.AddDays(7);
             date = convert.ToLongDateString();
             cell.DetailTextLabel.Text = date;
-            cell.BackgroundColor = UIColor.Green;
+            //cell.BackgroundColor = UIColor.Green;
             //cell.AccessibilityLabel = BudgetInfo[indexPath.Row].m_spent.ToString();
             
             return cell;
         }
-        public override nfloat EstimatedHeightForHeader(UITableView tableView, nint section)
-        {
-            return (nfloat)1000.00;
-        }
-        public override nint NumberOfSections(UITableView tableView)
-        {
-            return 5;
-        }
+        //public override nfloat EstimatedHeightForHeader(UITableView tableView, nint section)
+        //{
+        //    return (nfloat)1000.00;
+        //}
+        //public override nint NumberOfSections(UITableView tableView)
+        //{
+        //    return 5;
+        //}
+
+        
         public override nint RowsInSection(UITableView tableview, nint section)
         {
             return BudgetInfo.Count;
+        }
+
+        public void IsWeek()
+        {
+
         }
     }
 }

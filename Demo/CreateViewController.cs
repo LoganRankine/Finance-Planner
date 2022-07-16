@@ -10,10 +10,16 @@ namespace Demo
 {
 	public partial class CreateViewController : UIViewController
 	{
+        private bool direct = false;
+        partial void Switch_Clicked(UISwitch sender)
+        {
+            direct = Switch_DirectDebit.On;
+        }
         private string budgetName;
 		public CreateViewController (IntPtr handle) : base (handle)
 		{
         }
+        
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -34,7 +40,62 @@ namespace Demo
             }
             ));
 
-            Submit.TouchDown += Submit_TouchDown;
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Add, target: View, action: null);
+            NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
+
+            //Submit.TouchDown += Submit_TouchDown;
+
+            
+
+            
+            
+            
+        }
+        
+
+        
+
+        private void RightBarButtonItem_Clicked(object sender, EventArgs e)
+        {
+            //creates object person and gets input from user and populates objects variables
+            Person BudgetName = new Person
+            {
+                m_Name = Budget_TextField.Text.ToString(),
+                m_StartDate = RemoveSpaces(StartDate.Date.ToString()),
+                m_EndDate = RemoveSpaces(EndDate.Date.ToString()),
+                m_Money = int.Parse(Money.Text.ToString())
+            };
+
+            //Adds object created into SQLite database
+            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                conn.CreateTable<Person>();
+                conn.CreateTable<BudgetInfo>();
+                conn.CreateTable<DirectDebits>();
+                
+                DirectDBViewController.UserSelected(BudgetName);
+                conn.Insert(BudgetName);
+                //if(debugging == true)
+                //{
+                //    int rows = conn.Insert(BudgetName);
+                //}
+
+            }
+            
+            if(direct == true)
+            {
+                DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
+                NavigationController.PushViewController(view,true);
+            }
+            else
+            {
+                NavigationController.PopToRootViewController(true);
+            }
+        }
+
+        private void DirectDebit_TouchDown(object sender, EventArgs e)
+        {
+            //DirectDebit.
         }
 
         private void configure()
@@ -90,7 +151,7 @@ namespace Demo
                 //{
                 //    int rows = conn.Insert(BudgetName);
                 //}
-                Submit.TintColor = UIColor.Green;
+                
             }
         }
         private string RemoveSpaces(string date)
