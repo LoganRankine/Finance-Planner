@@ -15,6 +15,6 @@ namespace Demo
         public string m_Name { get; set; }
         public string m_StartDate { get; set; }
         public string m_EndDate { get; set; }
-        public int m_Money { get; set; }
+        public float m_Money { get; set; }
     }
 }

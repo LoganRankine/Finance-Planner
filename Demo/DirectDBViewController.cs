@@ -75,17 +75,31 @@ namespace Demo
 
         private void Calculateexpense()
         {
+            DateTime start = Convert.ToDateTime(currentUser.m_StartDate);
+            DateTime end = Convert.ToDateTime(currentUser.m_EndDate);
+            double days = (end - start).TotalDays;
+            foreach(DirectDebits debit in directs)
+            {
+                if(debit.m_userID == currentUser.Id)
+                {
+                    double dates = days / (double)debit.m_days;
+                    double reg = dates * debit.m_cost;
+                    using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
+                    {
 
+                        //currentUser.m_Money;
+                        
+                        //float newnum = currentUser.m_Money - float.Parse(reg);
+                        connection.Update(currentUser);
+
+                    }
+                }
+            }
+            //DateTime howmanyD = DateTime.Compare(start, end);
         }
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
-            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-            {
-               
-                //currentUser.m_Money;
-                connection.Update(currentUser);
-         
-            }
+            
             NavigationController.PopToRootViewController(true);
         }
 
