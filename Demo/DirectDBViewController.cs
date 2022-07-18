@@ -4,6 +4,8 @@ using System;
 using SQLite;
 using Foundation;
 using UIKit;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Demo
 {
@@ -11,6 +13,7 @@ namespace Demo
 	{
         static private int db_int;
         static private Person currentUser;
+        List<DirectDebits> directs;
 		public DirectDBViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -33,7 +36,22 @@ namespace Demo
 
             db_cost.EditingDidEnd += DirectDebit_Cost_EditingDidEnd;
             DirectDebit_Add.TouchDown += DirectDebit_Add_TouchDown;
-            //NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
+
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
+
+            NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
+        }
+
+        /// <summary>
+        /// Shows direct debits added
+        /// </summary>
+        private void ShowDirect()
+        {
+            foreach(DirectDebits debit in directs)
+            {
+                DirectDebit_Show.Text = $"{debit.m_Name} added";
+                DirectDebit_Show.Text = "\r\n";
+            }
         }
 
         private void DirectDebit_Cost_EditingDidEnd(object sender, EventArgs e)
@@ -54,8 +72,20 @@ namespace Demo
             db_cost.Text = "";
             db_cost.BackgroundColor = UIColor.Clear;
         }
+
+        private void Calculateexpense()
+        {
+
+        }
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
+            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
+            {
+               
+                //currentUser.m_Money;
+                connection.Update(currentUser);
+         
+            }
             NavigationController.PopToRootViewController(true);
         }
 
@@ -72,11 +102,15 @@ namespace Demo
             using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
             {
                 connection.Insert(directDebit);
+                directs = connection.Table<DirectDebits>().ToList();
             }
 
-            DirectDebit_Show.Text = $"{directDebit.m_Name} added";
-            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
+            
+            
+            
             refresh();
+            ShowDirect();
+            directs.RemoveRange(0, directs.Count);
         }
 
         private void DirectDebit_Period_EditingDidEnd(object sender, EventArgs e)

@@ -4,11 +4,13 @@ using System;
 using SQLite;
 using Foundation;
 using UIKit;
+using System.Collections.Generic;
 
 namespace Demo
 {
 	public partial class AddViewController : UIViewController
 	{
+        
         public static int db_int;
 		public AddViewController (IntPtr handle) : base (handle)
 		{
