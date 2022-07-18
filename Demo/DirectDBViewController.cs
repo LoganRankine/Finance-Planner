@@ -88,7 +88,7 @@ namespace Demo
                     {
 
                         //currentUser.m_Money;
-                        
+                        currentUser.m_Money = currentUser.m_Money - (float)reg;
                         //float newnum = currentUser.m_Money - float.Parse(reg);
                         connection.Update(currentUser);
 
@@ -99,7 +99,7 @@ namespace Demo
         }
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
-            
+            Calculateexpense();
             NavigationController.PopToRootViewController(true);
         }
 

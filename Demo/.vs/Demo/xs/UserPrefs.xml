@@ -1,5 +1,13 @@
 ﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DirectDBViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E771BC4-38F2-4C3E-84AF-3D7FD7E6B0C6" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/loganrankine/Projects/Finance-Planner/Demo/DirectDBViewController.cs" relfile="DirectDBViewController.cs" line="87" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Info.plist">
     <Files>
       <File FileName="CreateViewController.cs" Line="36" Column="13" IsPinned="True" />
       <File FileName="TrackerViewController.cs" Line="82" Column="33" IsPinned="True" />
@@ -15,7 +23,7 @@
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
       <File FileName="CreateViewController.designer.cs" Line="40" Column="1" />
       <File FileName="Info.plist" />
-      <File FileName="DirectDBViewController.cs" Line="92" Column="27" />
+      <File FileName="DirectDBViewController.cs" Line="85" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +31,6 @@
           <Node name="Demo" expanded="True">
             <Node name="Demo" expanded="True">
               <Node name="Database" expanded="True" />
-              <Node name="DirectDBViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -34,11 +41,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9E771BC4-38F2-4C3E-84AF-3D7FD7E6B0C6" />
 </Properties>
