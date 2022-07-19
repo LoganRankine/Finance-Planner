@@ -48,6 +48,7 @@ namespace Demo
                 cell = new UITableViewCell(UITableViewCellStyle.Default,cellIdentifer);
             }
             //cell.TextLabel.Text = tableItems[indexPath.Row];
+            //heloo
             cell.TextLabel.Text = People[indexPath.Row].m_Name;
             var InfoButton = new UIButton(UIButtonType.InfoLight);
             //edit
