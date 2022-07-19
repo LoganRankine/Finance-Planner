@@ -19,6 +19,7 @@ namespace Demo
         public TrackerViewController (IntPtr handle) : base (handle)
 		{
 		}
+        
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
