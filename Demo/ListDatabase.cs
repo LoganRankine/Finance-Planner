@@ -50,6 +50,7 @@ namespace Demo
             //cell.TextLabel.Text = tableItems[indexPath.Row];
             cell.TextLabel.Text = People[indexPath.Row].m_Name;
             var InfoButton = new UIButton(UIButtonType.InfoLight);
+            //edit
             InfoButton.TouchDown += InfoButton_TouchDown;
             cell.AccessoryView = InfoButton;
             return cell;
