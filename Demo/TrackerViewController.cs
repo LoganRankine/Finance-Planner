@@ -15,6 +15,7 @@ namespace Demo
         List<BudgetInfo> Info = new List<BudgetInfo>();
         UITableView _Budget;
         public static int db_int;
+        public static Person currentUser;
         public TrackerViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -23,6 +24,8 @@ namespace Demo
             base.ViewDidLoad();
             connectToPeople();
             Title = user[db_int].m_Name;
+
+            TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
             AddViewController.db_int = db_int;
             ConnectToDB();
             
@@ -34,11 +37,14 @@ namespace Demo
             //NavigationItem.RightBarButtonItem.
 
         }
+
+        
+
         private void LoadMoney()
         {
             _Budget = new UITableView
             {
-                Frame = new CoreGraphics.CGRect(0, 100, View.Bounds.Width, View.Bounds.Height),
+                Frame = new CoreGraphics.CGRect(0, 120, View.Bounds.Width, View.Bounds.Height),
                 Source = new ListSpent(Info)
             };
             //_Budget.ReloadData();
@@ -49,6 +55,8 @@ namespace Demo
             _Budget.RemoveFromSuperview();
             Info.RemoveRange(0, Info.Count);
             //_Budget.ReloadData();
+            TrackerAllowance.Text = "";
+            TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
             ConnectToDB();
             LoadMoney();
         }
@@ -72,6 +80,7 @@ namespace Demo
         {
             AddViewController tracker = Storyboard.InstantiateViewController(identifier: "AddViewController") as AddViewController;
             AddViewController.db_int = db_int;
+            AddViewController.currentPerson(user[db_int]);
             NavigationController.PushViewController(tracker, true);
         }
 

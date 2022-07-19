@@ -49,8 +49,12 @@ namespace Demo
         {
             foreach(DirectDebits debit in directs)
             {
-                DirectDebit_Show.Text = $"{debit.m_Name} added";
-                DirectDebit_Show.Text = "\r\n";
+                if(debit.m_userID == currentUser.Id)
+                {
+                    DirectDebit_Show.Text = $"{debit.m_Name} added";
+                    DirectDebit_Show.Text = "\r\n";
+                }
+                
             }
         }
 
@@ -62,6 +66,9 @@ namespace Demo
             }
         }
 
+        /// <summary>
+        /// Resets the state of all button once a new has inputed their direct debit
+        /// </summary>
         public void refresh()
         {
             DirectDebit_Name.BackgroundColor = UIColor.Clear;
@@ -73,6 +80,9 @@ namespace Demo
             db_cost.BackgroundColor = UIColor.Clear;
         }
 
+        /// <summary>
+        /// Calculates how much money will be deducted from the overall allowance the user has inputted
+        /// </summary>
         private void Calculateexpense()
         {
             DateTime start = Convert.ToDateTime(currentUser.m_StartDate);
@@ -82,7 +92,7 @@ namespace Demo
             {
                 if(debit.m_userID == currentUser.Id)
                 {
-                    double dates = days / (double)debit.m_days;
+                    int dates = (int)days / (int)debit.m_days;
                     double reg = dates * debit.m_cost;
                     using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
                     {
@@ -124,7 +134,7 @@ namespace Demo
             
             refresh();
             ShowDirect();
-            directs.RemoveRange(0, directs.Count);
+            //directs.RemoveRange(0, directs.Count);
         }
 
         private void DirectDebit_Period_EditingDidEnd(object sender, EventArgs e)

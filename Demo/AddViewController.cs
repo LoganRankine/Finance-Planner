@@ -10,7 +10,7 @@ namespace Demo
 {
 	public partial class AddViewController : UIViewController
 	{
-        
+        static public Person current;
         public static int db_int;
 		public AddViewController (IntPtr handle) : base (handle)
 		{
@@ -22,6 +22,11 @@ namespace Demo
 
             AddToDB.TouchDown += AddToDB_TouchDown;
             //Add();
+        }
+
+        static public void currentPerson(Person person)
+        {
+            current = person;
         }
 
         private void AddToDB_TouchDown(object sender, EventArgs e)
@@ -41,6 +46,8 @@ namespace Demo
             };
             using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
             {
+                current.m_Money = current.m_Money - budget.m_spent;
+                conn.Update(current);
                 conn.Insert(budget);
             }
         }
