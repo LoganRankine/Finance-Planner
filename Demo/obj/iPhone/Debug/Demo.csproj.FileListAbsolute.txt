@@ -49,4 +49,3 @@
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CopyComplete
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.exe
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.pdb
-/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.AssemblyReference.cache

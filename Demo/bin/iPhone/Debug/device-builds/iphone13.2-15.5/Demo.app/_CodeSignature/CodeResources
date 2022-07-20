@@ -22,19 +22,19 @@
 		</data>
 		<key>Demo.aotdata.arm64</key>
 		<data>
-		ZEDhX46N+A4eoyk3yz461xcp2EQ=
+		PnCua3EwZ+61F1Eib2HTEIkE8kc=
 		</data>
 		<key>Demo.exe</key>
 		<data>
-		w4//2d1h/N8e16WbHoKP18/wl/k=
+		/AelxZKm+83V+grIvBZDQIUWpEs=
 		</data>
 		<key>Demo.pdb</key>
 		<data>
-		ri5hLe3wtVPuB1vFNuOkJe2QaA4=
+		aHkHJhaWdLzijV1tiBLqRcAv9zw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3d7zEar8/SseMFe5lrB/m2400ZE=
+		Iw3VUAk5wA6XyZj6T+cR5QpyrIM=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>Main.storyboardc/11K-hf-tWk-view-wLt-eY-wVC.nib</key>
 		<data>
-		zCjK0ZTvejaXVS2LDD5+OmF1dBk=
+		Cozl4DYiGL2muO/4Lpx125kAipQ=
 		</data>
-		<key>Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib</key>
+		<key>Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib</key>
 		<data>
 		TvDsM3Dyo+uyElsHgNpNefOhKJw=
 		</data>
+		<key>Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib</key>
+		<data>
+		gKoq5YZdS554eNSetTWmefb8DsA=
+		</data>
 		<key>Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib</key>
 		<data>
-		O+nvILRnC5Spc65jcglmiYYIdFo=
+		DZP78U1b2kD+z1WLZwXAO3Cu198=
 		</data>
 		<key>Main.storyboardc/AddViewController.nib</key>
 		<data>
@@ -74,7 +78,11 @@
 		</data>
 		<key>Main.storyboardc/DirectDBViewController.nib</key>
 		<data>
-		X4Om79l2bYlKuKNx/HNc5SBn6pA=
+		JwFCCZjpa5K+N2xIImK5moLDM/o=
+		</data>
+		<key>Main.storyboardc/EditTrackerViewController.nib</key>
+		<data>
+		FiUES+0QNi1Ni4/6moBnmUpJtYw=
 		</data>
 		<key>Main.storyboardc/ExistingViewController.nib</key>
 		<data>
@@ -82,7 +90,7 @@
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
-		NX2TT47e6aFZi0hOCtYFHjFvH9k=
+		hFSKF/mRU3dbxgrHcPtu2AizX8o=
 		</data>
 		<key>Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib</key>
 		<data>
@@ -102,7 +110,7 @@
 		</data>
 		<key>Main.storyboardc/bRv-4p-frS-view-0uO-ed-erd.nib</key>
 		<data>
-		CWVBXxwiBgzl+zCNxdB9s3ehhec=
+		1XwkrgA+3LJFih3KOLCTLvxhVtY=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -114,7 +122,7 @@
 		</data>
 		<key>SQLite-net.aotdata.arm64</key>
 		<data>
-		nK8YlIxcI9Gc5FqAANenJy4cnVY=
+		RtopQGkDyLtogKfPBF5lxH8rQ/w=
 		</data>
 		<key>SQLite-net.dll</key>
 		<data>
@@ -122,7 +130,7 @@
 		</data>
 		<key>SQLitePCLRaw.batteries_v2.aotdata.arm64</key>
 		<data>
-		rtLyCAXLuIkh13CEPGnRMHw+8fQ=
+		cTvSLYdMjlOUbHMKiA3KYKho6d4=
 		</data>
 		<key>SQLitePCLRaw.batteries_v2.dll</key>
 		<data>
@@ -130,7 +138,7 @@
 		</data>
 		<key>SQLitePCLRaw.core.aotdata.arm64</key>
 		<data>
-		d/ffNqnN8MY0N6VBQeSDbGX50kA=
+		LNtxJ6sGKj3ByppXq+GXGAhSWEs=
 		</data>
 		<key>SQLitePCLRaw.core.dll</key>
 		<data>
@@ -138,7 +146,7 @@
 		</data>
 		<key>SQLitePCLRaw.nativelibrary.aotdata.arm64</key>
 		<data>
-		lBK9Iya9Q28zkyXXhhoPnszMlqQ=
+		fhtFCd9TUvRWA/O1nuWj7+EKIGQ=
 		</data>
 		<key>SQLitePCLRaw.nativelibrary.dll</key>
 		<data>
@@ -146,7 +154,7 @@
 		</data>
 		<key>SQLitePCLRaw.provider.dynamic_cdecl.aotdata.arm64</key>
 		<data>
-		g0jRfbDK/nufsVOqRmdNKhuUFHQ=
+		vG4OsmeZFvcVWQzHi7z6Q9vLEXw=
 		</data>
 		<key>SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
 		<data>
@@ -158,7 +166,7 @@
 		</data>
 		<key>System.Core.aotdata.arm64</key>
 		<data>
-		v+hA8XNB5RCpE4W1yVjDhc8Z3/I=
+		yxmsbLI2XLwYyVsBsqzRFiL5Nxc=
 		</data>
 		<key>System.Core.dll</key>
 		<data>
@@ -170,7 +178,7 @@
 		</data>
 		<key>System.aotdata.arm64</key>
 		<data>
-		GnZMFaqbLEU881W2L4K+4dLEq6U=
+		Z0//lJkwy5RmHxVGYIKUlsvAH7I=
 		</data>
 		<key>System.dll</key>
 		<data>
@@ -182,15 +190,15 @@
 		</data>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<data>
-		ymllJDfur5znM5/HN99wxh53jAc=
+		EMwBJDtVE3IGORUybuo/raNKVGc=
 		</data>
 		<key>Xamarin.iOS.dll</key>
 		<data>
-		V1FCS8XzZTtV0ZP8EZSh6mawA6Y=
+		MxI/jdtuiAQUNnfnHg9q1ZHJjbQ=
 		</data>
 		<key>Xamarin.iOS.pdb</key>
 		<data>
-		FIpbqGHzucj4sqBtynrHxzZw9Ac=
+		h9GXecrMXz7xkJ7gKh5eD5dXV0g=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -198,19 +206,19 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		vZScXI5RFqitZHy1ANNOo0M04bQ=
+		+EHAegaXv9cIXMY/WhMWLnMeKs4=
 		</data>
 		<key>mscorlib.aotdata.arm64</key>
 		<data>
-		dgNdEZgUnhRGZAPPomwIWklNNPU=
+		QgQLClx8kAacg0IH5oerrw1fvXw=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		T28JIwrSTVWcGQd1L/ZWyhxOoh8=
+		ENAQ/yUV7v98ndVWEDLBitZHJJ8=
 		</data>
 		<key>mscorlib.pdb</key>
 		<data>
-		0Jt0Z5AXCaSMmNUbvlWIYKu2jBc=
+		RyMbByuEH5NbcdMWencgtN86VIQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -240,21 +248,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RLeYQeOjexRDTgxQoapV0r0vJOxD7AgADVhJqLTUCco=
+			5ueI83viFNWAEGEPKkRUm4c1vcBUKnk977VOZrWIXjU=
 			</data>
 		</dict>
 		<key>Demo.exe</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvjtjYtuPcdn04l1zSckV6Xp9HfykWVcBHdZ135A3LE=
+			zRvXiZ6Y0P7dAcLCTKcVZagIr74G+rUc5r5Be3t++UI=
 			</data>
 		</dict>
 		<key>Demo.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3arspZYNB/Ewurx0x3utaiR4IzzjVVQxKumjQltaEt0=
+			o/HA1NRcZMNCOFrFIfGxF84qevPY1tyGgmOEl/lTPrA=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -282,21 +290,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wk45uVMB1sqvK+RDpRAxFMBXdPNfhbowxgyk1t4+Les=
+			wCvIAkpT7q4iEvKotmSitj2w3jccG8Nii+3pIc2ireo=
 			</data>
 		</dict>
-		<key>Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib</key>
+		<key>Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			px6uUiSLgmZxYukEQJ4wgspqwphA5J+pF/DBKM1Hizk=
 			</data>
 		</dict>
+		<key>Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l7SI5/EH9CRCJr1CpRKLNuopNL/26imJa6tS7WYX+Jo=
+			</data>
+		</dict>
 		<key>Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v96cSlmsrab9hvck1zDehLi3vK2edabOqPdrDR/1VE0=
+			RqPOpX+/5EhSkX5OsGbCwfnghZCwcg/HMH8Pf2sHD9Q=
 			</data>
 		</dict>
 		<key>Main.storyboardc/AddViewController.nib</key>
@@ -324,7 +339,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JiK/DRIbN1mozkzh5Yr6+hfYSCO/mjZdS0+F9AKq8zg=
+			ELpXyAtbMnRZwvcySTmEAhgiUEqbMx1ID4Sqz7CUAeI=
+			</data>
+		</dict>
+		<key>Main.storyboardc/EditTrackerViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7RgfOJOW6bGOuWx1JoW2EzO9+oxh1PCc43yUXh1+TeQ=
 			</data>
 		</dict>
 		<key>Main.storyboardc/ExistingViewController.nib</key>
@@ -338,7 +360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhkxsxgMDHX8SyEfif+lgqFu2uGHM4Iva8ugikc+yrw=
+			JHya3Dvy59U5OmArHpzev99cSuxpVjP7/NgWshT8bP8=
 			</data>
 		</dict>
 		<key>Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib</key>
@@ -373,7 +395,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nicwcit2FXhcuLjGhjQqcYtXbTG5J0GnadF8W+4I7Dg=
+			0LeMjSJsGmlEFR3+XCR+AM6nhfCC/N8T+jMrV1926V0=
 			</data>
 		</dict>
 		<key>MonoTouchDebugConfiguration.txt</key>
@@ -387,7 +409,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKb+ciTEWLVYUttcqgNGq2EQHFckPWAnkfUrEwFPRbY=
+			7ru839nJQdRZxaxWOXMEHY/Ayr3C36SYJUSpZOrfSM4=
 			</data>
 		</dict>
 		<key>SQLite-net.dll</key>
@@ -401,7 +423,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8IliGey42W3vp7xityCPuizFDx+Xprg2gDZrcFRNmls=
+			me1jBizEn9M24zQA0NA+da9mKHCU92Qx8Z57O0k+ed8=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.batteries_v2.dll</key>
@@ -415,7 +437,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fadnA0FgDpcqxU8f3SlWbkNN5d7zrEzU7ZMN3JzqSc8=
+			rwuyWxPcEmVSwhATdk1hDiuYJIRzLVWocP4FFvcnKdA=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.core.dll</key>
@@ -429,7 +451,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8PhzwhsQLHpSQwdKHMbm78SfgWvwKcSymlp9Fb0GJ88=
+			uOAofgK/Ki0Zd7IuiqcqKFKXNjlCnO1bVNEuZwwcD6w=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.nativelibrary.dll</key>
@@ -443,7 +465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			keWvNEu7jEqxEmXUva+mrUtOrsigIJheHkPpCuJH6jM=
+			iq/klg+j1obd1QRzmtJ6rQGUy40PdkwFWq+2Q0VILow=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
@@ -464,7 +486,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kkAEP+afpVshthWniC1oH/woB59slaU1D15Fv1LCukI=
+			OFAFMO3r8TLx+khpRnWl8bv6hcVIy6EK4Oj9Q52qbno=
 			</data>
 		</dict>
 		<key>System.Core.dll</key>
@@ -485,7 +507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1PznGBoE8jaSYidJ5eMm8nWOVWekdETpMPVSyHLHBM=
+			YBOVfjGdo09073xFJ134W2P+QSrak9xGk6kDbGmR9e4=
 			</data>
 		</dict>
 		<key>System.dll</key>
@@ -506,21 +528,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXHhh3IsMpLE+5Q9kOgJelKRud9NJN86bTk5mclobRw=
+			6IwucN9j4xPYnIC36qCtqz/1y43oSmWSNZ7eGitrEoA=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IM8pmGKQx3VWfH7nTsNDriUB5Ri1qBLEaKP5WcqGb/w=
+			nBMtVzmHVQ8h+VfMOoEqOGLj8w6b4bNztnmDgJiTTI8=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wu2yVZ/01EfopEtycT26EtSxMlOOsvKc1C6G1BLAgUM=
+			JRS6E9+ZQI5Y6MML0GyG+8Ig/Bx19btGAJnc9MnYelc=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -534,28 +556,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Io3JIRv9VlYh7o/joobJgcjTQmF0Ul0Z3KTN37EM/ck=
+			ZHDhKSK7d+laewaWbKNvMEnQiIC6hNJ6bdjXt3uDzic=
 			</data>
 		</dict>
 		<key>mscorlib.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2E8RItMXYtKrgPjhDtbbVuo7VofV1gwOONcJWvlLRs=
+			dV3iHvYBaZ7N+b/24fQ81SkH5gIF5auyRdvuWiyp63c=
 			</data>
 		</dict>
 		<key>mscorlib.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UmA1nzrrZirC4pcOBECrZBpHynEsQMONJrK37hu2U+o=
+			+wVGwHy2L6nKRYpGF1RgzzFPyMM4rC8PCeCyEYiy9+Q=
 			</data>
 		</dict>
 		<key>mscorlib.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AT+GS19x9F5A6b931/AR9CuZbW+kcMGQKXxO9Jb0rHU=
+			fudYra5EKEnpt9iUIeO6gEMEdeirJUGqGiQXJ/GojQI=
 			</data>
 		</dict>
 	</dict>

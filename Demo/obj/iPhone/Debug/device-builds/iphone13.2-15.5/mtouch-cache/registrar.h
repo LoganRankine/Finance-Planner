@@ -22,6 +22,7 @@
 @class Demo_ListSpent;
 @class AddViewController;
 @class DirectDBViewController;
+@class EditTrackerViewController;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSSynchronizationContextDispatcher;
 @class Foundation_NSAsyncDispatcher;
@@ -172,6 +173,7 @@
 
 @interface TrackerViewController : UIViewController {
 }
+	@property (nonatomic, assign) UILabel * TrackerAllowance;
 	@property (nonatomic, assign) UILabel * TrackerName;
 	-(void) release;
 	-(id) retain;
@@ -179,6 +181,8 @@
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UILabel *) TrackerAllowance;
+	-(void) setTrackerAllowance:(UILabel *)p0;
 	-(UILabel *) TrackerName;
 	-(void) setTrackerName:(UILabel *)p0;
 	-(void) viewDidLoad;
@@ -223,6 +227,36 @@
 @end
 
 @interface DirectDBViewController : UIViewController {
+}
+	@property (nonatomic, assign) UITextField * db_cost;
+	@property (nonatomic, assign) UIButton * DirectDebit_Add;
+	@property (nonatomic, assign) UIButton * DirectDebit_Cost;
+	@property (nonatomic, assign) UITextField * DirectDebit_Name;
+	@property (nonatomic, assign) UITextField * DirectDebit_Period;
+	@property (nonatomic, assign) UITextView * DirectDebit_Show;
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UITextField *) db_cost;
+	-(void) setDb_cost:(UITextField *)p0;
+	-(UIButton *) DirectDebit_Add;
+	-(void) setDirectDebit_Add:(UIButton *)p0;
+	-(UIButton *) DirectDebit_Cost;
+	-(void) setDirectDebit_Cost:(UIButton *)p0;
+	-(UITextField *) DirectDebit_Name;
+	-(void) setDirectDebit_Name:(UITextField *)p0;
+	-(UITextField *) DirectDebit_Period;
+	-(void) setDirectDebit_Period:(UITextField *)p0;
+	-(UITextView *) DirectDebit_Show;
+	-(void) setDirectDebit_Show:(UITextView *)p0;
+	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface EditTrackerViewController : UIViewController {
 }
 	-(void) release;
 	-(id) retain;

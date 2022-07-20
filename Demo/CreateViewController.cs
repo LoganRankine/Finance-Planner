@@ -44,16 +44,26 @@ namespace Demo
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
 
             //Submit.TouchDown += Submit_TouchDown;
-
-            
-
-            
-            
             
         }
-        
 
-        
+        /// <summary>
+        /// Converts money input into float and returns
+        /// if fails to convert returns 0
+        /// </summary>
+        /// <returns></returns>
+        private float convertMoney()
+        {
+            try
+            {
+                float temp = float.Parse(Money.Text.ToString());
+                return temp;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
 
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
@@ -63,36 +73,106 @@ namespace Demo
                 m_Name = Budget_TextField.Text.ToString(),
                 m_StartDate = RemoveSpaces(StartDate.Date.ToString()),
                 m_EndDate = RemoveSpaces(EndDate.Date.ToString()),
-                m_Money = int.Parse(Money.Text.ToString())
+                m_Money = convertMoney()
             };
 
-            //Adds object created into SQLite database
-            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            //see if end date is later than start date
+            if(DateTime.Compare((DateTime)StartDate.Date,(DateTime)EndDate.Date) < 0)
             {
-                conn.CreateTable<Person>();
-                conn.CreateTable<BudgetInfo>();
-                conn.CreateTable<DirectDebits>();
-                
-                DirectDBViewController.UserSelected(BudgetName);
-                conn.Insert(BudgetName);
-                //if(debugging == true)
-                //{
-                //    int rows = conn.Insert(BudgetName);
-                //}
+                if(Budget_TextField.Text != string.Empty)
+                {
+                    if(Money.Text != "")
+                    {
+                        //Adds object created into SQLite database
+                        using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+                        {
+                            conn.CreateTable<Person>();
+                            conn.CreateTable<BudgetInfo>();
+                            conn.CreateTable<DirectDebits>();
 
-            }
-            
-            if(direct == true)
-            {
-                DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
-                NavigationController.PushViewController(view,true);
+                            DirectDBViewController.UserSelected(BudgetName);
+                            conn.Insert(BudgetName);
+                            //if(debugging == true)
+                            //{
+                            //    int rows = conn.Insert(BudgetName);
+                            //}
+
+                        }
+                        if (direct == true)
+                        {
+                            DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
+                            NavigationController.PushViewController(view, true);
+                        }
+                        else
+                        {
+                            NavigationController.PopToRootViewController(true);
+                        }
+                    }
+                    else
+                    {
+                        //sets background colour to red to show which needs editing
+                        Money.BackgroundColor = UIColor.Red;
+
+                        //creates alert and button to alert user
+                        UIAlertController alertUser4 = new UIAlertController();
+                        alertUser4.Title = "No money inputted";
+                        alertUser4.Message = "Please input a number into the money field";
+                        UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                        alertUser4.AddAction(alertUserAction1);
+
+                        //shows alert 
+                        this.PresentViewController(alertUser4, true, null);
+                    }
+                    
+                }
+                else
+                {
+                    //sets background colour to red to show which needs editing
+                    Budget_TextField.BackgroundColor = UIColor.Red;
+
+                    //creates alert and button to alert user
+                    UIAlertController alertUser2 = new UIAlertController();
+                    alertUser2.Title = "No name given";
+                    alertUser2.Message = "Give budget name a name";
+                    UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                    alertUser2.AddAction(alertUserAction1);
+
+                    //shows alert 
+                    this.PresentViewController(alertUser2, true, null);
+                }
+                
             }
             else
             {
-                NavigationController.PopToRootViewController(true);
+                //sets background colour to red to show which needs editing
+                EndDate.BackgroundColor = UIColor.Red;
+
+                //creates alert and button to alert user
+                UIAlertController alertUser1 = new UIAlertController();
+                alertUser1.Title = "Incorrect Dates";
+                alertUser1.Message = "Input a end date that is later than start date";
+                UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);           
+                alertUser1.AddAction(alertUserAction1);
+
+                //shows alert 
+                this.PresentViewController(alertUser1, true, null);
             }
+
+            ////creates alert and button to alert user
+            //UIAlertController alertUser3 = new UIAlertController();
+            //alertUser3.Title = "Tracker not created";
+            //alertUser3.Message = "Please fill out text fields to contine";
+            //UIAlertAction alertUserAction3 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+            //alertUser3.AddAction(alertUserAction3);
+
+            ////shows alert
+            //this.PresentViewController(alertUser3, true, null);
+
+            //NavigationController.PopToRootViewController(true);
+
         }
 
+       
         private void DirectDebit_TouchDown(object sender, EventArgs e)
         {
             //DirectDebit.

@@ -5518,7 +5518,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 204,217,73,62,10,103,232,216,152,47,170,115,8,220,244,38
+	.byte 2,9,73,18,145,53,144,90,103,230,242,169,238,93,49,6
 	.globl _mono_aot_module_SQLitePCLRaw_nativelibrary_info
 	.align 3
 _mono_aot_module_SQLitePCLRaw_nativelibrary_info:

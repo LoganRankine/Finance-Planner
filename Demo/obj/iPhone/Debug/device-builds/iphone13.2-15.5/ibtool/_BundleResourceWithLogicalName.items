@@ -11,6 +11,11 @@
       <LogicalName>Main.storyboardc/AddViewController.nib</LogicalName>
       <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc/EditTrackerViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/EditTrackerViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc/TrackerViewController.nib">
       <Optimize>false</Optimize>
       <LogicalName>Main.storyboardc/TrackerViewController.nib</LogicalName>
@@ -19,6 +24,11 @@
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib">
       <Optimize>false</Optimize>
       <LogicalName>Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib</LogicalName>
       <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.5/ibtool-link/Main.storyboardc/ViewController.nib">

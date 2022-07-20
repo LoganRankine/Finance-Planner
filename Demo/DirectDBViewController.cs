@@ -113,27 +113,100 @@ namespace Demo
             NavigationController.PopToRootViewController(true);
         }
 
+        private int convertDays()
+        {
+            try
+            {
+                return int.Parse(DirectDebit_Period.Text.ToString());
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        private float convertCost()
+        {
+            try
+            {
+                return float.Parse(db_cost.Text.ToString());
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
         private void DirectDebit_Add_TouchDown(object sender, EventArgs e)
         {
             DirectDebits directDebit = new DirectDebits
             {
                 m_userID = currentUser.Id,
-                m_days = int.Parse(DirectDebit_Period.Text.ToString()),
+                m_days = convertDays(),
                 m_Name = DirectDebit_Name.Text.ToString(),
-                m_cost = float.Parse(db_cost.Text.ToString())
+                m_cost = convertCost()
                 
             };
-            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-            {
-                connection.Insert(directDebit);
-                directs = connection.Table<DirectDebits>().ToList();
-            }
 
+            if (directDebit.m_days != 0)
+            {
+                if(directDebit.m_Name != String.Empty)
+                {
+                    if(directDebit.m_cost != 0)
+                    {
+                        using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
+                        {
+                            connection.Insert(directDebit);
+                            directs = connection.Table<DirectDebits>().ToList();
+                        }
+
+                        refresh();
+                        DirectDebit_Show.Text = $"{directDebit.m_Name}: {directDebit.m_cost} added";
+                        DirectDebit_Show.Text = "\r\n";
+                        //ShowDirect();
+                    }
+                    else
+                    {
+                        //change field to red
+                        db_cost.BackgroundColor = UIColor.Red;
+
+                        //creates alert and button to alert user
+                        UIAlertController alertUser3 = new UIAlertController();
+                        alertUser3.Title = "Cost not given";
+                        alertUser3.Message = "Please give cost of direct debit";
+                        UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                        alertUser3.AddAction(alertUserAction1);
+                    }
+                }
+                else
+                {
+                    //change field to red
+                    DirectDebit_Name.BackgroundColor = UIColor.Red;
+
+                    //creates alert and button to alert user
+                    UIAlertController alertUser2 = new UIAlertController();
+                    alertUser2.Title = "Name not given";
+                    alertUser2.Message = "Please give direct debit a name";
+                    UIAlertAction alertUserAction2 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                    alertUser2.AddAction(alertUserAction2);
+                }
+            }
+            else
+            {
+                //change field to red
+                DirectDebit_Period.BackgroundColor = UIColor.Red;
+
+                //creates alert and button to alert user
+                UIAlertController alertUser1 = new UIAlertController();
+                alertUser1.Title = "Day not inputted";
+                alertUser1.Message = "Please input a value into days field";
+                UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                alertUser1.AddAction(alertUserAction1);
+
+                //shows alert
+                this.PresentViewController(alertUser1, true, null);
+            }
             
-            
-            
-            refresh();
-            ShowDirect();
             //directs.RemoveRange(0, directs.Count);
         }
 

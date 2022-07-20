@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <_CodesignBundle Include="Demo.app">
-      <CodesignSigningKey>D3BECF44BE95C39CE7FEDF6DFCB895E71E0AD40F</CodesignSigningKey>
+      <CodesignSigningKey>7FCF9F0718C28D83C8F1CE0CE21EDBE7D2384158</CodesignSigningKey>
       <CodesignEntitlements>/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
       <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
