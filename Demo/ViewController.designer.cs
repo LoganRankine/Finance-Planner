@@ -22,10 +22,18 @@ namespace Demo
 		UIKit.UILabel MainTitleDate { get; set; }
 
 		[Outlet]
+		UIKit.UIButton RESETALL { get; set; }
+
+		[Outlet]
 		UIKit.UITextView ShowDatabase { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (RESETALL != null) {
+				RESETALL.Dispose ();
+				RESETALL = null;
+			}
+
 			if (Create != null) {
 				Create.Dispose ();
 				Create = null;

@@ -171,8 +171,8 @@ namespace Demo
                         }
 
                         refresh();
-                        DirectDebit_Show.Text = $"{directDebit.m_Name}: {directDebit.m_cost} added";
-                        DirectDebit_Show.Text = "\r\n";
+                        DirectDebit_Show.Text = $"\r\n{directDebit.m_Name}: {directDebit.m_cost} added";
+                        //DirectDebit_Show.Text = "\r\n";
                         //ShowDirect();
                     }
                     else

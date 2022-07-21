@@ -49,16 +49,22 @@ namespace Demo
             _table.ReloadData();
             //NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
 
-            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
-            NavigationItem.RightBarButtonItem.Title = "Next";
+            var NextPage = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
+            var EditTracker = new UIBarButtonItem(UIBarButtonSystemItem.Edit, target: View, action: null);
+            NextPage.Title = "Next";
+            //NavigationItem.RightBarButtonItem.Title = "Next";          
+
+            UIBarButtonItem[] button = { NextPage, EditTracker };
+            NavigationItem.SetRightBarButtonItems(button, true);
+
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
-            
-            
-           
+
+            NavigationItem.RightBarButtonItems[1].Clicked += ExistingViewController_Clicked;
+
             //recalls ViewDidLoad to refresh any data
             //this.ViewDidLoad();
 
-            
+
             //_table.UserInteractionEnabled = true;
             //_table.AddGestureRecognizer(new UITapGestureRecognizer(() =>
             //{
@@ -67,6 +73,18 @@ namespace Demo
             //));
 
 
+        }
+
+        private void ExistingViewController_Clicked(object sender, EventArgs e)
+        {
+            EditTrackerViewController.updatePerson(trackers[db_int]);
+            EditTracker();
+        }
+
+        private void EditTracker()
+        {
+            EditTrackerViewController edit = Storyboard.InstantiateViewController(identifier: "EditTrackerViewController") as EditTrackerViewController;
+            NavigationController.PushViewController(edit, true);
         }
 
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)

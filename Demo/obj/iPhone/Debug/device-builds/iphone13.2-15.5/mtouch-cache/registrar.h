@@ -79,6 +79,7 @@
 	@property (nonatomic, assign) UIButton * Create;
 	@property (nonatomic, assign) UIButton * Existing;
 	@property (nonatomic, assign) UILabel * MainTitleDate;
+	@property (nonatomic, assign) UIButton * RESETALL;
 	@property (nonatomic, assign) UITextView * ShowDatabase;
 	-(void) release;
 	-(id) retain;
@@ -92,6 +93,8 @@
 	-(void) setExisting:(UIButton *)p0;
 	-(UILabel *) MainTitleDate;
 	-(void) setMainTitleDate:(UILabel *)p0;
+	-(UIButton *) RESETALL;
+	-(void) setRESETALL:(UIButton *)p0;
 	-(UITextView *) ShowDatabase;
 	-(void) setShowDatabase:(UITextView *)p0;
 	-(void) viewDidLoad;
@@ -208,6 +211,7 @@
 	@property (nonatomic, assign) UITextField * Cost;
 	@property (nonatomic, assign) UIDatePicker * Date;
 	@property (nonatomic, assign) UITextField * Reason;
+	@property (nonatomic, assign) UITextView * ShowPurchase;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
@@ -222,6 +226,8 @@
 	-(void) setDate:(UIDatePicker *)p0;
 	-(UITextField *) Reason;
 	-(void) setReason:(UITextField *)p0;
+	-(UITextView *) ShowPurchase;
+	-(void) setShowPurchase:(UITextView *)p0;
 	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
@@ -264,6 +270,7 @@
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

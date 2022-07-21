@@ -40,30 +40,53 @@ namespace Demo
                 
             Create.TouchDown += CreateButton_TouchInside;
 
-            Existing.TouchDown += Existing_TouchDown;         
+            Existing.TouchDown += Existing_TouchDown;
+
+            RESETALL.TouchDown += RESETALL_TouchDown;
        
         }
 
-        //private void ShowBudgets()
-        //{
-            
-        //    using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
-        //    {
-        //        try
-        //        {
-        //            var users = conn.Table<Person>().ToList();
-        //            foreach (var user in users)
-        //            {
-        //                ShowDatabase.Text += $"\r\n {user.m_Name}";
-        //            }
-        //        }
-        //        catch
-        //        {
-        //            ShowDatabase.Text += "No Existing Budgets";
-        //        }
-                
-        //    }
-        //}
+        private void RESETALL_TouchDown(object sender, EventArgs e)
+        {
+            RestoreToDefault();
+        }
+
+        private void RestoreToDefault()
+        {
+
+            using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                try
+                {
+                    UIAlertController alertUser3 = new UIAlertController();
+                    alertUser3.Title = "EVERYTHING IS DELETED";
+                    alertUser3.Message = "ALL YOUR TRACKERS HAVE BEEN DELETED. CREATE NEW TRACKER TO START AGAIN";
+                    UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                    alertUser3.AddAction(alertUserAction1);
+
+                    //show alert
+                    this.PresentViewController(alertUser3, true, null);
+
+                    conn.DeleteAll<DirectDebits>();
+                    conn.DeleteAll<BudgetInfo>();
+                    conn.DeleteAll<Person>();
+                }
+                catch
+                {
+                    //creates alert and button to alert user
+                    UIAlertController alertUser3 = new UIAlertController();
+                    alertUser3.Title = "No trackers already";
+                    alertUser3.Message = "There are no trackers created to delete";
+                    UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                    alertUser3.AddAction(alertUserAction1);
+
+                    //show alert
+                    this.PresentViewController(alertUser3, true, null);
+
+                }
+
+            }
+        }
 
         private void Existing_TouchDown(object sender, EventArgs e)
         {

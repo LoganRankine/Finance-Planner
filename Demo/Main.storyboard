@@ -39,13 +39,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="czd-Ax-Uoz">
-                                <rect key="frame" x="87" y="519" width="240" height="267"/>
+                                <rect key="frame" x="87" y="519" width="240" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-7T-e0G">
+                                <rect key="frame" x="168" y="726" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset all"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -54,6 +60,7 @@
                         <outlet property="Create" destination="9MI-p2-AKO" id="XgX-ja-kml"/>
                         <outlet property="Existing" destination="2FV-xx-5t3" id="btM-1c-UBn"/>
                         <outlet property="MainTitleDate" destination="Fw0-gF-ZLH" id="6nB-Dk-m77"/>
+                        <outlet property="RESETALL" destination="vyI-7T-e0G" id="wKU-t6-Shj"/>
                         <outlet property="ShowDatabase" destination="czd-Ax-Uoz" id="A5g-fK-7Fc"/>
                     </connections>
                 </viewController>
@@ -405,12 +412,24 @@
                     <view key="view" contentMode="scaleToFill" id="mXF-fg-lRr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weg-V7-JVC">
+                                <rect key="frame" x="149" y="765" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete Tracker"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hvf-Yw-NHl"/>
+                    <connections>
+                        <outlet property="DeleteTracker" destination="weg-V7-JVC" id="xPF-3H-8BJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1d-Q5-0l5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7922" y="0.0"/>
+            <point key="canvasLocation" x="8831.8840579710159" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tW4-E0-BNa">
@@ -483,6 +502,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66b-TG-DHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6353.6231884057979" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JfJ-Yo-RPD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iYY-rf-X50" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khb-E4-a0m">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ua-GB-vmg" kind="relationship" relationship="rootViewController" id="8o1-U8-JVc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNN-4Z-ZMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7921.739130434783" y="0.0"/>
         </scene>
     </scenes>
     <resources>

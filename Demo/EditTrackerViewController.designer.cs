@@ -12,9 +12,15 @@ namespace Demo
 	[Register ("EditTrackerViewController")]
 	partial class EditTrackerViewController
 	{
+		[Outlet]
+		UIKit.UIButton DeleteTracker { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (DeleteTracker != null) {
+				DeleteTracker.Dispose ();
+				DeleteTracker = null;
+			}
 		}
 	}
 }

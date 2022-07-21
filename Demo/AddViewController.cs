@@ -101,8 +101,9 @@ namespace Demo
                         conn.Update(current);
                         conn.Insert(budget);
                     }
-                    ShowPurchase.Text = "\r\n";
-                    ShowPurchase.Text = $"{budget.m_Reason}: {budget.m_spent} added";
+                     
+                    //ShowPurchase.Text = "\r\n";
+                    ShowPurchase.Text = $"\r\n{budget.m_Reason}: {budget.m_spent} added";
                     refresh();
 
                 }

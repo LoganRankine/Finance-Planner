@@ -45,6 +45,7 @@
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/_ProcessedBundleResourcesPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/_ProcessedContentPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/device-builds/iphone13.2-15.5/optimized/
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.AssemblyReference.cache
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CoreCompileInputs.cache
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.csproj.CopyComplete
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhone/Debug/Demo.exe

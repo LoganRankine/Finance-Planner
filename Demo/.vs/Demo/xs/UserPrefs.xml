@@ -1,6 +1,6 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DirectDBViewController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="CreateViewController.cs" Line="162" Column="64" IsPinned="True" />
       <File FileName="TrackerViewController.cs" Line="85" Column="68" IsPinned="True" />
@@ -10,11 +10,11 @@
       <File FileName="ListDatabase.cs" Line="29" Column="113" />
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
       <File FileName="Database/Person.cs" Line="19" Column="6" />
-      <File FileName="AddViewController.cs" Line="50" Column="38" />
+      <File FileName="AddViewController.cs" Line="26" Column="24" />
       <File FileName="ListSpent.cs" Line="45" Column="9" />
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
       <File FileName="Info.plist" />
-      <File FileName="DirectDBViewController.cs" Line="62" Column="103" />
+      <File FileName="DirectDBViewController.cs" Line="30" Column="13" />
       <File FileName="EditTrackerViewController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -24,7 +24,6 @@
             <Node name="Demo" expanded="True">
               <Node name="Database" expanded="True" />
               <Node name="CreateViewController.cs" expanded="True" />
-              <Node name="DirectDBViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -38,7 +37,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
