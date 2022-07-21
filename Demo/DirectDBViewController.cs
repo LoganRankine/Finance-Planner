@@ -58,6 +58,11 @@ namespace Demo
             }
         }
 
+        /// <summary>
+        /// Once the user has inputted the cost will highlight textfield to show them its been recongnised
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DirectDebit_Cost_EditingDidEnd(object sender, EventArgs e)
         {
             if (db_cost.Text.ToString() != string.Empty)
@@ -109,7 +114,12 @@ namespace Demo
         }
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
-            Calculateexpense();
+            //calculates cost of direct debits if they have been created
+            if(directs != null)
+            {
+                Calculateexpense();
+            }
+            
             NavigationController.PopToRootViewController(true);
         }
 
@@ -176,6 +186,9 @@ namespace Demo
                         alertUser3.Message = "Please give cost of direct debit";
                         UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
                         alertUser3.AddAction(alertUserAction1);
+
+                        //show alert
+                        this.PresentViewController(alertUser3, true, null);
                     }
                 }
                 else
@@ -189,6 +202,9 @@ namespace Demo
                     alertUser2.Message = "Please give direct debit a name";
                     UIAlertAction alertUserAction2 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
                     alertUser2.AddAction(alertUserAction2);
+
+                    //shows alert
+                    this.PresentViewController(alertUser2, true, null);
                 }
             }
             else

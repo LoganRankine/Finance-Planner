@@ -1,9 +1,5 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="DirectDBViewController.cs">
     <Files>
       <File FileName="CreateViewController.cs" Line="162" Column="64" IsPinned="True" />
@@ -18,16 +14,17 @@
       <File FileName="ListSpent.cs" Line="45" Column="9" />
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
       <File FileName="Info.plist" />
-      <File FileName="DirectDBViewController.cs" Line="169" Column="22" />
+      <File FileName="DirectDBViewController.cs" Line="62" Column="103" />
       <File FileName="EditTrackerViewController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
-            <Node name="Demo" expanded="True" selected="True">
+            <Node name="Demo" expanded="True">
               <Node name="Database" expanded="True" />
               <Node name="CreateViewController.cs" expanded="True" />
+              <Node name="DirectDBViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -37,7 +34,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -20,8 +20,42 @@ namespace Demo
         {
             base.ViewDidLoad();
 
+            View.UserInteractionEnabled = true;
+            View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
+            {
+                this.View.EndEditing(true);
+            }
+            ));
+
+            Reason.EditingDidEnd += Reason_EditingDidEnd;
+            Cost.EditingDidEnd += Cost_EditingDidEnd;
+            Date.EditingDidEnd += Date_EditingDidEnd;
             AddToDB.TouchDown += AddToDB_TouchDown;
             //Add();
+        }
+
+        private void Date_EditingDidEnd(object sender, EventArgs e)
+        {
+            if (Date.Date.ToString() != string.Empty)
+            {
+                Date.BackgroundColor = UIColor.Green;
+            }
+        }
+
+        private void Cost_EditingDidEnd(object sender, EventArgs e)
+        {
+            if (Cost.Text.ToString() != string.Empty)
+            {
+                Cost.BackgroundColor = UIColor.Green;
+            }
+        }
+
+        private void Reason_EditingDidEnd(object sender, EventArgs e)
+        {
+            if (Reason.Text.ToString() != string.Empty)
+            {
+                Reason.BackgroundColor = UIColor.Green;
+            }
         }
 
         static public void currentPerson(Person person)
@@ -35,21 +69,82 @@ namespace Demo
             Add();
         }
 
+        private float convertCost()
+        {
+            try
+            {
+                return float.Parse(Cost.Text);
+            }
+            catch
+            {
+                return 0;
+            }
+            
+        }
+
         public void Add()
         {
             BudgetInfo budget = new BudgetInfo
             {
                 m_Reason = Reason.Text,
-                m_spent = float.Parse(Cost.Text),
+                m_spent = convertCost(),
                 m_Date = RemoveSpaces(Date.Date.ToString()),
                 userId = db_int
             };
-            using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            if(Reason.Text != string.Empty)
             {
-                current.m_Money = current.m_Money - budget.m_spent;
-                conn.Update(current);
-                conn.Insert(budget);
+                if(Cost.Text != string.Empty)
+                {
+                    using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+                    {
+                        current.m_Money = current.m_Money - budget.m_spent;
+                        conn.Update(current);
+                        conn.Insert(budget);
+                    }
+                    ShowPurchase.Text = "\r\n";
+                    ShowPurchase.Text = $"{budget.m_Reason}: {budget.m_spent} added";
+                    refresh();
+
+                }
+                else
+                {
+                    Cost.BackgroundColor = UIColor.Red;
+
+                    //creates alert and button to alert user
+                    UIAlertController alertUser3 = new UIAlertController();
+                    alertUser3.Title = "Cost not given";
+                    alertUser3.Message = "Please give cost of purchase";
+                    UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                    alertUser3.AddAction(alertUserAction1);
+
+                    //show alert
+                    this.PresentViewController(alertUser3, true, null);
+                }
             }
+            else
+            {
+                Reason.BackgroundColor = UIColor.Red;
+
+                //creates alert and button to alert user
+                UIAlertController alertUser3 = new UIAlertController();
+                alertUser3.Title = "Reason not given";
+                alertUser3.Message = "Please give reason for purchase";
+                UIAlertAction alertUserAction1 = UIAlertAction.Create("OK", UIAlertActionStyle.Default, null);
+                alertUser3.AddAction(alertUserAction1);
+
+                //show alert
+                this.PresentViewController(alertUser3, true, null);
+            }
+            
+        }
+
+        private void refresh()
+        {
+            Reason.BackgroundColor = UIColor.Clear;
+            Reason.Text = "";
+            Cost.BackgroundColor = UIColor.Clear;
+            Cost.Text = "";
+            Date.BackgroundColor = UIColor.Clear;
         }
         private string RemoveSpaces(string date)
         {

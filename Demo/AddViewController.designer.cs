@@ -23,9 +23,17 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UITextField Reason { get; set; }
+
+		[Outlet]
+		UIKit.UITextView ShowPurchase { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (ShowPurchase != null) {
+				ShowPurchase.Dispose ();
+				ShowPurchase = null;
+			}
+
 			if (AddToDB != null) {
 				AddToDB.Dispose ();
 				AddToDB = null;
