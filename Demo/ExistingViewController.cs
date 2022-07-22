@@ -20,6 +20,8 @@ namespace Demo
         {
         }
 
+        
+
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
@@ -39,7 +41,7 @@ namespace Demo
 
             DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
-            ListDatabase data = new ListDatabase(trackers);
+            ListDatabase data = new ListDatabase(trackers, this.ModalViewController);
             UITableView _table;
             _table = new UITableView
             {
@@ -115,4 +117,6 @@ namespace Demo
             }
         }
     }
+
+    
 }

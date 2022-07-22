@@ -25,8 +25,9 @@ namespace Demo
             base.ViewDidLoad();
             connectToPeople();
             Title = user[db_int].m_Name;
-
+            currentUser = user[db_int];
             TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
+
             AddViewController.db_int = db_int;
             ConnectToDB();
             
@@ -80,7 +81,7 @@ namespace Demo
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
             AddViewController tracker = Storyboard.InstantiateViewController(identifier: "AddViewController") as AddViewController;
-            AddViewController.db_int = db_int;
+            //AddViewController.db_int = db_int;
             AddViewController.currentPerson(user[db_int]);
             NavigationController.PushViewController(tracker, true);
         }
@@ -110,7 +111,7 @@ namespace Demo
                     tempInfo = conn1.Table<BudgetInfo>().ToList();
                     foreach(BudgetInfo spent in tempInfo)
                     {
-                        if(spent.userId == db_int)
+                        if(spent.userId == currentUser.Id)
                         {
                             Info.Add(spent);
                         }

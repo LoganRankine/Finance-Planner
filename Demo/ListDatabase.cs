@@ -13,14 +13,18 @@ namespace Demo
         List<Person> People = new List<Person>();
         string cellIdentifer = "TableCell";
         int selection;
+        UIViewController currentView;
+
+
 
         //public ListDatabase(string [] items)
         //{
         //    tableItems = items;
         //}
-        public ListDatabase(List<Person> people)
+        public ListDatabase(List<Person> people, UIViewController view)
         {
             People = people;
+            currentView = view;
         }
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
@@ -31,6 +35,9 @@ namespace Demo
             selection = indexPath.Row;
             tableView.DeselectRow(indexPath,true);
             ExistingViewController.update(indexPath.Row);
+            //TrackerViewController tracker = currentView.Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
+            //currentView.NavigationController.PushViewController(tracker, true);
+            
             
            
            

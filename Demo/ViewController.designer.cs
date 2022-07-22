@@ -26,14 +26,12 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UITextView ShowDatabase { get; set; }
+
+		[Outlet]
+		UIKit.UITableView[] ShowRecents { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (RESETALL != null) {
-				RESETALL.Dispose ();
-				RESETALL = null;
-			}
-
 			if (Create != null) {
 				Create.Dispose ();
 				Create = null;
@@ -47,6 +45,11 @@ namespace Demo
 			if (MainTitleDate != null) {
 				MainTitleDate.Dispose ();
 				MainTitleDate = null;
+			}
+
+			if (RESETALL != null) {
+				RESETALL.Dispose ();
+				RESETALL = null;
 			}
 
 			if (ShowDatabase != null) {

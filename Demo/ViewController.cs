@@ -43,6 +43,8 @@ namespace Demo
             Existing.TouchDown += Existing_TouchDown;
 
             RESETALL.TouchDown += RESETALL_TouchDown;
+
+            
        
         }
 
@@ -87,7 +89,7 @@ namespace Demo
 
             }
         }
-
+        
         private void Existing_TouchDown(object sender, EventArgs e)
         {
             int rows = 0;

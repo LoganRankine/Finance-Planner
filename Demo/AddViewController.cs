@@ -89,7 +89,7 @@ namespace Demo
                 m_Reason = Reason.Text,
                 m_spent = convertCost(),
                 m_Date = RemoveSpaces(Date.Date.ToString()),
-                userId = db_int
+                userId = current.Id
             };
             if(Reason.Text != string.Empty)
             {
