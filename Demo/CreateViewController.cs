@@ -22,8 +22,12 @@ namespace Demo
         
         public override void ViewDidLoad()
         {
+
             base.ViewDidLoad();
             configure();
+
+            //var colour = View.BackgroundColor.CGColor;
+
             Title = "Create New Tracker";
             //BackButton.TouchDown += BackButton_TouchDown;
 

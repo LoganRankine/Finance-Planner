@@ -27,6 +27,8 @@ namespace Demo
         private void DeleteTracker_TouchDown(object sender, EventArgs e)
         {
             RemoveUser(currentPerson);
+            ViewController view = Storyboard.InstantiateViewController(identifier: "ViewController") as ViewController;
+            NavigationController.PushViewController(view, true);
             //creates alert and button to alert user
             UIAlertController alertUser2 = new UIAlertController();
             alertUser2.Title = "Tracker delete";
@@ -36,6 +38,8 @@ namespace Demo
 
             //shows alert 
             this.PresentViewController(alertUser2, true, null);
+
+            
         }
 
         private void RemoveUser(Person user)
@@ -58,6 +62,7 @@ namespace Demo
                     }
                 }
                 conn.Delete(user);
+                
             }
         }
 

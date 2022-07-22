@@ -33,6 +33,8 @@ namespace Demo
         {
             base.ViewDidLoad();
 
+            View.BackgroundColor = UIColor.Blue;
+
             Title = "Open Tracker";
             //this.ListDataBase.DataSource = (IUITableViewDataSource)this;
             //this.ListDataBase.Delegate = (IUITableViewDelegate)this;
