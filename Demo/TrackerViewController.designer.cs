@@ -13,6 +13,9 @@ namespace Demo
 	partial class TrackerViewController
 	{
 		[Outlet]
+		UIKit.UITableView ShowSpent { get; set; }
+
+		[Outlet]
 		UIKit.UILabel TrackerAllowance { get; set; }
 
 		[Outlet]
@@ -20,14 +23,19 @@ namespace Demo
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (TrackerAllowance != null) {
+				TrackerAllowance.Dispose ();
+				TrackerAllowance = null;
+			}
+
 			if (TrackerName != null) {
 				TrackerName.Dispose ();
 				TrackerName = null;
 			}
 
-			if (TrackerAllowance != null) {
-				TrackerAllowance.Dispose ();
-				TrackerAllowance = null;
+			if (ShowSpent != null) {
+				ShowSpent.Dispose ();
+				ShowSpent = null;
 			}
 		}
 	}

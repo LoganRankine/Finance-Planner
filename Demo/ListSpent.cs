@@ -7,7 +7,7 @@ namespace Demo
     public class ListSpent : UITableViewSource
     {
         List<BudgetInfo> BudgetInfo = new List<BudgetInfo>();
-        string cellIdentifer = "BudgetCell";
+        string cellIdentifer = "SpentCell";
         public ListSpent(List<BudgetInfo> budgetInfo)
         {
             BudgetInfo = budgetInfo;
@@ -16,6 +16,7 @@ namespace Demo
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifer);
+
             if (cell == null)
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
@@ -31,6 +32,8 @@ namespace Demo
             //cell.BackgroundColor = UIColor.Green;
             //cell.AccessibilityLabel = BudgetInfo[indexPath.Row].m_spent.ToString();
             
+            
+
             return cell;
         }
         //public override nfloat EstimatedHeightForHeader(UITableView tableView, nint section)
@@ -42,7 +45,17 @@ namespace Demo
         //    return 5;
         //}
 
-        
+        //public override nint NumberOfSections(UITableView tableView)
+        //{
+        //    return 2;
+        //}
+
+        //public override UISwipeActionsConfiguration GetLeadingSwipeActionsConfiguration(UITableView tableView, NSIndexPath indexPath)
+        //{
+        //    UIButton delete = new UIButton(UIButtonType.Close);
+        //    return base.GetLeadingSwipeActionsConfiguration(tableView, indexPath);
+        //}
+
         public override nint RowsInSection(UITableView tableview, nint section)
         {
             return BudgetInfo.Count;

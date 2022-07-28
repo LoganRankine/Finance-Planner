@@ -21,10 +21,10 @@ namespace Demo
         //{
         //    tableItems = items;
         //}
-        public ListDatabase(List<Person> people, UIViewController view)
+        public ListDatabase(List<Person> people)
         {
             People = people;
-            currentView = view;
+            
         }
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
@@ -37,10 +37,7 @@ namespace Demo
             ExistingViewController.update(indexPath.Row);
             //TrackerViewController tracker = currentView.Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
             //currentView.NavigationController.PushViewController(tracker, true);
-            
-            
-           
-           
+
         }
         public bool changeScreen(bool tru)
         {

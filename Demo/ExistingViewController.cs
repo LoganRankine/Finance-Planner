@@ -33,7 +33,7 @@ namespace Demo
         {
             base.ViewDidLoad();
 
-            View.BackgroundColor = UIColor.Blue;
+            //View.BackgroundColor = UIColor.Blue;
 
             Title = "Open Tracker";
             //this.ListDataBase.DataSource = (IUITableViewDataSource)this;
@@ -41,21 +41,15 @@ namespace Demo
 
             numberOfBudgetsSaved();
 
-            DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
+            //DateText.Text = DateTime.Now.ToString("dddd dd MMMM").ToUpper();
 
-            ListDatabase data = new ListDatabase(trackers, this.ModalViewController);
-            UITableView _table;
-            _table = new UITableView
-            {
-                Frame = new CoreGraphics.CGRect(0, 0, View.Bounds.Width, View.Bounds.Height), Source = data
-            };
-            View.AddSubview(_table);
-            _table.ReloadData();
+            ShowExisting.Source = new ListDatabase(trackers);
+            
             //NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
 
             var NextPage = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
             var EditTracker = new UIBarButtonItem(UIBarButtonSystemItem.Edit, target: View, action: null);
-            NextPage.Title = "Next";
+            //NextPage.Title = "Next";
             //NavigationItem.RightBarButtonItem.Title = "Next";          
 
             UIBarButtonItem[] button = { NextPage, EditTracker };
@@ -75,8 +69,18 @@ namespace Demo
             //    this.ViewDidLoad();
             //}
             //));
+            //ShowExisting.Sel
+            
+            
+           
+           
 
+           
+        }
 
+        private void ChangeSomething()
+        {
+            var row = ShowExisting.IndexPathForSelectedRow;
         }
 
         private void ExistingViewController_Clicked(object sender, EventArgs e)

@@ -11,6 +11,7 @@ namespace Demo
 	public partial class EditTrackerViewController : UIViewController
 	{
         private static Person currentPerson;
+        private List<DirectDebits> db = new List<DirectDebits>();
 		public EditTrackerViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -20,8 +21,41 @@ namespace Demo
             base.ViewDidLoad();
 
             Title = "Editing: " + currentPerson.m_Name;
-
+            
             DeleteTracker.TouchDown += DeleteTracker_TouchDown;
+            GetDirects();
+            AddNewDirectDebit.TouchDown += AddNewDirectDebit_TouchDown;
+            ShowDirects.Source = new ShowDirects(db);
+        }
+
+        private void AddNewDirectDebit_TouchDown(object sender, EventArgs e)
+        {
+            DirectDBViewController.UserSelected(currentPerson);
+            DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
+            NavigationController.PushViewController(view, true);
+        }
+
+        private void GetDirects()
+        {
+            using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                List<DirectDebits> temp = new List<DirectDebits>();
+                try
+                {
+                    temp = conn.Table<DirectDebits>().ToList();
+                    foreach (DirectDebits item in temp)
+                    {
+                        if (item.m_userID == currentPerson.Id)
+                        {
+                            db.Add(item);
+                        }
+                    }
+                }
+                catch
+                {
+                    //there is no direct debits ignore for now
+                }
+            }
         }
 
         private void DeleteTracker_TouchDown(object sender, EventArgs e)
