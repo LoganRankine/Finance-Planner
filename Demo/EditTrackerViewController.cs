@@ -30,6 +30,7 @@ namespace Demo
 
         private void AddNewDirectDebit_TouchDown(object sender, EventArgs e)
         {
+            DirectDBViewController.editingMode = true;
             DirectDBViewController.UserSelected(currentPerson);
             DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
             NavigationController.PushViewController(view, true);

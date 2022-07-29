@@ -54,7 +54,7 @@ namespace Demo
             //cell.TextLabel.Text = tableItems[indexPath.Row];
             //heloo
             cell.TextLabel.Text = People[indexPath.Row].m_Name;
-            var InfoButton = new UIButton(UIButtonType.InfoLight);
+            var InfoButton = new UIButton(UIButtonType.DetailDisclosure);
             //edit
             InfoButton.TouchDown += InfoButton_TouchDown;
             cell.AccessoryView = InfoButton;
@@ -70,6 +70,7 @@ namespace Demo
         private void InfoButton_TouchDown(object sender, EventArgs e)
         {
             //take to new screen
+            
             ExistingViewController.db_int = selection;
         }
 

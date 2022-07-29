@@ -23,6 +23,8 @@
 @class AddViewController;
 @class DirectDBViewController;
 @class EditTrackerViewController;
+@class Demo_ShowDirects;
+@class ShowSpent;
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSSynchronizationContextDispatcher;
 @class Foundation_NSAsyncDispatcher;
@@ -81,6 +83,7 @@
 	@property (nonatomic, assign) UILabel * MainTitleDate;
 	@property (nonatomic, assign) UIButton * RESETALL;
 	@property (nonatomic, assign) UITextView * ShowDatabase;
+	@property (nonatomic, assign) NSArray * ShowRecents;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
@@ -97,6 +100,8 @@
 	-(void) setRESETALL:(UIButton *)p0;
 	-(UITextView *) ShowDatabase;
 	-(void) setShowDatabase:(UITextView *)p0;
+	-(NSArray *) ShowRecents;
+	-(void) setShowRecents:(NSArray *)p0;
 	-(void) viewDidLoad;
 	-(void) didReceiveMemoryWarning;
 	-(BOOL) conformsToProtocol:(void *)p0;
@@ -140,6 +145,7 @@
 }
 	@property (nonatomic, assign) UIButton * BackToMain;
 	@property (nonatomic, assign) UILabel * DateText;
+	@property (nonatomic, assign) UITableView * ShowExisting;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
@@ -150,6 +156,8 @@
 	-(void) setBackToMain:(UIButton *)p0;
 	-(UILabel *) DateText;
 	-(void) setDateText:(UILabel *)p0;
+	-(UITableView *) ShowExisting;
+	-(void) setShowExisting:(UITableView *)p0;
 	-(void) viewDidAppear:(BOOL)p0;
 	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
@@ -176,6 +184,7 @@
 
 @interface TrackerViewController : UIViewController {
 }
+	@property (nonatomic, assign) UITableView * ShowSpent;
 	@property (nonatomic, assign) UILabel * TrackerAllowance;
 	@property (nonatomic, assign) UILabel * TrackerName;
 	-(void) release;
@@ -184,6 +193,8 @@
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UITableView *) ShowSpent;
+	-(void) setShowSpent:(UITableView *)p0;
 	-(UILabel *) TrackerAllowance;
 	-(void) setTrackerAllowance:(UILabel *)p0;
 	-(UILabel *) TrackerName;
@@ -201,6 +212,8 @@
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
 	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(void) tableView:(UITableView *)p0 commitEditingStyle:(NSInteger)p1 forRowAtIndexPath:(NSIndexPath *)p2;
+	-(BOOL) tableView:(UITableView *)p0 canEditRowAtIndexPath:(NSIndexPath *)p1;
 	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
@@ -264,13 +277,62 @@
 
 @interface EditTrackerViewController : UIViewController {
 }
+	@property (nonatomic, assign) UIButton * AddNewDirectDebit;
+	@property (nonatomic, assign) UITextField * ChangeBudgetName;
+	@property (nonatomic, assign) UIButton * DeleteTracker;
+	@property (nonatomic, assign) UITableView * ShowDirects;
 	-(void) release;
 	-(id) retain;
 	-(GCHandle) xamarinGetGCHandle;
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIButton *) AddNewDirectDebit;
+	-(void) setAddNewDirectDebit:(UIButton *)p0;
+	-(UITextField *) ChangeBudgetName;
+	-(void) setChangeBudgetName:(UITextField *)p0;
+	-(UIButton *) DeleteTracker;
+	-(void) setDeleteTracker:(UIButton *)p0;
+	-(UITableView *) ShowDirects;
+	-(void) setShowDirects:(UITableView *)p0;
 	-(void) viewDidLoad;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Demo_ShowDirects : NSObject<UIScrollViewDelegate, UIScrollViewDelegate, UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface ShowSpent : UITableViewCell {
+}
+	@property (nonatomic, assign) UILabel * ShowDate;
+	@property (nonatomic, assign) UILabel * ShowPrice;
+	@property (nonatomic, assign) UIView * ShowSpentView;
+	@property (nonatomic, assign) UILabel * SpentName;
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UILabel *) ShowDate;
+	-(void) setShowDate:(UILabel *)p0;
+	-(UILabel *) ShowPrice;
+	-(void) setShowPrice:(UILabel *)p0;
+	-(UIView *) ShowSpentView;
+	-(void) setShowSpentView:(UIView *)p0;
+	-(UILabel *) SpentName;
+	-(void) setSpentName:(UILabel *)p0;
+	-(void) layoutSubviews;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

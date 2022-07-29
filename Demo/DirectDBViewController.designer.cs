@@ -19,6 +19,9 @@ namespace Demo
 		UIKit.UIButton DirectDebit_Add { get; set; }
 
 		[Outlet]
+		UIKit.UITextField DirectDebit_BillingDay { get; set; }
+
+		[Outlet]
 		UIKit.UIButton DirectDebit_Cost { get; set; }
 
 		[Outlet]
@@ -32,9 +35,9 @@ namespace Demo
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (DirectDebit_Cost != null) {
-				DirectDebit_Cost.Dispose ();
-				DirectDebit_Cost = null;
+			if (DirectDebit_BillingDay != null) {
+				DirectDebit_BillingDay.Dispose ();
+				DirectDebit_BillingDay = null;
 			}
 
 			if (db_cost != null) {
@@ -45,6 +48,11 @@ namespace Demo
 			if (DirectDebit_Add != null) {
 				DirectDebit_Add.Dispose ();
 				DirectDebit_Add = null;
+			}
+
+			if (DirectDebit_Cost != null) {
+				DirectDebit_Cost.Dispose ();
+				DirectDebit_Cost = null;
 			}
 
 			if (DirectDebit_Name != null) {

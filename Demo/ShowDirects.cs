@@ -25,6 +25,7 @@ namespace Demo
             }
             //cell.TextLabel.Text = tableItems[indexPath.Row];
             cell.TextLabel.Text = DB[indexPath.Row].m_Name;
+            cell.DetailTextLabel.Text = $"£{DB[indexPath.Row].m_cost} every {DB[indexPath.Row].m_days} days";
             //cell.DetailTextLabel.Text = DB[indexPath.Row].m_cost.ToString();
             return cell;
         }

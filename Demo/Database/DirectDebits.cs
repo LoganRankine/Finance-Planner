@@ -9,6 +9,7 @@ namespace Demo
         public int m_userID { get; set; }
         public string m_Name { get; set; }
         public int m_days { get; set; }
+        public int m_billingDay { get; set; }
         public float m_cost { get; set; }
     }
 }
