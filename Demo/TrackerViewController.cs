@@ -54,7 +54,10 @@ namespace Demo
             //};
             ////_Budget.ReloadData();
             //View.AddSubview(_Budget);
+            
             ShowSpent.Source = new ListSpent(Info);
+            var cell = ShowSpent.DequeueReusableCell("SpentCell") as ShowSpent;
+            
         }
         private void RefreshClicked(object sender, EventArgs e)
         {

@@ -13,8 +13,7 @@ namespace Demo
         List<Person> People = new List<Person>();
         string cellIdentifer = "TableCell";
         int selection;
-        UIViewController currentView;
-
+     
 
 
         //public ListDatabase(string [] items)
@@ -35,6 +34,7 @@ namespace Demo
             selection = indexPath.Row;
             tableView.DeselectRow(indexPath,true);
             ExistingViewController.update(indexPath.Row);
+            //Existing.PresentViewController(Existing, true,null);
             //TrackerViewController tracker = currentView.Storyboard.InstantiateViewController(identifier: "TrackerViewController") as TrackerViewController;
             //currentView.NavigationController.PushViewController(tracker, true);
 

@@ -9,8 +9,31 @@ namespace Demo
 {
 	public partial class ShowSpent : UITableViewCell
 	{
-		public ShowSpent (IntPtr handle) : base (handle)
-		{
-		}
+		//public ShowSpent (IntPtr handle) : base (handle)
+		//{
+		//}
+
+		public ShowSpent(string cellID) : base(UITableViewCellStyle.Default, cellID)
+        {
+
+            
+            ShowDate.Text = DateTime.Now.ToLongDateString();
+            SpentName.Text = "Defualt";
+            ShowPrice.Text = "400";
+
+        }
+
+        public override void LayoutSubviews()
+        {
+            base.LayoutSubviews();
+        }
+
+
+        public void configure(string reason, string cost, string date)
+        {
+			ShowDate.Text = date;
+			ShowPrice.Text = cost;
+			SpentName.Text = reason;
+        }
 	}
 }

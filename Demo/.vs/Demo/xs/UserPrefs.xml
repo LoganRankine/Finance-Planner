@@ -1,23 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EditTrackerViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExistingViewController.cs">
     <Files>
       <File FileName="ShowSpent.cs" Line="17" Column="1" />
       <File FileName="ListSpent.cs" Line="18" Column="80" />
       <File FileName="ListDatabase.cs" Line="45" Column="21" />
-      <File FileName="ExistingViewController.cs" Line="76" Column="12" />
+      <File FileName="ExistingViewController.cs" Line="82" Column="10" />
       <File FileName="ShowDirects.cs" Line="1" Column="1" />
-      <File FileName="EditTrackerViewController.cs" Line="24" Column="13" />
+      <File FileName="EditTrackerViewController.cs" Line="10" Column="2" />
+      <File FileName="EditTrackerViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="DirectDBViewController.cs" Line="1" Column="1" />
+      <File FileName="CreateViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="CreateViewController.cs" Line="108" Column="81" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
-            <Node name="Demo" expanded="True">
-              <Node name="CreateViewController.cs" expanded="True" />
-              <Node name="EditTrackerViewController.cs" selected="True" />
-            </Node>
+            <Node name="Demo" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -54,7 +54,7 @@ namespace Demo
 
             UIBarButtonItem[] button = { NextPage, EditTracker };
             NavigationItem.SetRightBarButtonItems(button, true);
-
+            
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
 
             NavigationItem.RightBarButtonItems[1].Clicked += ExistingViewController_Clicked;
