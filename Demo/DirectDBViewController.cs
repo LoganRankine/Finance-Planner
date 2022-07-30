@@ -224,25 +224,41 @@ namespace Demo
                 }
                 else
                 {
+                    List<DirectDebits> temp = new List<DirectDebits>();
+                    using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+                    {
+                        temp = conn.Table<DirectDebits>().ToList();
+                        foreach(DirectDebits notBudget in temp)
+                        {
+                            if(currentUser.Id != notBudget.m_userID)
+                            {
+                                temp.Remove(notBudget);
+                            }
+                        }
+                    }
                     foreach (DirectDebits userDirect in directs)
                     {
-                        //use billing start date and user start month and year to calculate
-                        string[] array = currentUser.m_StartDate.Split("-");
-
-                        DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{userDirect.m_billingDay}");
-                        DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
-                        double day = (enddate - startdate).TotalDays;
-                        int dates = (int)day / (int)userDirect.m_days;
-                        double reg = dates * userDirect.m_cost;
-                        using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
+                        if(userDirect.Id != userDirect.Id)
                         {
+                            //use billing start date and user start month and year to calculate
+                            string[] array = currentUser.m_StartDate.Split("-");
 
-                            //currentUser.m_Money;
-                            currentUser.m_Money = currentUser.m_Money - (float)reg;
-                            //float newnum = currentUser.m_Money - float.Parse(reg);
-                            connection.Update(currentUser);
+                            DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{userDirect.m_billingDay}");
+                            DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
+                            double day = (enddate - startdate).TotalDays;
+                            int dates = (int)day / (int)userDirect.m_days;
+                            double reg = dates * userDirect.m_cost;
+                            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
+                            {
 
+                                //currentUser.m_Money;
+                                currentUser.m_Money = currentUser.m_Money - (float)reg;
+                                //float newnum = currentUser.m_Money - float.Parse(reg);
+                                connection.Update(currentUser);
+
+                            }
                         }
+                        
                     }
                 }
 
