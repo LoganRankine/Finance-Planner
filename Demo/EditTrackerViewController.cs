@@ -30,7 +30,6 @@ namespace Demo
 
         private void AddNewDirectDebit_TouchDown(object sender, EventArgs e)
         {
-            DirectDBViewController.editingMode = true;
             DirectDBViewController.UserSelected(currentPerson);
             DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
             NavigationController.PushViewController(view, true);
@@ -73,10 +72,13 @@ namespace Demo
 
             //shows alert 
             this.PresentViewController(alertUser2, true, null);
-
-            
         }
 
+        /// <summary>
+        /// Takes Person object in to remove object from person database and any reference to the person object in any
+        /// databases
+        /// </summary>
+        /// <param name="user"></param>
         private void RemoveUser(Person user)
         {
             using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))

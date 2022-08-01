@@ -15,7 +15,7 @@ namespace Demo
         {
             direct = Switch_DirectDebit.On;
         }
-        private string budgetName;
+        
 		public CreateViewController (IntPtr handle) : base (handle)
 		{
         }
@@ -24,13 +24,10 @@ namespace Demo
         {
 
             base.ViewDidLoad();
-            configure();
-
-            //var colour = View.BackgroundColor.CGColor;
 
             Title = "Create New Tracker";
-            //BackButton.TouchDown += BackButton_TouchDown;
 
+            //Textfields will turn green if edited
             Budget_TextField.EditingDidEnd += Budget_TextField_EditingDidEnd;
             StartDate.EditingDidEnd += StartDate_EditingDidEnd;
             EndDate.EditingDidEnd += EndDate_EditingDidEnd;
@@ -83,9 +80,9 @@ namespace Demo
             //see if end date is later than start date
             if(DateTime.Compare((DateTime)StartDate.Date,(DateTime)EndDate.Date) < 0)
             {
-                if(Budget_TextField.Text != string.Empty)
+                if(BudgetName.m_Name != string.Empty)
                 {
-                    if(Money.Text != "")
+                    if(BudgetName.m_Money != 0)
                     {
                         //Adds object created into SQLite database
                         using (SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
@@ -94,7 +91,7 @@ namespace Demo
                             conn.CreateTable<BudgetInfo>();
                             conn.CreateTable<DirectDebits>();
 
-                            DirectDBViewController.UserSelected(BudgetName);
+                            
                             conn.Insert(BudgetName);
                             //if(debugging == true)
                             //{
@@ -104,6 +101,7 @@ namespace Demo
                         }
                         if (direct == true)
                         {
+                            DirectDBViewController.UserSelected(BudgetName);
                             DirectDBViewController view = Storyboard.InstantiateViewController(identifier: "DirectDBViewController") as DirectDBViewController;
                             NavigationController.PushViewController(view, true);
                         }
@@ -182,16 +180,15 @@ namespace Demo
             //DirectDebit.
         }
 
-        private void configure()
-        {
-            //NavigationItem.RightBarButtonItem = UIBarButtonItem();
-        }
-
         private void Money_EditingDidEnd(object sender, EventArgs e)
         {
             if (Money.Text.ToString() != string.Empty)
             {
                 Money.BackgroundColor = UIColor.Green;
+            }
+            else if(Money.Text.ToString().Contains("£")== true)
+            {
+                Money.BackgroundColor = UIColor.Red;
             }
             
         }

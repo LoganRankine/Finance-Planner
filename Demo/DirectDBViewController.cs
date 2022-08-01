@@ -14,8 +14,6 @@ namespace Demo
         static private int db_int;
         static private Person currentUser;
         static public bool editingMode = false;
-        List<DirectDebits> directs = new List<DirectDebits>();
-        List<DirectDebits> ExistingDirects = new List<DirectDebits>();
         public DirectDBViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -26,46 +24,26 @@ namespace Demo
             Title = "Add Direct Debits";
             update(currentUser.Id);
 
-            if(editingMode == false)
+            //Displays done button on navigation bar
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
+
+            //if textfields has been edited shows green
+            DirectDebit_Name.EditingDidEnd += DirectDebit_Name_EditingDidEnd;
+            DirectDebit_Period.EditingDidEnd += DirectDebit_Period_EditingDidEnd;
+            db_cost.EditingDidEnd += DirectDebit_Cost_EditingDidEnd;
+            DirectDebit_BillingDay.EditingDidEnd += DirectDebit_BillingDay_EditingDidEnd;
+
+            View.UserInteractionEnabled = true;
+            View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
             {
-                DirectDebit_Name.EditingDidEnd += DirectDebit_Name_EditingDidEnd;
-                DirectDebit_Period.EditingDidEnd += DirectDebit_Period_EditingDidEnd;
-
-                View.UserInteractionEnabled = true;
-                View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
-                {
-                    this.View.EndEditing(true);
-                }
-                ));
-
-                db_cost.EditingDidEnd += DirectDebit_Cost_EditingDidEnd;
-                DirectDebit_BillingDay.EditingDidEnd += DirectDebit_BillingDay_EditingDidEnd;
-                DirectDebit_Add.TouchDown += DirectDebit_Add_TouchDown;
-
-                NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
-
-                NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
+                this.View.EndEditing(true);
             }
-            else if(editingMode == true)
-            {
-                DirectDebit_Name.EditingDidEnd += DirectDebit_Name_EditingDidEnd;
-                DirectDebit_Period.EditingDidEnd += DirectDebit_Period_EditingDidEnd;
+            ));
 
-                View.UserInteractionEnabled = true;
-                View.AddGestureRecognizer(new UITapGestureRecognizer(() =>
-                {
-                    this.View.EndEditing(true);
-                }
-                ));
+            DirectDebit_Add.TouchDown += DirectDebit_Add_TouchDown;
 
-                db_cost.EditingDidEnd += DirectDebit_Cost_EditingDidEnd;
-                DirectDebit_BillingDay.EditingDidEnd += DirectDebit_BillingDay_EditingDidEnd;
-                DirectDebit_Add.TouchDown += DirectDebit_Add_TouchDown;
+            NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
 
-                NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
-
-                NavigationItem.RightBarButtonItem.Clicked += EditingMode;
-            }
         }
 
         private void DirectDebit_BillingDay_EditingDidEnd(object sender, EventArgs e)
@@ -74,23 +52,16 @@ namespace Demo
             {
                 DirectDebit_BillingDay.BackgroundColor = UIColor.Green;
             }
+            else if (DirectDebit_BillingDay.Text.ToString().Contains("£"))
+            {
+                DirectDebit_BillingDay.BackgroundColor = UIColor.Red;
+            }
         }
 
         /// <summary>
         /// Shows direct debits added
         /// </summary>
-        private void ShowDirect()
-        {
-            foreach(DirectDebits debit in directs)
-            {
-                if(debit.m_userID == currentUser.Id)
-                {
-                    DirectDebit_Show.Text = $"{debit.m_Name} added";
-                    DirectDebit_Show.Text = "\r\n";
-                }
-                
-            }
-        }
+  
 
         /// <summary>
         /// Once the user has inputted the cost will highlight textfield to show them its been recongnised
@@ -102,6 +73,10 @@ namespace Demo
             if (db_cost.Text.ToString() != string.Empty)
             {
                 db_cost.BackgroundColor = UIColor.Green;
+            }
+            else if (db_cost.Text.ToString().Contains("£"))
+            {
+                db_cost.BackgroundColor = UIColor.Red;
             }
         }
 
@@ -124,167 +99,30 @@ namespace Demo
         /// <summary>
         /// Calculates how much money will be deducted from the overall allowance the user has inputted
         /// </summary>
-        private void Calculateexpense()
+        private void Calculateexpense(DirectDebits directDebit)
         {
-            //get the direct debits of the user
-            List<DirectDebits> userDirects = new List<DirectDebits>();
-            foreach(DirectDebits user in directs)
+            //use billing start date and user start month and year to calculate
+            string[] array = currentUser.m_StartDate.Split("-");
+
+            DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{directDebit.m_billingDay}");
+            DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
+            double day = (enddate - startdate).TotalDays;
+            int dates = (int)day / (int)directDebit.m_days;
+            double reg = dates * directDebit.m_cost;
+            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
             {
-                if(user.m_userID == currentUser.Id)
-                {
-                    userDirects.Add(user);
-                }
+
+                //currentUser.m_Money;
+                currentUser.m_Money = currentUser.m_Money - (float)reg;
+                //float newnum = currentUser.m_Money - float.Parse(reg);
+                connection.Update(currentUser);
+
             }
-
-            foreach(DirectDebits userDirect in userDirects)
-            {
-                //use billing start date and user start month and year to calculate
-                string[] array = currentUser.m_StartDate.Split("-");
-
-                DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{userDirect.m_billingDay}");
-                DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
-                double day = (enddate - startdate).TotalDays;
-                int dates = (int)day / (int)userDirect.m_days;
-                double reg = dates * userDirect.m_cost;
-                using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-                {
-
-                    //currentUser.m_Money;
-                    currentUser.m_Money = currentUser.m_Money - (float)reg;
-                    //float newnum = currentUser.m_Money - float.Parse(reg);
-                    connection.Update(currentUser);
-
-                }
-            }
+        }
 
         
-            //DateTime start = Convert.ToDateTime(currentUser.m_StartDate);
-            //DateTime end = Convert.ToDateTime(currentUser.m_EndDate);
-            //double days = (end - start).TotalDays;
-            //foreach(DirectDebits debit in directs)
-            //{
-            //    if(debit.m_userID == currentUser.Id)
-            //    {
-            //        int dates = (int)days / (int)debit.m_days;
-            //        double reg = dates * debit.m_cost;
-            //        using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-            //        {
-
-            //            //currentUser.m_Money;
-            //            currentUser.m_Money = currentUser.m_Money - (float)reg;
-            //            //float newnum = currentUser.m_Money - float.Parse(reg);
-            //            connection.Update(currentUser);
-
-            //        }
-            //    }
-            //}
-            //DateTime howmanyD = DateTime.Compare(start, end);
-        }
-
-        private void EditingModeCalculation()
-        {
-            List<DirectDebits> add = new List<DirectDebits>();
-
-            //find what has been added already
-            if(directs.Count != 0)
-            {
-                if(ExistingDirects.Count != 0)
-                {
-                    foreach (DirectDebits debit in ExistingDirects)
-                    {
-                        foreach (DirectDebits direct in directs)
-                        {
-                            if (debit != direct)
-                            {
-                                add.Add(direct);
-                            }
-                        }
-                    }
-
-                    foreach (DirectDebits userDirect in add)
-                    {
-                        //use billing start date and user start month and year to calculate
-                        string[] array = currentUser.m_StartDate.Split("-");
-
-                        DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{userDirect.m_billingDay}");
-                        DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
-                        double day = (enddate - startdate).TotalDays;
-                        int dates = (int)day / (int)userDirect.m_days;
-                        double reg = dates * userDirect.m_cost;
-                        using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-                        {
-
-                            //currentUser.m_Money;
-                            currentUser.m_Money = currentUser.m_Money - (float)reg;
-                            //float newnum = currentUser.m_Money - float.Parse(reg);
-                            connection.Update(currentUser);
-
-                        }
-                    }
-                }
-                else
-                {
-                    List<DirectDebits> temp = new List<DirectDebits>();
-                    using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
-                    {
-                        temp = conn.Table<DirectDebits>().ToList();
-                        foreach(DirectDebits notBudget in temp)
-                        {
-                            if(currentUser.Id != notBudget.m_userID)
-                            {
-                                temp.Remove(notBudget);
-                            }
-                        }
-                    }
-                    foreach (DirectDebits userDirect in directs)
-                    {
-                        if(userDirect.Id != userDirect.Id)
-                        {
-                            //use billing start date and user start month and year to calculate
-                            string[] array = currentUser.m_StartDate.Split("-");
-
-                            DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{userDirect.m_billingDay}");
-                            DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
-                            double day = (enddate - startdate).TotalDays;
-                            int dates = (int)day / (int)userDirect.m_days;
-                            double reg = dates * userDirect.m_cost;
-                            using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-                            {
-
-                                //currentUser.m_Money;
-                                currentUser.m_Money = currentUser.m_Money - (float)reg;
-                                //float newnum = currentUser.m_Money - float.Parse(reg);
-                                connection.Update(currentUser);
-
-                            }
-                        }
-                        
-                    }
-                }
-
-            }
-            
-        }
         private void RightBarButtonItem_Clicked(object sender, EventArgs e)
         {
-            //calculates cost of direct debits if they have been created
-            if(directs != null)
-            {
-                Calculateexpense();
-            }
-            
-            NavigationController.PopToRootViewController(true);
-        }
-
-        private void EditingMode(object sender, EventArgs e)
-        {
-            //calculates cost of direct debits if they have been created
-
-            if (directs.Count != 0)
-            {
-                EditingModeCalculation();
-            }
-
             NavigationController.PopToRootViewController(true);
         }
 
@@ -327,21 +165,6 @@ namespace Demo
 
         private void DirectDebit_Add_TouchDown(object sender, EventArgs e)
         {
-            if(editingMode == true)
-            {
-                try
-                {
-                    using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
-                    {
-                        ExistingDirects = connection.Table<DirectDebits>().ToList();
-                    }
-                }
-                catch
-                {
-                    //no directs exist
-                }
-                
-            }
             DirectDebits directDebit = new DirectDebits
             {
                 m_userID = currentUser.Id,
@@ -360,17 +183,19 @@ namespace Demo
                     {
                         if(directDebit.m_billingDay != 0)
                         {
+                            //add the direct debit to direct debits database
                             using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
                             {
                                 connection.Insert(directDebit);
-                                directs.Add(directDebit);
-                                //directs = connection.Table<DirectDebits>().ToList();
+                              
                             }
+
+                            //calculate how much it deducts from allowance and updates tracker database
+                            Calculateexpense(directDebit);
 
                             refresh();
                             DirectDebit_Show.Text = $"\r\n{directDebit.m_Name}: {directDebit.m_cost} added";
-                            //DirectDebit_Show.Text = "\r\n";
-                            //ShowDirect();
+                          
                         }
                         else
                         {
@@ -436,8 +261,6 @@ namespace Demo
                 //shows alert
                 this.PresentViewController(alertUser1, true, null);
             }
-            
-            //directs.RemoveRange(0, directs.Count);
         }
 
         private void DirectDebit_Period_EditingDidEnd(object sender, EventArgs e)
@@ -446,7 +269,11 @@ namespace Demo
             {
                 DirectDebit_Period.BackgroundColor = UIColor.Green;
             }
-            
+            else if (DirectDebit_Period.Text.ToString().Contains("£") == true)
+            {
+                DirectDebit_Period.BackgroundColor = UIColor.Red;
+            }
+
         }
 
         private void DirectDebit_Name_EditingDidEnd(object sender, EventArgs e)
@@ -455,6 +282,7 @@ namespace Demo
             {
                 DirectDebit_Name.BackgroundColor = UIColor.Green;
             }
+            
         }
 
         /// <summary>

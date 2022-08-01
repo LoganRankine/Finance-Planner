@@ -19,6 +19,7 @@
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/optimized/
+/Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.AssemblyReference.cache
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CoreCompileInputs.cache
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CopyComplete
 /Users/loganrankine/Projects/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.exe
