@@ -20,9 +20,22 @@ namespace Demo
 
 		[Outlet]
 		UIKit.UILabel TrackerName { get; set; }
+
+		[Outlet]
+		UIKit.UILabel WeeklyAlowance { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (ShowSpent != null) {
+				ShowSpent.Dispose ();
+				ShowSpent = null;
+			}
+
+			if (WeeklyAlowance != null) {
+				WeeklyAlowance.Dispose ();
+				WeeklyAlowance = null;
+			}
+
 			if (TrackerAllowance != null) {
 				TrackerAllowance.Dispose ();
 				TrackerAllowance = null;
@@ -31,11 +44,6 @@ namespace Demo
 			if (TrackerName != null) {
 				TrackerName.Dispose ();
 				TrackerName = null;
-			}
-
-			if (ShowSpent != null) {
-				ShowSpent.Dispose ();
-				ShowSpent = null;
 			}
 		}
 	}

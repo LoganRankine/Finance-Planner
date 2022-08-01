@@ -30,6 +30,7 @@ namespace Demo
             Title = user[db_int].m_Name;
             currentUser = user[db_int];
             TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
+            WeeklyAlowance.Text = $"Weekly budget: £{CalculateWeeklyAllowance()}";
 
             AddViewController.db_int = db_int;
             ConnectToDB();
@@ -43,18 +44,22 @@ namespace Demo
 
         }
 
-        
+        /// <summary>
+        /// Calculates weekly allowance for the user
+        /// </summary>
+        private float CalculateWeeklyAllowance()
+        {
+            DateTime startDATE = Convert.ToDateTime(currentUser.m_StartDate);
+            DateTime endDATE = Convert.ToDateTime(currentUser.m_EndDate);
+            double days = (endDATE - startDATE).TotalDays;
+            int weeks = (int)days / 7;
+            float weeklyAllowance = currentUser.m_Money / weeks;
+            return weeklyAllowance;
+
+        }
 
         private void LoadMoney()
         {
-            //_Budget = new UITableView
-            //{
-            //    Frame = new CoreGraphics.CGRect(0, 120, View.Bounds.Width, View.Bounds.Height),
-            //    Source = new ListSpent(Info)
-            //};
-            ////_Budget.ReloadData();
-            //View.AddSubview(_Budget);
-            
             ShowSpent.Source = new ListSpent(Info);
             var cell = ShowSpent.DequeueReusableCell("SpentCell") as ShowSpent;
             
