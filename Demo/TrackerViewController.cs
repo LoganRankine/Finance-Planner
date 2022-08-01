@@ -30,7 +30,7 @@ namespace Demo
             Title = user[db_int].m_Name;
             currentUser = user[db_int];
             TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
-            WeeklyAlowance.Text = $"Weekly budget: £{CalculateWeeklyAllowance()}";
+            WeeklyAlowance.Text = $"Weekly budget: £{CalculateWeeklyAllowance().ToString("0.00")}";
 
             AddViewController.db_int = db_int;
             ConnectToDB();
