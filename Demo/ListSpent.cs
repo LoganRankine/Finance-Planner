@@ -3,10 +3,13 @@ using UIKit;
 using Foundation;
 using System.Collections.Generic;
 using SQLite;
+using System.Linq;
 namespace Demo
 {
     public class ListSpent : UITableViewSource
     {
+        private List<DateTime> sorted = new List<DateTime>();
+        private BudgetInfo lowestDate;
         List<BudgetInfo> BudgetInfo = new List<BudgetInfo>();
         string cellIdentifer = "SpentCell";
     
@@ -126,6 +129,71 @@ namespace Demo
         {
 
         }
+
+        private void FindLowest()
+        {
+            BudgetInfo tempDate = BudgetInfo[0];
+
+            foreach(BudgetInfo info in BudgetInfo)
+            {
+                if (DateTime.Compare(DateTime.Parse(tempDate.m_Date), DateTime.Parse(info.m_Date)) >= 0)
+                {
+                    tempDate = info;
+                }
+            }
+            lowestDate = tempDate;
+            FindWeekDate(DateTime.Parse(lowestDate.m_Date));
+            SortDates();
+        }
+
+        private void SortDates()
+        {
+            foreach (BudgetInfo temp in BudgetInfo)
+            {
+                sorted.Add(DateTime.Parse(temp.m_Date));
+            }
+            sorted.Sort();
+
+            List<BudgetInfo> temporary = new List<BudgetInfo>();
+
+            
+            
+
+        }
+
+        private DateTime FindWeekDate(DateTime date)
+        {
+            if (date.DayOfWeek.ToString().ToLower() == "monday")
+            {
+                return date;
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "tuesday")
+            {
+                return date.AddDays(-1);
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "wednesday")
+            {
+                return date.AddDays(-2);
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "thursday")
+            {
+                return date.AddDays(-3);
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "friday")
+            {
+                return date.AddDays(-4);
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "saturday")
+            {
+                return date.AddDays(-5);
+            }
+            if (date.DayOfWeek.ToString().ToLower() == "sunday")
+            {
+                return date.AddDays(-6);
+            }
+            return date;
+        }
+
     }
 }
 

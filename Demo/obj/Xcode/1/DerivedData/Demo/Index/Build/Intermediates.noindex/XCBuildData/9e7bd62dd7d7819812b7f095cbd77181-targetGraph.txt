@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-Demo in Demo, no dependencies
-Demo in Demo, no dependencies
