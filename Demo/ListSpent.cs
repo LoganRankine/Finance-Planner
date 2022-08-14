@@ -72,7 +72,8 @@ namespace Demo
             {
                 case UITableViewCellEditingStyle.Delete:
                     deleteFromDB(BudgetInfo[indexPath.Row]);
-                    tableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
+                    BudgetInfo.Remove(BudgetInfo[indexPath.Row]);
+                    tableView.ReloadData();
                     break;
 
                 case UITableViewCellEditingStyle.None:

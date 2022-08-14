@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "32DBL+EaVQL3K3fIk2NIHE5kOGjIAkox95msJIC1DteIl/+dlufhNogCKsNyn7PaBB431hpMAYk12vETF5ckfA==",
+  "dgSpecHash": "MFHJF5nxG0PbmiVrnsHQb+c7x3+TBkt3MvAasnUUSswvn+URSC2e6DN52mt0/55dE3CrXM1Z6+PvaotcSSBagg==",
   "success": true,
-  "projectFilePath": "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj",
+  "projectFilePath": "/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/Demo.csproj",
   "expectedPackageFiles": [
     "/Users/loganrankine/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
     "/Users/loganrankine/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

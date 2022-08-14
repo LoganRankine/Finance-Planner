@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj",
+      "projectUniqueName": "/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/Demo.csproj",
       "projectName": "Demo",
-      "projectPath": "/Users/loganrankine/Projects/Finance-Planner/Demo/Demo.csproj",
+      "projectPath": "/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/Demo.csproj",
       "packagesPath": "/Users/loganrankine/.nuget/packages/",
-      "outputPath": "/Users/loganrankine/Projects/Finance-Planner/Demo/obj/",
+      "outputPath": "/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
