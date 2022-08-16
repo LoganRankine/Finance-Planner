@@ -8,7 +8,7 @@ namespace Demo
 {
     public class ListSpent : UITableViewSource
     {
-        private List<DateTime> sorted = new List<DateTime>();
+        private List<List<BudgetInfo>> weekSort = new List<List<BudgetInfo>>();
         private BudgetInfo lowestDate;
         List<BudgetInfo> BudgetInfo = new List<BudgetInfo>();
         string cellIdentifer = "SpentCell";
@@ -16,7 +16,9 @@ namespace Demo
         public ListSpent(List<BudgetInfo> budgetInfo)
         {
             BudgetInfo = budgetInfo;
-     
+            FindLowest();
+            FindWeeks();
+
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -30,21 +32,27 @@ namespace Demo
 
             //cell.configure(BudgetInfo[indexPath.Row].m_Reason, "£" + BudgetInfo[indexPath.Row].m_spent.ToString(), BudgetInfo[indexPath.Row].m_Date);
 
-
             UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifer);
 
             if (cell == null)
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
             }
-            //cell.TextLabel.Text = tableItems[indexPath.Row];
-            cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
-            //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
-            string date = BudgetInfo[indexPath.Row].m_Date;
-            DateTime convert = Convert.ToDateTime(date);
-            //convert.AddDays(7);
-            date = convert.ToLongDateString();
-            cell.DetailTextLabel.Text = date;
+
+            if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]))
+            {
+                
+                //cell.TextLabel.Text = tableItems[indexPath.Row];
+                cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
+                //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+                string date = BudgetInfo[indexPath.Row].m_Date;
+                DateTime convert = Convert.ToDateTime(date);
+                //convert.AddDays(7);
+                date = convert.ToLongDateString();
+                cell.DetailTextLabel.Text = date;
+            }
+            
+            
             //cell.BackgroundColor = UIColor.Green;
 
             return cell;
@@ -53,10 +61,10 @@ namespace Demo
         //{
         //    return (nfloat)1000.00;
         //}
-        //public override nint NumberOfSections(UITableView tableView)
-        //{
-        //    return 5;
-        //}
+        public override nint NumberOfSections(UITableView tableView)
+        {
+            return weekSort.Count;
+        }
 
         //public override nint NumberOfSections(UITableView tableView)
         //{
@@ -148,17 +156,64 @@ namespace Demo
 
         private void SortDates()
         {
-            foreach (BudgetInfo temp in BudgetInfo)
+            int size = BudgetInfo.Count - 1;
+            for (int steps = 0; steps < size; steps++)
             {
-                sorted.Add(DateTime.Parse(temp.m_Date));
+                for (int j = 0; j < size - steps; j++)
+                {
+                    if (DateTime.Compare(DateTime.Parse(BudgetInfo[j].m_Date), DateTime.Parse(BudgetInfo[j + 1].m_Date)) > 0)
+                    {
+                        BudgetInfo temp = BudgetInfo[j];
+                        BudgetInfo[j] = BudgetInfo[j + 1];
+                        BudgetInfo[j + 1] = temp;
+                    }
+                }
             }
-            sorted.Sort();
+        }
 
-            List<BudgetInfo> temporary = new List<BudgetInfo>();
+        private void FindWeeks()
+        {
+            DateTime startweek = FindWeekDate(DateTime.Parse(lowestDate.m_Date));
+            DateTime endweek = startweek.AddDays(6);
+            List<BudgetInfo> tempweek = new List<BudgetInfo>();
+            for (int i = 0; i < BudgetInfo.Count; i++)
+            {
+                DateTime convertInfo = DateTime.Parse(BudgetInfo[i].m_Date);
+                if ((DateTime.Compare(startweek, convertInfo) < 0 || DateTime.Compare(startweek, convertInfo) == 0) && (DateTime.Compare(convertInfo, endweek) < 0 || DateTime.Compare(endweek, convertInfo) == 0))
+                {
+                    tempweek.Add(BudgetInfo[i]);
+                }
+                //last one
+                if (BudgetInfo.Count == i + 1)
+                {
+                    weekSort.Add(tempweek);
+                }
+                else if (DateTime.Compare(convertInfo, endweek) > 0)
+                {
+                    List<BudgetInfo> temptemp = new List<BudgetInfo>();
+                    foreach (BudgetInfo infoo in tempweek)
+                    {
+                        temptemp.Add(infoo);
+                    }
+                    weekSort.Add(temptemp);
+                    tempweek.RemoveRange(0, tempweek.Count);
 
-            
-            
+                    DateTime newWeek = FindWeekDate(convertInfo);
+                    startweek = newWeek;
+                    endweek = newWeek.AddDays(6);
 
+                    if ((DateTime.Compare(startweek, convertInfo) < 0 || DateTime.Compare(startweek, convertInfo) == 0) && (DateTime.Compare(convertInfo, endweek) < 0 || DateTime.Compare(endweek, convertInfo) == 0))
+                    {
+                        tempweek.Add(BudgetInfo[i]);
+                    }
+                    //last one
+                    if (BudgetInfo.Count == i + 1)
+                    {
+                        weekSort.Add(tempweek);
+                    }
+                }
+
+            }
         }
 
         private DateTime FindWeekDate(DateTime date)

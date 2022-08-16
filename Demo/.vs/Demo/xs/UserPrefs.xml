@@ -1,9 +1,13 @@
 ﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TrackerViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ListSpent.cs">
     <Files>
       <File FileName="CreateViewController.cs" Line="192" Column="14" IsPinned="True" />
       <File FileName="TrackerViewController.cs" Line="60" Column="1" IsPinned="True" />
@@ -14,7 +18,7 @@
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
       <File FileName="Database/Person.cs" Line="19" Column="6" />
       <File FileName="AddViewController.cs" Line="105" Column="23" />
-      <File FileName="ListSpent.cs" Line="75" Column="66" />
+      <File FileName="ListSpent.cs" Line="20" Column="25" />
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
       <File FileName="DirectDBViewController.cs" Line="121" Column="13" />
       <File FileName="EditTrackerViewController.cs" Line="32" Column="10" />
@@ -36,8 +40,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
