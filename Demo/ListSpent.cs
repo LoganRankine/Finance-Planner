@@ -16,8 +16,12 @@ namespace Demo
         public ListSpent(List<BudgetInfo> budgetInfo)
         {
             BudgetInfo = budgetInfo;
-            FindLowest();
-            FindWeeks();
+            if(BudgetInfo.Count != 0)
+            {
+                FindLowest();
+                FindWeeks();
+            }
+            
 
         }
 
@@ -33,7 +37,7 @@ namespace Demo
             //cell.configure(BudgetInfo[indexPath.Row].m_Reason, "£" + BudgetInfo[indexPath.Row].m_spent.ToString(), BudgetInfo[indexPath.Row].m_Date);
 
             UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifer);
-
+            //tableView.row
             if (cell == null)
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
@@ -50,6 +54,10 @@ namespace Demo
                 //convert.AddDays(7);
                 date = convert.ToLongDateString();
                 cell.DetailTextLabel.Text = date;
+            }
+            else
+            {
+                tableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
             }
             
             
