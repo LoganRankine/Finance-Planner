@@ -25,6 +25,15 @@ namespace Demo
 
         }
 
+        
+
+        public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            tableView.DeselectRow(indexPath, true);
+        }
+
+        
+
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             //var cell = tableView.DequeueReusableCell(cellIdentifer) as ShowSpent;
@@ -35,35 +44,85 @@ namespace Demo
             //}
 
             //cell.configure(BudgetInfo[indexPath.Row].m_Reason, "£" + BudgetInfo[indexPath.Row].m_spent.ToString(), BudgetInfo[indexPath.Row].m_Date);
-
+            
             UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifer);
             //tableView.row
+            
             if (cell == null)
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
             }
-
-            if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]))
+            try
             {
                 
-                //cell.TextLabel.Text = tableItems[indexPath.Row];
-                cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
-                //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
-                string date = BudgetInfo[indexPath.Row].m_Date;
-                DateTime convert = Convert.ToDateTime(date);
-                //convert.AddDays(7);
-                date = convert.ToLongDateString();
-                cell.DetailTextLabel.Text = date;
+                if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]) && weekSort[indexPath.Section].Count >= indexPath.Row)
+                {
+
+                    //cell.TextLabel.Text = tableItems[indexPath.Row];
+                    cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
+                    //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+                    string date = BudgetInfo[indexPath.Row].m_Date;
+                    DateTime convert = Convert.ToDateTime(date);
+
+                    date = convert.ToLongDateString();
+                    cell.DetailTextLabel.Text = date;
+                    
+                }
             }
-            else
+            catch
             {
-                tableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
+
             }
             
             
             //cell.BackgroundColor = UIColor.Green;
 
             return cell;
+        }
+
+        public override string TitleForHeader(UITableView tableView, nint section)
+        {
+            string weekstart = null;
+            if (BudgetInfo.Count != 0)
+            {
+                int m_section = ((int)section);
+                DateTime weekStarting = FindWeekDate(DateTime.Parse(weekSort[m_section][0].m_Date));
+                weekstart = weekStarting.ToShortDateString();
+            }
+            return $"Week {weekstart}";
+        }
+        public override string TitleForFooter(UITableView tableView, nint section)
+        {
+            float totalWeek = 0;
+            string footerTitle = null;
+            if (BudgetInfo.Count != 0)
+            {
+                
+                List<BudgetInfo> temp = weekSort[((int)section)];
+                foreach(BudgetInfo info in temp)
+                {
+                    totalWeek += info.m_spent;
+                }
+                footerTitle = $"Total spent: £{totalWeek}";
+            }
+
+            
+            return footerTitle;
+        }
+        public bool DoesExist(BudgetInfo temp)
+        {
+            try
+            {
+                if(temp != null)
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+            return false;
         }
         //public override nfloat EstimatedHeightForHeader(UITableView tableView, nint section)
         //{
