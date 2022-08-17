@@ -142,6 +142,7 @@ namespace Demo
                 case UITableViewCellEditingStyle.Delete:
                     deleteFromDB(BudgetInfo[indexPath.Row]);
                     BudgetInfo.Remove(BudgetInfo[indexPath.Row]);
+                    weekSort[indexPath.Section].Remove(weekSort[indexPath.Section][indexPath.Row]);
                     tableView.ReloadData();
                     break;
 
