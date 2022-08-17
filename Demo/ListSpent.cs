@@ -52,29 +52,20 @@ namespace Demo
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
             }
-            try
-            {
-                
-                if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]) && weekSort[indexPath.Section].Count >= indexPath.Row)
-                {
-
-                    //cell.TextLabel.Text = tableItems[indexPath.Row];
-                    cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
-                    //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
-                    string date = BudgetInfo[indexPath.Row].m_Date;
-                    DateTime convert = Convert.ToDateTime(date);
-
-                    date = convert.ToLongDateString();
-                    cell.DetailTextLabel.Text = date;
-                    
-                }
-            }
-            catch
+            if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]) || weekSort[indexPath.Section].Count >= indexPath.Row)
             {
 
+                //cell.TextLabel.Text = tableItems[indexPath.Row];
+                cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
+                //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+                string date = BudgetInfo[indexPath.Row].m_Date;
+                DateTime convert = Convert.ToDateTime(date);
+
+                date = convert.ToLongDateString();
+                cell.DetailTextLabel.Text = date;
+
             }
-            
-            
+
             //cell.BackgroundColor = UIColor.Green;
 
             return cell;
@@ -167,6 +158,11 @@ namespace Demo
 
         public override nint RowsInSection(UITableView tableview, nint section)
         {
+            int te = ((int)section);
+            if (section == weekSort.IndexOf(weekSort[te]))
+            {
+                return weekSort[te].Count;
+            }
             return BudgetInfo.Count;
         }
 
