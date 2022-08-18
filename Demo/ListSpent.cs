@@ -52,19 +52,28 @@ namespace Demo
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifer);
             }
-            if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]) || weekSort[indexPath.Section].Count >= indexPath.Row)
-            {
+            //if (weekSort[indexPath.Section].Contains(BudgetInfo[indexPath.Row]) || weekSort[indexPath.Section].Count >= indexPath.Row)
+            //{
 
-                //cell.TextLabel.Text = tableItems[indexPath.Row];
-                cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
-                //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
-                string date = BudgetInfo[indexPath.Row].m_Date;
-                DateTime convert = Convert.ToDateTime(date);
+            //    //cell.TextLabel.Text = tableItems[indexPath.Row];
+            //    cell.TextLabel.Text = $"{BudgetInfo[indexPath.Row].m_Reason} £{BudgetInfo[indexPath.Row].m_spent.ToString()}";
+            //    //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+            //    string date = BudgetInfo[indexPath.Row].m_Date;
+            //    DateTime convert = Convert.ToDateTime(date);
 
-                date = convert.ToLongDateString();
-                cell.DetailTextLabel.Text = date;
+            //    date = convert.ToLongDateString();
+            //    cell.DetailTextLabel.Text = date;
 
-            }
+            //}
+
+            //cell.TextLabel.Text = tableItems[indexPath.Row];
+            cell.TextLabel.Text = $"{weekSort[indexPath.Section][indexPath.Row].m_Reason} £{weekSort[indexPath.Section][indexPath.Row].m_spent.ToString()}";
+            //cell.DetailTextLabel.Text = BudgetInfo[indexPath.Row].m_Date;
+            string date = weekSort[indexPath.Section][indexPath.Row].m_Date;
+            DateTime convert = Convert.ToDateTime(date);
+
+            date = convert.ToLongDateString();
+            cell.DetailTextLabel.Text = date;
 
             //cell.BackgroundColor = UIColor.Green;
 
