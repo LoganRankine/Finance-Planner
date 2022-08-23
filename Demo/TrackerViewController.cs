@@ -29,7 +29,7 @@ namespace Demo
 
             Title = user[db_int].m_Name;
             currentUser = user[db_int];
-            TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
+            TrackerAllowance.Text = $"Allowance: £{currentUser.m_Money.ToString("0.00")}";
             WeeklyAlowance.Text = $"Weekly budget: £{CalculateWeeklyAllowance().ToString("0.00")}";
 
             AddViewController.db_int = db_int;
@@ -69,9 +69,10 @@ namespace Demo
             
             Info.RemoveRange(0, Info.Count);
             //_Budget.ReloadData();
-            TrackerAllowance.Text = "";
-            TrackerAllowance.Text = $"Allowance: £{user[db_int].m_Money}";
             ConnectToDB();
+            //WeeklyAlowance.Text = $"Weekly budget: £{CalculateWeeklyAllowance().ToString("0.00")}";
+            TrackerAllowance.Text = $"Allowance: £{currentUser.m_Money.ToString("0.00")}";
+            
             LoadMoney();
             ShowSpent.ReloadData();
         }
@@ -128,6 +129,19 @@ namespace Demo
                         if(spent.userId == currentUser.Id)
                         {
                             Info.Add(spent);
+                        }
+                    }
+                }
+                using (SQLiteConnection conn1 = new SQLiteConnection(AppDelegate.FilePath))
+                {
+                    //conn1.CreateTable<BudgetInfo>();
+                    List<Person> tempInfo = new List<Person>();
+                    tempInfo = conn1.Table<Person>().ToList();
+                    foreach (Person spent in tempInfo)
+                    {
+                        if (spent.Id == currentUser.Id)
+                        {
+                            currentUser = spent;
                         }
                     }
                 }

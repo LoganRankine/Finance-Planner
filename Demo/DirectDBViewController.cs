@@ -24,7 +24,7 @@ namespace Demo
 
             Title = "Add Direct Debits";
             update(currentUser.Id);
-
+            ConnectToDB();
             //Displays done button on navigation bar
             NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Done, target: View, action: null);
 
@@ -45,6 +45,21 @@ namespace Demo
 
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
 
+        }
+
+        private void ConnectToDB()
+        {
+            using(SQLiteConnection conn = new SQLiteConnection(AppDelegate.FilePath))
+            {
+                List<Person> temp = conn.Table<Person>().ToList();
+                foreach(Person person in temp)
+                {
+                    if(person.Id == currentUser.Id)
+                    {
+                        currentUser = person;
+                    }
+                }
+            }
         }
 
         private void DirectDebit_BillingDay_EditingDidEnd(object sender, EventArgs e)
