@@ -259,50 +259,24 @@ namespace Demo
                 {
                     tempweek.Add(BudgetInfo[i]);
                 }
-                //last one
-                if (BudgetInfo.Count == i + 1)
+                else
                 {
-                    if (weekSort.Contains(tempweek) == false)
-                    {
-                        weekSort.Add(tempweek);
-                    }
-                    
-                }
-                if (DateTime.Compare(convertInfo, endweek) > 0)
-                {
-
                     List<BudgetInfo> temptemp = new List<BudgetInfo>();
-                    foreach (BudgetInfo infoo in tempweek)
-                    {
-                        temptemp.Add(infoo);
-                    }
-                    bool hi = weekSort.Contains(temptemp);
-                    if (weekSort.Count != 0 && weekSort[weekSort.Count - 1][0] != temptemp[0])
-                    {
-                        weekSort.Add(temptemp);
-                    }
-
+                    temptemp = tempweek;
+                    weekSort.Add(temptemp);
+                    startweek = FindWeekDate(DateTime.Parse(BudgetInfo[i].m_Date));
+                    endweek = startweek.AddDays(6);
                     tempweek = new List<BudgetInfo>();
-
-                    DateTime newWeek = FindWeekDate(convertInfo);
-                    startweek = newWeek;
-                    endweek = newWeek.AddDays(6);
-
-                    
 
                     if ((DateTime.Compare(startweek, convertInfo) < 0 || DateTime.Compare(startweek, convertInfo) == 0) && (DateTime.Compare(convertInfo, endweek) < 0 || DateTime.Compare(endweek, convertInfo) == 0))
                     {
                         tempweek.Add(BudgetInfo[i]);
                     }
-                    //last one
-                    if (BudgetInfo.Count == i + 1)
-                    {
-                        if(weekSort.Contains(tempweek) == false)
-                        {
-                            weekSort.Add(tempweek);
-                        }
-                        
-                    }
+                }
+
+                if(BudgetInfo.Count - 1== i)
+                {
+                    weekSort.Add(tempweek);
                 }
 
             }

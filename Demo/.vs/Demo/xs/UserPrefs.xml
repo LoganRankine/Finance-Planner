@@ -1,4 +1,5 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
+﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ListSpent.cs">
     <Files>
       <File FileName="CreateViewController.cs" Line="192" Column="14" IsPinned="True" />
@@ -10,7 +11,7 @@
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
       <File FileName="Database/Person.cs" Line="19" Column="6" />
       <File FileName="AddViewController.cs" Line="105" Column="23" />
-      <File FileName="ListSpent.cs" Line="283" Column="22" />
+      <File FileName="ListSpent.cs" Line="14" Column="32" />
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
       <File FileName="DirectDBViewController.cs" Line="110" Column="1" />
       <File FileName="EditTrackerViewController.cs" Line="32" Column="10" />
@@ -21,6 +22,7 @@
         <State name="__root__">
           <Node name="Demo" expanded="True">
             <Node name="Demo" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="Database" expanded="True" />
             </Node>
           </Node>
@@ -33,12 +35,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/ListSpent.cs" relfile="ListSpent.cs" line="280" column="1" />
+      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/ListSpent.cs" relfile="ListSpent.cs" line="258" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73C24C80-3896-4D49-B38B-FCA9F13B798C" />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
 </Properties>
