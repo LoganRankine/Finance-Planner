@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 using System.Collections.Generic;
 using System.Linq;
+using static CoreFoundation.DispatchSource;
 
 namespace Demo
 {
@@ -101,19 +102,56 @@ namespace Demo
         /// </summary>
         private void Calculateexpense(DirectDebits directDebit)
         {
-            //use billing start date and user start month and year to calculate
-            string[] array = currentUser.m_StartDate.Split("-");
+            int times = 0;
+            DateTime startDate = DateTime.Parse(currentUser.m_StartDate);
+            DateTime endDate = DateTime.Parse(currentUser.m_EndDate);
+            DateTime now = DateTime.Now;
+            string snowdate = $"{directDebit.m_billingDay}/{now.Month.ToString()}/{now.Year.ToString()}";
+            DateTime nowDate = DateTime.Parse(snowdate);
 
-            DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{directDebit.m_billingDay}");
-            DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
-            double day = (enddate - startdate).TotalDays;
-            int dates = (int)day / (int)directDebit.m_days;
-            double reg = dates * directDebit.m_cost;
+            if (DateTime.Compare(startDate, nowDate) < 0 && nowDate.Month == startDate.Month)
+            {                                                                                
+                //date = start;
+                times++;
+                while (DateTime.Compare(nowDate, endDate) < 0)
+                {
+
+                    DateTime temp = nowDate;
+                    if (DateTime.Compare(temp.AddDays(directDebit.m_days), endDate) < 0)
+                    {
+                        nowDate = nowDate.AddDays(directDebit.m_days);
+                        times++;
+                    }
+                    else if (DateTime.Compare(temp, nowDate) == 0)
+                    {
+                        nowDate = endDate;
+                    }
+
+                }
+            }
+            else if(DateTime.Compare(startDate, nowDate) < 0 && nowDate.Month == startDate.Month)
+            {
+                times++;
+            }
+
+
+
+            float totalCost = times * directDebit.m_cost;
+                //use billing start date and user start month and year to calculate
+                //string[] array = currentUser.m_StartDate.Split("-");
+
+                //DateTime startdate = Convert.ToDateTime($"{array[0]}-{array[1]}-{directDebit.m_billingDay}");
+                //DateTime enddate = Convert.ToDateTime(currentUser.m_EndDate);
+                //double day = (enddate - startdate).TotalDays;
+                //int dates = (int)day / (int)directDebit.m_days;
+                //double reg = dates * directDebit.m_cost;
+
+
             using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
             {
 
                 //currentUser.m_Money;
-                currentUser.m_Money = currentUser.m_Money - (float)reg;
+                currentUser.m_Money = currentUser.m_Money - totalCost;
                 //float newnum = currentUser.m_Money - float.Parse(reg);
                 connection.Update(currentUser);
 

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/11K-hf-tWk-view-wLt-eY-wVC.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/11K-hf-tWk-view-wLt-eY-wVC.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/AddViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/AddViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/EditTrackerViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/EditTrackerViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/TrackerViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/TrackerViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/723-LQ-cmN-view-vGc-kA-EkS.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/1Ua-GB-vmg-view-mXF-fg-lRr.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/ViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/ViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/DirectDBViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/DirectDBViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/CreateViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/CreateViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/6Gi-DG-Zdz-view-JCG-V6-v1L.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/ExistingViewController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/ExistingViewController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/UINavigationController-e8c-Xa-qDN.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/UINavigationController-e8c-Xa-qDN.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/Info.plist">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/JwH-io-i2r-view-eri-v2-8ZS.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc/bRv-4p-frS-view-0uO-ed-erd.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/bRv-4p-frS-view-0uO-ed-erd.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc/Info.plist">
+      <Optimize>false</Optimize>
+      <LogicalName>LaunchScreen.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone13.2-15.6/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

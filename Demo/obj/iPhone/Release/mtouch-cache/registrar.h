@@ -213,7 +213,10 @@
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
 	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(NSString *) tableView:(UITableView *)p0 titleForHeaderInSection:(NSInteger)p1;
+	-(NSString *) tableView:(UITableView *)p0 titleForFooterInSection:(NSInteger)p1;
 	-(NSInteger) numberOfSectionsInTableView:(UITableView *)p0;
 	-(void) tableView:(UITableView *)p0 commitEditingStyle:(NSInteger)p1 forRowAtIndexPath:(NSIndexPath *)p2;
 	-(BOOL) tableView:(UITableView *)p0 canEditRowAtIndexPath:(NSIndexPath *)p1;

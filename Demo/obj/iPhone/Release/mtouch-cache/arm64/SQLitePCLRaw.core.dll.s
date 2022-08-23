@@ -12512,7 +12512,7 @@ System_ReadOnlySpan_1_T_BYTE_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_120
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -12537,7 +12537,7 @@ System_ReadOnlySpan_1_T_BYTE_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_120
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -13202,7 +13202,7 @@ ldr x1, [x16, #16]
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 5 275 0
-.word 0xd28a99c0
+.word 0xd28a9a40
 bl _p_120
 .word 0xf9002ba0
 .word 0xd281c240
@@ -14216,7 +14216,7 @@ bl _p_120
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_3
-.word 0xd28a9580
+.word 0xd28a9600
 .loc 5 618 0
 bl _p_120
 .word 0xaa0003e1
@@ -15165,7 +15165,7 @@ System_Collections_Concurrent_ConcurrentDictionary_2_TKey_INTPTR_TValue_REF_Thro
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28a3fc0
+.word 0xd28a4040
 bl _p_120
 .word 0xf90023a0
 .word 0xf9400ba0
@@ -15194,7 +15194,7 @@ System_Collections_Concurrent_ConcurrentDictionary_2_TKey_INTPTR_TValue_REF_Thro
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000baf
-.word 0xd28aad80
+.word 0xd28aae00
 bl _p_120
 .word 0xaa0003e1
 .word 0xd2800920
@@ -17434,7 +17434,7 @@ bl _p_189
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 6 269 0
-.word 0xd28df3e0
+.word 0xd28df460
 bl _p_120
 .word 0xaa0003e1
 .word 0xd2801220
@@ -17442,7 +17442,7 @@ bl _p_120
 bl _mono_create_corlib_exception_1
 bl _p_3
 .loc 6 271 0
-.word 0xd28dfea0
+.word 0xd28dff20
 bl _p_120
 .word 0xaa0003e1
 .word 0xd2801220
@@ -18540,7 +18540,7 @@ System_Span_1_T_BYTE_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_120
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -18565,7 +18565,7 @@ System_Span_1_T_BYTE_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_120
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -25524,7 +25524,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 205,4,102,52,61,32,52,85,226,160,11,135,100,253,67,85
+	.byte 251,103,55,40,188,18,226,191,19,119,99,189,250,216,161,90
 	.globl _mono_aot_module_SQLitePCLRaw_core_info
 	.align 3
 _mono_aot_module_SQLitePCLRaw_core_info:

@@ -6534,75 +6534,76 @@ bl _p_118
 Lme_83:
 .text
 	.align 4
+	.no_dead_strip Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath
+Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath:
+.loc 1 1 0
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xf9400fa0
+.word 0xf94013a1
+.word 0xd2800022
+.word 0xf9400fa3
+.word 0x3940007e
+bl _p_95
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_84:
+.text
+	.align 4
 	.no_dead_strip Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
 Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath:
 .loc 1 1 0
-.word 0xa9b87bfd
+.word 0xa9b77bfd
 .word 0x910003fd
-.word 0xa90163b7
-.word 0xa9026bb9
+.word 0xa90167b8
+.word 0xf90013ba
 .word 0xaa0003f8
 .word 0xaa0103f9
 .word 0xaa0203fa
-.word 0xf9001bbf
+.word 0xf90017bf
 .word 0x9e6703e0
 .word 0x1e624010
-.word 0xbd003bb0
+.word 0xbd0033b0
 .word 0xf9402301
 .word 0xaa1903e0
 .word 0x3940033e
 bl _p_96
-.word 0xaa0003f7
-.word 0xaa1703e0
+.word 0xaa0003f9
+.word 0xaa1903e0
 .word 0xb50001a0
 .word 0xf9402300
-.word 0xf9002fa0
+.word 0xf90027a0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #960]
 bl _p_17
-.word 0xf9402fa2
-.word 0xf9002ba0
+.word 0xf94027a2
+.word 0xf90023a0
 .word 0xd2800061
 bl _p_97
-.word 0xf9402ba0
-.word 0xaa0003f7
+.word 0xf94023a0
+.word 0xaa0003f9
+.word 0xaa1903e0
+.word 0x3940033e
+bl _p_98
+.word 0xf9002ba0
 .word 0xf9401700
-.word 0xf90033a0
+.word 0xf90043a0
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_119
 .word 0x93407c00
 .word 0xaa0003e1
-.word 0xf94033a2
+.word 0xf94043a2
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_120
-.word 0xf9002ba0
-.word 0xf9401f00
-.word 0xf9002fa0
-.word 0xaa1a03e0
-.word 0x3940035e
-bl _p_94
-.word 0x93407c00
-.word 0xaa0003e1
-.word 0xf9402fa2
-.word 0xaa0203e0
-.word 0x3940005e
-bl _p_121
-.word 0xaa0003e1
-.word 0xf9402ba2
-.word 0xaa0203e0
-.word 0x3940005e
-bl _p_122
-.word 0x53001c00
-.word 0x34000b00
-.word 0xaa1703e0
-.word 0x394002fe
-bl _p_98
-.word 0xf9002fa0
-.word 0xf9401f00
 .word 0xf9003fa0
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -6616,20 +6617,30 @@ bl _p_121
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9400800
-.word 0xf90033a0
+.word 0xf9002fa0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #1192]
-.word 0xf90037a0
-.word 0xf9401f00
+.word 0xf90033a0
+.word 0xf9401700
 .word 0xf9003ba0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_119
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf9403ba2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_120
+.word 0xf90037a0
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_94
 .word 0x93407c00
 .word 0xaa0003e1
-.word 0xf9403ba2
+.word 0xf94037a2
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_121
@@ -6638,30 +6649,40 @@ bl _p_121
 .word 0xbd402810
 .word 0x1e22c200
 .word 0x1e624010
-.word 0xbd003fb0
-.word 0xbd403fb0
+.word 0xbd0037b0
+.word 0xbd4037b0
 .word 0x1e22c200
 .word 0x1e624010
-.word 0xbd003bb0
-.word 0x9100e3a0
-bl _p_123
+.word 0xbd0033b0
+.word 0x9100c3a0
+bl _p_122
 .word 0xaa0003e2
-.word 0xf94033a0
-.word 0xf94037a1
-bl _p_124
+.word 0xf9402fa0
+.word 0xf94033a1
+bl _p_123
 .word 0xaa0003e1
-.word 0xf9402fa2
+.word 0xf9402ba2
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_14
-.word 0xf9401f00
-.word 0xf9002ba0
+.word 0xf9401700
+.word 0xf90027a0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_119
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf94027a2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_120
+.word 0xf90023a0
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_94
 .word 0x93407c00
 .word 0xaa0003e1
-.word 0xf9402ba2
+.word 0xf94023a2
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_121
@@ -6669,51 +6690,231 @@ bl _p_121
 .word 0x3940003e
 .word 0xf9400c1a
 .word 0xaa1a03e0
-.word 0x9100c3a1
-.word 0xf90023a1
+.word 0x9100a3a1
+.word 0xf9001fa1
 bl _p_15
-.word 0xf94023be
+.word 0xf9401fbe
 .word 0xf90003c0
-.word 0x9100c3a0
+.word 0x9100a3a0
 bl _p_16
 .word 0xaa0003fa
-.word 0xaa1703e0
-.word 0x394002fe
-bl _p_125
+.word 0xaa1903e0
+.word 0x3940033e
+bl _p_124
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
 bl _p_14
-.word 0x14000014
+.word 0xaa1903e0
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+
+Lme_85:
+.text
+	.align 4
+	.no_dead_strip Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint
+Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint:
+.loc 1 1 0
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xaa0003f9
+.word 0xf90013a1
+.word 0xf90017a2
+.word 0xf9001fbf
+.word 0xd2800018
+.word 0xf9401f20
+.word 0xaa0003e1
+.word 0x3940003e
+.word 0xb9801800
+.word 0x340003e0
+.word 0xf94017a0
+.word 0x93407c18
+.word 0xf9401722
+.word 0xaa0203e0
+.word 0xaa1803e1
+.word 0x3940005e
+bl _p_120
+.word 0xaa0003e2
+.word 0xaa0203e0
+.word 0xd2800001
+.word 0x3940005e
+bl _p_121
+.word 0xaa0003e1
+.word 0x3940003e
+.word 0xf9400c00
+.word 0x9100c3a1
+.word 0xf90023a1
+bl _p_125
+.word 0xf94023be
+.word 0xf90003c0
+.word 0x9100e3a0
+.word 0xf90023a0
+.word 0xaa1903e0
+.word 0xf9401ba1
+bl _p_126
+.word 0xf94023be
+.word 0xf90003c0
+.word 0x9100e3a0
+bl _p_127
+.word 0xaa0003f8
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #1200]
-.word 0xd2800021
-bl _p_85
-.word 0xaa0003e3
-.word 0xaa0303e0
-.word 0xf9002ba0
-.word 0xaa0303e0
-.word 0xd2800001
-.word 0xaa1a03e2
-.word 0xf9400063
-.word 0xf9405070
-.word 0xd63f0200
-.word 0xf9402ba1
-.word 0xaa1903e0
-.word 0xd2800002
-.word 0x3940033e
-bl _p_126
-.word 0xaa1703e0
-.word 0xa94163b7
-.word 0xa9426bb9
+.word 0xaa1803e1
+bl _p_13
+.word 0xa94167b8
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_86:
+.text
+	.align 4
+	.no_dead_strip Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint
+Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint:
+.loc 1 1 0
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003f9
+.word 0xf90017a1
+.word 0xaa0203fa
+.word 0xd2800000
+.word 0xf9001ba0
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0xd280001e
+.word 0x9e6703d0
+.word 0x1e22c200
+.word 0x1e624010
+.word 0xbd004bb0
+.word 0xd2800018
+.word 0xf9401f20
+.word 0xaa0003e1
+.word 0x3940003e
+.word 0xb9801800
+.word 0x34000880
+.word 0xf9401722
+.word 0x93407f41
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_120
+.word 0xaa0003e1
+.word 0x9100c3a8
+.word 0xaa0103e0
+.word 0x3940003e
+bl _p_114
+.word 0x14000011
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1168]
+.word 0xf94023ba
+.word 0xbd404bb0
+.word 0x1e22c200
+.word 0x3940035e
+.word 0xbd402b50
+.word 0x1e22c201
+.word 0x1e624030
+.word 0xbd004fb0
+.word 0xbd404fb0
+.word 0x1e22c201
+.word 0x1e612800
+.word 0x1e624010
+.word 0xbd004bb0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x15, [x16, #1168]
+.word 0x9100c3a0
+bl _p_116
+.word 0x53001c00
+.word 0x35fffd40
+.word 0xf9002bbf
+.word 0x94000005
+.word 0xf9402ba0
+.word 0xb4000040
+bl _p_35
+.word 0x14000009
+.word 0xf90033be
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1168]
+.word 0x9100c3a0
+.word 0xf9002fa0
+.word 0xf94033be
+.word 0xd61f03c0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1208]
+.word 0xf9003ba0
+.word 0xbd404bb0
+.word 0x1e22c200
+.word 0xfd003fa0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1032]
+.word 0xd2800281
+bl _p_20
+.word 0xaa0003e1
+.word 0xf9403ba0
+.word 0xfd403fa0
+.word 0x1e624010
+.word 0xbd001030
+bl _p_102
+.word 0xaa0003f8
+.word 0xaa1803e0
+.word 0xa94167b8
+.word 0xf94013ba
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_84:
+Lme_87:
+.text
+	.align 4
+	.no_dead_strip Demo_ListSpent_DoesExist_Demo_BudgetInfo
+Demo_ListSpent_DoesExist_Demo_BudgetInfo:
+.loc 1 1 0
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0x390083bf
+.word 0xf9400fa0
+.word 0xb4000080
+.word 0xd2800020
+.word 0x390083a0
+.word 0x1400000e
+.word 0x1400000b
+.word 0xf90017a0
+.word 0xd2800000
+.word 0x390083a0
+bl _p_36
+.word 0xf90023a0
+.word 0xf94023a0
+.word 0xb4000060
+.word 0xf94023a0
+bl _p_37
+.word 0x14000003
+.word 0xd2800000
+.word 0x14000002
+.word 0x394083a0
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_88:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_NumberOfSections_UIKit_UITableView
@@ -6733,13 +6934,13 @@ Demo_ListSpent_NumberOfSections_UIKit_UITableView:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_85:
+Lme_89:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
 Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bb7
 .word 0xf9000fba
@@ -6748,28 +6949,66 @@ Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditing
 .word 0xf90017a2
 .word 0xaa0303fa
 .word 0xf94017a0
-.word 0xb4000520
+.word 0xb40009e0
 .word 0xf94017a0
 .word 0xd280003e
 .word 0xeb1e001f
-.word 0x540004a1
+.word 0x54000961
 .word 0xf9401ee0
-.word 0xf90023a0
+.word 0xf90033a0
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_94
 .word 0x93407c00
 .word 0xaa0003e1
-.word 0xf94023a2
+.word 0xf94033a2
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_121
 .word 0xaa0003e1
 .word 0xaa1703e0
-bl _p_127
+bl _p_128
 .word 0xf9401ee0
+.word 0xf9002ba0
+.word 0xf9401ee0
+.word 0xf9002fa0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_94
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf9402fa2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_121
+.word 0xaa0003e1
+.word 0xf9402ba2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_129
+.word 0xf94016e0
+.word 0xf90027a0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_119
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf94027a2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_120
 .word 0xf9001ba0
-.word 0xf9401ee0
+.word 0xf94016e0
+.word 0xf90023a0
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_119
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf94023a2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_120
 .word 0xf9001fa0
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -6784,7 +7023,7 @@ bl _p_121
 .word 0xf9401ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_128
+bl _p_129
 .word 0xf94013a0
 .word 0xf94013a1
 .word 0x3940003e
@@ -6792,10 +7031,10 @@ bl _p_111
 .word 0xf9400bb7
 .word 0xf9400fba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_86:
+Lme_8a:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
@@ -6811,28 +7050,55 @@ Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_87:
+Lme_8b:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint
 Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf90013a2
-.word 0xf9400ba0
-.word 0xf9401c00
+.word 0xa90167b8
+.word 0xaa0003f9
+.word 0xf90013a1
+.word 0xf90017a2
+.word 0xf94017a0
+.word 0x93407c18
+.word 0xf9401720
+.word 0xf9001ba0
+.word 0xf9401722
+.word 0xaa0203e0
+.word 0xaa1803e1
+.word 0x3940005e
+bl _p_120
+.word 0xaa0003e1
+.word 0xf9401ba2
+.word 0xaa0203e0
+.word 0x3940005e
+bl _p_130
+.word 0x93407c00
+.word 0x93407c01
+.word 0xf94017a0
+.word 0xeb01001f
+.word 0x9a9f17e0
+.word 0x34000160
+.word 0xf9401722
+.word 0xaa0203e0
+.word 0xaa1803e1
+.word 0x3940005e
+bl _p_120
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xb9801800
 .word 0x93407c00
+.word 0x14000002
+.word 0xd2800020
+.word 0xa94167b8
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_88:
+Lme_8c:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
@@ -6922,12 +7188,12 @@ bl _p_92
 .word 0x9100c3a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_129
+bl _p_131
 .word 0x1400000e
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1208]
+ldr x0, [x16, #1216]
 .word 0xf94023b8
 .word 0xaa1803e0
 .word 0xaa0003e1
@@ -6941,9 +7207,9 @@ ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0x9100c3a0
-bl _p_130
+bl _p_132
 .word 0x53001c00
 .word 0x35fffda0
 .word 0xf9002bbf
@@ -6956,7 +7222,7 @@ bl _p_35
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1208]
+ldr x0, [x16, #1216]
 .word 0x9100c3a0
 .word 0xf9002fa0
 .word 0xf9403bbe
@@ -6987,13 +7253,13 @@ ldr x0, [x16, #1208]
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_131
+bl _p_133
 .word 0x93407c00
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_132
+bl _p_134
 .word 0x93407c00
 .word 0xf90037bf
 .word 0x94000005
@@ -7023,7 +7289,7 @@ ldr x15, [x16, #416]
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_89:
+Lme_8d:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_IsWeek
@@ -7036,7 +7302,7 @@ Demo_ListSpent_IsWeek:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_8a:
+Lme_8e:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_FindLowest
@@ -7072,14 +7338,14 @@ ldr x0, [x16, #1168]
 .word 0xf9400f20
 .word 0x910103a1
 .word 0xf90033a1
-bl _p_133
+bl _p_125
 .word 0xf94033be
 .word 0xf90003c0
 .word 0x3940031e
 .word 0xf9400f00
 .word 0x9100e3a1
 .word 0xf90033a1
-bl _p_133
+bl _p_125
 .word 0xf94033be
 .word 0xf90003c0
 .word 0xf94023a0
@@ -7134,14 +7400,14 @@ ldr x1, [x16, #16]
 .word 0xf9400c00
 .word 0x9100c3a1
 .word 0xf90033a1
-bl _p_133
+bl _p_125
 .word 0xf94033be
 .word 0xf90003c0
 .word 0x9100a3a0
 .word 0xf90033a0
 .word 0xaa1a03e0
 .word 0xf9401ba1
-bl _p_134
+bl _p_126
 .word 0xf94033be
 .word 0xf90003c0
 .word 0xaa1a03e0
@@ -7152,7 +7418,7 @@ bl _p_135
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_8b:
+Lme_8f:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_SortDates
@@ -7183,7 +7449,7 @@ bl _p_121
 .word 0xf9400c00
 .word 0x910103a1
 .word 0xf90027a1
-bl _p_133
+bl _p_125
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xf9401f42
@@ -7196,7 +7462,7 @@ bl _p_121
 .word 0xf9400c00
 .word 0x9100e3a1
 .word 0xf90027a1
-bl _p_133
+bl _p_125
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xf94023a0
@@ -7244,7 +7510,7 @@ bl _p_136
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_8c:
+Lme_90:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_FindWeeks
@@ -7270,14 +7536,14 @@ Demo_ListSpent_FindWeeks:
 .word 0xf9400c00
 .word 0x9101c3a1
 .word 0xf9005ba1
-bl _p_133
+bl _p_125
 .word 0xf9405bbe
 .word 0xf90003c0
 .word 0x9102a3a0
 .word 0xf9005ba0
 .word 0xaa1a03e0
 .word 0xf9403ba1
-bl _p_134
+bl _p_126
 .word 0xf9405bbe
 .word 0xf90003c0
 .word 0x910283a0
@@ -7329,7 +7595,7 @@ bl _p_121
 .word 0xf9400c00
 .word 0x910263a1
 .word 0xf9005ba1
-bl _p_133
+bl _p_125
 .word 0xf9405bbe
 .word 0xf90003c0
 .word 0xf94057a0
@@ -7547,7 +7813,7 @@ bl _p_110
 .word 0xf9005ba0
 .word 0xaa1a03e0
 .word 0xf9404fa1
-bl _p_134
+bl _p_126
 .word 0xf9405bbe
 .word 0xf90003c0
 .word 0xf9404ba0
@@ -7663,7 +7929,7 @@ bl _p_138
 .word 0xa8cf7bfd
 .word 0xd65f03c0
 
-Lme_8d:
+Lme_91:
 .text
 	.align 4
 	.no_dead_strip Demo_ListSpent_FindWeekDate_System_DateTime
@@ -7683,39 +7949,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
-.word 0xd2800281
-bl _p_20
-.word 0xaa0003e1
-.word 0xf9402ba0
-.word 0xb9001020
-.word 0xaa0103e0
-.word 0x3940003e
-bl _p_140
-.word 0xaa0003e1
-.word 0xaa0103e0
-.word 0x3940003e
-bl _p_141
-
-adrp x16, mono_aot_Demo_got@PAGE+0
-add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1224]
-bl _p_142
-.word 0x53001c00
-.word 0x34000080
-.word 0xf9401ba0
-.word 0xf9000fa0
-.word 0x140000e1
-.word 0x9100c3a0
-bl _p_139
-.word 0x93407c00
-.word 0xaa0003fa
-.word 0xaa1a03e0
-.word 0xf9002ba0
-
-adrp x16, mono_aot_Demo_got@PAGE+0
-add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7734,17 +7968,10 @@ add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x1, [x16, #1232]
 bl _p_142
 .word 0x53001c00
-.word 0x34000160
-.word 0x910063a0
-.word 0xf90023a0
-.word 0x9100c3a0
-.word 0xd280001e
-.word 0xf2f7fe1e
-.word 0x9e6703c0
-bl _p_137
-.word 0xf94023be
-.word 0xf90003c0
-.word 0x140000bc
+.word 0x34000080
+.word 0xf9401ba0
+.word 0xf9000fa0
+.word 0x140000e1
 .word 0x9100c3a0
 bl _p_139
 .word 0x93407c00
@@ -7754,7 +7981,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7778,12 +8005,12 @@ bl _p_142
 .word 0xf90023a0
 .word 0x9100c3a0
 .word 0xd280001e
-.word 0xf2f8001e
+.word 0xf2f7fe1e
 .word 0x9e6703c0
 bl _p_137
 .word 0xf94023be
 .word 0xf90003c0
-.word 0x14000097
+.word 0x140000bc
 .word 0x9100c3a0
 bl _p_139
 .word 0x93407c00
@@ -7793,7 +8020,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7817,12 +8044,12 @@ bl _p_142
 .word 0xf90023a0
 .word 0x9100c3a0
 .word 0xd280001e
-.word 0xf2f8011e
+.word 0xf2f8001e
 .word 0x9e6703c0
 bl _p_137
 .word 0xf94023be
 .word 0xf90003c0
-.word 0x14000072
+.word 0x14000097
 .word 0x9100c3a0
 bl _p_139
 .word 0x93407c00
@@ -7832,7 +8059,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7856,12 +8083,12 @@ bl _p_142
 .word 0xf90023a0
 .word 0x9100c3a0
 .word 0xd280001e
-.word 0xf2f8021e
+.word 0xf2f8011e
 .word 0x9e6703c0
 bl _p_137
 .word 0xf94023be
 .word 0xf90003c0
-.word 0x1400004d
+.word 0x14000072
 .word 0x9100c3a0
 bl _p_139
 .word 0x93407c00
@@ -7871,7 +8098,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7895,12 +8122,12 @@ bl _p_142
 .word 0xf90023a0
 .word 0x9100c3a0
 .word 0xd280001e
-.word 0xf2f8029e
+.word 0xf2f8021e
 .word 0x9e6703c0
 bl _p_137
 .word 0xf94023be
 .word 0xf90003c0
-.word 0x14000028
+.word 0x1400004d
 .word 0x9100c3a0
 bl _p_139
 .word 0x93407c00
@@ -7910,7 +8137,7 @@ bl _p_139
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xd2800281
 bl _p_20
 .word 0xaa0003e1
@@ -7934,6 +8161,45 @@ bl _p_142
 .word 0xf90023a0
 .word 0x9100c3a0
 .word 0xd280001e
+.word 0xf2f8029e
+.word 0x9e6703c0
+bl _p_137
+.word 0xf94023be
+.word 0xf90003c0
+.word 0x14000028
+.word 0x9100c3a0
+bl _p_139
+.word 0x93407c00
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0xf9002ba0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1224]
+.word 0xd2800281
+bl _p_20
+.word 0xaa0003e1
+.word 0xf9402ba0
+.word 0xb9001020
+.word 0xaa0103e0
+.word 0x3940003e
+bl _p_140
+.word 0xaa0003e1
+.word 0xaa0103e0
+.word 0x3940003e
+bl _p_141
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x1, [x16, #1280]
+bl _p_142
+.word 0x53001c00
+.word 0x34000160
+.word 0x910063a0
+.word 0xf90023a0
+.word 0x9100c3a0
+.word 0xd280001e
 .word 0xf2f8031e
 .word 0x9e6703c0
 bl _p_137
@@ -7948,7 +8214,7 @@ bl _p_137
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_8e:
+Lme_92:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController__ctor_intptr
@@ -7965,7 +8231,7 @@ bl _p_7
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_8f:
+Lme_93:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_ViewDidLoad
@@ -8020,17 +8286,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1280]
+ldr x1, [x16, #1288]
 .word 0xf9001401
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1288]
+ldr x1, [x16, #1296]
 .word 0xf9002001
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1296]
+ldr x1, [x16, #1304]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -8083,17 +8349,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1304]
+ldr x0, [x16, #1312]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1312]
+ldr x0, [x16, #1320]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1320]
+ldr x0, [x16, #1328]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -8135,17 +8401,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1328]
+ldr x0, [x16, #1336]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1344]
+ldr x0, [x16, #1352]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -8187,17 +8453,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1352]
+ldr x0, [x16, #1360]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1360]
+ldr x0, [x16, #1368]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1368]
+ldr x0, [x16, #1376]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -8239,17 +8505,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1376]
+ldr x0, [x16, #1384]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1384]
+ldr x0, [x16, #1392]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -8269,7 +8535,7 @@ bl _p_22
 .word 0xaa1103e1
 bl _p_22
 
-Lme_90:
+Lme_94:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_Date_EditingDidEnd_object_System_EventArgs
@@ -8311,7 +8577,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_91:
+Lme_95:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_Cost_EditingDidEnd_object_System_EventArgs
@@ -8353,7 +8619,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_92:
+Lme_96:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_Reason_EditingDidEnd_object_System_EventArgs
@@ -8395,7 +8661,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_93:
+Lme_97:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_currentPerson_Demo_Person
@@ -8417,7 +8683,7 @@ ldr x0, [x16, #1152]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_94:
+Lme_98:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_AddToDB_TouchDown_object_System_EventArgs
@@ -8434,7 +8700,7 @@ bl _p_143
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_95:
+Lme_99:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_convertCost
@@ -8476,7 +8742,7 @@ bl _p_37
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_96:
+Lme_9a:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_Add
@@ -8491,7 +8757,7 @@ Demo_AddViewController_Add:
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1400]
+ldr x0, [x16, #1408]
 .word 0xd2800601
 bl _p_20
 .word 0xaa0003e1
@@ -8671,7 +8937,7 @@ ldr x0, [x16, #1152]
 .word 0xf9400001
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_131
+bl _p_133
 .word 0x93407c00
 .word 0xf94017a2
 .word 0xaa0203e0
@@ -8706,7 +8972,7 @@ ldr x15, [x16, #416]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1408]
+ldr x0, [x16, #1416]
 .word 0xf9003fa0
 .word 0x3940033e
 .word 0xf9400b20
@@ -8761,14 +9027,14 @@ bl _p_26
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1416]
+ldr x1, [x16, #1424]
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_27
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1424]
+ldr x1, [x16, #1432]
 .word 0xaa1903e0
 .word 0x3940033e
 bl _p_28
@@ -8812,14 +9078,14 @@ bl _p_26
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1432]
+ldr x1, [x16, #1440]
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_27
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1440]
+ldr x1, [x16, #1448]
 .word 0xaa1903e0
 .word 0x3940033e
 bl _p_28
@@ -8847,7 +9113,7 @@ bl _p_31
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 
-Lme_97:
+Lme_9b:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_refresh
@@ -8902,7 +9168,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_98:
+Lme_9c:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_RemoveSpaces_string
@@ -8933,7 +9199,7 @@ bl _p_77
 .word 0xaa1103e1
 bl _p_22
 
-Lme_99:
+Lme_9d:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_get_AddToDB
@@ -8948,7 +9214,7 @@ Demo_AddViewController_get_AddToDB:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9a:
+Lme_9e:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_set_AddToDB_UIKit_UIButton
@@ -8978,7 +9244,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9b:
+Lme_9f:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_get_Cost
@@ -8993,7 +9259,7 @@ Demo_AddViewController_get_Cost:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9c:
+Lme_a0:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_set_Cost_UIKit_UITextField
@@ -9023,7 +9289,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9d:
+Lme_a1:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_get_Date
@@ -9038,7 +9304,7 @@ Demo_AddViewController_get_Date:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9e:
+Lme_a2:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_set_Date_UIKit_UIDatePicker
@@ -9068,7 +9334,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9f:
+Lme_a3:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_get_Reason
@@ -9083,7 +9349,7 @@ Demo_AddViewController_get_Reason:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a0:
+Lme_a4:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_set_Reason_UIKit_UITextField
@@ -9113,7 +9379,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a1:
+Lme_a5:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_get_ShowPurchase
@@ -9128,7 +9394,7 @@ Demo_AddViewController_get_ShowPurchase:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a2:
+Lme_a6:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
@@ -9158,7 +9424,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a3:
+Lme_a7:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController_ReleaseDesignerOutlets
@@ -9288,7 +9554,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_a4:
+Lme_a8:
 .text
 	.align 4
 	.no_dead_strip Demo_AddViewController__ViewDidLoadb__3_0
@@ -9307,7 +9573,7 @@ bl _p_80
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a5:
+Lme_a9:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController__ctor_intptr
@@ -9324,7 +9590,7 @@ bl _p_7
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a6:
+Lme_aa:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_ViewDidLoad
@@ -9339,7 +9605,7 @@ bl _p_8
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1448]
+ldr x1, [x16, #1456]
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf9409c50
@@ -9355,12 +9621,12 @@ ldr x0, [x16, #688]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1456]
+ldr x0, [x16, #1464]
 .word 0xb9000001
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1456]
+ldr x0, [x16, #1464]
 .word 0xb9800000
 .word 0xaa1a03e0
 .word 0x3940035e
@@ -9418,17 +9684,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1464]
+ldr x0, [x16, #1472]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1472]
+ldr x0, [x16, #1480]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1480]
+ldr x0, [x16, #1488]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9470,17 +9736,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1488]
+ldr x0, [x16, #1496]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1496]
+ldr x0, [x16, #1504]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1504]
+ldr x0, [x16, #1512]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9522,17 +9788,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1512]
+ldr x0, [x16, #1520]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1520]
+ldr x0, [x16, #1528]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9574,17 +9840,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1536]
+ldr x0, [x16, #1544]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1560]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9636,17 +9902,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1560]
+ldr x1, [x16, #1568]
 .word 0xf9001401
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1568]
+ldr x1, [x16, #1576]
 .word 0xf9002001
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1576]
+ldr x1, [x16, #1584]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -9699,17 +9965,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1584]
+ldr x0, [x16, #1592]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1592]
+ldr x0, [x16, #1600]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1600]
+ldr x0, [x16, #1608]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9757,17 +10023,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1608]
+ldr x0, [x16, #1616]
 .word 0xf9001420
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1616]
+ldr x0, [x16, #1624]
 .word 0xf9002020
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1624]
+ldr x0, [x16, #1632]
 .word 0xf9401403
 .word 0xf9000c23
 .word 0xf9401000
@@ -9787,7 +10053,7 @@ bl _p_22
 .word 0xaa1103e1
 bl _p_22
 
-Lme_a7:
+Lme_ab:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_DirectDebit_BillingDay_EditingDidEnd_object_System_EventArgs
@@ -9857,7 +10123,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_a8:
+Lme_ac:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_DirectDebit_Cost_EditingDidEnd_object_System_EventArgs
@@ -9927,7 +10193,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_a9:
+Lme_ad:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_refresh
@@ -10014,19 +10280,22 @@ bl _p_73
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_aa:
+Lme_ae:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
 Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits:
 .loc 1 1 0
-.word 0xa9b67bfd
+.word 0xa9b07bfd
 .word 0x910003fd
-.word 0xf9000bba
-.word 0xf9000fa0
+.word 0xa9016bb9
+.word 0xf90013a0
 .word 0xaa0103fa
-.word 0xf9001bbf
-.word 0xf9001fbf
+.word 0xf9003fbf
+.word 0xf90037bf
+.word 0xf90033bf
+.word 0xf90043bf
+.word 0xd2800019
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
@@ -10034,53 +10303,11 @@ ldr x0, [x16, #688]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0x3940003e
-.word 0xf9400c03
-
-adrp x16, mono_aot_Demo_got@PAGE+0
-add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1632]
-.word 0xaa0303e0
-.word 0xd2800002
-.word 0x3940007e
-bl _p_77
-
-adrp x16, mono_aot_Demo_got@PAGE+0
-add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1640]
-.word 0xf90043a1
-.word 0xb9801801
-.word 0xeb1f003f
-.word 0x10000011
-.word 0x54001809
-.word 0xf9401001
+.word 0xf9400c00
+.word 0x9101e3a1
 .word 0xf90047a1
-.word 0xb9801801
-.word 0xd280003e
-.word 0xeb1e003f
-.word 0x10000011
-.word 0x54001729
-.word 0xf9401400
-.word 0xf9004ba0
-.word 0x3940035e
-.word 0xb9802740
-.word 0xf9004fa0
-
-adrp x16, mono_aot_Demo_got@PAGE+0
-add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1648]
-.word 0xd2800281
-bl _p_20
-.word 0xaa0003e3
-.word 0xf94043a0
-.word 0xf94047a1
-.word 0xf9404ba2
-.word 0xf9404fa4
-.word 0xb9001064
-bl _p_150
-.word 0x9100a3a1
-.word 0xf90023a1
-bl _p_15
-.word 0xf94023be
+bl _p_125
+.word 0xf94047be
 .word 0xf90003c0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
@@ -10090,79 +10317,156 @@ ldr x0, [x16, #688]
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9401000
-.word 0x910083a1
-.word 0xf90023a1
-bl _p_15
-.word 0xf94023be
+.word 0x9101c3a1
+.word 0xf90047a1
+bl _p_125
+.word 0xf94047be
 .word 0xf90003c0
-.word 0x9100c3a0
-.word 0xf90023a0
-.word 0xf94013a0
-.word 0xf94017a1
-bl _p_108
-.word 0xf94023be
+.word 0x910163a0
+.word 0xf90047a0
+bl _p_10
+.word 0xf94047be
 .word 0xf90003c0
-.word 0xf9401ba0
-.word 0x9e620000
-.word 0xd288161e
-.word 0xf2bc779e
-.word 0xf2cb8ffe
-.word 0xf2e7ae9e
-.word 0x9e6703c1
-.word 0x1e610800
-.word 0x9e780000
-.word 0x93407c00
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1640]
+.word 0xf9006ba0
 .word 0x3940035e
-.word 0xb9802341
-.word 0x6b1f003f
-.word 0x10000011
-.word 0x54000fc0
-.word 0x9280001e
-.word 0xf2bffffe
-.word 0x6b1e003f
-.word 0x9a9f17e2
-.word 0x929ffffe
-.word 0xf2b0001e
-.word 0x6b1e001f
-.word 0x9a9f17e3
-.word 0xa030042
-.word 0xd280003e
-.word 0x6b1e005f
-.word 0x10000011
-.word 0x54000dc0
-.word 0xf100003f
-.word 0x10000011
-.word 0x54000dc0
-.word 0x929ffff0
-.word 0xf2b00010
-.word 0xeb10001f
-.word 0x9a9f17f1
-.word 0x92800010
-.word 0xf2bffff0
-.word 0xeb10003f
-.word 0x9a9f17f0
-.word 0x8a110210
-.word 0xf100061f
-.word 0x10000011
-.word 0x54000be0
-.word 0x1ac10c00
-.word 0x1e220010
+.word 0xb9802740
+.word 0xf9007fa0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1648]
+.word 0xd2800281
+bl _p_20
+.word 0xf9407fa1
+.word 0xb9001001
+.word 0xf9006fa0
+.word 0x9101e3a0
+bl _p_150
+.word 0x93407c00
+.word 0xf9007ba0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1648]
+.word 0xd2800281
+bl _p_20
+.word 0xf9407ba1
+.word 0xb9001001
+.word 0xf90073a0
+.word 0x9101e3a0
+bl _p_151
+.word 0x93407c00
+.word 0xf90077a0
+
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x0, [x16, #1648]
+.word 0xd2800281
+bl _p_20
+.word 0xaa0003e3
+.word 0xf9406ba0
+.word 0xf9406fa1
+.word 0xf94073a2
+.word 0xf94077a4
+.word 0xb9001064
+bl _p_152
+.word 0x9101a3a1
+.word 0xf90047a1
+bl _p_125
+.word 0xf94047be
+.word 0xf90003c0
+.word 0xf9403fa0
+.word 0xf9002ba0
+.word 0xf94037a0
+.word 0xf90027a0
+.word 0xf9402ba0
+.word 0xf94027a1
+bl _p_66
+.word 0x93407c00
+.word 0x6b1f001f
+.word 0x540006aa
+.word 0x9101a3a0
+bl _p_150
+.word 0x93407c00
+.word 0xf9006ba0
+.word 0x9101e3a0
+bl _p_150
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf9406ba0
+.word 0x6b01001f
+.word 0x54000541
+.word 0x11000739
+.word 0x14000028
+.word 0xf94037a0
+.word 0xf90033a0
+.word 0x3940035e
+.word 0xb9802340
+.word 0x1e620000
+.word 0x910103a0
+.word 0xf90047a0
+.word 0x910183a0
+bl _p_137
+.word 0xf94047be
+.word 0xf90003c0
+.word 0xf94023a0
+.word 0xf9403ba1
+bl _p_66
+.word 0x93407c00
+.word 0x6b1f001f
+.word 0x5400018a
+.word 0x3940035e
+.word 0xb9802340
+.word 0x1e620000
+.word 0x9101a3a0
+.word 0xf90047a0
+.word 0x9101a3a0
+bl _p_137
+.word 0xf94047be
+.word 0xf90003c0
+.word 0x11000739
+.word 0x1400000c
+.word 0xf94033a0
+.word 0xf9001fa0
+.word 0xf94037a0
+.word 0xf9001ba0
+.word 0xf9401fa0
+.word 0xf9401ba1
+bl _p_66
+.word 0x93407c00
+.word 0x35000060
+.word 0xf9403ba0
+.word 0xf90037a0
+.word 0xf94037a0
+.word 0xf90017a0
+.word 0xf94017a0
+.word 0xf9403ba1
+bl _p_66
+.word 0x93407c00
+.word 0x6b1f001f
+.word 0x54fffa4b
+.word 0x1e220330
 .word 0x1e22c200
 .word 0x3940035e
 .word 0xbd402b50
 .word 0x1e22c201
 .word 0x1e624030
-.word 0xbd004bb0
-.word 0xbd404bb0
+.word 0xbd0093b0
+.word 0xbd4093b0
 .word 0x1e22c201
 .word 0x1e610800
-.word 0xfd002ba0
+.word 0x1e624010
+.word 0xbd0093b0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xf9400000
-.word 0xf9003fa0
+.word 0xf9006fa0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
@@ -10175,12 +10479,12 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #336]
 bl _p_17
-.word 0xf9403fa1
-.word 0xf9003ba0
+.word 0xf9406fa1
+.word 0xf9006ba0
 .word 0xd2800022
 bl _p_25
-.word 0xf9403ba0
-.word 0xf9001fa0
+.word 0xf9406ba0
+.word 0xf90043a0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
@@ -10196,21 +10500,20 @@ ldr x1, [x16, #688]
 .word 0xbd402c30
 .word 0x1e22c200
 .word 0x1e624010
-.word 0xbd004bb0
-.word 0xbd404bb0
+.word 0xbd0097b0
+.word 0xbd4097b0
 .word 0x1e22c200
-.word 0xfd402ba1
-.word 0x1e624030
+.word 0xbd4093b0
 .word 0x1e22c201
 .word 0x1e613800
 .word 0x1e624010
-.word 0xbd004bb0
+.word 0xbd0093b0
 .word 0x3940001e
-.word 0xbd404bb0
+.word 0xbd4093b0
 .word 0x1e22c200
 .word 0x1e624010
 .word 0xbd002c10
-.word 0xf9401fa2
+.word 0xf94043a2
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
@@ -10218,18 +10521,18 @@ ldr x0, [x16, #688]
 .word 0xf9400001
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_131
+bl _p_133
 .word 0x93407c00
-.word 0xf9002fbf
+.word 0xf9004fbf
 .word 0x94000005
-.word 0xf9402fa0
+.word 0xf9404fa0
 .word 0xb4000040
 bl _p_35
 .word 0x14000010
-.word 0xf90033be
-.word 0xf9401fa0
+.word 0xf90063be
+.word 0xf94043a0
 .word 0xb4000160
-.word 0xf9401fa1
+.word 0xf94043a1
 .word 0xaa0103e0
 .word 0xf9400021
 
@@ -10240,23 +10543,14 @@ ldr x15, [x16, #416]
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf94033be
+.word 0xf94063be
 .word 0xd61f03c0
-.word 0xf9400bba
+.word 0xa9416bb9
 .word 0x910003bf
-.word 0xa8ca7bfd
+.word 0xa8d07bfd
 .word 0xd65f03c0
-.word 0xd2801500
-.word 0xaa1103e1
-bl _p_22
-.word 0xd2800bc0
-.word 0xaa1103e1
-bl _p_22
-.word 0xd2801180
-.word 0xaa1103e1
-bl _p_22
 
-Lme_ab:
+Lme_af:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_RightBarButtonItem_Clicked_object_System_EventArgs
@@ -10280,7 +10574,7 @@ bl _p_72
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_ac:
+Lme_b0:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_convertDays
@@ -10318,7 +10612,7 @@ bl _p_37
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_ad:
+Lme_b1:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_convertBillingDay
@@ -10356,7 +10650,7 @@ bl _p_37
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_ae:
+Lme_b2:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_convertCost
@@ -10403,7 +10697,7 @@ bl _p_37
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_af:
+Lme_b3:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_DirectDebit_Add_TouchDown_object_System_EventArgs
@@ -10437,7 +10731,7 @@ ldr x1, [x16, #688]
 .word 0xf90063a1
 .word 0xf90067a0
 .word 0xaa1a03e0
-bl _p_151
+bl _p_153
 .word 0x93407c00
 .word 0xaa0003e2
 .word 0xf94063a0
@@ -10478,7 +10772,7 @@ ldr x3, [x16, #16]
 .word 0xf90057a0
 .word 0xf9004fa0
 .word 0xaa1a03e0
-bl _p_152
+bl _p_154
 .word 0x1e22c000
 .word 0xf9404fa0
 .word 0xf94053a1
@@ -10494,7 +10788,7 @@ bl _p_152
 .word 0xf9004ba0
 .word 0xf90043a0
 .word 0xaa1a03e0
-bl _p_153
+bl _p_155
 .word 0x93407c00
 .word 0xaa0003e2
 .word 0xf94043a0
@@ -10587,15 +10881,15 @@ ldr x15, [x16, #416]
 .word 0xd61f03c0
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_154
+bl _p_156
 .word 0xaa1a03e0
-bl _p_155
+bl _p_157
 .word 0xf9402f40
 .word 0xf90043a0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1408]
+ldr x0, [x16, #1416]
 .word 0xf90047a0
 .word 0x3940033e
 .word 0xf9400b20
@@ -10699,7 +10993,7 @@ bl _p_26
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x1, [x16, #1416]
+ldr x1, [x16, #1424]
 .word 0xaa0203e0
 .word 0x3940005e
 bl _p_27
@@ -10836,7 +11130,7 @@ bl _p_31
 .word 0xa8ce7bfd
 .word 0xd65f03c0
 
-Lme_b0:
+Lme_b4:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_DirectDebit_Period_EditingDidEnd_object_System_EventArgs
@@ -10906,7 +11200,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_b1:
+Lme_b5:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_DirectDebit_Name_EditingDidEnd_object_System_EventArgs
@@ -10948,7 +11242,7 @@ bl _p_73
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_b2:
+Lme_b6:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_update_int
@@ -10960,19 +11254,19 @@ Demo_DirectDBViewController_update_int:
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1456]
+ldr x0, [x16, #1464]
 .word 0xb98013a1
 .word 0xb9000001
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
-ldr x0, [x16, #1456]
+ldr x0, [x16, #1464]
 .word 0xb9800000
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b3:
+Lme_b7:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_UserSelected_Demo_Person
@@ -10994,7 +11288,7 @@ ldr x0, [x16, #688]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_b4:
+Lme_b8:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_db_cost
@@ -11009,7 +11303,7 @@ Demo_DirectDBViewController_get_db_cost:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b5:
+Lme_b9:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_db_cost_UIKit_UITextField
@@ -11039,7 +11333,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b6:
+Lme_ba:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_Add
@@ -11054,7 +11348,7 @@ Demo_DirectDBViewController_get_DirectDebit_Add:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b7:
+Lme_bb:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_Add_UIKit_UIButton
@@ -11084,7 +11378,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b8:
+Lme_bc:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_BillingDay
@@ -11099,7 +11393,7 @@ Demo_DirectDBViewController_get_DirectDebit_BillingDay:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_b9:
+Lme_bd:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_BillingDay_UIKit_UITextField
@@ -11129,7 +11423,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ba:
+Lme_be:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_Cost
@@ -11144,7 +11438,7 @@ Demo_DirectDBViewController_get_DirectDebit_Cost:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_bb:
+Lme_bf:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_Cost_UIKit_UIButton
@@ -11174,7 +11468,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_bc:
+Lme_c0:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_Name
@@ -11189,7 +11483,7 @@ Demo_DirectDBViewController_get_DirectDebit_Name:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_bd:
+Lme_c1:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_Name_UIKit_UITextField
@@ -11219,7 +11513,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_be:
+Lme_c2:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_Period
@@ -11234,7 +11528,7 @@ Demo_DirectDBViewController_get_DirectDebit_Period:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_bf:
+Lme_c3:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_Period_UIKit_UITextField
@@ -11264,7 +11558,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c0:
+Lme_c4:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_get_DirectDebit_Show
@@ -11279,7 +11573,7 @@ Demo_DirectDBViewController_get_DirectDebit_Show:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c1:
+Lme_c5:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_set_DirectDebit_Show_UIKit_UITextView
@@ -11309,7 +11603,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c2:
+Lme_c6:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController_ReleaseDesignerOutlets
@@ -11485,7 +11779,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_c3:
+Lme_c7:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDBViewController__ViewDidLoadb__4_0
@@ -11504,7 +11798,7 @@ bl _p_80
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c4:
+Lme_c8:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_Id
@@ -11519,7 +11813,7 @@ Demo_DirectDebits_get_Id:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c5:
+Lme_c9:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_Id_int
@@ -11536,7 +11830,7 @@ Demo_DirectDebits_set_Id_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c6:
+Lme_ca:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_m_userID
@@ -11551,7 +11845,7 @@ Demo_DirectDebits_get_m_userID:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c7:
+Lme_cb:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_m_userID_int
@@ -11568,7 +11862,7 @@ Demo_DirectDebits_set_m_userID_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c8:
+Lme_cc:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_m_Name
@@ -11583,7 +11877,7 @@ Demo_DirectDebits_get_m_Name:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_c9:
+Lme_cd:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_m_Name_string
@@ -11613,7 +11907,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ca:
+Lme_ce:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_m_days
@@ -11628,7 +11922,7 @@ Demo_DirectDebits_get_m_days:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_cb:
+Lme_cf:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_m_days_int
@@ -11645,7 +11939,7 @@ Demo_DirectDebits_set_m_days_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_cc:
+Lme_d0:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_m_billingDay
@@ -11660,7 +11954,7 @@ Demo_DirectDebits_get_m_billingDay:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_cd:
+Lme_d1:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_m_billingDay_int
@@ -11677,7 +11971,7 @@ Demo_DirectDebits_set_m_billingDay_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ce:
+Lme_d2:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_get_m_cost
@@ -11694,7 +11988,7 @@ Demo_DirectDebits_get_m_cost:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_cf:
+Lme_d3:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits_set_m_cost_single
@@ -11713,7 +12007,7 @@ Demo_DirectDebits_set_m_cost_single:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_d0:
+Lme_d4:
 .text
 	.align 4
 	.no_dead_strip Demo_DirectDebits__ctor
@@ -11726,7 +12020,7 @@ Demo_DirectDebits__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_d1:
+Lme_d5:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController__ctor_intptr
@@ -11787,7 +12081,7 @@ bl _p_7
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_d2:
+Lme_d6:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_ViewDidLoad
@@ -11870,7 +12164,7 @@ ldr x0, [x16, #1760]
 .word 0x3940005e
 bl _p_21
 .word 0xaa1a03e0
-bl _p_156
+bl _p_158
 .word 0xf9401b40
 .word 0xf9001fa0
 .word 0xeb1f035f
@@ -11934,7 +12228,7 @@ ldr x0, [x16, #1792]
 bl _p_17
 .word 0xf9401ba1
 .word 0xf90013a0
-bl _p_157
+bl _p_159
 .word 0xf94013a1
 .word 0xf94017a2
 .word 0xaa0203e0
@@ -11951,7 +12245,7 @@ bl _p_22
 .word 0xaa1103e1
 bl _p_22
 
-Lme_d3:
+Lme_d7:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_AddNewDirectDebit_TouchDown_object_System_EventArgs
@@ -12019,7 +12313,7 @@ bl _p_47
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_d4:
+Lme_d8:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_GetDirects
@@ -12093,16 +12387,16 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1800]
 .word 0x3940001e
-bl _p_158
+bl _p_160
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_159
+bl _p_161
 .word 0xaa0003e1
 .word 0x9100e3a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_160
+bl _p_162
 .word 0x1400002c
 
 adrp x16, mono_aot_Demo_got@PAGE+0
@@ -12147,14 +12441,14 @@ ldr x1, [x16, #888]
 .word 0x14000005
 .word 0xaa1803e0
 .word 0xaa1703e1
-bl _p_161
+bl _p_163
 .word 0x14000001
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1808]
 .word 0x9100e3a0
-bl _p_162
+bl _p_164
 .word 0x53001c00
 .word 0x35fff9e0
 .word 0xf9002fbf
@@ -12214,7 +12508,7 @@ ldr x15, [x16, #416]
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 
-Lme_d5:
+Lme_d9:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_DeleteTracker_TouchDown_object_System_EventArgs
@@ -12233,7 +12527,7 @@ add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x0, [x16, #888]
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_163
+bl _p_165
 .word 0xaa1a03e0
 .word 0x3940035e
 bl _p_44
@@ -12328,7 +12622,7 @@ bl _p_31
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_d6:
+Lme_da:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_RemoveUser_Demo_Person
@@ -12406,7 +12700,7 @@ ldr x0, [x16, #1168]
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_132
+bl _p_134
 .word 0x93407c00
 
 adrp x16, mono_aot_Demo_got@PAGE+0
@@ -12437,16 +12731,16 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1800]
 .word 0x3940001e
-bl _p_158
+bl _p_160
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_159
+bl _p_161
 .word 0xaa0003e1
 .word 0x9100a3a8
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_160
+bl _p_162
 .word 0x14000013
 
 adrp x16, mono_aot_Demo_got@PAGE+0
@@ -12465,14 +12759,14 @@ ldr x0, [x16, #1808]
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_132
+bl _p_134
 .word 0x93407c00
 
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1808]
 .word 0x9100a3a0
-bl _p_162
+bl _p_164
 .word 0x53001c00
 .word 0x35fffd00
 .word 0xf9003bbf
@@ -12494,7 +12788,7 @@ ldr x0, [x16, #1808]
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0x3940005e
-bl _p_132
+bl _p_134
 .word 0x93407c00
 .word 0xf90043bf
 .word 0x94000005
@@ -12523,7 +12817,7 @@ ldr x15, [x16, #416]
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 
-Lme_d7:
+Lme_db:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_updatePerson_Demo_Person
@@ -12545,7 +12839,7 @@ ldr x0, [x16, #888]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_d8:
+Lme_dc:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_get_AddNewDirectDebit
@@ -12560,7 +12854,7 @@ Demo_EditTrackerViewController_get_AddNewDirectDebit:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_d9:
+Lme_dd:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_set_AddNewDirectDebit_UIKit_UIButton
@@ -12590,7 +12884,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_da:
+Lme_de:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_get_ChangeBudgetName
@@ -12605,7 +12899,7 @@ Demo_EditTrackerViewController_get_ChangeBudgetName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_db:
+Lme_df:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_set_ChangeBudgetName_UIKit_UITextField
@@ -12635,7 +12929,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_dc:
+Lme_e0:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_get_DeleteTracker
@@ -12650,7 +12944,7 @@ Demo_EditTrackerViewController_get_DeleteTracker:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_dd:
+Lme_e1:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_set_DeleteTracker_UIKit_UIButton
@@ -12680,7 +12974,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_de:
+Lme_e2:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_get_ShowDirects
@@ -12695,7 +12989,7 @@ Demo_EditTrackerViewController_get_ShowDirects:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_df:
+Lme_e3:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_set_ShowDirects_UIKit_UITableView
@@ -12725,7 +13019,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e0:
+Lme_e4:
 .text
 	.align 4
 	.no_dead_strip Demo_EditTrackerViewController_ReleaseDesignerOutlets
@@ -12832,7 +13126,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_e1:
+Lme_e5:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
@@ -12928,7 +13222,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_e2:
+Lme_e6:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowDirects_GetCell_UIKit_UITableView_Foundation_NSIndexPath
@@ -12975,7 +13269,7 @@ bl _p_94
 .word 0xf9404ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_164
+bl _p_166
 .word 0xf94047a2
 .word 0xaa0003e1
 .word 0x3940003e
@@ -12985,7 +13279,7 @@ bl _p_164
 bl _p_14
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_125
+bl _p_124
 .word 0xf9002ba0
 
 adrp x16, mono_aot_Demo_got@PAGE+0
@@ -13002,7 +13296,7 @@ bl _p_94
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_164
+bl _p_166
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xbd402810
@@ -13032,7 +13326,7 @@ bl _p_94
 .word 0xf9403ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_164
+bl _p_166
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xb9802000
@@ -13061,7 +13355,7 @@ bl _p_14
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_e3:
+Lme_e7:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
@@ -13082,7 +13376,7 @@ Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_e4:
+Lme_e8:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent__ctor_string
@@ -13133,7 +13427,7 @@ bl _p_14
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_e5:
+Lme_e9:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_LayoutSubviews
@@ -13143,12 +13437,12 @@ Demo_ShowSpent_LayoutSubviews:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_165
+bl _p_167
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e6:
+Lme_ea:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_configure_string_string_string
@@ -13181,7 +13475,7 @@ bl _p_14
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_e7:
+Lme_eb:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_get_ShowDate
@@ -13196,7 +13490,7 @@ Demo_ShowSpent_get_ShowDate:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e8:
+Lme_ec:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_set_ShowDate_UIKit_UILabel
@@ -13226,7 +13520,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e9:
+Lme_ed:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_get_ShowPrice
@@ -13241,7 +13535,7 @@ Demo_ShowSpent_get_ShowPrice:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ea:
+Lme_ee:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_set_ShowPrice_UIKit_UILabel
@@ -13271,7 +13565,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_eb:
+Lme_ef:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_get_ShowSpentView
@@ -13286,7 +13580,7 @@ Demo_ShowSpent_get_ShowSpentView:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ec:
+Lme_f0:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_set_ShowSpentView_UIKit_UIView
@@ -13316,7 +13610,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ed:
+Lme_f1:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_get_SpentName
@@ -13331,7 +13625,7 @@ Demo_ShowSpent_get_SpentName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ee:
+Lme_f2:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_set_SpentName_UIKit_UILabel
@@ -13361,7 +13655,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_ef:
+Lme_f3:
 .text
 	.align 4
 	.no_dead_strip Demo_ShowSpent_ReleaseDesignerOutlets
@@ -13468,7 +13762,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_f0:
+Lme_f4:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
@@ -13546,8 +13840,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -13555,7 +13849,7 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_f2:
+Lme_f6:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering
@@ -13633,8 +13927,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -13642,9 +13936,9 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_f3:
+Lme_f7:
 .text
-ut_244:
+ut_248:
 add x0, x0, 16
 b System_Nullable_1_int__ctor_int
 ut_end:
@@ -13652,7 +13946,7 @@ ut_end:
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM3=ut_end - ut_244
+LDIFF_SYM3=ut_end - ut_248
 	.long LDIFF_SYM3
 .text
 	.align 4
@@ -13676,9 +13970,9 @@ System_Nullable_1_int__ctor_int:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_f4:
+Lme_f8:
 .text
-ut_245:
+ut_249:
 add x0, x0, 16
 b System_Nullable_1_int_get_HasValue
 .text
@@ -13695,9 +13989,9 @@ System_Nullable_1_int_get_HasValue:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_f5:
+Lme_f9:
 .text
-ut_246:
+ut_250:
 add x0, x0, 16
 b System_Nullable_1_int_get_Value
 .text
@@ -13718,12 +14012,12 @@ System_Nullable_1_int_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_168
+bl _p_170
 .word 0x17fffffa
 
-Lme_f6:
+Lme_fa:
 .text
-ut_247:
+ut_251:
 add x0, x0, 16
 b System_Nullable_1_int_Equals_object
 .text
@@ -13751,15 +14045,15 @@ System_Nullable_1_int_Equals_object:
 .word 0xf9400ba0
 .word 0x91001000
 .word 0xf9400fa1
-bl _p_169
+bl _p_171
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_f7:
+Lme_fb:
 .text
-ut_248:
+ut_252:
 add x0, x0, 16
 b System_Nullable_1_int_GetHashCode
 .text
@@ -13784,9 +14078,9 @@ System_Nullable_1_int_GetHashCode:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_f8:
+Lme_fc:
 .text
-ut_249:
+ut_253:
 add x0, x0, 16
 b System_Nullable_1_int_ToString
 .text
@@ -13807,14 +14101,14 @@ ldr x0, [x16, #1864]
 .word 0x14000004
 .word 0xf9400ba0
 .word 0x91001000
-bl _p_170
+bl _p_172
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_f9:
+Lme_fd:
 .text
-ut_250:
+ut_254:
 add x0, x0, 16
 b System_Nullable_1_int_Box_System_Nullable_1_int
 .text
@@ -13846,9 +14140,9 @@ bl _p_20
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_fa:
+Lme_fe:
 .text
-ut_251:
+ut_255:
 add x0, x0, 16
 b System_Nullable_1_int_Unbox_object
 .text
@@ -13894,7 +14188,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1880]
 .word 0x9100a3a0
-bl _p_171
+bl _p_173
 .word 0xb9802ba0
 .word 0xb9001ba0
 .word 0xb9802fa0
@@ -13908,9 +14202,9 @@ bl _p_171
 .word 0xaa1103e1
 bl _p_22
 
-Lme_fb:
+Lme_ff:
 .text
-ut_252:
+ut_256:
 add x0, x0, 16
 b System_Nullable_1_int_UnboxExact_object
 .text
@@ -13969,7 +14263,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x15, [x16, #1880]
 .word 0x9100a3a0
-bl _p_171
+bl _p_173
 .word 0xb9802ba0
 .word 0xb9001ba0
 .word 0xb9802fa0
@@ -13988,7 +14282,7 @@ bl _p_37
 .word 0xaa1103e1
 bl _p_22
 
-Lme_fc:
+Lme_100:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
@@ -14066,8 +14360,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -14075,7 +14369,7 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_fd:
+Lme_101:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
@@ -14153,8 +14447,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -14162,7 +14456,7 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_fe:
+Lme_102:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
@@ -14240,8 +14534,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -14249,7 +14543,7 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_ff:
+Lme_103:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits
@@ -14327,8 +14621,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_166
-bl _p_167
+bl _p_168
+bl _p_169
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -14336,7 +14630,7 @@ bl _p_167
 .word 0xaa1103e1
 bl _p_22
 
-Lme_100:
+Lme_104:
 .text
 	.align 3
 jit_code_end:
@@ -14478,7 +14772,11 @@ bl Demo_TrackerViewController_get_WeeklyAlowance
 bl Demo_TrackerViewController_set_WeeklyAlowance_UIKit_UILabel
 bl Demo_TrackerViewController_ReleaseDesignerOutlets
 bl Demo_ListSpent__ctor_System_Collections_Generic_List_1_Demo_BudgetInfo
+bl Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath
 bl Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
+bl Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint
+bl Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint
+bl Demo_ListSpent_DoesExist_Demo_BudgetInfo
 bl Demo_ListSpent_NumberOfSections_UIKit_UITableView
 bl Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
 bl Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
@@ -14609,23 +14907,23 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 244,245,246,247,248,249,250,251
-	.long 252
+	.long 248,249,250,251,252,253,254,255
+	.long 256
 unbox_trampolines_end:
 
 	.long 0
 .text
 	.align 3
 unbox_trampoline_addresses:
-bl ut_244
-bl ut_245
-bl ut_246
-bl ut_247
 bl ut_248
 bl ut_249
 bl ut_250
 bl ut_251
 bl ut_252
+bl ut_253
+bl ut_254
+bl ut_255
+bl ut_256
 
 	.long 0
 .section __TEXT, __const
@@ -14643,16 +14941,18 @@ unwind_info:
 	.byte 13,29,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,21,12,31,0,68,14,80,157,10,158,9,68,13
 	.byte 29,68,152,8,153,7,68,154,6,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,27,12,31,0,68,14
 	.byte 192,1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,153,19,68,154,18,16,12,31,0,68,14,80,157,10,158
-	.byte 9,68,13,29,68,153,8,24,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
-	.byte 19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,154,7,22,12,31,0,68,14,160,1,157,20,158,19
-	.byte 68,13,29,68,152,18,153,17,68,154,16,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152
-	.byte 8,153,7,68,154,6,34,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68
-	.byte 151,24,152,23,68,153,22,154,21,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,22,12,31,0,68,14
-	.byte 192,1,157,24,158,23,68,13,29,68,152,22,153,21,68,154,20,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68
-	.byte 154,8,17,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,154,18,22,12,31,0,68,14,224,1,157,28,158,27
-	.byte 68,13,29,68,152,26,153,25,68,154,24,19,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,153,24,154,23,16
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149
-	.byte 8,150,7,68,151,6,152,5,68,153,4,154,3,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.byte 9,68,13,29,68,153,8,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14,18,12
+	.byte 31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29
+	.byte 68,152,14,153,13,68,154,12,19,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,154,11,18,12,31,0
+	.byte 68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,22,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152
+	.byte 18,153,17,68,154,16,26,12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154
+	.byte 6,34,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68,151,24,152,23,68
+	.byte 153,22,154,21,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,22,12,31,0,68,14,192,1,157,24,158
+	.byte 23,68,13,29,68,152,22,153,21,68,154,20,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,19,12,31
+	.byte 0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,154,29,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 68,152,26,153,25,68,154,24,19,12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,153,24,154,23,16,12,31,0
+	.byte 68,14,48,157,6,158,5,68,13,29,68,151,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7
+	.byte 68,151,6,152,5,68,153,4,154,3,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 
 .text
 	.align 4
@@ -14665,7 +14965,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 2249
+.word 2265
 	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
 plt_UIKit_UIApplication_Main_string___string_string:
 _p_2:
@@ -14673,7 +14973,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 2254
+.word 2270
 	.no_dead_strip plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder
 plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder:
 _p_3:
@@ -14681,7 +14981,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 2259
+.word 2275
 	.no_dead_strip plt_System_IO_Path_Combine_string_string
 plt_System_IO_Path_Combine_string_string:
 _p_4:
@@ -14689,7 +14989,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 2264
+.word 2280
 	.no_dead_strip plt_UIKit_UISceneSession_get_Role
 plt_UIKit_UISceneSession_get_Role:
 _p_5:
@@ -14697,7 +14997,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 2269
+.word 2285
 	.no_dead_strip plt_UIKit_UISceneConfiguration_Create_string_UIKit_UIWindowSceneSessionRole
 plt_UIKit_UISceneConfiguration_Create_string_UIKit_UIWindowSceneSessionRole:
 _p_6:
@@ -14705,7 +15005,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 2274
+.word 2290
 	.no_dead_strip plt_UIKit_UIViewController__ctor_intptr
 plt_UIKit_UIViewController__ctor_intptr:
 _p_7:
@@ -14713,7 +15013,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 2279
+.word 2295
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidLoad
 plt_UIKit_UIViewController_ViewDidLoad:
 _p_8:
@@ -14721,7 +15021,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 2284
+.word 2300
 	.no_dead_strip plt_UIKit_UILabel_get_Text
 plt_UIKit_UILabel_get_Text:
 _p_9:
@@ -14729,7 +15029,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 2289
+.word 2305
 	.no_dead_strip plt_System_DateTime_get_Now
 plt_System_DateTime_get_Now:
 _p_10:
@@ -14737,7 +15037,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 2294
+.word 2310
 	.no_dead_strip plt_System_DateTime_ToString_string
 plt_System_DateTime_ToString_string:
 _p_11:
@@ -14745,7 +15045,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 2299
+.word 2315
 	.no_dead_strip plt_string_ToUpper
 plt_string_ToUpper:
 _p_12:
@@ -14753,7 +15053,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 2304
+.word 2320
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_13:
@@ -14761,7 +15061,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 2309
+.word 2325
 	.no_dead_strip plt_UIKit_UILabel_set_Text_string
 plt_UIKit_UILabel_set_Text_string:
 _p_14:
@@ -14769,7 +15069,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 2314
+.word 2330
 	.no_dead_strip plt_System_Convert_ToDateTime_string
 plt_System_Convert_ToDateTime_string:
 _p_15:
@@ -14777,7 +15077,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 2319
+.word 2335
 	.no_dead_strip plt_System_DateTime_ToLongDateString
 plt_System_DateTime_ToLongDateString:
 _p_16:
@@ -14785,7 +15085,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 2324
+.word 2340
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_17:
@@ -14793,7 +15093,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 2329
+.word 2345
 	.no_dead_strip plt_Foundation_NSDateFormatter__ctor
 plt_Foundation_NSDateFormatter__ctor:
 _p_18:
@@ -14801,7 +15101,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 2332
+.word 2348
 	.no_dead_strip plt_Foundation_NSDateFormatter_set_DateStyle_Foundation_NSDateFormatterStyle
 plt_Foundation_NSDateFormatter_set_DateStyle_Foundation_NSDateFormatterStyle:
 _p_19:
@@ -14809,7 +15109,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 2337
+.word 2353
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_20:
@@ -14817,7 +15117,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 2342
+.word 2358
 	.no_dead_strip plt_UIKit_UIControl_add_TouchDown_System_EventHandler
 plt_UIKit_UIControl_add_TouchDown_System_EventHandler:
 _p_21:
@@ -14825,7 +15125,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 2350
+.word 2366
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_22:
@@ -14833,7 +15133,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 2355
+.word 2371
 	.no_dead_strip plt_Demo_ViewController_RestoreToDefault
 plt_Demo_ViewController_RestoreToDefault:
 _p_23:
@@ -14841,7 +15141,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 2357
+.word 2373
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_24:
@@ -14849,7 +15149,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 2359
+.word 2375
 	.no_dead_strip plt_SQLite_SQLiteConnection__ctor_string_bool
 plt_SQLite_SQLiteConnection__ctor_string_bool:
 _p_25:
@@ -14857,7 +15157,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 2362
+.word 2378
 	.no_dead_strip plt_UIKit_UIAlertController__ctor
 plt_UIKit_UIAlertController__ctor:
 _p_26:
@@ -14865,7 +15165,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 2367
+.word 2383
 	.no_dead_strip plt_UIKit_UIAlertController_set_Title_string
 plt_UIKit_UIAlertController_set_Title_string:
 _p_27:
@@ -14873,7 +15173,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 2372
+.word 2388
 	.no_dead_strip plt_UIKit_UIAlertController_set_Message_string
 plt_UIKit_UIAlertController_set_Message_string:
 _p_28:
@@ -14881,7 +15181,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 2377
+.word 2393
 	.no_dead_strip plt_UIKit_UIAlertAction_Create_string_UIKit_UIAlertActionStyle_System_Action_1_UIKit_UIAlertAction
 plt_UIKit_UIAlertAction_Create_string_UIKit_UIAlertActionStyle_System_Action_1_UIKit_UIAlertAction:
 _p_29:
@@ -14889,7 +15189,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 2382
+.word 2398
 	.no_dead_strip plt_UIKit_UIAlertController_AddAction_UIKit_UIAlertAction
 plt_UIKit_UIAlertController_AddAction_UIKit_UIAlertAction:
 _p_30:
@@ -14897,7 +15197,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 2387
+.word 2403
 	.no_dead_strip plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action
 plt_UIKit_UIViewController_PresentViewController_UIKit_UIViewController_bool_System_Action:
 _p_31:
@@ -14905,7 +15205,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 2392
+.word 2408
 	.no_dead_strip plt_SQLite_SQLiteConnection_DeleteAll_Demo_DirectDebits
 plt_SQLite_SQLiteConnection_DeleteAll_Demo_DirectDebits:
 _p_32:
@@ -14913,7 +15213,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 2397
+.word 2413
 	.no_dead_strip plt_SQLite_SQLiteConnection_DeleteAll_Demo_BudgetInfo
 plt_SQLite_SQLiteConnection_DeleteAll_Demo_BudgetInfo:
 _p_33:
@@ -14921,7 +15221,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 2409
+.word 2425
 	.no_dead_strip plt_SQLite_SQLiteConnection_DeleteAll_Demo_Person
 plt_SQLite_SQLiteConnection_DeleteAll_Demo_Person:
 _p_34:
@@ -14929,7 +15229,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 2421
+.word 2437
 	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
 plt__jit_icall_ves_icall_thread_finish_async_abort:
 _p_35:
@@ -14937,7 +15237,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 2433
+.word 2449
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_36:
@@ -14945,7 +15245,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 2436
+.word 2452
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_37:
@@ -14953,7 +15253,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 2439
+.word 2455
 	.no_dead_strip plt_SQLite_SQLiteConnection_Table_Demo_Person
 plt_SQLite_SQLiteConnection_Table_Demo_Person:
 _p_38:
@@ -14961,7 +15261,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 2441
+.word 2457
 	.no_dead_strip plt_SQLite_TableQuery_1_Demo_Person_Count
 plt_SQLite_TableQuery_1_Demo_Person_Count:
 _p_39:
@@ -14969,7 +15269,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 2453
+.word 2469
 	.no_dead_strip plt_UIKit_UIColor_get_Red
 plt_UIKit_UIColor_get_Red:
 _p_40:
@@ -14977,7 +15277,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 2464
+.word 2480
 	.no_dead_strip plt_UIKit_UITextView_set_TextColor_UIKit_UIColor
 plt_UIKit_UITextView_set_TextColor_UIKit_UIColor:
 _p_41:
@@ -14985,7 +15285,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 2469
+.word 2485
 	.no_dead_strip plt_UIKit_UITextView_get_Text
 plt_UIKit_UITextView_get_Text:
 _p_42:
@@ -14993,7 +15293,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 2474
+.word 2490
 	.no_dead_strip plt_UIKit_UITextView_set_Text_string
 plt_UIKit_UITextView_set_Text_string:
 _p_43:
@@ -15001,7 +15301,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 2479
+.word 2495
 	.no_dead_strip plt_UIKit_UIViewController_get_Storyboard
 plt_UIKit_UIViewController_get_Storyboard:
 _p_44:
@@ -15009,7 +15309,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 2484
+.word 2500
 	.no_dead_strip plt_UIKit_UIStoryboard_InstantiateViewController_string
 plt_UIKit_UIStoryboard_InstantiateViewController_string:
 _p_45:
@@ -15017,7 +15317,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 2489
+.word 2505
 	.no_dead_strip plt_UIKit_UIViewController_get_NavigationController
 plt_UIKit_UIViewController_get_NavigationController:
 _p_46:
@@ -15025,7 +15325,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 2494
+.word 2510
 	.no_dead_strip plt_UIKit_UINavigationController_PushViewController_UIKit_UIViewController_bool
 plt_UIKit_UINavigationController_PushViewController_UIKit_UIViewController_bool:
 _p_47:
@@ -15033,7 +15333,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 2499
+.word 2515
 	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
 plt_UIKit_UIViewController_DidReceiveMemoryWarning:
 _p_48:
@@ -15041,7 +15341,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 2504
+.word 2520
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_49:
@@ -15049,7 +15349,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 2509
+.word 2525
 	.no_dead_strip plt_UIKit_UIControl_add_EditingDidEnd_System_EventHandler
 plt_UIKit_UIControl_add_EditingDidEnd_System_EventHandler:
 _p_50:
@@ -15057,7 +15357,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 2514
+.word 2530
 	.no_dead_strip plt_UIKit_UIViewController_get_View
 plt_UIKit_UIViewController_get_View:
 _p_51:
@@ -15065,7 +15365,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 2519
+.word 2535
 	.no_dead_strip plt_UIKit_UIView_set_UserInteractionEnabled_bool
 plt_UIKit_UIView_set_UserInteractionEnabled_bool:
 _p_52:
@@ -15073,7 +15373,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 2524
+.word 2540
 	.no_dead_strip plt_UIKit_UITapGestureRecognizer__ctor_System_Action
 plt_UIKit_UITapGestureRecognizer__ctor_System_Action:
 _p_53:
@@ -15081,7 +15381,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 2529
+.word 2545
 	.no_dead_strip plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer
 plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer:
 _p_54:
@@ -15089,7 +15389,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 2534
+.word 2550
 	.no_dead_strip plt_UIKit_UIViewController_get_NavigationItem
 plt_UIKit_UIViewController_get_NavigationItem:
 _p_55:
@@ -15097,7 +15397,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 2539
+.word 2555
 	.no_dead_strip plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_Foundation_NSObject_ObjCRuntime_Selector
 plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_Foundation_NSObject_ObjCRuntime_Selector:
 _p_56:
@@ -15105,7 +15405,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 2544
+.word 2560
 	.no_dead_strip plt_UIKit_UINavigationItem_set_RightBarButtonItem_UIKit_UIBarButtonItem
 plt_UIKit_UINavigationItem_set_RightBarButtonItem_UIKit_UIBarButtonItem:
 _p_57:
@@ -15113,7 +15413,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 2549
+.word 2565
 	.no_dead_strip plt_UIKit_UINavigationItem_get_RightBarButtonItem
 plt_UIKit_UINavigationItem_get_RightBarButtonItem:
 _p_58:
@@ -15121,7 +15421,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 2554
+.word 2570
 	.no_dead_strip plt_UIKit_UIBarButtonItem_add_Clicked_System_EventHandler
 plt_UIKit_UIBarButtonItem_add_Clicked_System_EventHandler:
 _p_59:
@@ -15129,7 +15429,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 2559
+.word 2575
 	.no_dead_strip plt_UIKit_UITextField_get_Text
 plt_UIKit_UITextField_get_Text:
 _p_60:
@@ -15137,7 +15437,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 2564
+.word 2580
 	.no_dead_strip plt_single_Parse_string
 plt_single_Parse_string:
 _p_61:
@@ -15145,7 +15445,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 2569
+.word 2585
 	.no_dead_strip plt_UIKit_UIDatePicker_get_Date
 plt_UIKit_UIDatePicker_get_Date:
 _p_62:
@@ -15153,7 +15453,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 2574
+.word 2590
 	.no_dead_strip plt_Demo_CreateViewController_RemoveSpaces_string
 plt_Demo_CreateViewController_RemoveSpaces_string:
 _p_63:
@@ -15161,7 +15461,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 2579
+.word 2595
 	.no_dead_strip plt_Demo_CreateViewController_convertMoney
 plt_Demo_CreateViewController_convertMoney:
 _p_64:
@@ -15169,7 +15469,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 2581
+.word 2597
 	.no_dead_strip plt_Foundation_NSDate_op_Explicit_Foundation_NSDate
 plt_Foundation_NSDate_op_Explicit_Foundation_NSDate:
 _p_65:
@@ -15177,7 +15477,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 2583
+.word 2599
 	.no_dead_strip plt_System_DateTime_Compare_System_DateTime_System_DateTime
 plt_System_DateTime_Compare_System_DateTime_System_DateTime:
 _p_66:
@@ -15185,7 +15485,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 2588
+.word 2604
 	.no_dead_strip plt_string_op_Inequality_string_string
 plt_string_op_Inequality_string_string:
 _p_67:
@@ -15193,7 +15493,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 2593
+.word 2609
 	.no_dead_strip plt_SQLite_SQLiteConnection_CreateTable_Demo_Person_SQLite_CreateFlags
 plt_SQLite_SQLiteConnection_CreateTable_Demo_Person_SQLite_CreateFlags:
 _p_68:
@@ -15201,7 +15501,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 2598
+.word 2614
 	.no_dead_strip plt_SQLite_SQLiteConnection_CreateTable_Demo_BudgetInfo_SQLite_CreateFlags
 plt_SQLite_SQLiteConnection_CreateTable_Demo_BudgetInfo_SQLite_CreateFlags:
 _p_69:
@@ -15209,7 +15509,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 2610
+.word 2626
 	.no_dead_strip plt_SQLite_SQLiteConnection_CreateTable_Demo_DirectDebits_SQLite_CreateFlags
 plt_SQLite_SQLiteConnection_CreateTable_Demo_DirectDebits_SQLite_CreateFlags:
 _p_70:
@@ -15217,7 +15517,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 2622
+.word 2638
 	.no_dead_strip plt_SQLite_SQLiteConnection_Insert_object
 plt_SQLite_SQLiteConnection_Insert_object:
 _p_71:
@@ -15225,7 +15525,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 2634
+.word 2650
 	.no_dead_strip plt_UIKit_UINavigationController_PopToRootViewController_bool
 plt_UIKit_UINavigationController_PopToRootViewController_bool:
 _p_72:
@@ -15233,7 +15533,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 2639
+.word 2655
 	.no_dead_strip plt_UIKit_UIView_set_BackgroundColor_UIKit_UIColor
 plt_UIKit_UIView_set_BackgroundColor_UIKit_UIColor:
 _p_73:
@@ -15241,7 +15541,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 2644
+.word 2660
 	.no_dead_strip plt_UIKit_UIColor_get_Green
 plt_UIKit_UIColor_get_Green:
 _p_74:
@@ -15249,7 +15549,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 2649
+.word 2665
 	.no_dead_strip plt_string_Contains_string
 plt_string_Contains_string:
 _p_75:
@@ -15257,7 +15557,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 2654
+.word 2670
 	.no_dead_strip plt_int_Parse_string
 plt_int_Parse_string:
 _p_76:
@@ -15265,7 +15565,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 2659
+.word 2675
 	.no_dead_strip plt_string_Split_string_System_StringSplitOptions
 plt_string_Split_string_System_StringSplitOptions:
 _p_77:
@@ -15273,7 +15573,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 2664
+.word 2680
 	.no_dead_strip plt_UIKit_UIViewController_set_ModalPresentationStyle_UIKit_UIModalPresentationStyle
 plt_UIKit_UIViewController_set_ModalPresentationStyle_UIKit_UIModalPresentationStyle:
 _p_78:
@@ -15281,7 +15581,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 2669
+.word 2685
 	.no_dead_strip plt_UIKit_UISwitch_get_On
 plt_UIKit_UISwitch_get_On:
 _p_79:
@@ -15289,7 +15589,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 2674
+.word 2690
 	.no_dead_strip plt_UIKit_UIView_UITextField_EndEditing_UIKit_UIView_bool
 plt_UIKit_UIView_UITextField_EndEditing_UIKit_UIView_bool:
 _p_80:
@@ -15297,7 +15597,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 2679
+.word 2695
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidAppear_bool
 plt_UIKit_UIViewController_ViewDidAppear_bool:
 _p_81:
@@ -15305,7 +15605,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 2684
+.word 2700
 	.no_dead_strip plt_Demo_ExistingViewController_numberOfBudgetsSaved
 plt_Demo_ExistingViewController_numberOfBudgetsSaved:
 _p_82:
@@ -15313,7 +15613,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 2689
+.word 2705
 	.no_dead_strip plt_Demo_ListDatabase__ctor_System_Collections_Generic_List_1_Demo_Person
 plt_Demo_ListDatabase__ctor_System_Collections_Generic_List_1_Demo_Person:
 _p_83:
@@ -15321,7 +15621,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 2691
+.word 2707
 	.no_dead_strip plt_UIKit_UITableView_set_Source_UIKit_UITableViewSource
 plt_UIKit_UITableView_set_Source_UIKit_UITableViewSource:
 _p_84:
@@ -15329,7 +15629,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 2693
+.word 2709
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_85:
@@ -15337,7 +15637,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 2698
+.word 2714
 	.no_dead_strip plt_UIKit_UINavigationItem_SetRightBarButtonItems_UIKit_UIBarButtonItem___bool
 plt_UIKit_UINavigationItem_SetRightBarButtonItems_UIKit_UIBarButtonItem___bool:
 _p_86:
@@ -15345,7 +15645,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 2706
+.word 2722
 	.no_dead_strip plt_UIKit_UINavigationItem_get_RightBarButtonItems
 plt_UIKit_UINavigationItem_get_RightBarButtonItems:
 _p_87:
@@ -15353,7 +15653,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 2711
+.word 2727
 	.no_dead_strip plt_UIKit_UITableView_get_IndexPathForSelectedRow
 plt_UIKit_UITableView_get_IndexPathForSelectedRow:
 _p_88:
@@ -15361,7 +15661,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 2716
+.word 2732
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_Person_get_Item_int
 plt_System_Collections_Generic_List_1_Demo_Person_get_Item_int:
 _p_89:
@@ -15369,7 +15669,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 2721
+.word 2737
 	.no_dead_strip plt_Demo_ExistingViewController_EditTracker
 plt_Demo_ExistingViewController_EditTracker:
 _p_90:
@@ -15377,7 +15677,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 2732
+.word 2748
 	.no_dead_strip plt_Demo_ExistingViewController_change
 plt_Demo_ExistingViewController_change:
 _p_91:
@@ -15385,7 +15685,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 2734
+.word 2750
 	.no_dead_strip plt_SQLite_TableQuery_1_Demo_Person_ToList
 plt_SQLite_TableQuery_1_Demo_Person_ToList:
 _p_92:
@@ -15393,7 +15693,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 2736
+.word 2752
 	.no_dead_strip plt_UIKit_UITableViewSource__ctor
 plt_UIKit_UITableViewSource__ctor:
 _p_93:
@@ -15401,7 +15701,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 2747
+.word 2763
 	.no_dead_strip plt_Foundation_NSIndexPath_get_Row
 plt_Foundation_NSIndexPath_get_Row:
 _p_94:
@@ -15409,7 +15709,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 2752
+.word 2768
 	.no_dead_strip plt_UIKit_UITableView_DeselectRow_Foundation_NSIndexPath_bool
 plt_UIKit_UITableView_DeselectRow_Foundation_NSIndexPath_bool:
 _p_95:
@@ -15417,7 +15717,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 2757
+.word 2773
 	.no_dead_strip plt_UIKit_UITableView_DequeueReusableCell_string
 plt_UIKit_UITableView_DequeueReusableCell_string:
 _p_96:
@@ -15425,7 +15725,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 2762
+.word 2778
 	.no_dead_strip plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string
 plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string:
 _p_97:
@@ -15433,7 +15733,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 2767
+.word 2783
 	.no_dead_strip plt_UIKit_UITableViewCell_get_TextLabel
 plt_UIKit_UITableViewCell_get_TextLabel:
 _p_98:
@@ -15441,7 +15741,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 2772
+.word 2788
 	.no_dead_strip plt_UIKit_UIButton__ctor_UIKit_UIButtonType
 plt_UIKit_UIButton__ctor_UIKit_UIButtonType:
 _p_99:
@@ -15449,7 +15749,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 2777
+.word 2793
 	.no_dead_strip plt_UIKit_UITableViewCell_set_AccessoryView_UIKit_UIView
 plt_UIKit_UITableViewCell_set_AccessoryView_UIKit_UIView:
 _p_100:
@@ -15457,7 +15757,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 2782
+.word 2798
 	.no_dead_strip plt_Demo_TrackerViewController_connectToPeople
 plt_Demo_TrackerViewController_connectToPeople:
 _p_101:
@@ -15465,7 +15765,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 2787
+.word 2803
 	.no_dead_strip plt_string_Format_string_object
 plt_string_Format_string_object:
 _p_102:
@@ -15473,7 +15773,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 2789
+.word 2805
 	.no_dead_strip plt_Demo_TrackerViewController_CalculateWeeklyAllowance
 plt_Demo_TrackerViewController_CalculateWeeklyAllowance:
 _p_103:
@@ -15481,7 +15781,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 2794
+.word 2810
 	.no_dead_strip plt_single_ToString_string
 plt_single_ToString_string:
 _p_104:
@@ -15489,7 +15789,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 2796
+.word 2812
 	.no_dead_strip plt_Demo_TrackerViewController_ConnectToDB
 plt_Demo_TrackerViewController_ConnectToDB:
 _p_105:
@@ -15497,7 +15797,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 2801
+.word 2817
 	.no_dead_strip plt_Demo_TrackerViewController_LoadMoney
 plt_Demo_TrackerViewController_LoadMoney:
 _p_106:
@@ -15505,7 +15805,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 2803
+.word 2819
 	.no_dead_strip plt_Demo_TrackerViewController_configure
 plt_Demo_TrackerViewController_configure:
 _p_107:
@@ -15513,7 +15813,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 2805
+.word 2821
 	.no_dead_strip plt_System_DateTime_op_Subtraction_System_DateTime_System_DateTime
 plt_System_DateTime_op_Subtraction_System_DateTime_System_DateTime:
 _p_108:
@@ -15521,7 +15821,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 2807
+.word 2823
 	.no_dead_strip plt_Demo_ListSpent__ctor_System_Collections_Generic_List_1_Demo_BudgetInfo
 plt_Demo_ListSpent__ctor_System_Collections_Generic_List_1_Demo_BudgetInfo:
 _p_109:
@@ -15529,7 +15829,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 2812
+.word 2828
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_RemoveRange_int_int
 plt_System_Collections_Generic_List_1_Demo_BudgetInfo_RemoveRange_int_int:
 _p_110:
@@ -15537,7 +15837,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 2815
+.word 2831
 	.no_dead_strip plt_UIKit_UITableView_ReloadData
 plt_UIKit_UITableView_ReloadData:
 _p_111:
@@ -15545,7 +15845,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 2826
+.word 2842
 	.no_dead_strip plt_SQLite_SQLiteConnection_Table_Demo_BudgetInfo
 plt_SQLite_SQLiteConnection_Table_Demo_BudgetInfo:
 _p_112:
@@ -15553,7 +15853,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 2831
+.word 2847
 	.no_dead_strip plt_SQLite_TableQuery_1_Demo_BudgetInfo_ToList
 plt_SQLite_TableQuery_1_Demo_BudgetInfo_ToList:
 _p_113:
@@ -15561,7 +15861,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 2843
+.word 2859
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_GetEnumerator
 plt_System_Collections_Generic_List_1_Demo_BudgetInfo_GetEnumerator:
 _p_114:
@@ -15569,7 +15869,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 2854
+.word 2870
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_AddWithResize_Demo_BudgetInfo
 plt_System_Collections_Generic_List_1_Demo_BudgetInfo_AddWithResize_Demo_BudgetInfo:
 _p_115:
@@ -15577,7 +15877,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 2865
+.word 2881
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Demo_BudgetInfo_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_Demo_BudgetInfo_MoveNext:
 _p_116:
@@ -15585,7 +15885,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 2882
+.word 2898
 	.no_dead_strip plt_Demo_ListSpent_FindLowest
 plt_Demo_ListSpent_FindLowest:
 _p_117:
@@ -15593,7 +15893,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 2893
+.word 2909
 	.no_dead_strip plt_Demo_ListSpent_FindWeeks
 plt_Demo_ListSpent_FindWeeks:
 _p_118:
@@ -15601,7 +15901,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 2896
+.word 2912
 	.no_dead_strip plt_Foundation_NSIndexPath_get_Section
 plt_Foundation_NSIndexPath_get_Section:
 _p_119:
@@ -15609,7 +15909,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 2899
+.word 2915
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_get_Item_int
 plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_get_Item_int:
 _p_120:
@@ -15617,7 +15917,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 2904
+.word 2920
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_get_Item_int
 plt_System_Collections_Generic_List_1_Demo_BudgetInfo_get_Item_int:
 _p_121:
@@ -15625,111 +15925,111 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 2915
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Contains_Demo_BudgetInfo
-plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Contains_Demo_BudgetInfo:
+.word 2931
+	.no_dead_strip plt_single_ToString
+plt_single_ToString:
 _p_122:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 2926
-	.no_dead_strip plt_single_ToString
-plt_single_ToString:
+.word 2942
+	.no_dead_strip plt_string_Concat_string_string_string
+plt_string_Concat_string_string_string:
 _p_123:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 2937
-	.no_dead_strip plt_string_Concat_string_string_string
-plt_string_Concat_string_string_string:
+.word 2947
+	.no_dead_strip plt_UIKit_UITableViewCell_get_DetailTextLabel
+plt_UIKit_UITableViewCell_get_DetailTextLabel:
 _p_124:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 2942
-	.no_dead_strip plt_UIKit_UITableViewCell_get_DetailTextLabel
-plt_UIKit_UITableViewCell_get_DetailTextLabel:
+.word 2952
+	.no_dead_strip plt_System_DateTime_Parse_string
+plt_System_DateTime_Parse_string:
 _p_125:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 2947
-	.no_dead_strip plt_UIKit_UITableView_DeleteRows_Foundation_NSIndexPath___UIKit_UITableViewRowAnimation
-plt_UIKit_UITableView_DeleteRows_Foundation_NSIndexPath___UIKit_UITableViewRowAnimation:
+.word 2957
+	.no_dead_strip plt_Demo_ListSpent_FindWeekDate_System_DateTime
+plt_Demo_ListSpent_FindWeekDate_System_DateTime:
 _p_126:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 2952
-	.no_dead_strip plt_Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
-plt_Demo_ListSpent_deleteFromDB_Demo_BudgetInfo:
+.word 2962
+	.no_dead_strip plt_System_DateTime_ToShortDateString
+plt_System_DateTime_ToShortDateString:
 _p_127:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 2957
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Remove_Demo_BudgetInfo
-plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Remove_Demo_BudgetInfo:
+.word 2965
+	.no_dead_strip plt_Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
+plt_Demo_ListSpent_deleteFromDB_Demo_BudgetInfo:
 _p_128:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 2960
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_Person_GetEnumerator
-plt_System_Collections_Generic_List_1_Demo_Person_GetEnumerator:
+.word 2970
+	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Remove_Demo_BudgetInfo
+plt_System_Collections_Generic_List_1_Demo_BudgetInfo_Remove_Demo_BudgetInfo:
 _p_129:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 2971
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Demo_Person_MoveNext
-plt_System_Collections_Generic_List_1_Enumerator_Demo_Person_MoveNext:
+.word 2973
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_IndexOf_System_Collections_Generic_List_1_Demo_BudgetInfo
+plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_IndexOf_System_Collections_Generic_List_1_Demo_BudgetInfo:
 _p_130:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 2982
-	.no_dead_strip plt_SQLite_SQLiteConnection_Update_object
-plt_SQLite_SQLiteConnection_Update_object:
+.word 2984
+	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_Person_GetEnumerator
+plt_System_Collections_Generic_List_1_Demo_Person_GetEnumerator:
 _p_131:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 2993
-	.no_dead_strip plt_SQLite_SQLiteConnection_Delete_object
-plt_SQLite_SQLiteConnection_Delete_object:
+.word 2995
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Demo_Person_MoveNext
+plt_System_Collections_Generic_List_1_Enumerator_Demo_Person_MoveNext:
 _p_132:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 2998
-	.no_dead_strip plt_System_DateTime_Parse_string
-plt_System_DateTime_Parse_string:
+.word 3006
+	.no_dead_strip plt_SQLite_SQLiteConnection_Update_object
+plt_SQLite_SQLiteConnection_Update_object:
 _p_133:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 3003
-	.no_dead_strip plt_Demo_ListSpent_FindWeekDate_System_DateTime
-plt_Demo_ListSpent_FindWeekDate_System_DateTime:
+.word 3017
+	.no_dead_strip plt_SQLite_SQLiteConnection_Delete_object
+plt_SQLite_SQLiteConnection_Delete_object:
 _p_134:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 3008
+.word 3022
 	.no_dead_strip plt_Demo_ListSpent_SortDates
 plt_Demo_ListSpent_SortDates:
 _p_135:
@@ -15737,7 +16037,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 3011
+.word 3027
 	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_BudgetInfo_set_Item_int_Demo_BudgetInfo
 plt_System_Collections_Generic_List_1_Demo_BudgetInfo_set_Item_int_Demo_BudgetInfo:
 _p_136:
@@ -15745,7 +16045,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 3014
+.word 3030
 	.no_dead_strip plt_System_DateTime_AddDays_double
 plt_System_DateTime_AddDays_double:
 _p_137:
@@ -15753,7 +16053,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 3025
+.word 3041
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_AddWithResize_System_Collections_Generic_List_1_Demo_BudgetInfo
 plt_System_Collections_Generic_List_1_System_Collections_Generic_List_1_Demo_BudgetInfo_AddWithResize_System_Collections_Generic_List_1_Demo_BudgetInfo:
 _p_138:
@@ -15761,7 +16061,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 3030
+.word 3046
 	.no_dead_strip plt_System_DateTime_get_DayOfWeek
 plt_System_DateTime_get_DayOfWeek:
 _p_139:
@@ -15769,7 +16069,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 3047
+.word 3063
 	.no_dead_strip plt_System_Enum_ToString
 plt_System_Enum_ToString:
 _p_140:
@@ -15777,7 +16077,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 3052
+.word 3068
 	.no_dead_strip plt_string_ToLower
 plt_string_ToLower:
 _p_141:
@@ -15785,7 +16085,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 3057
+.word 3073
 	.no_dead_strip plt_string_op_Equality_string_string
 plt_string_op_Equality_string_string:
 _p_142:
@@ -15793,7 +16093,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 3062
+.word 3078
 	.no_dead_strip plt_Demo_AddViewController_Add
 plt_Demo_AddViewController_Add:
 _p_143:
@@ -15801,7 +16101,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 3067
+.word 3083
 	.no_dead_strip plt_Demo_AddViewController_convertCost
 plt_Demo_AddViewController_convertCost:
 _p_144:
@@ -15809,7 +16109,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 3070
+.word 3086
 	.no_dead_strip plt_Demo_AddViewController_RemoveSpaces_string
 plt_Demo_AddViewController_RemoveSpaces_string:
 _p_145:
@@ -15817,7 +16117,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 3073
+.word 3089
 	.no_dead_strip plt_string_Format_string_object_object
 plt_string_Format_string_object_object:
 _p_146:
@@ -15825,7 +16125,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 3076
+.word 3092
 	.no_dead_strip plt_Demo_AddViewController_refresh
 plt_Demo_AddViewController_refresh:
 _p_147:
@@ -15833,7 +16133,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 3081
+.word 3097
 	.no_dead_strip plt_UIKit_UIColor_get_Clear
 plt_UIKit_UIColor_get_Clear:
 _p_148:
@@ -15841,7 +16141,7 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 3084
+.word 3100
 	.no_dead_strip plt_UIKit_UITextField_set_Text_string
 plt_UIKit_UITextField_set_Text_string:
 _p_149:
@@ -15849,187 +16149,203 @@ adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 3089
-	.no_dead_strip plt_string_Format_string_object_object_object
-plt_string_Format_string_object_object_object:
+.word 3105
+	.no_dead_strip plt_System_DateTime_get_Month
+plt_System_DateTime_get_Month:
 _p_150:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 3094
-	.no_dead_strip plt_Demo_DirectDBViewController_convertDays
-plt_Demo_DirectDBViewController_convertDays:
+.word 3110
+	.no_dead_strip plt_System_DateTime_get_Year
+plt_System_DateTime_get_Year:
 _p_151:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 3099
-	.no_dead_strip plt_Demo_DirectDBViewController_convertCost
-plt_Demo_DirectDBViewController_convertCost:
+.word 3115
+	.no_dead_strip plt_string_Format_string_object_object_object
+plt_string_Format_string_object_object_object:
 _p_152:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 3102
-	.no_dead_strip plt_Demo_DirectDBViewController_convertBillingDay
-plt_Demo_DirectDBViewController_convertBillingDay:
+.word 3120
+	.no_dead_strip plt_Demo_DirectDBViewController_convertDays
+plt_Demo_DirectDBViewController_convertDays:
 _p_153:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 3105
-	.no_dead_strip plt_Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
-plt_Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits:
+.word 3125
+	.no_dead_strip plt_Demo_DirectDBViewController_convertCost
+plt_Demo_DirectDBViewController_convertCost:
 _p_154:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 3108
-	.no_dead_strip plt_Demo_DirectDBViewController_refresh
-plt_Demo_DirectDBViewController_refresh:
+.word 3128
+	.no_dead_strip plt_Demo_DirectDBViewController_convertBillingDay
+plt_Demo_DirectDBViewController_convertBillingDay:
 _p_155:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 3111
-	.no_dead_strip plt_Demo_EditTrackerViewController_GetDirects
-plt_Demo_EditTrackerViewController_GetDirects:
+.word 3131
+	.no_dead_strip plt_Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
+plt_Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits:
 _p_156:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 3114
-	.no_dead_strip plt_Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
-plt_Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits:
+.word 3134
+	.no_dead_strip plt_Demo_DirectDBViewController_refresh
+plt_Demo_DirectDBViewController_refresh:
 _p_157:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 3117
-	.no_dead_strip plt_SQLite_SQLiteConnection_Table_Demo_DirectDebits
-plt_SQLite_SQLiteConnection_Table_Demo_DirectDebits:
+.word 3137
+	.no_dead_strip plt_Demo_EditTrackerViewController_GetDirects
+plt_Demo_EditTrackerViewController_GetDirects:
 _p_158:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 3120
-	.no_dead_strip plt_SQLite_TableQuery_1_Demo_DirectDebits_ToList
-plt_SQLite_TableQuery_1_Demo_DirectDebits_ToList:
+.word 3140
+	.no_dead_strip plt_Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
+plt_Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits:
 _p_159:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 3132
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_GetEnumerator
-plt_System_Collections_Generic_List_1_Demo_DirectDebits_GetEnumerator:
+.word 3143
+	.no_dead_strip plt_SQLite_SQLiteConnection_Table_Demo_DirectDebits
+plt_SQLite_SQLiteConnection_Table_Demo_DirectDebits:
 _p_160:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 3143
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_AddWithResize_Demo_DirectDebits
-plt_System_Collections_Generic_List_1_Demo_DirectDebits_AddWithResize_Demo_DirectDebits:
+.word 3146
+	.no_dead_strip plt_SQLite_TableQuery_1_Demo_DirectDebits_ToList
+plt_SQLite_TableQuery_1_Demo_DirectDebits_ToList:
 _p_161:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 3154
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Demo_DirectDebits_MoveNext
-plt_System_Collections_Generic_List_1_Enumerator_Demo_DirectDebits_MoveNext:
+.word 3158
+	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_GetEnumerator
+plt_System_Collections_Generic_List_1_Demo_DirectDebits_GetEnumerator:
 _p_162:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 3171
-	.no_dead_strip plt_Demo_EditTrackerViewController_RemoveUser_Demo_Person
-plt_Demo_EditTrackerViewController_RemoveUser_Demo_Person:
+.word 3169
+	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_AddWithResize_Demo_DirectDebits
+plt_System_Collections_Generic_List_1_Demo_DirectDebits_AddWithResize_Demo_DirectDebits:
 _p_163:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 3182
-	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_get_Item_int
-plt_System_Collections_Generic_List_1_Demo_DirectDebits_get_Item_int:
+.word 3180
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Demo_DirectDebits_MoveNext
+plt_System_Collections_Generic_List_1_Enumerator_Demo_DirectDebits_MoveNext:
 _p_164:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 3185
-	.no_dead_strip plt_UIKit_UIView_LayoutSubviews
-plt_UIKit_UIView_LayoutSubviews:
+.word 3197
+	.no_dead_strip plt_Demo_EditTrackerViewController_RemoveUser_Demo_Person
+plt_Demo_EditTrackerViewController_RemoveUser_Demo_Person:
 _p_165:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 3196
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
+.word 3208
+	.no_dead_strip plt_System_Collections_Generic_List_1_Demo_DirectDebits_get_Item_int
+plt_System_Collections_Generic_List_1_Demo_DirectDebits_get_Item_int:
 _p_166:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 3201
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 3211
+	.no_dead_strip plt_UIKit_UIView_LayoutSubviews
+plt_UIKit_UIView_LayoutSubviews:
 _p_167:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 3203
-	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
-plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
+.word 3222
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
 _p_168:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 3206
-	.no_dead_strip plt_int_Equals_object
-plt_int_Equals_object:
+.word 3227
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_169:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 3211
-	.no_dead_strip plt_int_ToString
-plt_int_ToString:
+.word 3229
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
 _p_170:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 3216
-	.no_dead_strip plt_System_Nullable_1_int__ctor_int
-plt_System_Nullable_1_int__ctor_int:
+.word 3232
+	.no_dead_strip plt_int_Equals_object
+plt_int_Equals_object:
 _p_171:
 adrp x16, mono_aot_Demo_got@PAGE+0
 add x16, x16, mono_aot_Demo_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 3221
+.word 3237
+	.no_dead_strip plt_int_ToString
+plt_int_ToString:
+_p_172:
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x16, [x16, #3272]
+br x16
+.word 3242
+	.no_dead_strip plt_System_Nullable_1_int__ctor_int
+plt_System_Nullable_1_int__ctor_int:
+_p_173:
+adrp x16, mono_aot_Demo_got@PAGE+0
+add x16, x16, mono_aot_Demo_got@PAGEOFF
+ldr x16, [x16, #3280]
+br x16
+.word 3247
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Demo_got, 3272
+.lcomm mono_aot_Demo_got, 3288
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -16060,7 +16376,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "5F476E1D-2B4D-4CED-82A5-01EF86DB7420"
+	.asciz "39B5BE88-494F-407D-8283-FCE05AFAD3A4"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -16147,14 +16463,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 237,3272,172,257,6,98,387000831,0
-	.long 6651,128,8,8,8,9,8388607,0
-	.long 4,25,8872,0,0,2208,1880,968
-	.long 0,1464,1824,1136,0,840,352,2200
+	.long 237,3288,174,261,6,98,387000831,0
+	.long 6742,128,8,8,8,9,8388607,0
+	.long 4,25,8976,0,0,2224,1896,976
+	.long 0,1472,1840,1144,0,848,360,2216
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 151,41,110,39,224,225,10,245,135,146,187,103,65,224,194,170
+	.byte 246,201,179,125,170,33,113,120,76,38,25,162,21,64,33,180
 	.globl _mono_aot_module_Demo_info
 	.align 3
 _mono_aot_module_Demo_info:
@@ -24006,66 +24322,277 @@ Lfde131_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "Demo.ListSpent:GetCell"
-	.asciz "Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath"
+	.asciz "Demo.ListSpent:RowSelected"
+	.asciz "Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath"
 
 	.byte 0,0
-	.quad Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
+	.quad Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath
 	.quad Lme_84
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1015=LTDIE_79_REFERENCE - Ldebug_info_start
+LDIFF_SYM1015=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1015
-	.byte 1,104,3
+	.byte 0,3
 	.asciz "tableView"
 
 LDIFF_SYM1016=LTDIE_58_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1016
-	.byte 1,105,3
+	.byte 2,141,24,3
 	.asciz "indexPath"
 
 LDIFF_SYM1017=LTDIE_76_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1017
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1018=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1018
-	.byte 1,103,11
-	.asciz "V_1"
-
-LDIFF_SYM1019=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1019
-	.byte 1,106,11
-	.asciz "V_2"
-
-LDIFF_SYM1020=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1020
-	.byte 2,141,48,11
-	.asciz "V_3"
-
-LDIFF_SYM1021=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM1021
-	.byte 2,141,56,0
+	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1022=Lfde132_end - Lfde132_start
-	.long LDIFF_SYM1022
+LDIFF_SYM1018=Lfde132_end - Lfde132_start
+	.long LDIFF_SYM1018
 Lfde132_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath
+
+LDIFF_SYM1019=Lme_84 - Demo_ListSpent_RowSelected_UIKit_UITableView_Foundation_NSIndexPath
+	.long LDIFF_SYM1019
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde132_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:GetCell"
+	.asciz "Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath"
+
+	.byte 0,0
+	.quad Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
+	.quad Lme_85
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1020=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1020
+	.byte 1,104,3
+	.asciz "tableView"
+
+LDIFF_SYM1021=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1021
+	.byte 1,105,3
+	.asciz "indexPath"
+
+LDIFF_SYM1022=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1022
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1023=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1023
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM1024=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1024
+	.byte 1,106,11
+	.asciz "V_2"
+
+LDIFF_SYM1025=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1025
+	.byte 2,141,40,11
+	.asciz "V_3"
+
+LDIFF_SYM1026=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1026
+	.byte 2,141,48,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1027=Lfde133_end - Lfde133_start
+	.long LDIFF_SYM1027
+Lfde133_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
 
-LDIFF_SYM1023=Lme_84 - Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
-	.long LDIFF_SYM1023
+LDIFF_SYM1028=Lme_85 - Demo_ListSpent_GetCell_UIKit_UITableView_Foundation_NSIndexPath
+	.long LDIFF_SYM1028
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14
 	.align 3
-Lfde132_end:
+Lfde133_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:TitleForHeader"
+	.asciz "Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint"
+
+	.byte 0,0
+	.quad Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint
+	.quad Lme_86
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1029=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1029
+	.byte 1,105,3
+	.asciz "tableView"
+
+LDIFF_SYM1030=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1030
+	.byte 0,3
+	.asciz "section"
+
+LDIFF_SYM1031=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1031
+	.byte 2,141,40,11
+	.asciz "V_0"
+
+LDIFF_SYM1032=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1032
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM1033=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1033
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1034=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1034
+	.byte 2,141,56,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1035=Lfde134_end - Lfde134_start
+	.long LDIFF_SYM1035
+Lfde134_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint
+
+LDIFF_SYM1036=Lme_86 - Demo_ListSpent_TitleForHeader_UIKit_UITableView_System_nint
+	.long LDIFF_SYM1036
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7
+	.align 3
+Lfde134_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:TitleForFooter"
+	.asciz "Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint"
+
+	.byte 0,0
+	.quad Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint
+	.quad Lme_87
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1037=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1037
+	.byte 1,105,3
+	.asciz "tableView"
+
+LDIFF_SYM1038=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1038
+	.byte 0,3
+	.asciz "section"
+
+LDIFF_SYM1039=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1039
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1040=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1040
+	.byte 3,141,200,0,11
+	.asciz "V_1"
+
+LDIFF_SYM1041=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1041
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1042=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1042
+	.byte 2,141,48,11
+	.asciz "V_3"
+
+LDIFF_SYM1043=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1043
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1044=Lfde135_end - Lfde135_start
+	.long LDIFF_SYM1044
+Lfde135_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint
+
+LDIFF_SYM1045=Lme_87 - Demo_ListSpent_TitleForFooter_UIKit_UITableView_System_nint
+	.long LDIFF_SYM1045
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,152,14,153,13,68,154,12
+	.align 3
+Lfde135_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:DoesExist"
+	.asciz "Demo_ListSpent_DoesExist_Demo_BudgetInfo"
+
+	.byte 0,0
+	.quad Demo_ListSpent_DoesExist_Demo_BudgetInfo
+	.quad Lme_88
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1046=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1046
+	.byte 0,3
+	.asciz "temp"
+
+LDIFF_SYM1047=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1047
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM1048=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1048
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1049=Lfde136_end - Lfde136_start
+	.long LDIFF_SYM1049
+Lfde136_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_DoesExist_Demo_BudgetInfo
+
+LDIFF_SYM1050=Lme_88 - Demo_ListSpent_DoesExist_Demo_BudgetInfo
+	.long LDIFF_SYM1050
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.align 3
+Lfde136_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24075,36 +24602,36 @@ Lfde132_end:
 
 	.byte 0,0
 	.quad Demo_ListSpent_NumberOfSections_UIKit_UITableView
-	.quad Lme_85
+	.quad Lme_89
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1024=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1024
+LDIFF_SYM1051=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1051
 	.byte 2,141,16,3
 	.asciz "tableView"
 
-LDIFF_SYM1025=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1025
+LDIFF_SYM1052=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1052
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1026=Lfde133_end - Lfde133_start
-	.long LDIFF_SYM1026
-Lfde133_start:
+LDIFF_SYM1053=Lfde137_end - Lfde137_start
+	.long LDIFF_SYM1053
+Lfde137_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_NumberOfSections_UIKit_UITableView
 
-LDIFF_SYM1027=Lme_85 - Demo_ListSpent_NumberOfSections_UIKit_UITableView
-	.long LDIFF_SYM1027
+LDIFF_SYM1054=Lme_89 - Demo_ListSpent_NumberOfSections_UIKit_UITableView
+	.long LDIFF_SYM1054
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde133_end:
+Lfde137_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_81:
@@ -24113,8 +24640,8 @@ LTDIE_81:
 	.asciz "UIKit_UITableViewCellEditingStyle"
 
 	.byte 8
-LDIFF_SYM1028=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM1028
+LDIFF_SYM1055=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM1055
 	.byte 9
 	.asciz "None"
 
@@ -24127,64 +24654,64 @@ LDIFF_SYM1028=LDIE_I8 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "UIKit_UITableViewCellEditingStyle"
 
-LDIFF_SYM1029=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM1029
+LDIFF_SYM1056=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1056
 LTDIE_81_POINTER:
 
 	.byte 13
-LDIFF_SYM1030=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM1030
+LDIFF_SYM1057=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1057
 LTDIE_81_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1031=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM1031
+LDIFF_SYM1058=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1058
 	.byte 2
 	.asciz "Demo.ListSpent:CommitEditingStyle"
 	.asciz "Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath"
 
 	.byte 0,0
 	.quad Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
-	.quad Lme_86
+	.quad Lme_8a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1032=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1032
+LDIFF_SYM1059=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1059
 	.byte 1,103,3
 	.asciz "tableView"
 
-LDIFF_SYM1033=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1033
+LDIFF_SYM1060=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1060
 	.byte 2,141,32,3
 	.asciz "editingStyle"
 
-LDIFF_SYM1034=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM1034
+LDIFF_SYM1061=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1061
 	.byte 2,141,40,3
 	.asciz "indexPath"
 
-LDIFF_SYM1035=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1035
+LDIFF_SYM1062=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1062
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1036=Lfde134_end - Lfde134_start
-	.long LDIFF_SYM1036
-Lfde134_start:
+LDIFF_SYM1063=Lfde138_end - Lfde138_start
+	.long LDIFF_SYM1063
+Lfde138_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
 
-LDIFF_SYM1037=Lme_86 - Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
-	.long LDIFF_SYM1037
+LDIFF_SYM1064=Lme_8a - Demo_ListSpent_CommitEditingStyle_UIKit_UITableView_UIKit_UITableViewCellEditingStyle_Foundation_NSIndexPath
+	.long LDIFF_SYM1064
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,154,7
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,68,154,11
 	.align 3
-Lfde134_end:
+Lfde138_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24194,41 +24721,41 @@ Lfde134_end:
 
 	.byte 0,0
 	.quad Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
-	.quad Lme_87
+	.quad Lme_8b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1038=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1038
+LDIFF_SYM1065=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1065
 	.byte 0,3
 	.asciz "tableView"
 
-LDIFF_SYM1039=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1039
+LDIFF_SYM1066=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1066
 	.byte 0,3
 	.asciz "indexPath"
 
-LDIFF_SYM1040=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1040
+LDIFF_SYM1067=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1067
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1041=Lfde135_end - Lfde135_start
-	.long LDIFF_SYM1041
-Lfde135_start:
+LDIFF_SYM1068=Lfde139_end - Lfde139_start
+	.long LDIFF_SYM1068
+Lfde139_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
 
-LDIFF_SYM1042=Lme_87 - Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
-	.long LDIFF_SYM1042
+LDIFF_SYM1069=Lme_8b - Demo_ListSpent_CanEditRow_UIKit_UITableView_Foundation_NSIndexPath
+	.long LDIFF_SYM1069
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde135_end:
+Lfde139_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24238,41 +24765,46 @@ Lfde135_end:
 
 	.byte 0,0
 	.quad Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint
-	.quad Lme_88
+	.quad Lme_8c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1043=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1043
-	.byte 2,141,16,3
+LDIFF_SYM1070=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1070
+	.byte 1,105,3
 	.asciz "tableview"
 
-LDIFF_SYM1044=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1044
+LDIFF_SYM1071=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1071
 	.byte 0,3
 	.asciz "section"
 
-LDIFF_SYM1045=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1045
-	.byte 0,0
+LDIFF_SYM1072=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1072
+	.byte 2,141,40,11
+	.asciz "V_0"
+
+LDIFF_SYM1073=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1073
+	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1046=Lfde136_end - Lfde136_start
-	.long LDIFF_SYM1046
-Lfde136_start:
+LDIFF_SYM1074=Lfde140_end - Lfde140_start
+	.long LDIFF_SYM1074
+Lfde140_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint
 
-LDIFF_SYM1047=Lme_88 - Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint
-	.long LDIFF_SYM1047
+LDIFF_SYM1075=Lme_8c - Demo_ListSpent_RowsInSection_UIKit_UITableView_System_nint
+	.long LDIFF_SYM1075
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5
 	.align 3
-Lfde136_end:
+Lfde140_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24282,255 +24814,39 @@ Lfde136_end:
 
 	.byte 0,0
 	.quad Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
-	.quad Lme_89
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1048=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1048
-	.byte 0,3
-	.asciz "info"
-
-LDIFF_SYM1049=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1049
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1050=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1050
-	.byte 1,105,11
-	.asciz "V_1"
-
-LDIFF_SYM1051=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1051
-	.byte 3,141,200,0,11
-	.asciz "V_2"
-
-LDIFF_SYM1052=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1052
-	.byte 2,141,48,11
-	.asciz "V_3"
-
-LDIFF_SYM1053=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1053
-	.byte 1,104,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1054=Lfde137_end - Lfde137_start
-	.long LDIFF_SYM1054
-Lfde137_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
-
-LDIFF_SYM1055=Lme_89 - Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
-	.long LDIFF_SYM1055
-	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16
-	.align 3
-Lfde137_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ListSpent:IsWeek"
-	.asciz "Demo_ListSpent_IsWeek"
-
-	.byte 0,0
-	.quad Demo_ListSpent_IsWeek
-	.quad Lme_8a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1056=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1056
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1057=Lfde138_end - Lfde138_start
-	.long LDIFF_SYM1057
-Lfde138_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ListSpent_IsWeek
-
-LDIFF_SYM1058=Lme_8a - Demo_ListSpent_IsWeek
-	.long LDIFF_SYM1058
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde138_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ListSpent:FindLowest"
-	.asciz "Demo_ListSpent_FindLowest"
-
-	.byte 0,0
-	.quad Demo_ListSpent_FindLowest
-	.quad Lme_8b
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1059=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1059
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1060=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1060
-	.byte 1,105,11
-	.asciz "V_1"
-
-LDIFF_SYM1061=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1061
-	.byte 3,141,200,0,11
-	.asciz "V_2"
-
-LDIFF_SYM1062=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1062
-	.byte 1,104,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1063=Lfde139_end - Lfde139_start
-	.long LDIFF_SYM1063
-Lfde139_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ListSpent_FindLowest
-
-LDIFF_SYM1064=Lme_8b - Demo_ListSpent_FindLowest
-	.long LDIFF_SYM1064
-	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16
-	.align 3
-Lfde139_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ListSpent:SortDates"
-	.asciz "Demo_ListSpent_SortDates"
-
-	.byte 0,0
-	.quad Demo_ListSpent_SortDates
-	.quad Lme_8c
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1065=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1065
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1066=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1066
-	.byte 1,105,11
-	.asciz "V_1"
-
-LDIFF_SYM1067=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1067
-	.byte 1,104,11
-	.asciz "V_2"
-
-LDIFF_SYM1068=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1068
-	.byte 1,103,11
-	.asciz "V_3"
-
-LDIFF_SYM1069=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1069
-	.byte 1,102,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1070=Lfde140_end - Lfde140_start
-	.long LDIFF_SYM1070
-Lfde140_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ListSpent_SortDates
-
-LDIFF_SYM1071=Lme_8c - Demo_ListSpent_SortDates
-	.long LDIFF_SYM1071
-	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
-	.align 3
-Lfde140_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ListSpent:FindWeeks"
-	.asciz "Demo_ListSpent_FindWeeks"
-
-	.byte 0,0
-	.quad Demo_ListSpent_FindWeeks
 	.quad Lme_8d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1072=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1072
+LDIFF_SYM1076=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1076
+	.byte 0,3
+	.asciz "info"
+
+LDIFF_SYM1077=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1077
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1073=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1073
-	.byte 3,141,168,1,11
+LDIFF_SYM1078=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1078
+	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1074=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1074
-	.byte 3,141,160,1,11
-	.asciz "V_2"
-
-LDIFF_SYM1075=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1075
-	.byte 1,105,11
-	.asciz "V_3"
-
-LDIFF_SYM1076=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1076
-	.byte 1,104,11
-	.asciz "V_4"
-
-LDIFF_SYM1077=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1077
-	.byte 3,141,152,1,11
-	.asciz "V_5"
-
-LDIFF_SYM1078=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1078
-	.byte 1,103,11
-	.asciz "V_6"
-
-LDIFF_SYM1079=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1079=LTDIE_28_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1079
-	.byte 3,141,144,1,11
-	.asciz "V_7"
+	.byte 3,141,200,0,11
+	.asciz "V_2"
 
 LDIFF_SYM1080=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1080
-	.byte 3,141,248,0,11
-	.asciz "V_8"
+	.byte 2,141,48,11
+	.asciz "V_3"
 
-LDIFF_SYM1081=LTDIE_72_REFERENCE - Ldebug_info_start
+LDIFF_SYM1081=LTDIE_10_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1081
-	.byte 1,102,0
+	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -24540,15 +24856,231 @@ Lfde141_start:
 
 	.long 0
 	.align 3
+	.quad Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
+
+LDIFF_SYM1083=Lme_8d - Demo_ListSpent_deleteFromDB_Demo_BudgetInfo
+	.long LDIFF_SYM1083
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16
+	.align 3
+Lfde141_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:IsWeek"
+	.asciz "Demo_ListSpent_IsWeek"
+
+	.byte 0,0
+	.quad Demo_ListSpent_IsWeek
+	.quad Lme_8e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1084=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1084
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1085=Lfde142_end - Lfde142_start
+	.long LDIFF_SYM1085
+Lfde142_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_IsWeek
+
+LDIFF_SYM1086=Lme_8e - Demo_ListSpent_IsWeek
+	.long LDIFF_SYM1086
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde142_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:FindLowest"
+	.asciz "Demo_ListSpent_FindLowest"
+
+	.byte 0,0
+	.quad Demo_ListSpent_FindLowest
+	.quad Lme_8f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1087=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1087
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1088=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1088
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM1089=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1089
+	.byte 3,141,200,0,11
+	.asciz "V_2"
+
+LDIFF_SYM1090=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1090
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1091=Lfde143_end - Lfde143_start
+	.long LDIFF_SYM1091
+Lfde143_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_FindLowest
+
+LDIFF_SYM1092=Lme_8f - Demo_ListSpent_FindLowest
+	.long LDIFF_SYM1092
+	.long 0
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16
+	.align 3
+Lfde143_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:SortDates"
+	.asciz "Demo_ListSpent_SortDates"
+
+	.byte 0,0
+	.quad Demo_ListSpent_SortDates
+	.quad Lme_90
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1093=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1093
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1094=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1094
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM1095=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1095
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1096=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1096
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM1097=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1097
+	.byte 1,102,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1098=Lfde144_end - Lfde144_start
+	.long LDIFF_SYM1098
+Lfde144_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ListSpent_SortDates
+
+LDIFF_SYM1099=Lme_90 - Demo_ListSpent_SortDates
+	.long LDIFF_SYM1099
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
+	.align 3
+Lfde144_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ListSpent:FindWeeks"
+	.asciz "Demo_ListSpent_FindWeeks"
+
+	.byte 0,0
+	.quad Demo_ListSpent_FindWeeks
+	.quad Lme_91
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1100=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1100
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1101=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1101
+	.byte 3,141,168,1,11
+	.asciz "V_1"
+
+LDIFF_SYM1102=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1102
+	.byte 3,141,160,1,11
+	.asciz "V_2"
+
+LDIFF_SYM1103=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1103
+	.byte 1,105,11
+	.asciz "V_3"
+
+LDIFF_SYM1104=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1104
+	.byte 1,104,11
+	.asciz "V_4"
+
+LDIFF_SYM1105=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1105
+	.byte 3,141,152,1,11
+	.asciz "V_5"
+
+LDIFF_SYM1106=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1106
+	.byte 1,103,11
+	.asciz "V_6"
+
+LDIFF_SYM1107=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1107
+	.byte 3,141,144,1,11
+	.asciz "V_7"
+
+LDIFF_SYM1108=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1108
+	.byte 3,141,248,0,11
+	.asciz "V_8"
+
+LDIFF_SYM1109=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1109
+	.byte 1,102,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1110=Lfde145_end - Lfde145_start
+	.long LDIFF_SYM1110
+Lfde145_start:
+
+	.long 0
+	.align 3
 	.quad Demo_ListSpent_FindWeeks
 
-LDIFF_SYM1083=Lme_8d - Demo_ListSpent_FindWeeks
-	.long LDIFF_SYM1083
+LDIFF_SYM1111=Lme_91 - Demo_ListSpent_FindWeeks
+	.long LDIFF_SYM1111
 	.long 0
 	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,147,28,148,27,68,149,26,150,25,68,151,24,152,23,68,153,22
 	.byte 154,21
 	.align 3
-Lfde141_end:
+Lfde145_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_82:
@@ -24557,8 +25089,8 @@ LTDIE_82:
 	.asciz "System_DayOfWeek"
 
 	.byte 4
-LDIFF_SYM1084=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1084
+LDIFF_SYM1112=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1112
 	.byte 9
 	.asciz "Sunday"
 
@@ -24583,59 +25115,59 @@ LDIFF_SYM1084=LDIE_I4 - Ldebug_info_start
 	.byte 6,0,7
 	.asciz "System_DayOfWeek"
 
-LDIFF_SYM1085=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM1085
+LDIFF_SYM1113=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1113
 LTDIE_82_POINTER:
 
 	.byte 13
-LDIFF_SYM1086=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM1086
+LDIFF_SYM1114=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1114
 LTDIE_82_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1087=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM1087
+LDIFF_SYM1115=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1115
 	.byte 2
 	.asciz "Demo.ListSpent:FindWeekDate"
 	.asciz "Demo_ListSpent_FindWeekDate_System_DateTime"
 
 	.byte 0,0
 	.quad Demo_ListSpent_FindWeekDate_System_DateTime
-	.quad Lme_8e
+	.quad Lme_92
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1088=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1088
+LDIFF_SYM1116=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1116
 	.byte 0,3
 	.asciz "date"
 
-LDIFF_SYM1089=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1089
+LDIFF_SYM1117=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1117
 	.byte 2,141,48,11
 	.asciz "V_0"
 
-LDIFF_SYM1090=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM1090
+LDIFF_SYM1118=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1118
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1091=Lfde142_end - Lfde142_start
-	.long LDIFF_SYM1091
-Lfde142_start:
+LDIFF_SYM1119=Lfde146_end - Lfde146_start
+	.long LDIFF_SYM1119
+Lfde146_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ListSpent_FindWeekDate_System_DateTime
 
-LDIFF_SYM1092=Lme_8e - Demo_ListSpent_FindWeekDate_System_DateTime
-	.long LDIFF_SYM1092
+LDIFF_SYM1120=Lme_92 - Demo_ListSpent_FindWeekDate_System_DateTime
+	.long LDIFF_SYM1120
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
-Lfde142_end:
+Lfde146_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24645,36 +25177,36 @@ Lfde142_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController__ctor_intptr
-	.quad Lme_8f
+	.quad Lme_93
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1093=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1093
+LDIFF_SYM1121=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1121
 	.byte 2,141,16,3
 	.asciz "handle"
 
-LDIFF_SYM1094=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1094
+LDIFF_SYM1122=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1122
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1095=Lfde143_end - Lfde143_start
-	.long LDIFF_SYM1095
-Lfde143_start:
+LDIFF_SYM1123=Lfde147_end - Lfde147_start
+	.long LDIFF_SYM1123
+Lfde147_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController__ctor_intptr
 
-LDIFF_SYM1096=Lme_8f - Demo_AddViewController__ctor_intptr
-	.long LDIFF_SYM1096
+LDIFF_SYM1124=Lme_93 - Demo_AddViewController__ctor_intptr
+	.long LDIFF_SYM1124
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde143_end:
+Lfde147_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24684,31 +25216,31 @@ Lfde143_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_ViewDidLoad
-	.quad Lme_90
+	.quad Lme_94
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1097=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1097
+LDIFF_SYM1125=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1125
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1098=Lfde144_end - Lfde144_start
-	.long LDIFF_SYM1098
-Lfde144_start:
+LDIFF_SYM1126=Lfde148_end - Lfde148_start
+	.long LDIFF_SYM1126
+Lfde148_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_ViewDidLoad
 
-LDIFF_SYM1099=Lme_90 - Demo_AddViewController_ViewDidLoad
-	.long LDIFF_SYM1099
+LDIFF_SYM1127=Lme_94 - Demo_AddViewController_ViewDidLoad
+	.long LDIFF_SYM1127
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
-Lfde144_end:
+Lfde148_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24718,41 +25250,41 @@ Lfde144_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_Date_EditingDidEnd_object_System_EventArgs
-	.quad Lme_91
+	.quad Lme_95
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1100=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1100
+LDIFF_SYM1128=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1128
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1101=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1101
+LDIFF_SYM1129=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1129
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1102=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1102
+LDIFF_SYM1130=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1130
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1103=Lfde145_end - Lfde145_start
-	.long LDIFF_SYM1103
-Lfde145_start:
+LDIFF_SYM1131=Lfde149_end - Lfde149_start
+	.long LDIFF_SYM1131
+Lfde149_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_Date_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1104=Lme_91 - Demo_AddViewController_Date_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1104
+LDIFF_SYM1132=Lme_95 - Demo_AddViewController_Date_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1132
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde145_end:
+Lfde149_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24762,41 +25294,41 @@ Lfde145_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_Cost_EditingDidEnd_object_System_EventArgs
-	.quad Lme_92
+	.quad Lme_96
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1105=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1105
+LDIFF_SYM1133=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1133
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1106=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1106
+LDIFF_SYM1134=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1134
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1107=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1107
+LDIFF_SYM1135=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1135
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1108=Lfde146_end - Lfde146_start
-	.long LDIFF_SYM1108
-Lfde146_start:
+LDIFF_SYM1136=Lfde150_end - Lfde150_start
+	.long LDIFF_SYM1136
+Lfde150_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_Cost_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1109=Lme_92 - Demo_AddViewController_Cost_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1109
+LDIFF_SYM1137=Lme_96 - Demo_AddViewController_Cost_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1137
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde146_end:
+Lfde150_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24806,41 +25338,41 @@ Lfde146_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_Reason_EditingDidEnd_object_System_EventArgs
-	.quad Lme_93
+	.quad Lme_97
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1110=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1110
+LDIFF_SYM1138=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1138
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1111=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1111
+LDIFF_SYM1139=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1139
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1112=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1112
+LDIFF_SYM1140=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1140
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1113=Lfde147_end - Lfde147_start
-	.long LDIFF_SYM1113
-Lfde147_start:
+LDIFF_SYM1141=Lfde151_end - Lfde151_start
+	.long LDIFF_SYM1141
+Lfde151_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_Reason_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1114=Lme_93 - Demo_AddViewController_Reason_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1114
+LDIFF_SYM1142=Lme_97 - Demo_AddViewController_Reason_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1142
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde147_end:
+Lfde151_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24850,31 +25382,31 @@ Lfde147_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_currentPerson_Demo_Person
-	.quad Lme_94
+	.quad Lme_98
 
 	.byte 2,118,16,3
 	.asciz "person"
 
-LDIFF_SYM1115=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1115
+LDIFF_SYM1143=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1143
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1116=Lfde148_end - Lfde148_start
-	.long LDIFF_SYM1116
-Lfde148_start:
+LDIFF_SYM1144=Lfde152_end - Lfde152_start
+	.long LDIFF_SYM1144
+Lfde152_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_currentPerson_Demo_Person
 
-LDIFF_SYM1117=Lme_94 - Demo_AddViewController_currentPerson_Demo_Person
-	.long LDIFF_SYM1117
+LDIFF_SYM1145=Lme_98 - Demo_AddViewController_currentPerson_Demo_Person
+	.long LDIFF_SYM1145
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde148_end:
+Lfde152_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24884,41 +25416,41 @@ Lfde148_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_AddToDB_TouchDown_object_System_EventArgs
-	.quad Lme_95
+	.quad Lme_99
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1118=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1118
+LDIFF_SYM1146=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1146
 	.byte 2,141,16,3
 	.asciz "sender"
 
-LDIFF_SYM1119=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1119
+LDIFF_SYM1147=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1147
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1120=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1120
+LDIFF_SYM1148=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1148
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1121=Lfde149_end - Lfde149_start
-	.long LDIFF_SYM1121
-Lfde149_start:
+LDIFF_SYM1149=Lfde153_end - Lfde153_start
+	.long LDIFF_SYM1149
+Lfde153_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_AddToDB_TouchDown_object_System_EventArgs
 
-LDIFF_SYM1122=Lme_95 - Demo_AddViewController_AddToDB_TouchDown_object_System_EventArgs
-	.long LDIFF_SYM1122
+LDIFF_SYM1150=Lme_99 - Demo_AddViewController_AddToDB_TouchDown_object_System_EventArgs
+	.long LDIFF_SYM1150
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde149_end:
+Lfde153_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24928,36 +25460,36 @@ Lfde149_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_convertCost
-	.quad Lme_96
+	.quad Lme_9a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1123=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1123
+LDIFF_SYM1151=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1151
 	.byte 2,141,16,11
 	.asciz "V_0"
 
-LDIFF_SYM1124=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM1124
+LDIFF_SYM1152=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1152
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1125=Lfde150_end - Lfde150_start
-	.long LDIFF_SYM1125
-Lfde150_start:
+LDIFF_SYM1153=Lfde154_end - Lfde154_start
+	.long LDIFF_SYM1153
+Lfde154_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_convertCost
 
-LDIFF_SYM1126=Lme_96 - Demo_AddViewController_convertCost
-	.long LDIFF_SYM1126
+LDIFF_SYM1154=Lme_9a - Demo_AddViewController_convertCost
+	.long LDIFF_SYM1154
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde150_end:
+Lfde154_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24967,61 +25499,61 @@ Lfde150_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_Add
-	.quad Lme_97
+	.quad Lme_9b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1127=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1127
+LDIFF_SYM1155=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1155
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1128=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1128
+LDIFF_SYM1156=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1156
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1129=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1129
+LDIFF_SYM1157=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1157
 	.byte 2,141,40,11
 	.asciz "V_2"
 
-LDIFF_SYM1130=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1130
+LDIFF_SYM1158=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1158
 	.byte 1,105,11
 	.asciz "V_3"
 
-LDIFF_SYM1131=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1131
+LDIFF_SYM1159=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1159
 	.byte 1,104,11
 	.asciz "V_4"
 
-LDIFF_SYM1132=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1132
+LDIFF_SYM1160=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1160
 	.byte 1,105,11
 	.asciz "V_5"
 
-LDIFF_SYM1133=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1133
+LDIFF_SYM1161=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1161
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1134=Lfde151_end - Lfde151_start
-	.long LDIFF_SYM1134
-Lfde151_start:
+LDIFF_SYM1162=Lfde155_end - Lfde155_start
+	.long LDIFF_SYM1162
+Lfde155_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_Add
 
-LDIFF_SYM1135=Lme_97 - Demo_AddViewController_Add
-	.long LDIFF_SYM1135
+LDIFF_SYM1163=Lme_9b - Demo_AddViewController_Add
+	.long LDIFF_SYM1163
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,152,22,153,21,68,154,20
 	.align 3
-Lfde151_end:
+Lfde155_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25031,31 +25563,31 @@ Lfde151_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_refresh
-	.quad Lme_98
+	.quad Lme_9c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1136=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1136
+LDIFF_SYM1164=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1164
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1137=Lfde152_end - Lfde152_start
-	.long LDIFF_SYM1137
-Lfde152_start:
+LDIFF_SYM1165=Lfde156_end - Lfde156_start
+	.long LDIFF_SYM1165
+Lfde156_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_refresh
 
-LDIFF_SYM1138=Lme_98 - Demo_AddViewController_refresh
-	.long LDIFF_SYM1138
+LDIFF_SYM1166=Lme_9c - Demo_AddViewController_refresh
+	.long LDIFF_SYM1166
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde152_end:
+Lfde156_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25065,36 +25597,36 @@ Lfde152_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_RemoveSpaces_string
-	.quad Lme_99
+	.quad Lme_9d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1139=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1139
+LDIFF_SYM1167=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1167
 	.byte 0,3
 	.asciz "date"
 
-LDIFF_SYM1140=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1140
+LDIFF_SYM1168=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1168
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1141=Lfde153_end - Lfde153_start
-	.long LDIFF_SYM1141
-Lfde153_start:
+LDIFF_SYM1169=Lfde157_end - Lfde157_start
+	.long LDIFF_SYM1169
+Lfde157_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_RemoveSpaces_string
 
-LDIFF_SYM1142=Lme_99 - Demo_AddViewController_RemoveSpaces_string
-	.long LDIFF_SYM1142
+LDIFF_SYM1170=Lme_9d - Demo_AddViewController_RemoveSpaces_string
+	.long LDIFF_SYM1170
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde153_end:
+Lfde157_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25104,299 +25636,7 @@ Lfde153_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_get_AddToDB
-	.quad Lme_9a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1143=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1143
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1144=Lfde154_end - Lfde154_start
-	.long LDIFF_SYM1144
-Lfde154_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_get_AddToDB
-
-LDIFF_SYM1145=Lme_9a - Demo_AddViewController_get_AddToDB
-	.long LDIFF_SYM1145
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde154_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:set_AddToDB"
-	.asciz "Demo_AddViewController_set_AddToDB_UIKit_UIButton"
-
-	.byte 0,0
-	.quad Demo_AddViewController_set_AddToDB_UIKit_UIButton
-	.quad Lme_9b
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1146=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1146
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM1147=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1147
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1148=Lfde155_end - Lfde155_start
-	.long LDIFF_SYM1148
-Lfde155_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_set_AddToDB_UIKit_UIButton
-
-LDIFF_SYM1149=Lme_9b - Demo_AddViewController_set_AddToDB_UIKit_UIButton
-	.long LDIFF_SYM1149
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde155_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:get_Cost"
-	.asciz "Demo_AddViewController_get_Cost"
-
-	.byte 0,0
-	.quad Demo_AddViewController_get_Cost
-	.quad Lme_9c
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1150=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1150
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1151=Lfde156_end - Lfde156_start
-	.long LDIFF_SYM1151
-Lfde156_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_get_Cost
-
-LDIFF_SYM1152=Lme_9c - Demo_AddViewController_get_Cost
-	.long LDIFF_SYM1152
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde156_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:set_Cost"
-	.asciz "Demo_AddViewController_set_Cost_UIKit_UITextField"
-
-	.byte 0,0
-	.quad Demo_AddViewController_set_Cost_UIKit_UITextField
-	.quad Lme_9d
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1153=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1153
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM1154=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1154
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1155=Lfde157_end - Lfde157_start
-	.long LDIFF_SYM1155
-Lfde157_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_set_Cost_UIKit_UITextField
-
-LDIFF_SYM1156=Lme_9d - Demo_AddViewController_set_Cost_UIKit_UITextField
-	.long LDIFF_SYM1156
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde157_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:get_Date"
-	.asciz "Demo_AddViewController_get_Date"
-
-	.byte 0,0
-	.quad Demo_AddViewController_get_Date
 	.quad Lme_9e
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1157=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1157
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1158=Lfde158_end - Lfde158_start
-	.long LDIFF_SYM1158
-Lfde158_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_get_Date
-
-LDIFF_SYM1159=Lme_9e - Demo_AddViewController_get_Date
-	.long LDIFF_SYM1159
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde158_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:set_Date"
-	.asciz "Demo_AddViewController_set_Date_UIKit_UIDatePicker"
-
-	.byte 0,0
-	.quad Demo_AddViewController_set_Date_UIKit_UIDatePicker
-	.quad Lme_9f
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1160=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1160
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM1161=LTDIE_61_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1161
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1162=Lfde159_end - Lfde159_start
-	.long LDIFF_SYM1162
-Lfde159_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_set_Date_UIKit_UIDatePicker
-
-LDIFF_SYM1163=Lme_9f - Demo_AddViewController_set_Date_UIKit_UIDatePicker
-	.long LDIFF_SYM1163
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde159_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:get_Reason"
-	.asciz "Demo_AddViewController_get_Reason"
-
-	.byte 0,0
-	.quad Demo_AddViewController_get_Reason
-	.quad Lme_a0
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1164=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1164
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1165=Lfde160_end - Lfde160_start
-	.long LDIFF_SYM1165
-Lfde160_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_get_Reason
-
-LDIFF_SYM1166=Lme_a0 - Demo_AddViewController_get_Reason
-	.long LDIFF_SYM1166
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde160_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:set_Reason"
-	.asciz "Demo_AddViewController_set_Reason_UIKit_UITextField"
-
-	.byte 0,0
-	.quad Demo_AddViewController_set_Reason_UIKit_UITextField
-	.quad Lme_a1
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1167=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1167
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM1168=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1168
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1169=Lfde161_end - Lfde161_start
-	.long LDIFF_SYM1169
-Lfde161_start:
-
-	.long 0
-	.align 3
-	.quad Demo_AddViewController_set_Reason_UIKit_UITextField
-
-LDIFF_SYM1170=Lme_a1 - Demo_AddViewController_set_Reason_UIKit_UITextField
-	.long LDIFF_SYM1170
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde161_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.AddViewController:get_ShowPurchase"
-	.asciz "Demo_AddViewController_get_ShowPurchase"
-
-	.byte 0,0
-	.quad Demo_AddViewController_get_ShowPurchase
-	.quad Lme_a2
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -25407,30 +25647,30 @@ LDIFF_SYM1171=LTDIE_78_REFERENCE - Ldebug_info_start
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1172=Lfde162_end - Lfde162_start
+LDIFF_SYM1172=Lfde158_end - Lfde158_start
 	.long LDIFF_SYM1172
-Lfde162_start:
+Lfde158_start:
 
 	.long 0
 	.align 3
-	.quad Demo_AddViewController_get_ShowPurchase
+	.quad Demo_AddViewController_get_AddToDB
 
-LDIFF_SYM1173=Lme_a2 - Demo_AddViewController_get_ShowPurchase
+LDIFF_SYM1173=Lme_9e - Demo_AddViewController_get_AddToDB
 	.long LDIFF_SYM1173
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde162_end:
+Lfde158_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "Demo.AddViewController:set_ShowPurchase"
-	.asciz "Demo_AddViewController_set_ShowPurchase_UIKit_UITextView"
+	.asciz "Demo.AddViewController:set_AddToDB"
+	.asciz "Demo_AddViewController_set_AddToDB_UIKit_UIButton"
 
 	.byte 0,0
-	.quad Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
-	.quad Lme_a3
+	.quad Demo_AddViewController_set_AddToDB_UIKit_UIButton
+	.quad Lme_9f
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -25440,26 +25680,318 @@ LDIFF_SYM1174=LTDIE_78_REFERENCE - Ldebug_info_start
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1175=LTDIE_25_REFERENCE - Ldebug_info_start
+LDIFF_SYM1175=LTDIE_22_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1175
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1176=Lfde163_end - Lfde163_start
+LDIFF_SYM1176=Lfde159_end - Lfde159_start
 	.long LDIFF_SYM1176
+Lfde159_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_set_AddToDB_UIKit_UIButton
+
+LDIFF_SYM1177=Lme_9f - Demo_AddViewController_set_AddToDB_UIKit_UIButton
+	.long LDIFF_SYM1177
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde159_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:get_Cost"
+	.asciz "Demo_AddViewController_get_Cost"
+
+	.byte 0,0
+	.quad Demo_AddViewController_get_Cost
+	.quad Lme_a0
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1178=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1178
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1179=Lfde160_end - Lfde160_start
+	.long LDIFF_SYM1179
+Lfde160_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_get_Cost
+
+LDIFF_SYM1180=Lme_a0 - Demo_AddViewController_get_Cost
+	.long LDIFF_SYM1180
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde160_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:set_Cost"
+	.asciz "Demo_AddViewController_set_Cost_UIKit_UITextField"
+
+	.byte 0,0
+	.quad Demo_AddViewController_set_Cost_UIKit_UITextField
+	.quad Lme_a1
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1181=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1181
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM1182=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1182
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1183=Lfde161_end - Lfde161_start
+	.long LDIFF_SYM1183
+Lfde161_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_set_Cost_UIKit_UITextField
+
+LDIFF_SYM1184=Lme_a1 - Demo_AddViewController_set_Cost_UIKit_UITextField
+	.long LDIFF_SYM1184
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde161_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:get_Date"
+	.asciz "Demo_AddViewController_get_Date"
+
+	.byte 0,0
+	.quad Demo_AddViewController_get_Date
+	.quad Lme_a2
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1185=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1185
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1186=Lfde162_end - Lfde162_start
+	.long LDIFF_SYM1186
+Lfde162_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_get_Date
+
+LDIFF_SYM1187=Lme_a2 - Demo_AddViewController_get_Date
+	.long LDIFF_SYM1187
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde162_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:set_Date"
+	.asciz "Demo_AddViewController_set_Date_UIKit_UIDatePicker"
+
+	.byte 0,0
+	.quad Demo_AddViewController_set_Date_UIKit_UIDatePicker
+	.quad Lme_a3
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1188=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1188
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM1189=LTDIE_61_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1189
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1190=Lfde163_end - Lfde163_start
+	.long LDIFF_SYM1190
 Lfde163_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_set_Date_UIKit_UIDatePicker
+
+LDIFF_SYM1191=Lme_a3 - Demo_AddViewController_set_Date_UIKit_UIDatePicker
+	.long LDIFF_SYM1191
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde163_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:get_Reason"
+	.asciz "Demo_AddViewController_get_Reason"
+
+	.byte 0,0
+	.quad Demo_AddViewController_get_Reason
+	.quad Lme_a4
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1192=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1192
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1193=Lfde164_end - Lfde164_start
+	.long LDIFF_SYM1193
+Lfde164_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_get_Reason
+
+LDIFF_SYM1194=Lme_a4 - Demo_AddViewController_get_Reason
+	.long LDIFF_SYM1194
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde164_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:set_Reason"
+	.asciz "Demo_AddViewController_set_Reason_UIKit_UITextField"
+
+	.byte 0,0
+	.quad Demo_AddViewController_set_Reason_UIKit_UITextField
+	.quad Lme_a5
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1195=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1195
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM1196=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1196
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1197=Lfde165_end - Lfde165_start
+	.long LDIFF_SYM1197
+Lfde165_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_set_Reason_UIKit_UITextField
+
+LDIFF_SYM1198=Lme_a5 - Demo_AddViewController_set_Reason_UIKit_UITextField
+	.long LDIFF_SYM1198
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde165_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:get_ShowPurchase"
+	.asciz "Demo_AddViewController_get_ShowPurchase"
+
+	.byte 0,0
+	.quad Demo_AddViewController_get_ShowPurchase
+	.quad Lme_a6
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1199=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1199
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1200=Lfde166_end - Lfde166_start
+	.long LDIFF_SYM1200
+Lfde166_start:
+
+	.long 0
+	.align 3
+	.quad Demo_AddViewController_get_ShowPurchase
+
+LDIFF_SYM1201=Lme_a6 - Demo_AddViewController_get_ShowPurchase
+	.long LDIFF_SYM1201
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde166_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.AddViewController:set_ShowPurchase"
+	.asciz "Demo_AddViewController_set_ShowPurchase_UIKit_UITextView"
+
+	.byte 0,0
+	.quad Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
+	.quad Lme_a7
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1202=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1202
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM1203=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1203
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1204=Lfde167_end - Lfde167_start
+	.long LDIFF_SYM1204
+Lfde167_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
 
-LDIFF_SYM1177=Lme_a3 - Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
-	.long LDIFF_SYM1177
+LDIFF_SYM1205=Lme_a7 - Demo_AddViewController_set_ShowPurchase_UIKit_UITextView
+	.long LDIFF_SYM1205
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde163_end:
+Lfde167_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25469,31 +26001,31 @@ Lfde163_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController_ReleaseDesignerOutlets
-	.quad Lme_a4
+	.quad Lme_a8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1178=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1178
+LDIFF_SYM1206=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1206
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1179=Lfde164_end - Lfde164_start
-	.long LDIFF_SYM1179
-Lfde164_start:
+LDIFF_SYM1207=Lfde168_end - Lfde168_start
+	.long LDIFF_SYM1207
+Lfde168_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController_ReleaseDesignerOutlets
 
-LDIFF_SYM1180=Lme_a4 - Demo_AddViewController_ReleaseDesignerOutlets
-	.long LDIFF_SYM1180
+LDIFF_SYM1208=Lme_a8 - Demo_AddViewController_ReleaseDesignerOutlets
+	.long LDIFF_SYM1208
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde164_end:
+Lfde168_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25503,31 +26035,31 @@ Lfde164_end:
 
 	.byte 0,0
 	.quad Demo_AddViewController__ViewDidLoadb__3_0
-	.quad Lme_a5
+	.quad Lme_a9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1181=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1181
+LDIFF_SYM1209=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1209
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1182=Lfde165_end - Lfde165_start
-	.long LDIFF_SYM1182
-Lfde165_start:
+LDIFF_SYM1210=Lfde169_end - Lfde169_start
+	.long LDIFF_SYM1210
+Lfde169_start:
 
 	.long 0
 	.align 3
 	.quad Demo_AddViewController__ViewDidLoadb__3_0
 
-LDIFF_SYM1183=Lme_a5 - Demo_AddViewController__ViewDidLoadb__3_0
-	.long LDIFF_SYM1183
+LDIFF_SYM1211=Lme_a9 - Demo_AddViewController__ViewDidLoadb__3_0
+	.long LDIFF_SYM1211
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde165_end:
+Lfde169_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25537,36 +26069,36 @@ Lfde165_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController__ctor_intptr
-	.quad Lme_a6
+	.quad Lme_aa
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1184=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1184
+LDIFF_SYM1212=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1212
 	.byte 2,141,16,3
 	.asciz "handle"
 
-LDIFF_SYM1185=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1185
+LDIFF_SYM1213=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1213
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1186=Lfde166_end - Lfde166_start
-	.long LDIFF_SYM1186
-Lfde166_start:
+LDIFF_SYM1214=Lfde170_end - Lfde170_start
+	.long LDIFF_SYM1214
+Lfde170_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController__ctor_intptr
 
-LDIFF_SYM1187=Lme_a6 - Demo_DirectDBViewController__ctor_intptr
-	.long LDIFF_SYM1187
+LDIFF_SYM1215=Lme_aa - Demo_DirectDBViewController__ctor_intptr
+	.long LDIFF_SYM1215
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde166_end:
+Lfde170_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25576,31 +26108,31 @@ Lfde166_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_ViewDidLoad
-	.quad Lme_a7
+	.quad Lme_ab
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1188=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1188
+LDIFF_SYM1216=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1216
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1189=Lfde167_end - Lfde167_start
-	.long LDIFF_SYM1189
-Lfde167_start:
+LDIFF_SYM1217=Lfde171_end - Lfde171_start
+	.long LDIFF_SYM1217
+Lfde171_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_ViewDidLoad
 
-LDIFF_SYM1190=Lme_a7 - Demo_DirectDBViewController_ViewDidLoad
-	.long LDIFF_SYM1190
+LDIFF_SYM1218=Lme_ab - Demo_DirectDBViewController_ViewDidLoad
+	.long LDIFF_SYM1218
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16
 	.align 3
-Lfde167_end:
+Lfde171_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25610,41 +26142,41 @@ Lfde167_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_DirectDebit_BillingDay_EditingDidEnd_object_System_EventArgs
-	.quad Lme_a8
+	.quad Lme_ac
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1191=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1191
+LDIFF_SYM1219=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1219
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1192=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1192
+LDIFF_SYM1220=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1220
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1193=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1193
+LDIFF_SYM1221=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1221
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1194=Lfde168_end - Lfde168_start
-	.long LDIFF_SYM1194
-Lfde168_start:
+LDIFF_SYM1222=Lfde172_end - Lfde172_start
+	.long LDIFF_SYM1222
+Lfde172_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_DirectDebit_BillingDay_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1195=Lme_a8 - Demo_DirectDBViewController_DirectDebit_BillingDay_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1195
+LDIFF_SYM1223=Lme_ac - Demo_DirectDBViewController_DirectDebit_BillingDay_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1223
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde168_end:
+Lfde172_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25654,41 +26186,41 @@ Lfde168_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_DirectDebit_Cost_EditingDidEnd_object_System_EventArgs
-	.quad Lme_a9
+	.quad Lme_ad
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1196=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1196
+LDIFF_SYM1224=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1224
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1197=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1197
+LDIFF_SYM1225=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1225
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1198=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1198
+LDIFF_SYM1226=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1226
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1199=Lfde169_end - Lfde169_start
-	.long LDIFF_SYM1199
-Lfde169_start:
+LDIFF_SYM1227=Lfde173_end - Lfde173_start
+	.long LDIFF_SYM1227
+Lfde173_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_DirectDebit_Cost_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1200=Lme_a9 - Demo_DirectDBViewController_DirectDebit_Cost_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1200
+LDIFF_SYM1228=Lme_ad - Demo_DirectDBViewController_DirectDebit_Cost_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1228
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde169_end:
+Lfde173_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25698,31 +26230,31 @@ Lfde169_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_refresh
-	.quad Lme_aa
+	.quad Lme_ae
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1201=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1201
+LDIFF_SYM1229=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1229
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1202=Lfde170_end - Lfde170_start
-	.long LDIFF_SYM1202
-Lfde170_start:
+LDIFF_SYM1230=Lfde174_end - Lfde174_start
+	.long LDIFF_SYM1230
+Lfde174_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_refresh
 
-LDIFF_SYM1203=Lme_aa - Demo_DirectDBViewController_refresh
-	.long LDIFF_SYM1203
+LDIFF_SYM1231=Lme_ae - Demo_DirectDBViewController_refresh
+	.long LDIFF_SYM1231
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde170_end:
+Lfde174_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_83:
@@ -25731,142 +26263,124 @@ LTDIE_83:
 	.asciz "Demo_DirectDebits"
 
 	.byte 48,16
-LDIFF_SYM1204=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM1204
+LDIFF_SYM1232=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM1232
 	.byte 2,35,0,6
 	.asciz "<Id>k__BackingField"
 
-LDIFF_SYM1205=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1205
+LDIFF_SYM1233=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1233
 	.byte 2,35,24,6
 	.asciz "<m_userID>k__BackingField"
 
-LDIFF_SYM1206=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1206
+LDIFF_SYM1234=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1234
 	.byte 2,35,28,6
 	.asciz "<m_Name>k__BackingField"
 
-LDIFF_SYM1207=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1207
+LDIFF_SYM1235=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1235
 	.byte 2,35,16,6
 	.asciz "<m_days>k__BackingField"
 
-LDIFF_SYM1208=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1208
+LDIFF_SYM1236=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1236
 	.byte 2,35,32,6
 	.asciz "<m_billingDay>k__BackingField"
 
-LDIFF_SYM1209=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1209
+LDIFF_SYM1237=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1237
 	.byte 2,35,36,6
 	.asciz "<m_cost>k__BackingField"
 
-LDIFF_SYM1210=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM1210
+LDIFF_SYM1238=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1238
 	.byte 2,35,40,0,7
 	.asciz "Demo_DirectDebits"
 
-LDIFF_SYM1211=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1211
+LDIFF_SYM1239=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1239
 LTDIE_83_POINTER:
 
 	.byte 13
-LDIFF_SYM1212=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1212
+LDIFF_SYM1240=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1240
 LTDIE_83_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1213=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM1213
-LTDIE_84:
-
-	.byte 5
-	.asciz "System_Double"
-
-	.byte 24,16
-LDIFF_SYM1214=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM1214
-	.byte 2,35,0,6
-	.asciz "m_value"
-
-LDIFF_SYM1215=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1215
-	.byte 2,35,16,0,7
-	.asciz "System_Double"
-
-LDIFF_SYM1216=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM1216
-LTDIE_84_POINTER:
-
-	.byte 13
-LDIFF_SYM1217=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM1217
-LTDIE_84_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1218=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM1218
+LDIFF_SYM1241=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1241
 	.byte 2
 	.asciz "Demo.DirectDBViewController:Calculateexpense"
 	.asciz "Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits"
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
-	.quad Lme_ab
+	.quad Lme_af
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1219=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1219
+LDIFF_SYM1242=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1242
 	.byte 0,3
 	.asciz "directDebit"
 
-LDIFF_SYM1220=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1220
+LDIFF_SYM1243=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1243
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1221=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1221
-	.byte 0,11
+LDIFF_SYM1244=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1244
+	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1222=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1222
-	.byte 0,11
+LDIFF_SYM1245=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1245
+	.byte 3,141,248,0,11
 	.asciz "V_2"
 
-LDIFF_SYM1223=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1223
-	.byte 3,141,208,0,11
+LDIFF_SYM1246=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1246
+	.byte 3,141,240,0,11
 	.asciz "V_3"
 
-LDIFF_SYM1224=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1224
-	.byte 2,141,48,11
+LDIFF_SYM1247=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1247
+	.byte 3,141,232,0,11
 	.asciz "V_4"
 
-LDIFF_SYM1225=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1225
-	.byte 2,141,56,0
+LDIFF_SYM1248=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1248
+	.byte 3,141,144,1,11
+	.asciz "V_5"
+
+LDIFF_SYM1249=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1249
+	.byte 3,141,224,0,11
+	.asciz "V_6"
+
+LDIFF_SYM1250=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1250
+	.byte 3,141,128,1,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1226=Lfde171_end - Lfde171_start
-	.long LDIFF_SYM1226
-Lfde171_start:
+LDIFF_SYM1251=Lfde175_end - Lfde175_start
+	.long LDIFF_SYM1251
+Lfde175_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
 
-LDIFF_SYM1227=Lme_ab - Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
-	.long LDIFF_SYM1227
+LDIFF_SYM1252=Lme_af - Demo_DirectDBViewController_Calculateexpense_Demo_DirectDebits
+	.long LDIFF_SYM1252
 	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,154,18
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,154,29
 	.align 3
-Lfde171_end:
+Lfde175_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25876,41 +26390,41 @@ Lfde171_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_RightBarButtonItem_Clicked_object_System_EventArgs
-	.quad Lme_ac
+	.quad Lme_b0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1228=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1228
+LDIFF_SYM1253=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1253
 	.byte 2,141,16,3
 	.asciz "sender"
 
-LDIFF_SYM1229=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1229
+LDIFF_SYM1254=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1254
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1230=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1230
+LDIFF_SYM1255=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1255
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1231=Lfde172_end - Lfde172_start
-	.long LDIFF_SYM1231
-Lfde172_start:
+LDIFF_SYM1256=Lfde176_end - Lfde176_start
+	.long LDIFF_SYM1256
+Lfde176_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_RightBarButtonItem_Clicked_object_System_EventArgs
 
-LDIFF_SYM1232=Lme_ac - Demo_DirectDBViewController_RightBarButtonItem_Clicked_object_System_EventArgs
-	.long LDIFF_SYM1232
+LDIFF_SYM1257=Lme_b0 - Demo_DirectDBViewController_RightBarButtonItem_Clicked_object_System_EventArgs
+	.long LDIFF_SYM1257
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde172_end:
+Lfde176_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25920,36 +26434,36 @@ Lfde172_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_convertDays
-	.quad Lme_ad
+	.quad Lme_b1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1233=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1233
+LDIFF_SYM1258=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1258
 	.byte 2,141,16,11
 	.asciz "V_0"
 
-LDIFF_SYM1234=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1234
+LDIFF_SYM1259=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1259
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1235=Lfde173_end - Lfde173_start
-	.long LDIFF_SYM1235
-Lfde173_start:
+LDIFF_SYM1260=Lfde177_end - Lfde177_start
+	.long LDIFF_SYM1260
+Lfde177_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_convertDays
 
-LDIFF_SYM1236=Lme_ad - Demo_DirectDBViewController_convertDays
-	.long LDIFF_SYM1236
+LDIFF_SYM1261=Lme_b1 - Demo_DirectDBViewController_convertDays
+	.long LDIFF_SYM1261
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde173_end:
+Lfde177_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25959,36 +26473,36 @@ Lfde173_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_convertBillingDay
-	.quad Lme_ae
+	.quad Lme_b2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1237=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1237
+LDIFF_SYM1262=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1262
 	.byte 2,141,16,11
 	.asciz "V_0"
 
-LDIFF_SYM1238=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1238
+LDIFF_SYM1263=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1263
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1239=Lfde174_end - Lfde174_start
-	.long LDIFF_SYM1239
-Lfde174_start:
+LDIFF_SYM1264=Lfde178_end - Lfde178_start
+	.long LDIFF_SYM1264
+Lfde178_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_convertBillingDay
 
-LDIFF_SYM1240=Lme_ae - Demo_DirectDBViewController_convertBillingDay
-	.long LDIFF_SYM1240
+LDIFF_SYM1265=Lme_b2 - Demo_DirectDBViewController_convertBillingDay
+	.long LDIFF_SYM1265
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde174_end:
+Lfde178_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25998,36 +26512,36 @@ Lfde174_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_convertCost
-	.quad Lme_af
+	.quad Lme_b3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1241=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1241
+LDIFF_SYM1266=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1266
 	.byte 2,141,16,11
 	.asciz "V_0"
 
-LDIFF_SYM1242=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM1242
+LDIFF_SYM1267=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1267
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1243=Lfde175_end - Lfde175_start
-	.long LDIFF_SYM1243
-Lfde175_start:
+LDIFF_SYM1268=Lfde179_end - Lfde179_start
+	.long LDIFF_SYM1268
+Lfde179_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_convertCost
 
-LDIFF_SYM1244=Lme_af - Demo_DirectDBViewController_convertCost
-	.long LDIFF_SYM1244
+LDIFF_SYM1269=Lme_b3 - Demo_DirectDBViewController_convertCost
+	.long LDIFF_SYM1269
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde175_end:
+Lfde179_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26037,91 +26551,91 @@ Lfde175_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_DirectDebit_Add_TouchDown_object_System_EventArgs
-	.quad Lme_b0
+	.quad Lme_b4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1245=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1245
+LDIFF_SYM1270=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1270
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1246=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1246
+LDIFF_SYM1271=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1271
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1247=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1247
+LDIFF_SYM1272=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1272
 	.byte 0,11
 	.asciz "V_0"
 
-LDIFF_SYM1248=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1248
+LDIFF_SYM1273=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1273
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1249=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1249
+LDIFF_SYM1274=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1274
 	.byte 2,141,56,11
 	.asciz "V_2"
 
-LDIFF_SYM1250=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1250
+LDIFF_SYM1275=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1275
 	.byte 1,105,11
 	.asciz "V_3"
 
-LDIFF_SYM1251=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1251
+LDIFF_SYM1276=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1276
 	.byte 1,104,11
 	.asciz "V_4"
 
-LDIFF_SYM1252=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1252
+LDIFF_SYM1277=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1277
 	.byte 1,105,11
 	.asciz "V_5"
 
-LDIFF_SYM1253=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1253
+LDIFF_SYM1278=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1278
 	.byte 1,104,11
 	.asciz "V_6"
 
-LDIFF_SYM1254=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1254
+LDIFF_SYM1279=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1279
 	.byte 1,105,11
 	.asciz "V_7"
 
-LDIFF_SYM1255=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1255
+LDIFF_SYM1280=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1280
 	.byte 1,104,11
 	.asciz "V_8"
 
-LDIFF_SYM1256=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1256
+LDIFF_SYM1281=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1281
 	.byte 1,105,11
 	.asciz "V_9"
 
-LDIFF_SYM1257=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1257
+LDIFF_SYM1282=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1282
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1258=Lfde176_end - Lfde176_start
-	.long LDIFF_SYM1258
-Lfde176_start:
+LDIFF_SYM1283=Lfde180_end - Lfde180_start
+	.long LDIFF_SYM1283
+Lfde180_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_DirectDebit_Add_TouchDown_object_System_EventArgs
 
-LDIFF_SYM1259=Lme_b0 - Demo_DirectDBViewController_DirectDebit_Add_TouchDown_object_System_EventArgs
-	.long LDIFF_SYM1259
+LDIFF_SYM1284=Lme_b4 - Demo_DirectDBViewController_DirectDebit_Add_TouchDown_object_System_EventArgs
+	.long LDIFF_SYM1284
 	.long 0
 	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26,153,25,68,154,24
 	.align 3
-Lfde176_end:
+Lfde180_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26131,41 +26645,41 @@ Lfde176_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_DirectDebit_Period_EditingDidEnd_object_System_EventArgs
-	.quad Lme_b1
+	.quad Lme_b5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1260=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1260
+LDIFF_SYM1285=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1285
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1261=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1261
+LDIFF_SYM1286=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1286
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1262=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1262
+LDIFF_SYM1287=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1287
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1263=Lfde177_end - Lfde177_start
-	.long LDIFF_SYM1263
-Lfde177_start:
+LDIFF_SYM1288=Lfde181_end - Lfde181_start
+	.long LDIFF_SYM1288
+Lfde181_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_DirectDebit_Period_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1264=Lme_b1 - Demo_DirectDBViewController_DirectDebit_Period_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1264
+LDIFF_SYM1289=Lme_b5 - Demo_DirectDBViewController_DirectDebit_Period_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1289
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde177_end:
+Lfde181_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26175,41 +26689,41 @@ Lfde177_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_DirectDebit_Name_EditingDidEnd_object_System_EventArgs
-	.quad Lme_b2
+	.quad Lme_b6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1265=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1265
+LDIFF_SYM1290=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1290
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1266=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1266
+LDIFF_SYM1291=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1291
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1267=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1267
+LDIFF_SYM1292=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1292
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1268=Lfde178_end - Lfde178_start
-	.long LDIFF_SYM1268
-Lfde178_start:
+LDIFF_SYM1293=Lfde182_end - Lfde182_start
+	.long LDIFF_SYM1293
+Lfde182_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_DirectDebit_Name_EditingDidEnd_object_System_EventArgs
 
-LDIFF_SYM1269=Lme_b2 - Demo_DirectDBViewController_DirectDebit_Name_EditingDidEnd_object_System_EventArgs
-	.long LDIFF_SYM1269
+LDIFF_SYM1294=Lme_b6 - Demo_DirectDBViewController_DirectDebit_Name_EditingDidEnd_object_System_EventArgs
+	.long LDIFF_SYM1294
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde178_end:
+Lfde182_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26219,31 +26733,31 @@ Lfde178_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_update_int
-	.quad Lme_b3
+	.quad Lme_b7
 
 	.byte 2,118,16,3
 	.asciz "selection"
 
-LDIFF_SYM1270=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1270
+LDIFF_SYM1295=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1295
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1271=Lfde179_end - Lfde179_start
-	.long LDIFF_SYM1271
-Lfde179_start:
+LDIFF_SYM1296=Lfde183_end - Lfde183_start
+	.long LDIFF_SYM1296
+Lfde183_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_update_int
 
-LDIFF_SYM1272=Lme_b3 - Demo_DirectDBViewController_update_int
-	.long LDIFF_SYM1272
+LDIFF_SYM1297=Lme_b7 - Demo_DirectDBViewController_update_int
+	.long LDIFF_SYM1297
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde179_end:
+Lfde183_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26253,31 +26767,31 @@ Lfde179_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_UserSelected_Demo_Person
-	.quad Lme_b4
+	.quad Lme_b8
 
 	.byte 2,118,16,3
 	.asciz "person"
 
-LDIFF_SYM1273=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1273
+LDIFF_SYM1298=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1298
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1274=Lfde180_end - Lfde180_start
-	.long LDIFF_SYM1274
-Lfde180_start:
+LDIFF_SYM1299=Lfde184_end - Lfde184_start
+	.long LDIFF_SYM1299
+Lfde184_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_UserSelected_Demo_Person
 
-LDIFF_SYM1275=Lme_b4 - Demo_DirectDBViewController_UserSelected_Demo_Person
-	.long LDIFF_SYM1275
+LDIFF_SYM1300=Lme_b8 - Demo_DirectDBViewController_UserSelected_Demo_Person
+	.long LDIFF_SYM1300
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde180_end:
+Lfde184_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26287,31 +26801,31 @@ Lfde180_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_db_cost
-	.quad Lme_b5
+	.quad Lme_b9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1276=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1276
+LDIFF_SYM1301=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1301
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1277=Lfde181_end - Lfde181_start
-	.long LDIFF_SYM1277
-Lfde181_start:
+LDIFF_SYM1302=Lfde185_end - Lfde185_start
+	.long LDIFF_SYM1302
+Lfde185_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_db_cost
 
-LDIFF_SYM1278=Lme_b5 - Demo_DirectDBViewController_get_db_cost
-	.long LDIFF_SYM1278
+LDIFF_SYM1303=Lme_b9 - Demo_DirectDBViewController_get_db_cost
+	.long LDIFF_SYM1303
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde181_end:
+Lfde185_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26321,36 +26835,36 @@ Lfde181_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_db_cost_UIKit_UITextField
-	.quad Lme_b6
+	.quad Lme_ba
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1279=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1279
+LDIFF_SYM1304=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1304
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1280=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1280
+LDIFF_SYM1305=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1305
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1281=Lfde182_end - Lfde182_start
-	.long LDIFF_SYM1281
-Lfde182_start:
+LDIFF_SYM1306=Lfde186_end - Lfde186_start
+	.long LDIFF_SYM1306
+Lfde186_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_db_cost_UIKit_UITextField
 
-LDIFF_SYM1282=Lme_b6 - Demo_DirectDBViewController_set_db_cost_UIKit_UITextField
-	.long LDIFF_SYM1282
+LDIFF_SYM1307=Lme_ba - Demo_DirectDBViewController_set_db_cost_UIKit_UITextField
+	.long LDIFF_SYM1307
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde182_end:
+Lfde186_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26360,31 +26874,31 @@ Lfde182_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_Add
-	.quad Lme_b7
+	.quad Lme_bb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1283=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1283
+LDIFF_SYM1308=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1308
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1284=Lfde183_end - Lfde183_start
-	.long LDIFF_SYM1284
-Lfde183_start:
+LDIFF_SYM1309=Lfde187_end - Lfde187_start
+	.long LDIFF_SYM1309
+Lfde187_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_Add
 
-LDIFF_SYM1285=Lme_b7 - Demo_DirectDBViewController_get_DirectDebit_Add
-	.long LDIFF_SYM1285
+LDIFF_SYM1310=Lme_bb - Demo_DirectDBViewController_get_DirectDebit_Add
+	.long LDIFF_SYM1310
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde183_end:
+Lfde187_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26394,36 +26908,36 @@ Lfde183_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_Add_UIKit_UIButton
-	.quad Lme_b8
+	.quad Lme_bc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1286=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1286
+LDIFF_SYM1311=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1311
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1287=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1287
+LDIFF_SYM1312=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1312
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1288=Lfde184_end - Lfde184_start
-	.long LDIFF_SYM1288
-Lfde184_start:
+LDIFF_SYM1313=Lfde188_end - Lfde188_start
+	.long LDIFF_SYM1313
+Lfde188_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_Add_UIKit_UIButton
 
-LDIFF_SYM1289=Lme_b8 - Demo_DirectDBViewController_set_DirectDebit_Add_UIKit_UIButton
-	.long LDIFF_SYM1289
+LDIFF_SYM1314=Lme_bc - Demo_DirectDBViewController_set_DirectDebit_Add_UIKit_UIButton
+	.long LDIFF_SYM1314
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde184_end:
+Lfde188_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26433,31 +26947,31 @@ Lfde184_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_BillingDay
-	.quad Lme_b9
+	.quad Lme_bd
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1290=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1290
+LDIFF_SYM1315=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1315
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1291=Lfde185_end - Lfde185_start
-	.long LDIFF_SYM1291
-Lfde185_start:
+LDIFF_SYM1316=Lfde189_end - Lfde189_start
+	.long LDIFF_SYM1316
+Lfde189_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_BillingDay
 
-LDIFF_SYM1292=Lme_b9 - Demo_DirectDBViewController_get_DirectDebit_BillingDay
-	.long LDIFF_SYM1292
+LDIFF_SYM1317=Lme_bd - Demo_DirectDBViewController_get_DirectDebit_BillingDay
+	.long LDIFF_SYM1317
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde185_end:
+Lfde189_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26467,36 +26981,36 @@ Lfde185_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_BillingDay_UIKit_UITextField
-	.quad Lme_ba
+	.quad Lme_be
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1293=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1293
+LDIFF_SYM1318=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1318
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1294=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1294
+LDIFF_SYM1319=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1319
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1295=Lfde186_end - Lfde186_start
-	.long LDIFF_SYM1295
-Lfde186_start:
+LDIFF_SYM1320=Lfde190_end - Lfde190_start
+	.long LDIFF_SYM1320
+Lfde190_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_BillingDay_UIKit_UITextField
 
-LDIFF_SYM1296=Lme_ba - Demo_DirectDBViewController_set_DirectDebit_BillingDay_UIKit_UITextField
-	.long LDIFF_SYM1296
+LDIFF_SYM1321=Lme_be - Demo_DirectDBViewController_set_DirectDebit_BillingDay_UIKit_UITextField
+	.long LDIFF_SYM1321
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde186_end:
+Lfde190_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26506,31 +27020,31 @@ Lfde186_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_Cost
-	.quad Lme_bb
+	.quad Lme_bf
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1297=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1297
+LDIFF_SYM1322=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1322
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1298=Lfde187_end - Lfde187_start
-	.long LDIFF_SYM1298
-Lfde187_start:
+LDIFF_SYM1323=Lfde191_end - Lfde191_start
+	.long LDIFF_SYM1323
+Lfde191_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_Cost
 
-LDIFF_SYM1299=Lme_bb - Demo_DirectDBViewController_get_DirectDebit_Cost
-	.long LDIFF_SYM1299
+LDIFF_SYM1324=Lme_bf - Demo_DirectDBViewController_get_DirectDebit_Cost
+	.long LDIFF_SYM1324
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde187_end:
+Lfde191_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26540,36 +27054,36 @@ Lfde187_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_Cost_UIKit_UIButton
-	.quad Lme_bc
+	.quad Lme_c0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1300=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1300
+LDIFF_SYM1325=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1325
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1301=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1301
+LDIFF_SYM1326=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1326
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1302=Lfde188_end - Lfde188_start
-	.long LDIFF_SYM1302
-Lfde188_start:
+LDIFF_SYM1327=Lfde192_end - Lfde192_start
+	.long LDIFF_SYM1327
+Lfde192_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_Cost_UIKit_UIButton
 
-LDIFF_SYM1303=Lme_bc - Demo_DirectDBViewController_set_DirectDebit_Cost_UIKit_UIButton
-	.long LDIFF_SYM1303
+LDIFF_SYM1328=Lme_c0 - Demo_DirectDBViewController_set_DirectDebit_Cost_UIKit_UIButton
+	.long LDIFF_SYM1328
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde188_end:
+Lfde192_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26579,31 +27093,31 @@ Lfde188_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_Name
-	.quad Lme_bd
+	.quad Lme_c1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1304=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1304
+LDIFF_SYM1329=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1329
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1305=Lfde189_end - Lfde189_start
-	.long LDIFF_SYM1305
-Lfde189_start:
+LDIFF_SYM1330=Lfde193_end - Lfde193_start
+	.long LDIFF_SYM1330
+Lfde193_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_Name
 
-LDIFF_SYM1306=Lme_bd - Demo_DirectDBViewController_get_DirectDebit_Name
-	.long LDIFF_SYM1306
+LDIFF_SYM1331=Lme_c1 - Demo_DirectDBViewController_get_DirectDebit_Name
+	.long LDIFF_SYM1331
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde189_end:
+Lfde193_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26613,36 +27127,36 @@ Lfde189_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_Name_UIKit_UITextField
-	.quad Lme_be
+	.quad Lme_c2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1307=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1307
+LDIFF_SYM1332=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1332
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1308=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1308
+LDIFF_SYM1333=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1333
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1309=Lfde190_end - Lfde190_start
-	.long LDIFF_SYM1309
-Lfde190_start:
+LDIFF_SYM1334=Lfde194_end - Lfde194_start
+	.long LDIFF_SYM1334
+Lfde194_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_Name_UIKit_UITextField
 
-LDIFF_SYM1310=Lme_be - Demo_DirectDBViewController_set_DirectDebit_Name_UIKit_UITextField
-	.long LDIFF_SYM1310
+LDIFF_SYM1335=Lme_c2 - Demo_DirectDBViewController_set_DirectDebit_Name_UIKit_UITextField
+	.long LDIFF_SYM1335
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde190_end:
+Lfde194_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26652,31 +27166,31 @@ Lfde190_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_Period
-	.quad Lme_bf
+	.quad Lme_c3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1311=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1311
+LDIFF_SYM1336=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1336
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1312=Lfde191_end - Lfde191_start
-	.long LDIFF_SYM1312
-Lfde191_start:
+LDIFF_SYM1337=Lfde195_end - Lfde195_start
+	.long LDIFF_SYM1337
+Lfde195_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_Period
 
-LDIFF_SYM1313=Lme_bf - Demo_DirectDBViewController_get_DirectDebit_Period
-	.long LDIFF_SYM1313
+LDIFF_SYM1338=Lme_c3 - Demo_DirectDBViewController_get_DirectDebit_Period
+	.long LDIFF_SYM1338
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde191_end:
+Lfde195_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26686,36 +27200,36 @@ Lfde191_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_Period_UIKit_UITextField
-	.quad Lme_c0
+	.quad Lme_c4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1314=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1314
+LDIFF_SYM1339=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1339
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1315=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1315
+LDIFF_SYM1340=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1340
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1316=Lfde192_end - Lfde192_start
-	.long LDIFF_SYM1316
-Lfde192_start:
+LDIFF_SYM1341=Lfde196_end - Lfde196_start
+	.long LDIFF_SYM1341
+Lfde196_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_Period_UIKit_UITextField
 
-LDIFF_SYM1317=Lme_c0 - Demo_DirectDBViewController_set_DirectDebit_Period_UIKit_UITextField
-	.long LDIFF_SYM1317
+LDIFF_SYM1342=Lme_c4 - Demo_DirectDBViewController_set_DirectDebit_Period_UIKit_UITextField
+	.long LDIFF_SYM1342
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde192_end:
+Lfde196_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26725,31 +27239,31 @@ Lfde192_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_get_DirectDebit_Show
-	.quad Lme_c1
+	.quad Lme_c5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1318=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1318
+LDIFF_SYM1343=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1343
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1319=Lfde193_end - Lfde193_start
-	.long LDIFF_SYM1319
-Lfde193_start:
+LDIFF_SYM1344=Lfde197_end - Lfde197_start
+	.long LDIFF_SYM1344
+Lfde197_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_get_DirectDebit_Show
 
-LDIFF_SYM1320=Lme_c1 - Demo_DirectDBViewController_get_DirectDebit_Show
-	.long LDIFF_SYM1320
+LDIFF_SYM1345=Lme_c5 - Demo_DirectDBViewController_get_DirectDebit_Show
+	.long LDIFF_SYM1345
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde193_end:
+Lfde197_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26759,36 +27273,36 @@ Lfde193_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_set_DirectDebit_Show_UIKit_UITextView
-	.quad Lme_c2
+	.quad Lme_c6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1321=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1321
+LDIFF_SYM1346=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1346
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1322=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1322
+LDIFF_SYM1347=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1347
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1323=Lfde194_end - Lfde194_start
-	.long LDIFF_SYM1323
-Lfde194_start:
+LDIFF_SYM1348=Lfde198_end - Lfde198_start
+	.long LDIFF_SYM1348
+Lfde198_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_set_DirectDebit_Show_UIKit_UITextView
 
-LDIFF_SYM1324=Lme_c2 - Demo_DirectDBViewController_set_DirectDebit_Show_UIKit_UITextView
-	.long LDIFF_SYM1324
+LDIFF_SYM1349=Lme_c6 - Demo_DirectDBViewController_set_DirectDebit_Show_UIKit_UITextView
+	.long LDIFF_SYM1349
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde194_end:
+Lfde198_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26798,31 +27312,31 @@ Lfde194_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController_ReleaseDesignerOutlets
-	.quad Lme_c3
+	.quad Lme_c7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1325=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1325
+LDIFF_SYM1350=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1350
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1326=Lfde195_end - Lfde195_start
-	.long LDIFF_SYM1326
-Lfde195_start:
+LDIFF_SYM1351=Lfde199_end - Lfde199_start
+	.long LDIFF_SYM1351
+Lfde199_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController_ReleaseDesignerOutlets
 
-LDIFF_SYM1327=Lme_c3 - Demo_DirectDBViewController_ReleaseDesignerOutlets
-	.long LDIFF_SYM1327
+LDIFF_SYM1352=Lme_c7 - Demo_DirectDBViewController_ReleaseDesignerOutlets
+	.long LDIFF_SYM1352
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde195_end:
+Lfde199_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26832,31 +27346,31 @@ Lfde195_end:
 
 	.byte 0,0
 	.quad Demo_DirectDBViewController__ViewDidLoadb__4_0
-	.quad Lme_c4
+	.quad Lme_c8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1328=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1328
+LDIFF_SYM1353=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1353
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1329=Lfde196_end - Lfde196_start
-	.long LDIFF_SYM1329
-Lfde196_start:
+LDIFF_SYM1354=Lfde200_end - Lfde200_start
+	.long LDIFF_SYM1354
+Lfde200_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDBViewController__ViewDidLoadb__4_0
 
-LDIFF_SYM1330=Lme_c4 - Demo_DirectDBViewController__ViewDidLoadb__4_0
-	.long LDIFF_SYM1330
+LDIFF_SYM1355=Lme_c8 - Demo_DirectDBViewController__ViewDidLoadb__4_0
+	.long LDIFF_SYM1355
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde196_end:
+Lfde200_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26866,31 +27380,31 @@ Lfde196_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_Id
-	.quad Lme_c5
+	.quad Lme_c9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1331=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1331
+LDIFF_SYM1356=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1356
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1332=Lfde197_end - Lfde197_start
-	.long LDIFF_SYM1332
-Lfde197_start:
+LDIFF_SYM1357=Lfde201_end - Lfde201_start
+	.long LDIFF_SYM1357
+Lfde201_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_Id
 
-LDIFF_SYM1333=Lme_c5 - Demo_DirectDebits_get_Id
-	.long LDIFF_SYM1333
+LDIFF_SYM1358=Lme_c9 - Demo_DirectDebits_get_Id
+	.long LDIFF_SYM1358
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde197_end:
+Lfde201_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26900,36 +27414,36 @@ Lfde197_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_Id_int
-	.quad Lme_c6
+	.quad Lme_ca
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1334=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1334
+LDIFF_SYM1359=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1359
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1335=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1335
+LDIFF_SYM1360=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1360
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1336=Lfde198_end - Lfde198_start
-	.long LDIFF_SYM1336
-Lfde198_start:
+LDIFF_SYM1361=Lfde202_end - Lfde202_start
+	.long LDIFF_SYM1361
+Lfde202_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_Id_int
 
-LDIFF_SYM1337=Lme_c6 - Demo_DirectDebits_set_Id_int
-	.long LDIFF_SYM1337
+LDIFF_SYM1362=Lme_ca - Demo_DirectDebits_set_Id_int
+	.long LDIFF_SYM1362
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde198_end:
+Lfde202_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26939,31 +27453,31 @@ Lfde198_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_m_userID
-	.quad Lme_c7
+	.quad Lme_cb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1338=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1338
+LDIFF_SYM1363=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1363
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1339=Lfde199_end - Lfde199_start
-	.long LDIFF_SYM1339
-Lfde199_start:
+LDIFF_SYM1364=Lfde203_end - Lfde203_start
+	.long LDIFF_SYM1364
+Lfde203_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_m_userID
 
-LDIFF_SYM1340=Lme_c7 - Demo_DirectDebits_get_m_userID
-	.long LDIFF_SYM1340
+LDIFF_SYM1365=Lme_cb - Demo_DirectDebits_get_m_userID
+	.long LDIFF_SYM1365
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde199_end:
+Lfde203_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26973,36 +27487,36 @@ Lfde199_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_m_userID_int
-	.quad Lme_c8
+	.quad Lme_cc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1341=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1341
+LDIFF_SYM1366=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1366
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1342=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1342
+LDIFF_SYM1367=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1367
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1343=Lfde200_end - Lfde200_start
-	.long LDIFF_SYM1343
-Lfde200_start:
+LDIFF_SYM1368=Lfde204_end - Lfde204_start
+	.long LDIFF_SYM1368
+Lfde204_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_m_userID_int
 
-LDIFF_SYM1344=Lme_c8 - Demo_DirectDebits_set_m_userID_int
-	.long LDIFF_SYM1344
+LDIFF_SYM1369=Lme_cc - Demo_DirectDebits_set_m_userID_int
+	.long LDIFF_SYM1369
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde200_end:
+Lfde204_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27012,31 +27526,31 @@ Lfde200_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_m_Name
-	.quad Lme_c9
+	.quad Lme_cd
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1345=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1345
+LDIFF_SYM1370=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1370
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1346=Lfde201_end - Lfde201_start
-	.long LDIFF_SYM1346
-Lfde201_start:
+LDIFF_SYM1371=Lfde205_end - Lfde205_start
+	.long LDIFF_SYM1371
+Lfde205_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_m_Name
 
-LDIFF_SYM1347=Lme_c9 - Demo_DirectDebits_get_m_Name
-	.long LDIFF_SYM1347
+LDIFF_SYM1372=Lme_cd - Demo_DirectDebits_get_m_Name
+	.long LDIFF_SYM1372
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde201_end:
+Lfde205_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27046,36 +27560,36 @@ Lfde201_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_m_Name_string
-	.quad Lme_ca
+	.quad Lme_ce
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1348=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1348
+LDIFF_SYM1373=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1373
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1349=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1349
+LDIFF_SYM1374=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1374
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1350=Lfde202_end - Lfde202_start
-	.long LDIFF_SYM1350
-Lfde202_start:
+LDIFF_SYM1375=Lfde206_end - Lfde206_start
+	.long LDIFF_SYM1375
+Lfde206_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_m_Name_string
 
-LDIFF_SYM1351=Lme_ca - Demo_DirectDebits_set_m_Name_string
-	.long LDIFF_SYM1351
+LDIFF_SYM1376=Lme_ce - Demo_DirectDebits_set_m_Name_string
+	.long LDIFF_SYM1376
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde202_end:
+Lfde206_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27085,31 +27599,31 @@ Lfde202_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_m_days
-	.quad Lme_cb
+	.quad Lme_cf
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1352=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1352
+LDIFF_SYM1377=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1377
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1353=Lfde203_end - Lfde203_start
-	.long LDIFF_SYM1353
-Lfde203_start:
+LDIFF_SYM1378=Lfde207_end - Lfde207_start
+	.long LDIFF_SYM1378
+Lfde207_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_m_days
 
-LDIFF_SYM1354=Lme_cb - Demo_DirectDebits_get_m_days
-	.long LDIFF_SYM1354
+LDIFF_SYM1379=Lme_cf - Demo_DirectDebits_get_m_days
+	.long LDIFF_SYM1379
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde203_end:
+Lfde207_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27119,36 +27633,36 @@ Lfde203_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_m_days_int
-	.quad Lme_cc
+	.quad Lme_d0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1355=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1355
+LDIFF_SYM1380=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1380
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1356=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1356
+LDIFF_SYM1381=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1381
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1357=Lfde204_end - Lfde204_start
-	.long LDIFF_SYM1357
-Lfde204_start:
+LDIFF_SYM1382=Lfde208_end - Lfde208_start
+	.long LDIFF_SYM1382
+Lfde208_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_m_days_int
 
-LDIFF_SYM1358=Lme_cc - Demo_DirectDebits_set_m_days_int
-	.long LDIFF_SYM1358
+LDIFF_SYM1383=Lme_d0 - Demo_DirectDebits_set_m_days_int
+	.long LDIFF_SYM1383
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde204_end:
+Lfde208_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27158,31 +27672,31 @@ Lfde204_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_m_billingDay
-	.quad Lme_cd
+	.quad Lme_d1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1359=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1359
+LDIFF_SYM1384=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1384
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1360=Lfde205_end - Lfde205_start
-	.long LDIFF_SYM1360
-Lfde205_start:
+LDIFF_SYM1385=Lfde209_end - Lfde209_start
+	.long LDIFF_SYM1385
+Lfde209_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_m_billingDay
 
-LDIFF_SYM1361=Lme_cd - Demo_DirectDebits_get_m_billingDay
-	.long LDIFF_SYM1361
+LDIFF_SYM1386=Lme_d1 - Demo_DirectDebits_get_m_billingDay
+	.long LDIFF_SYM1386
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde205_end:
+Lfde209_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27192,36 +27706,36 @@ Lfde205_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_m_billingDay_int
-	.quad Lme_ce
+	.quad Lme_d2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1362=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1362
+LDIFF_SYM1387=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1387
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1363=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1363
+LDIFF_SYM1388=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1388
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1364=Lfde206_end - Lfde206_start
-	.long LDIFF_SYM1364
-Lfde206_start:
+LDIFF_SYM1389=Lfde210_end - Lfde210_start
+	.long LDIFF_SYM1389
+Lfde210_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_m_billingDay_int
 
-LDIFF_SYM1365=Lme_ce - Demo_DirectDebits_set_m_billingDay_int
-	.long LDIFF_SYM1365
+LDIFF_SYM1390=Lme_d2 - Demo_DirectDebits_set_m_billingDay_int
+	.long LDIFF_SYM1390
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde206_end:
+Lfde210_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27231,31 +27745,31 @@ Lfde206_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_get_m_cost
-	.quad Lme_cf
+	.quad Lme_d3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1366=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1366
+LDIFF_SYM1391=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1391
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1367=Lfde207_end - Lfde207_start
-	.long LDIFF_SYM1367
-Lfde207_start:
+LDIFF_SYM1392=Lfde211_end - Lfde211_start
+	.long LDIFF_SYM1392
+Lfde211_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_get_m_cost
 
-LDIFF_SYM1368=Lme_cf - Demo_DirectDebits_get_m_cost
-	.long LDIFF_SYM1368
+LDIFF_SYM1393=Lme_d3 - Demo_DirectDebits_get_m_cost
+	.long LDIFF_SYM1393
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde207_end:
+Lfde211_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27265,36 +27779,36 @@ Lfde207_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits_set_m_cost_single
-	.quad Lme_d0
+	.quad Lme_d4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1369=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1369
+LDIFF_SYM1394=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1394
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1370=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM1370
+LDIFF_SYM1395=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1395
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1371=Lfde208_end - Lfde208_start
-	.long LDIFF_SYM1371
-Lfde208_start:
+LDIFF_SYM1396=Lfde212_end - Lfde212_start
+	.long LDIFF_SYM1396
+Lfde212_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits_set_m_cost_single
 
-LDIFF_SYM1372=Lme_d0 - Demo_DirectDebits_set_m_cost_single
-	.long LDIFF_SYM1372
+LDIFF_SYM1397=Lme_d4 - Demo_DirectDebits_set_m_cost_single
+	.long LDIFF_SYM1397
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde208_end:
+Lfde212_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27304,31 +27818,31 @@ Lfde208_end:
 
 	.byte 0,0
 	.quad Demo_DirectDebits__ctor
-	.quad Lme_d1
+	.quad Lme_d5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1373=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1373
+LDIFF_SYM1398=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1398
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1374=Lfde209_end - Lfde209_start
-	.long LDIFF_SYM1374
-Lfde209_start:
+LDIFF_SYM1399=Lfde213_end - Lfde213_start
+	.long LDIFF_SYM1399
+Lfde213_start:
 
 	.long 0
 	.align 3
 	.quad Demo_DirectDebits__ctor
 
-LDIFF_SYM1375=Lme_d1 - Demo_DirectDebits__ctor
-	.long LDIFF_SYM1375
+LDIFF_SYM1400=Lme_d5 - Demo_DirectDebits__ctor
+	.long LDIFF_SYM1400
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde209_end:
+Lfde213_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27338,36 +27852,36 @@ Lfde209_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController__ctor_intptr
-	.quad Lme_d2
+	.quad Lme_d6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1376=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1376
+LDIFF_SYM1401=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1401
 	.byte 2,141,16,3
 	.asciz "handle"
 
-LDIFF_SYM1377=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1377
+LDIFF_SYM1402=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1402
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1378=Lfde210_end - Lfde210_start
-	.long LDIFF_SYM1378
-Lfde210_start:
+LDIFF_SYM1403=Lfde214_end - Lfde214_start
+	.long LDIFF_SYM1403
+Lfde214_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController__ctor_intptr
 
-LDIFF_SYM1379=Lme_d2 - Demo_EditTrackerViewController__ctor_intptr
-	.long LDIFF_SYM1379
+LDIFF_SYM1404=Lme_d6 - Demo_EditTrackerViewController__ctor_intptr
+	.long LDIFF_SYM1404
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde210_end:
+Lfde214_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27377,31 +27891,31 @@ Lfde210_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_ViewDidLoad
-	.quad Lme_d3
+	.quad Lme_d7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1380=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1380
+LDIFF_SYM1405=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1405
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1381=Lfde211_end - Lfde211_start
-	.long LDIFF_SYM1381
-Lfde211_start:
+LDIFF_SYM1406=Lfde215_end - Lfde215_start
+	.long LDIFF_SYM1406
+Lfde215_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_ViewDidLoad
 
-LDIFF_SYM1382=Lme_d3 - Demo_EditTrackerViewController_ViewDidLoad
-	.long LDIFF_SYM1382
+LDIFF_SYM1407=Lme_d7 - Demo_EditTrackerViewController_ViewDidLoad
+	.long LDIFF_SYM1407
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde211_end:
+Lfde215_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27411,46 +27925,46 @@ Lfde211_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_AddNewDirectDebit_TouchDown_object_System_EventArgs
-	.quad Lme_d4
+	.quad Lme_d8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1383=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1383
+LDIFF_SYM1408=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1408
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1384=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1384
+LDIFF_SYM1409=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1409
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1385=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1385
+LDIFF_SYM1410=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1410
 	.byte 0,11
 	.asciz "V_0"
 
-LDIFF_SYM1386=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1386
+LDIFF_SYM1411=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1411
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1387=Lfde212_end - Lfde212_start
-	.long LDIFF_SYM1387
-Lfde212_start:
+LDIFF_SYM1412=Lfde216_end - Lfde216_start
+	.long LDIFF_SYM1412
+Lfde216_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_AddNewDirectDebit_TouchDown_object_System_EventArgs
 
-LDIFF_SYM1388=Lme_d4 - Demo_EditTrackerViewController_AddNewDirectDebit_TouchDown_object_System_EventArgs
-	.long LDIFF_SYM1388
+LDIFF_SYM1413=Lme_d8 - Demo_EditTrackerViewController_AddNewDirectDebit_TouchDown_object_System_EventArgs
+	.long LDIFF_SYM1413
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
-Lfde212_end:
+Lfde216_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27460,46 +27974,46 @@ Lfde212_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_GetDirects
-	.quad Lme_d5
+	.quad Lme_d9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1389=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1389
+LDIFF_SYM1414=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1414
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1390=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1390
+LDIFF_SYM1415=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1415
 	.byte 3,141,208,0,11
 	.asciz "V_1"
 
-LDIFF_SYM1391=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1391
+LDIFF_SYM1416=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1416
 	.byte 2,141,56,11
 	.asciz "V_2"
 
-LDIFF_SYM1392=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1392
+LDIFF_SYM1417=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1417
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1393=Lfde213_end - Lfde213_start
-	.long LDIFF_SYM1393
-Lfde213_start:
+LDIFF_SYM1418=Lfde217_end - Lfde217_start
+	.long LDIFF_SYM1418
+Lfde217_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_GetDirects
 
-LDIFF_SYM1394=Lme_d5 - Demo_EditTrackerViewController_GetDirects
-	.long LDIFF_SYM1394
+LDIFF_SYM1419=Lme_d9 - Demo_EditTrackerViewController_GetDirects
+	.long LDIFF_SYM1419
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,153,19,68,154,18
 	.align 3
-Lfde213_end:
+Lfde217_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27509,56 +28023,56 @@ Lfde213_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_DeleteTracker_TouchDown_object_System_EventArgs
-	.quad Lme_d6
+	.quad Lme_da
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1395=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1395
+LDIFF_SYM1420=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1420
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM1396=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1396
+LDIFF_SYM1421=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1421
 	.byte 0,3
 	.asciz "e"
 
-LDIFF_SYM1397=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1397
+LDIFF_SYM1422=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1422
 	.byte 0,11
 	.asciz "V_0"
 
-LDIFF_SYM1398=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1398
+LDIFF_SYM1423=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1423
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1399=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1399
+LDIFF_SYM1424=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1424
 	.byte 1,105,11
 	.asciz "V_2"
 
-LDIFF_SYM1400=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1400
+LDIFF_SYM1425=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1425
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1401=Lfde214_end - Lfde214_start
-	.long LDIFF_SYM1401
-Lfde214_start:
+LDIFF_SYM1426=Lfde218_end - Lfde218_start
+	.long LDIFF_SYM1426
+Lfde218_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_DeleteTracker_TouchDown_object_System_EventArgs
 
-LDIFF_SYM1402=Lme_d6 - Demo_EditTrackerViewController_DeleteTracker_TouchDown_object_System_EventArgs
-	.long LDIFF_SYM1402
+LDIFF_SYM1427=Lme_da - Demo_EditTrackerViewController_DeleteTracker_TouchDown_object_System_EventArgs
+	.long LDIFF_SYM1427
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
-Lfde214_end:
+Lfde218_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27568,61 +28082,61 @@ Lfde214_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_RemoveUser_Demo_Person
-	.quad Lme_d7
+	.quad Lme_db
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1403=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1403
+LDIFF_SYM1428=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1428
 	.byte 0,3
 	.asciz "user"
 
-LDIFF_SYM1404=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1404
+LDIFF_SYM1429=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1429
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1405=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1405
+LDIFF_SYM1430=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1430
 	.byte 3,141,216,0,11
 	.asciz "V_1"
 
-LDIFF_SYM1406=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1406
+LDIFF_SYM1431=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1431
 	.byte 3,141,192,0,11
 	.asciz "V_2"
 
-LDIFF_SYM1407=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1407
+LDIFF_SYM1432=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1432
 	.byte 1,105,11
 	.asciz "V_3"
 
-LDIFF_SYM1408=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1408
+LDIFF_SYM1433=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1433
 	.byte 2,141,40,11
 	.asciz "V_4"
 
-LDIFF_SYM1409=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1409
+LDIFF_SYM1434=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1434
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1410=Lfde215_end - Lfde215_start
-	.long LDIFF_SYM1410
-Lfde215_start:
+LDIFF_SYM1435=Lfde219_end - Lfde219_start
+	.long LDIFF_SYM1435
+Lfde219_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_RemoveUser_Demo_Person
 
-LDIFF_SYM1411=Lme_d7 - Demo_EditTrackerViewController_RemoveUser_Demo_Person
-	.long LDIFF_SYM1411
+LDIFF_SYM1436=Lme_db - Demo_EditTrackerViewController_RemoveUser_Demo_Person
+	.long LDIFF_SYM1436
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,153,24,154,23
 	.align 3
-Lfde215_end:
+Lfde219_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27632,31 +28146,31 @@ Lfde215_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_updatePerson_Demo_Person
-	.quad Lme_d8
+	.quad Lme_dc
 
 	.byte 2,118,16,3
 	.asciz "user"
 
-LDIFF_SYM1412=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1412
+LDIFF_SYM1437=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1437
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1413=Lfde216_end - Lfde216_start
-	.long LDIFF_SYM1413
-Lfde216_start:
+LDIFF_SYM1438=Lfde220_end - Lfde220_start
+	.long LDIFF_SYM1438
+Lfde220_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_updatePerson_Demo_Person
 
-LDIFF_SYM1414=Lme_d8 - Demo_EditTrackerViewController_updatePerson_Demo_Person
-	.long LDIFF_SYM1414
+LDIFF_SYM1439=Lme_dc - Demo_EditTrackerViewController_updatePerson_Demo_Person
+	.long LDIFF_SYM1439
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde216_end:
+Lfde220_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27666,31 +28180,31 @@ Lfde216_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_get_AddNewDirectDebit
-	.quad Lme_d9
+	.quad Lme_dd
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1415=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1415
+LDIFF_SYM1440=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1440
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1416=Lfde217_end - Lfde217_start
-	.long LDIFF_SYM1416
-Lfde217_start:
+LDIFF_SYM1441=Lfde221_end - Lfde221_start
+	.long LDIFF_SYM1441
+Lfde221_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_get_AddNewDirectDebit
 
-LDIFF_SYM1417=Lme_d9 - Demo_EditTrackerViewController_get_AddNewDirectDebit
-	.long LDIFF_SYM1417
+LDIFF_SYM1442=Lme_dd - Demo_EditTrackerViewController_get_AddNewDirectDebit
+	.long LDIFF_SYM1442
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde217_end:
+Lfde221_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27700,36 +28214,36 @@ Lfde217_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_set_AddNewDirectDebit_UIKit_UIButton
-	.quad Lme_da
+	.quad Lme_de
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1418=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1418
+LDIFF_SYM1443=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1443
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1419=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1419
+LDIFF_SYM1444=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1444
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1420=Lfde218_end - Lfde218_start
-	.long LDIFF_SYM1420
-Lfde218_start:
+LDIFF_SYM1445=Lfde222_end - Lfde222_start
+	.long LDIFF_SYM1445
+Lfde222_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_set_AddNewDirectDebit_UIKit_UIButton
 
-LDIFF_SYM1421=Lme_da - Demo_EditTrackerViewController_set_AddNewDirectDebit_UIKit_UIButton
-	.long LDIFF_SYM1421
+LDIFF_SYM1446=Lme_de - Demo_EditTrackerViewController_set_AddNewDirectDebit_UIKit_UIButton
+	.long LDIFF_SYM1446
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde218_end:
+Lfde222_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27739,31 +28253,31 @@ Lfde218_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_get_ChangeBudgetName
-	.quad Lme_db
+	.quad Lme_df
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1422=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1422
+LDIFF_SYM1447=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1447
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1423=Lfde219_end - Lfde219_start
-	.long LDIFF_SYM1423
-Lfde219_start:
+LDIFF_SYM1448=Lfde223_end - Lfde223_start
+	.long LDIFF_SYM1448
+Lfde223_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_get_ChangeBudgetName
 
-LDIFF_SYM1424=Lme_db - Demo_EditTrackerViewController_get_ChangeBudgetName
-	.long LDIFF_SYM1424
+LDIFF_SYM1449=Lme_df - Demo_EditTrackerViewController_get_ChangeBudgetName
+	.long LDIFF_SYM1449
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde219_end:
+Lfde223_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27773,36 +28287,36 @@ Lfde219_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_set_ChangeBudgetName_UIKit_UITextField
-	.quad Lme_dc
+	.quad Lme_e0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1425=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1425
+LDIFF_SYM1450=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1450
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1426=LTDIE_60_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1426
+LDIFF_SYM1451=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1451
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1427=Lfde220_end - Lfde220_start
-	.long LDIFF_SYM1427
-Lfde220_start:
+LDIFF_SYM1452=Lfde224_end - Lfde224_start
+	.long LDIFF_SYM1452
+Lfde224_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_set_ChangeBudgetName_UIKit_UITextField
 
-LDIFF_SYM1428=Lme_dc - Demo_EditTrackerViewController_set_ChangeBudgetName_UIKit_UITextField
-	.long LDIFF_SYM1428
+LDIFF_SYM1453=Lme_e0 - Demo_EditTrackerViewController_set_ChangeBudgetName_UIKit_UITextField
+	.long LDIFF_SYM1453
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde220_end:
+Lfde224_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27812,31 +28326,31 @@ Lfde220_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_get_DeleteTracker
-	.quad Lme_dd
+	.quad Lme_e1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1429=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1429
+LDIFF_SYM1454=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1454
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1430=Lfde221_end - Lfde221_start
-	.long LDIFF_SYM1430
-Lfde221_start:
+LDIFF_SYM1455=Lfde225_end - Lfde225_start
+	.long LDIFF_SYM1455
+Lfde225_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_get_DeleteTracker
 
-LDIFF_SYM1431=Lme_dd - Demo_EditTrackerViewController_get_DeleteTracker
-	.long LDIFF_SYM1431
+LDIFF_SYM1456=Lme_e1 - Demo_EditTrackerViewController_get_DeleteTracker
+	.long LDIFF_SYM1456
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde221_end:
+Lfde225_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27846,36 +28360,36 @@ Lfde221_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_set_DeleteTracker_UIKit_UIButton
-	.quad Lme_de
+	.quad Lme_e2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1432=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1432
+LDIFF_SYM1457=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1457
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1433=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1433
+LDIFF_SYM1458=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1458
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1434=Lfde222_end - Lfde222_start
-	.long LDIFF_SYM1434
-Lfde222_start:
+LDIFF_SYM1459=Lfde226_end - Lfde226_start
+	.long LDIFF_SYM1459
+Lfde226_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_set_DeleteTracker_UIKit_UIButton
 
-LDIFF_SYM1435=Lme_de - Demo_EditTrackerViewController_set_DeleteTracker_UIKit_UIButton
-	.long LDIFF_SYM1435
+LDIFF_SYM1460=Lme_e2 - Demo_EditTrackerViewController_set_DeleteTracker_UIKit_UIButton
+	.long LDIFF_SYM1460
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde222_end:
+Lfde226_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27885,31 +28399,31 @@ Lfde222_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_get_ShowDirects
-	.quad Lme_df
+	.quad Lme_e3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1436=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1436
+LDIFF_SYM1461=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1461
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1437=Lfde223_end - Lfde223_start
-	.long LDIFF_SYM1437
-Lfde223_start:
+LDIFF_SYM1462=Lfde227_end - Lfde227_start
+	.long LDIFF_SYM1462
+Lfde227_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_get_ShowDirects
 
-LDIFF_SYM1438=Lme_df - Demo_EditTrackerViewController_get_ShowDirects
-	.long LDIFF_SYM1438
+LDIFF_SYM1463=Lme_e3 - Demo_EditTrackerViewController_get_ShowDirects
+	.long LDIFF_SYM1463
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde223_end:
+Lfde227_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27919,36 +28433,36 @@ Lfde223_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_set_ShowDirects_UIKit_UITableView
-	.quad Lme_e0
+	.quad Lme_e4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1439=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1439
+LDIFF_SYM1464=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1464
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1440=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1440
+LDIFF_SYM1465=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1465
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1441=Lfde224_end - Lfde224_start
-	.long LDIFF_SYM1441
-Lfde224_start:
+LDIFF_SYM1466=Lfde228_end - Lfde228_start
+	.long LDIFF_SYM1466
+Lfde228_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_set_ShowDirects_UIKit_UITableView
 
-LDIFF_SYM1442=Lme_e0 - Demo_EditTrackerViewController_set_ShowDirects_UIKit_UITableView
-	.long LDIFF_SYM1442
+LDIFF_SYM1467=Lme_e4 - Demo_EditTrackerViewController_set_ShowDirects_UIKit_UITableView
+	.long LDIFF_SYM1467
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde224_end:
+Lfde228_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27958,102 +28472,102 @@ Lfde224_end:
 
 	.byte 0,0
 	.quad Demo_EditTrackerViewController_ReleaseDesignerOutlets
-	.quad Lme_e1
+	.quad Lme_e5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1443=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1443
+LDIFF_SYM1468=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1468
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1444=Lfde225_end - Lfde225_start
-	.long LDIFF_SYM1444
-Lfde225_start:
+LDIFF_SYM1469=Lfde229_end - Lfde229_start
+	.long LDIFF_SYM1469
+Lfde229_start:
 
 	.long 0
 	.align 3
 	.quad Demo_EditTrackerViewController_ReleaseDesignerOutlets
 
-LDIFF_SYM1445=Lme_e1 - Demo_EditTrackerViewController_ReleaseDesignerOutlets
-	.long LDIFF_SYM1445
+LDIFF_SYM1470=Lme_e5 - Demo_EditTrackerViewController_ReleaseDesignerOutlets
+	.long LDIFF_SYM1470
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde225_end:
+Lfde229_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_85:
+LTDIE_84:
 
 	.byte 5
 	.asciz "Demo_ShowDirects"
 
 	.byte 56,16
-LDIFF_SYM1446=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM1446
+LDIFF_SYM1471=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM1471
 	.byte 2,35,0,6
 	.asciz "DB"
 
-LDIFF_SYM1447=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1447
+LDIFF_SYM1472=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1472
 	.byte 2,35,40,6
 	.asciz "cellIdentifer"
 
-LDIFF_SYM1448=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1448
+LDIFF_SYM1473=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1473
 	.byte 2,35,48,0,7
 	.asciz "Demo_ShowDirects"
 
-LDIFF_SYM1449=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM1449
-LTDIE_85_POINTER:
+LDIFF_SYM1474=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1474
+LTDIE_84_POINTER:
 
 	.byte 13
-LDIFF_SYM1450=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM1450
-LTDIE_85_REFERENCE:
+LDIFF_SYM1475=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1475
+LTDIE_84_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1451=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM1451
+LDIFF_SYM1476=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1476
 	.byte 2
 	.asciz "Demo.ShowDirects:.ctor"
 	.asciz "Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits"
 
 	.byte 0,0
 	.quad Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
-	.quad Lme_e2
+	.quad Lme_e6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1452=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1452
+LDIFF_SYM1477=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1477
 	.byte 1,105,3
 	.asciz "db"
 
-LDIFF_SYM1453=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1453
+LDIFF_SYM1478=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1478
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1454=Lfde226_end - Lfde226_start
-	.long LDIFF_SYM1454
-Lfde226_start:
+LDIFF_SYM1479=Lfde230_end - Lfde230_start
+	.long LDIFF_SYM1479
+Lfde230_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
 
-LDIFF_SYM1455=Lme_e2 - Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
-	.long LDIFF_SYM1455
+LDIFF_SYM1480=Lme_e6 - Demo_ShowDirects__ctor_System_Collections_Generic_List_1_Demo_DirectDebits
+	.long LDIFF_SYM1480
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
 	.align 3
-Lfde226_end:
+Lfde230_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28063,46 +28577,46 @@ Lfde226_end:
 
 	.byte 0,0
 	.quad Demo_ShowDirects_GetCell_UIKit_UITableView_Foundation_NSIndexPath
-	.quad Lme_e3
+	.quad Lme_e7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1456=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1456
+LDIFF_SYM1481=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1481
 	.byte 1,104,3
 	.asciz "tableView"
 
-LDIFF_SYM1457=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1457
+LDIFF_SYM1482=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1482
 	.byte 1,105,3
 	.asciz "indexPath"
 
-LDIFF_SYM1458=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1458
+LDIFF_SYM1483=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1483
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1459=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1459
+LDIFF_SYM1484=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1484
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1460=Lfde227_end - Lfde227_start
-	.long LDIFF_SYM1460
-Lfde227_start:
+LDIFF_SYM1485=Lfde231_end - Lfde231_start
+	.long LDIFF_SYM1485
+Lfde231_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowDirects_GetCell_UIKit_UITableView_Foundation_NSIndexPath
 
-LDIFF_SYM1461=Lme_e3 - Demo_ShowDirects_GetCell_UIKit_UITableView_Foundation_NSIndexPath
-	.long LDIFF_SYM1461
+LDIFF_SYM1486=Lme_e7 - Demo_ShowDirects_GetCell_UIKit_UITableView_Foundation_NSIndexPath
+	.long LDIFF_SYM1486
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16
 	.align 3
-Lfde227_end:
+Lfde231_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28112,227 +28626,24 @@ Lfde227_end:
 
 	.byte 0,0
 	.quad Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
-	.quad Lme_e4
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1462=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1462
-	.byte 2,141,16,3
-	.asciz "tableview"
-
-LDIFF_SYM1463=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1463
-	.byte 0,3
-	.asciz "section"
-
-LDIFF_SYM1464=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1464
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1465=Lfde228_end - Lfde228_start
-	.long LDIFF_SYM1465
-Lfde228_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
-
-LDIFF_SYM1466=Lme_e4 - Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
-	.long LDIFF_SYM1466
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde228_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_86:
-
-	.byte 5
-	.asciz "Demo_ShowSpent"
-
-	.byte 72,16
-LDIFF_SYM1467=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM1467
-	.byte 2,35,0,6
-	.asciz "<ShowDate>k__BackingField"
-
-LDIFF_SYM1468=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1468
-	.byte 2,35,40,6
-	.asciz "<ShowPrice>k__BackingField"
-
-LDIFF_SYM1469=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1469
-	.byte 2,35,48,6
-	.asciz "<ShowSpentView>k__BackingField"
-
-LDIFF_SYM1470=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1470
-	.byte 2,35,56,6
-	.asciz "<SpentName>k__BackingField"
-
-LDIFF_SYM1471=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1471
-	.byte 2,35,64,0,7
-	.asciz "Demo_ShowSpent"
-
-LDIFF_SYM1472=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM1472
-LTDIE_86_POINTER:
-
-	.byte 13
-LDIFF_SYM1473=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM1473
-LTDIE_86_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1474=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM1474
-	.byte 2
-	.asciz "Demo.ShowSpent:.ctor"
-	.asciz "Demo_ShowSpent__ctor_string"
-
-	.byte 0,0
-	.quad Demo_ShowSpent__ctor_string
-	.quad Lme_e5
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1475=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1475
-	.byte 1,105,3
-	.asciz "cellID"
-
-LDIFF_SYM1476=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1476
-	.byte 2,141,24,11
-	.asciz "V_0"
-
-LDIFF_SYM1477=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1477
-	.byte 2,141,32,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1478=Lfde229_end - Lfde229_start
-	.long LDIFF_SYM1478
-Lfde229_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ShowSpent__ctor_string
-
-LDIFF_SYM1479=Lme_e5 - Demo_ShowSpent__ctor_string
-	.long LDIFF_SYM1479
-	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
-	.align 3
-Lfde229_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ShowSpent:LayoutSubviews"
-	.asciz "Demo_ShowSpent_LayoutSubviews"
-
-	.byte 0,0
-	.quad Demo_ShowSpent_LayoutSubviews
-	.quad Lme_e6
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1480=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1480
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1481=Lfde230_end - Lfde230_start
-	.long LDIFF_SYM1481
-Lfde230_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ShowSpent_LayoutSubviews
-
-LDIFF_SYM1482=Lme_e6 - Demo_ShowSpent_LayoutSubviews
-	.long LDIFF_SYM1482
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde230_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ShowSpent:configure"
-	.asciz "Demo_ShowSpent_configure_string_string_string"
-
-	.byte 0,0
-	.quad Demo_ShowSpent_configure_string_string_string
-	.quad Lme_e7
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1483=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1483
-	.byte 1,103,3
-	.asciz "reason"
-
-LDIFF_SYM1484=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1484
-	.byte 2,141,24,3
-	.asciz "cost"
-
-LDIFF_SYM1485=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1485
-	.byte 2,141,32,3
-	.asciz "date"
-
-LDIFF_SYM1486=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1486
-	.byte 2,141,40,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1487=Lfde231_end - Lfde231_start
-	.long LDIFF_SYM1487
-Lfde231_start:
-
-	.long 0
-	.align 3
-	.quad Demo_ShowSpent_configure_string_string_string
-
-LDIFF_SYM1488=Lme_e7 - Demo_ShowSpent_configure_string_string_string
-	.long LDIFF_SYM1488
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
-	.align 3
-Lfde231_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "Demo.ShowSpent:get_ShowDate"
-	.asciz "Demo_ShowSpent_get_ShowDate"
-
-	.byte 0,0
-	.quad Demo_ShowSpent_get_ShowDate
 	.quad Lme_e8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1489=LTDIE_86_REFERENCE - Ldebug_info_start
+LDIFF_SYM1487=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1487
+	.byte 2,141,16,3
+	.asciz "tableview"
+
+LDIFF_SYM1488=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1488
+	.byte 0,3
+	.asciz "section"
+
+LDIFF_SYM1489=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1489
-	.byte 2,141,16,0
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -28342,14 +28653,217 @@ Lfde232_start:
 
 	.long 0
 	.align 3
-	.quad Demo_ShowSpent_get_ShowDate
+	.quad Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
 
-LDIFF_SYM1491=Lme_e8 - Demo_ShowSpent_get_ShowDate
+LDIFF_SYM1491=Lme_e8 - Demo_ShowDirects_RowsInSection_UIKit_UITableView_System_nint
 	.long LDIFF_SYM1491
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde232_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_85:
+
+	.byte 5
+	.asciz "Demo_ShowSpent"
+
+	.byte 72,16
+LDIFF_SYM1492=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM1492
+	.byte 2,35,0,6
+	.asciz "<ShowDate>k__BackingField"
+
+LDIFF_SYM1493=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1493
+	.byte 2,35,40,6
+	.asciz "<ShowPrice>k__BackingField"
+
+LDIFF_SYM1494=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1494
+	.byte 2,35,48,6
+	.asciz "<ShowSpentView>k__BackingField"
+
+LDIFF_SYM1495=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1495
+	.byte 2,35,56,6
+	.asciz "<SpentName>k__BackingField"
+
+LDIFF_SYM1496=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1496
+	.byte 2,35,64,0,7
+	.asciz "Demo_ShowSpent"
+
+LDIFF_SYM1497=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1497
+LTDIE_85_POINTER:
+
+	.byte 13
+LDIFF_SYM1498=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1498
+LTDIE_85_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1499=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1499
+	.byte 2
+	.asciz "Demo.ShowSpent:.ctor"
+	.asciz "Demo_ShowSpent__ctor_string"
+
+	.byte 0,0
+	.quad Demo_ShowSpent__ctor_string
+	.quad Lme_e9
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1500=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1500
+	.byte 1,105,3
+	.asciz "cellID"
+
+LDIFF_SYM1501=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1501
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM1502=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1502
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1503=Lfde233_end - Lfde233_start
+	.long LDIFF_SYM1503
+Lfde233_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ShowSpent__ctor_string
+
+LDIFF_SYM1504=Lme_e9 - Demo_ShowSpent__ctor_string
+	.long LDIFF_SYM1504
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6
+	.align 3
+Lfde233_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ShowSpent:LayoutSubviews"
+	.asciz "Demo_ShowSpent_LayoutSubviews"
+
+	.byte 0,0
+	.quad Demo_ShowSpent_LayoutSubviews
+	.quad Lme_ea
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1505=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1505
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1506=Lfde234_end - Lfde234_start
+	.long LDIFF_SYM1506
+Lfde234_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ShowSpent_LayoutSubviews
+
+LDIFF_SYM1507=Lme_ea - Demo_ShowSpent_LayoutSubviews
+	.long LDIFF_SYM1507
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde232_end:
+Lfde234_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ShowSpent:configure"
+	.asciz "Demo_ShowSpent_configure_string_string_string"
+
+	.byte 0,0
+	.quad Demo_ShowSpent_configure_string_string_string
+	.quad Lme_eb
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1508=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1508
+	.byte 1,103,3
+	.asciz "reason"
+
+LDIFF_SYM1509=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1509
+	.byte 2,141,24,3
+	.asciz "cost"
+
+LDIFF_SYM1510=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1510
+	.byte 2,141,32,3
+	.asciz "date"
+
+LDIFF_SYM1511=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1511
+	.byte 2,141,40,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1512=Lfde235_end - Lfde235_start
+	.long LDIFF_SYM1512
+Lfde235_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ShowSpent_configure_string_string_string
+
+LDIFF_SYM1513=Lme_eb - Demo_ShowSpent_configure_string_string_string
+	.long LDIFF_SYM1513
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
+	.align 3
+Lfde235_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "Demo.ShowSpent:get_ShowDate"
+	.asciz "Demo_ShowSpent_get_ShowDate"
+
+	.byte 0,0
+	.quad Demo_ShowSpent_get_ShowDate
+	.quad Lme_ec
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1514=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1514
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1515=Lfde236_end - Lfde236_start
+	.long LDIFF_SYM1515
+Lfde236_start:
+
+	.long 0
+	.align 3
+	.quad Demo_ShowSpent_get_ShowDate
+
+LDIFF_SYM1516=Lme_ec - Demo_ShowSpent_get_ShowDate
+	.long LDIFF_SYM1516
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde236_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28359,36 +28873,36 @@ Lfde232_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_set_ShowDate_UIKit_UILabel
-	.quad Lme_e9
+	.quad Lme_ed
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1492=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1492
+LDIFF_SYM1517=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1517
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1493=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1493
+LDIFF_SYM1518=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1518
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1494=Lfde233_end - Lfde233_start
-	.long LDIFF_SYM1494
-Lfde233_start:
+LDIFF_SYM1519=Lfde237_end - Lfde237_start
+	.long LDIFF_SYM1519
+Lfde237_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_set_ShowDate_UIKit_UILabel
 
-LDIFF_SYM1495=Lme_e9 - Demo_ShowSpent_set_ShowDate_UIKit_UILabel
-	.long LDIFF_SYM1495
+LDIFF_SYM1520=Lme_ed - Demo_ShowSpent_set_ShowDate_UIKit_UILabel
+	.long LDIFF_SYM1520
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde233_end:
+Lfde237_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28398,31 +28912,31 @@ Lfde233_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_get_ShowPrice
-	.quad Lme_ea
+	.quad Lme_ee
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1496=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1496
+LDIFF_SYM1521=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1521
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1497=Lfde234_end - Lfde234_start
-	.long LDIFF_SYM1497
-Lfde234_start:
+LDIFF_SYM1522=Lfde238_end - Lfde238_start
+	.long LDIFF_SYM1522
+Lfde238_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_get_ShowPrice
 
-LDIFF_SYM1498=Lme_ea - Demo_ShowSpent_get_ShowPrice
-	.long LDIFF_SYM1498
+LDIFF_SYM1523=Lme_ee - Demo_ShowSpent_get_ShowPrice
+	.long LDIFF_SYM1523
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde234_end:
+Lfde238_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28432,36 +28946,36 @@ Lfde234_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_set_ShowPrice_UIKit_UILabel
-	.quad Lme_eb
+	.quad Lme_ef
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1499=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1499
+LDIFF_SYM1524=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1524
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1500=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1500
+LDIFF_SYM1525=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1525
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1501=Lfde235_end - Lfde235_start
-	.long LDIFF_SYM1501
-Lfde235_start:
+LDIFF_SYM1526=Lfde239_end - Lfde239_start
+	.long LDIFF_SYM1526
+Lfde239_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_set_ShowPrice_UIKit_UILabel
 
-LDIFF_SYM1502=Lme_eb - Demo_ShowSpent_set_ShowPrice_UIKit_UILabel
-	.long LDIFF_SYM1502
+LDIFF_SYM1527=Lme_ef - Demo_ShowSpent_set_ShowPrice_UIKit_UILabel
+	.long LDIFF_SYM1527
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde235_end:
+Lfde239_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28471,31 +28985,31 @@ Lfde235_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_get_ShowSpentView
-	.quad Lme_ec
+	.quad Lme_f0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1503=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1503
+LDIFF_SYM1528=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1528
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1504=Lfde236_end - Lfde236_start
-	.long LDIFF_SYM1504
-Lfde236_start:
+LDIFF_SYM1529=Lfde240_end - Lfde240_start
+	.long LDIFF_SYM1529
+Lfde240_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_get_ShowSpentView
 
-LDIFF_SYM1505=Lme_ec - Demo_ShowSpent_get_ShowSpentView
-	.long LDIFF_SYM1505
+LDIFF_SYM1530=Lme_f0 - Demo_ShowSpent_get_ShowSpentView
+	.long LDIFF_SYM1530
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde236_end:
+Lfde240_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28505,36 +29019,36 @@ Lfde236_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_set_ShowSpentView_UIKit_UIView
-	.quad Lme_ed
+	.quad Lme_f1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1506=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1506
+LDIFF_SYM1531=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1531
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1507=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1507
+LDIFF_SYM1532=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1532
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1508=Lfde237_end - Lfde237_start
-	.long LDIFF_SYM1508
-Lfde237_start:
+LDIFF_SYM1533=Lfde241_end - Lfde241_start
+	.long LDIFF_SYM1533
+Lfde241_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_set_ShowSpentView_UIKit_UIView
 
-LDIFF_SYM1509=Lme_ed - Demo_ShowSpent_set_ShowSpentView_UIKit_UIView
-	.long LDIFF_SYM1509
+LDIFF_SYM1534=Lme_f1 - Demo_ShowSpent_set_ShowSpentView_UIKit_UIView
+	.long LDIFF_SYM1534
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde237_end:
+Lfde241_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28544,31 +29058,31 @@ Lfde237_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_get_SpentName
-	.quad Lme_ee
+	.quad Lme_f2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1510=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1510
+LDIFF_SYM1535=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1535
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1511=Lfde238_end - Lfde238_start
-	.long LDIFF_SYM1511
-Lfde238_start:
+LDIFF_SYM1536=Lfde242_end - Lfde242_start
+	.long LDIFF_SYM1536
+Lfde242_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_get_SpentName
 
-LDIFF_SYM1512=Lme_ee - Demo_ShowSpent_get_SpentName
-	.long LDIFF_SYM1512
+LDIFF_SYM1537=Lme_f2 - Demo_ShowSpent_get_SpentName
+	.long LDIFF_SYM1537
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde238_end:
+Lfde242_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28578,36 +29092,36 @@ Lfde238_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_set_SpentName_UIKit_UILabel
-	.quad Lme_ef
+	.quad Lme_f3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1513=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1513
+LDIFF_SYM1538=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1538
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1514=LTDIE_24_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1514
+LDIFF_SYM1539=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1539
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1515=Lfde239_end - Lfde239_start
-	.long LDIFF_SYM1515
-Lfde239_start:
+LDIFF_SYM1540=Lfde243_end - Lfde243_start
+	.long LDIFF_SYM1540
+Lfde243_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_set_SpentName_UIKit_UILabel
 
-LDIFF_SYM1516=Lme_ef - Demo_ShowSpent_set_SpentName_UIKit_UILabel
-	.long LDIFF_SYM1516
+LDIFF_SYM1541=Lme_f3 - Demo_ShowSpent_set_SpentName_UIKit_UILabel
+	.long LDIFF_SYM1541
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde239_end:
+Lfde243_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28617,350 +29131,350 @@ Lfde239_end:
 
 	.byte 0,0
 	.quad Demo_ShowSpent_ReleaseDesignerOutlets
-	.quad Lme_f0
+	.quad Lme_f4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1517=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1517
+LDIFF_SYM1542=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1542
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1518=Lfde240_end - Lfde240_start
-	.long LDIFF_SYM1518
-Lfde240_start:
+LDIFF_SYM1543=Lfde244_end - Lfde244_start
+	.long LDIFF_SYM1543
+Lfde244_start:
 
 	.long 0
 	.align 3
 	.quad Demo_ShowSpent_ReleaseDesignerOutlets
 
-LDIFF_SYM1519=Lme_f0 - Demo_ShowSpent_ReleaseDesignerOutlets
-	.long LDIFF_SYM1519
+LDIFF_SYM1544=Lme_f4 - Demo_ShowSpent_ReleaseDesignerOutlets
+	.long LDIFF_SYM1544
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde240_end:
+Lfde244_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_87:
+LTDIE_86:
 
 	.byte 5
 	.asciz "System_Comparison`1"
 
 	.byte 128,1,16
-LDIFF_SYM1520=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1520
+LDIFF_SYM1545=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1545
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1521=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM1521
-LTDIE_87_POINTER:
+LDIFF_SYM1546=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1546
+LTDIE_86_POINTER:
 
 	.byte 13
-LDIFF_SYM1522=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM1522
-LTDIE_87_REFERENCE:
+LDIFF_SYM1547=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1547
+LTDIE_86_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1523=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM1523
-LTDIE_88:
+LDIFF_SYM1548=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1548
+LTDIE_87:
 
 	.byte 5
 	.asciz "System_Array"
 
 	.byte 16,16
-LDIFF_SYM1524=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM1524
+LDIFF_SYM1549=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM1549
 	.byte 2,35,0,0,7
 	.asciz "System_Array"
 
-LDIFF_SYM1525=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM1525
-LTDIE_88_POINTER:
+LDIFF_SYM1550=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1550
+LTDIE_87_POINTER:
 
 	.byte 13
-LDIFF_SYM1526=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM1526
-LTDIE_88_REFERENCE:
+LDIFF_SYM1551=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1551
+LTDIE_87_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1527=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM1527
+LDIFF_SYM1552=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1552
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<object>:invoke_int_T_T"
 	.asciz "wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
-	.quad Lme_f2
+	.quad Lme_f6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1528=LTDIE_87_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1528
+LDIFF_SYM1553=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1553
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1529=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1529
+LDIFF_SYM1554=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1554
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1530=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1530
+LDIFF_SYM1555=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1555
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1531=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1531
+LDIFF_SYM1556=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1556
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM1532=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1532
+LDIFF_SYM1557=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1557
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1533=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1533
+LDIFF_SYM1558=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1558
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1534=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1534
+LDIFF_SYM1559=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1559
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1535=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1535
+LDIFF_SYM1560=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1560
 	.byte 1,103,11
 	.asciz "V_5"
 
-LDIFF_SYM1536=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1536
+LDIFF_SYM1561=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1561
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1537=Lfde241_end - Lfde241_start
-	.long LDIFF_SYM1537
-Lfde241_start:
+LDIFF_SYM1562=Lfde245_end - Lfde245_start
+	.long LDIFF_SYM1562
+Lfde245_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
 
-LDIFF_SYM1538=Lme_f2 - wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
-	.long LDIFF_SYM1538
+LDIFF_SYM1563=Lme_f6 - wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+	.long LDIFF_SYM1563
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde241_end:
+Lfde245_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_89:
+LTDIE_88:
 
 	.byte 5
 	.asciz "System_Comparison`1"
 
 	.byte 128,1,16
-LDIFF_SYM1539=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1539
+LDIFF_SYM1564=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1564
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1540=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM1540
-LTDIE_89_POINTER:
+LDIFF_SYM1565=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1565
+LTDIE_88_POINTER:
 
 	.byte 13
-LDIFF_SYM1541=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM1541
-LTDIE_89_REFERENCE:
+LDIFF_SYM1566=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1566
+LTDIE_88_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1542=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM1542
-LTDIE_90:
+LDIFF_SYM1567=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1567
+LTDIE_89:
 
 	.byte 5
 	.asciz "_Ordering"
 
 	.byte 32,16
-LDIFF_SYM1543=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM1543
+LDIFF_SYM1568=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM1568
 	.byte 2,35,0,6
 	.asciz "<ColumnName>k__BackingField"
 
-LDIFF_SYM1544=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1544
+LDIFF_SYM1569=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1569
 	.byte 2,35,16,6
 	.asciz "<Ascending>k__BackingField"
 
-LDIFF_SYM1545=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1545
+LDIFF_SYM1570=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1570
 	.byte 2,35,24,0,7
 	.asciz "_Ordering"
 
-LDIFF_SYM1546=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM1546
-LTDIE_90_POINTER:
+LDIFF_SYM1571=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1571
+LTDIE_89_POINTER:
 
 	.byte 13
-LDIFF_SYM1547=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM1547
-LTDIE_90_REFERENCE:
+LDIFF_SYM1572=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1572
+LTDIE_89_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1548=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM1548
+LDIFF_SYM1573=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1573
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<SQLite.BaseTableQuery/Ordering>:invoke_int_T_T"
 	.asciz "wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering
-	.quad Lme_f3
+	.quad Lme_f7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1549=LTDIE_89_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1549
+LDIFF_SYM1574=LTDIE_88_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1574
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1550=LTDIE_90_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1550
+LDIFF_SYM1575=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1575
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1551=LTDIE_90_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1551
+LDIFF_SYM1576=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1576
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1552=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1552
+LDIFF_SYM1577=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1577
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM1553=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1553
+LDIFF_SYM1578=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1578
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1554=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1554
+LDIFF_SYM1579=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1579
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1555=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1555
+LDIFF_SYM1580=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1580
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1556=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1556
+LDIFF_SYM1581=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1581
 	.byte 1,103,11
 	.asciz "V_5"
 
-LDIFF_SYM1557=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1557
+LDIFF_SYM1582=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1582
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1558=Lfde242_end - Lfde242_start
-	.long LDIFF_SYM1558
-Lfde242_start:
+LDIFF_SYM1583=Lfde246_end - Lfde246_start
+	.long LDIFF_SYM1583
+Lfde246_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering
 
-LDIFF_SYM1559=Lme_f3 - wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering
-	.long LDIFF_SYM1559
+LDIFF_SYM1584=Lme_f7 - wrapper_delegate_invoke_System_Comparison_1_SQLite_BaseTableQuery_Ordering_invoke_int_T_T_SQLite_BaseTableQuery_Ordering_SQLite_BaseTableQuery_Ordering
+	.long LDIFF_SYM1584
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde242_end:
+Lfde246_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_91:
+LTDIE_90:
 
 	.byte 5
 	.asciz "System_Nullable`1"
 
 	.byte 24,16
-LDIFF_SYM1560=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM1560
+LDIFF_SYM1585=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM1585
 	.byte 2,35,0,6
 	.asciz "hasValue"
 
-LDIFF_SYM1561=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1561
+LDIFF_SYM1586=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1586
 	.byte 2,35,16,6
 	.asciz "value"
 
-LDIFF_SYM1562=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1562
+LDIFF_SYM1587=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1587
 	.byte 2,35,20,0,7
 	.asciz "System_Nullable`1"
 
-LDIFF_SYM1563=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM1563
-LTDIE_91_POINTER:
+LDIFF_SYM1588=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1588
+LTDIE_90_POINTER:
 
 	.byte 13
-LDIFF_SYM1564=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM1564
-LTDIE_91_REFERENCE:
+LDIFF_SYM1589=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1589
+LTDIE_90_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1565=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM1565
+LDIFF_SYM1590=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1590
 	.byte 2
 	.asciz "System.Nullable`1<int>:.ctor"
 	.asciz "System_Nullable_1_int__ctor_int"
 
 	.byte 1,27
 	.quad System_Nullable_1_int__ctor_int
-	.quad Lme_f4
+	.quad Lme_f8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1566=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1566
+LDIFF_SYM1591=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1591
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1567=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1567
+LDIFF_SYM1592=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1592
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1568=Lfde243_end - Lfde243_start
-	.long LDIFF_SYM1568
-Lfde243_start:
+LDIFF_SYM1593=Lfde247_end - Lfde247_start
+	.long LDIFF_SYM1593
+Lfde247_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int__ctor_int
 
-LDIFF_SYM1569=Lme_f4 - System_Nullable_1_int__ctor_int
-	.long LDIFF_SYM1569
+LDIFF_SYM1594=Lme_f8 - System_Nullable_1_int__ctor_int
+	.long LDIFF_SYM1594
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde243_end:
+Lfde247_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28970,31 +29484,31 @@ Lfde243_end:
 
 	.byte 1,36
 	.quad System_Nullable_1_int_get_HasValue
-	.quad Lme_f5
+	.quad Lme_f9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1570=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1570
+LDIFF_SYM1595=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1595
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1571=Lfde244_end - Lfde244_start
-	.long LDIFF_SYM1571
-Lfde244_start:
+LDIFF_SYM1596=Lfde248_end - Lfde248_start
+	.long LDIFF_SYM1596
+Lfde248_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_get_HasValue
 
-LDIFF_SYM1572=Lme_f5 - System_Nullable_1_int_get_HasValue
-	.long LDIFF_SYM1572
+LDIFF_SYM1597=Lme_f9 - System_Nullable_1_int_get_HasValue
+	.long LDIFF_SYM1597
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde244_end:
+Lfde248_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29004,31 +29518,31 @@ Lfde244_end:
 
 	.byte 1,44
 	.quad System_Nullable_1_int_get_Value
-	.quad Lme_f6
+	.quad Lme_fa
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1573=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1573
+LDIFF_SYM1598=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1598
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1574=Lfde245_end - Lfde245_start
-	.long LDIFF_SYM1574
-Lfde245_start:
+LDIFF_SYM1599=Lfde249_end - Lfde249_start
+	.long LDIFF_SYM1599
+Lfde249_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_get_Value
 
-LDIFF_SYM1575=Lme_f6 - System_Nullable_1_int_get_Value
-	.long LDIFF_SYM1575
+LDIFF_SYM1600=Lme_fa - System_Nullable_1_int_get_Value
+	.long LDIFF_SYM1600
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde245_end:
+Lfde249_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29038,36 +29552,36 @@ Lfde245_end:
 
 	.byte 1,66
 	.quad System_Nullable_1_int_Equals_object
-	.quad Lme_f7
+	.quad Lme_fb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1576=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1576
+LDIFF_SYM1601=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1601
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM1577=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1577
+LDIFF_SYM1602=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1602
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1578=Lfde246_end - Lfde246_start
-	.long LDIFF_SYM1578
-Lfde246_start:
+LDIFF_SYM1603=Lfde250_end - Lfde250_start
+	.long LDIFF_SYM1603
+Lfde250_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_Equals_object
 
-LDIFF_SYM1579=Lme_f7 - System_Nullable_1_int_Equals_object
-	.long LDIFF_SYM1579
+LDIFF_SYM1604=Lme_fb - System_Nullable_1_int_Equals_object
+	.long LDIFF_SYM1604
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde246_end:
+Lfde250_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29077,31 +29591,31 @@ Lfde246_end:
 
 	.byte 1,73
 	.quad System_Nullable_1_int_GetHashCode
-	.quad Lme_f8
+	.quad Lme_fc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1580=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1580
+LDIFF_SYM1605=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1605
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1581=Lfde247_end - Lfde247_start
-	.long LDIFF_SYM1581
-Lfde247_start:
+LDIFF_SYM1606=Lfde251_end - Lfde251_start
+	.long LDIFF_SYM1606
+Lfde251_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_GetHashCode
 
-LDIFF_SYM1582=Lme_f8 - System_Nullable_1_int_GetHashCode
-	.long LDIFF_SYM1582
+LDIFF_SYM1607=Lme_fc - System_Nullable_1_int_GetHashCode
+	.long LDIFF_SYM1607
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde247_end:
+Lfde251_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29111,31 +29625,31 @@ Lfde247_end:
 
 	.byte 1,78
 	.quad System_Nullable_1_int_ToString
-	.quad Lme_f9
+	.quad Lme_fd
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1583=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1583
+LDIFF_SYM1608=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1608
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1584=Lfde248_end - Lfde248_start
-	.long LDIFF_SYM1584
-Lfde248_start:
+LDIFF_SYM1609=Lfde252_end - Lfde252_start
+	.long LDIFF_SYM1609
+Lfde252_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_ToString
 
-LDIFF_SYM1585=Lme_f9 - System_Nullable_1_int_ToString
-	.long LDIFF_SYM1585
+LDIFF_SYM1610=Lme_fd - System_Nullable_1_int_ToString
+	.long LDIFF_SYM1610
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde248_end:
+Lfde252_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29145,31 +29659,31 @@ Lfde248_end:
 
 	.byte 2,52
 	.quad System_Nullable_1_int_Box_System_Nullable_1_int
-	.quad Lme_fa
+	.quad Lme_fe
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1586=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1586
+LDIFF_SYM1611=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1611
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1587=Lfde249_end - Lfde249_start
-	.long LDIFF_SYM1587
-Lfde249_start:
+LDIFF_SYM1612=Lfde253_end - Lfde253_start
+	.long LDIFF_SYM1612
+Lfde253_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_Box_System_Nullable_1_int
 
-LDIFF_SYM1588=Lme_fa - System_Nullable_1_int_Box_System_Nullable_1_int
-	.long LDIFF_SYM1588
+LDIFF_SYM1613=Lme_fe - System_Nullable_1_int_Box_System_Nullable_1_int
+	.long LDIFF_SYM1613
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde249_end:
+Lfde253_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29179,36 +29693,36 @@ Lfde249_end:
 
 	.byte 2,60
 	.quad System_Nullable_1_int_Unbox_object
-	.quad Lme_fb
+	.quad Lme_ff
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1589=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1589
+LDIFF_SYM1614=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1614
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1590=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1590
+LDIFF_SYM1615=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1615
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1591=Lfde250_end - Lfde250_start
-	.long LDIFF_SYM1591
-Lfde250_start:
+LDIFF_SYM1616=Lfde254_end - Lfde254_start
+	.long LDIFF_SYM1616
+Lfde254_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_Unbox_object
 
-LDIFF_SYM1592=Lme_fb - System_Nullable_1_int_Unbox_object
-	.long LDIFF_SYM1592
+LDIFF_SYM1617=Lme_ff - System_Nullable_1_int_Unbox_object
+	.long LDIFF_SYM1617
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde250_end:
+Lfde254_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29218,36 +29732,132 @@ Lfde250_end:
 
 	.byte 2,67
 	.quad System_Nullable_1_int_UnboxExact_object
-	.quad Lme_fc
+	.quad Lme_100
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1593=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1593
+LDIFF_SYM1618=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1618
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1594=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1594
+LDIFF_SYM1619=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1619
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1595=Lfde251_end - Lfde251_start
-	.long LDIFF_SYM1595
-Lfde251_start:
+LDIFF_SYM1620=Lfde255_end - Lfde255_start
+	.long LDIFF_SYM1620
+Lfde255_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_int_UnboxExact_object
 
-LDIFF_SYM1596=Lme_fc - System_Nullable_1_int_UnboxExact_object
-	.long LDIFF_SYM1596
+LDIFF_SYM1621=Lme_100 - System_Nullable_1_int_UnboxExact_object
+	.long LDIFF_SYM1621
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde251_end:
+Lfde255_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_91:
+
+	.byte 5
+	.asciz "System_Comparison`1"
+
+	.byte 128,1,16
+LDIFF_SYM1622=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1622
+	.byte 2,35,0,0,7
+	.asciz "System_Comparison`1"
+
+LDIFF_SYM1623=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1623
+LTDIE_91_POINTER:
+
+	.byte 13
+LDIFF_SYM1624=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1624
+LTDIE_91_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1625=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1625
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Demo.Person>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
+	.quad Lme_101
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1626=LTDIE_91_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1626
+	.byte 1,104,3
+	.asciz "param0"
+
+LDIFF_SYM1627=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1627
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM1628=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1628
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1629=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1629
+	.byte 1,102,11
+	.asciz "V_1"
+
+LDIFF_SYM1630=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1630
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1631=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1631
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM1632=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1632
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM1633=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1633
+	.byte 1,103,11
+	.asciz "V_5"
+
+LDIFF_SYM1634=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1634
+	.byte 1,101,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1635=Lfde256_end - Lfde256_start
+	.long LDIFF_SYM1635
+Lfde256_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
+
+LDIFF_SYM1636=Lme_101 - wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
+	.long LDIFF_SYM1636
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
+	.align 3
+Lfde256_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_92:
@@ -29256,94 +29866,94 @@ LTDIE_92:
 	.asciz "System_Comparison`1"
 
 	.byte 128,1,16
-LDIFF_SYM1597=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1597
+LDIFF_SYM1637=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1637
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1598=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM1598
+LDIFF_SYM1638=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1638
 LTDIE_92_POINTER:
 
 	.byte 13
-LDIFF_SYM1599=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM1599
+LDIFF_SYM1639=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1639
 LTDIE_92_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1600=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM1600
+LDIFF_SYM1640=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1640
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Demo.Person>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person"
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Demo.BudgetInfo>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
-	.quad Lme_fd
+	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
+	.quad Lme_102
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1601=LTDIE_92_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1601
+LDIFF_SYM1641=LTDIE_92_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1641
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1602=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1602
+LDIFF_SYM1642=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1642
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1603=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1603
+LDIFF_SYM1643=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1643
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1604=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1604
+LDIFF_SYM1644=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1644
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM1605=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1605
+LDIFF_SYM1645=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1645
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1606=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1606
+LDIFF_SYM1646=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1646
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1607=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1607
+LDIFF_SYM1647=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1647
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1608=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1608
+LDIFF_SYM1648=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1648
 	.byte 1,103,11
 	.asciz "V_5"
 
-LDIFF_SYM1609=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1609
+LDIFF_SYM1649=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1649
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1610=Lfde252_end - Lfde252_start
-	.long LDIFF_SYM1610
-Lfde252_start:
+LDIFF_SYM1650=Lfde257_end - Lfde257_start
+	.long LDIFF_SYM1650
+Lfde257_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
+	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
 
-LDIFF_SYM1611=Lme_fd - wrapper_delegate_invoke_System_Comparison_1_Demo_Person_invoke_int_T_T_Demo_Person_Demo_Person
-	.long LDIFF_SYM1611
+LDIFF_SYM1651=Lme_102 - wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
+	.long LDIFF_SYM1651
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde252_end:
+Lfde257_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_93:
@@ -29352,94 +29962,94 @@ LTDIE_93:
 	.asciz "System_Comparison`1"
 
 	.byte 128,1,16
-LDIFF_SYM1612=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1612
+LDIFF_SYM1652=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1652
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1613=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM1613
+LDIFF_SYM1653=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1653
 LTDIE_93_POINTER:
 
 	.byte 13
-LDIFF_SYM1614=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM1614
+LDIFF_SYM1654=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1654
 LTDIE_93_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1615=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM1615
+LDIFF_SYM1655=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1655
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Demo.BudgetInfo>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo"
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<System.Collections.Generic.List`1<Demo.BudgetInfo>>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
-	.quad Lme_fe
+	.quad wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
+	.quad Lme_103
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1616=LTDIE_93_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1616
+LDIFF_SYM1656=LTDIE_93_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1656
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1617=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1617
+LDIFF_SYM1657=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1657
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1618=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1618
+LDIFF_SYM1658=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1658
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1619=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1619
+LDIFF_SYM1659=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1659
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM1620=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1620
+LDIFF_SYM1660=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1660
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1621=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1621
+LDIFF_SYM1661=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1661
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1622=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1622
+LDIFF_SYM1662=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1662
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1623=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1623
+LDIFF_SYM1663=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1663
 	.byte 1,103,11
 	.asciz "V_5"
 
-LDIFF_SYM1624=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1624
+LDIFF_SYM1664=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1664
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1625=Lfde253_end - Lfde253_start
-	.long LDIFF_SYM1625
-Lfde253_start:
+LDIFF_SYM1665=Lfde258_end - Lfde258_start
+	.long LDIFF_SYM1665
+Lfde258_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
+	.quad wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
 
-LDIFF_SYM1626=Lme_fe - wrapper_delegate_invoke_System_Comparison_1_Demo_BudgetInfo_invoke_int_T_T_Demo_BudgetInfo_Demo_BudgetInfo
-	.long LDIFF_SYM1626
+LDIFF_SYM1666=Lme_103 - wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
+	.long LDIFF_SYM1666
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde253_end:
+Lfde258_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_94:
@@ -29448,190 +30058,94 @@ LTDIE_94:
 	.asciz "System_Comparison`1"
 
 	.byte 128,1,16
-LDIFF_SYM1627=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1627
+LDIFF_SYM1667=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM1667
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1628=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM1628
+LDIFF_SYM1668=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1668
 LTDIE_94_POINTER:
 
 	.byte 13
-LDIFF_SYM1629=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM1629
+LDIFF_SYM1669=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1669
 LTDIE_94_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1630=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM1630
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<System.Collections.Generic.List`1<Demo.BudgetInfo>>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
-	.quad Lme_ff
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1631=LTDIE_94_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1631
-	.byte 1,104,3
-	.asciz "param0"
-
-LDIFF_SYM1632=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1632
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM1633=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1633
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1634=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1634
-	.byte 1,102,11
-	.asciz "V_1"
-
-LDIFF_SYM1635=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1635
-	.byte 1,104,11
-	.asciz "V_2"
-
-LDIFF_SYM1636=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1636
-	.byte 1,103,11
-	.asciz "V_3"
-
-LDIFF_SYM1637=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1637
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM1638=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1638
-	.byte 1,103,11
-	.asciz "V_5"
-
-LDIFF_SYM1639=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1639
-	.byte 1,101,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1640=Lfde254_end - Lfde254_start
-	.long LDIFF_SYM1640
-Lfde254_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
-
-LDIFF_SYM1641=Lme_ff - wrapper_delegate_invoke_System_Comparison_1_System_Collections_Generic_List_1_Demo_BudgetInfo_invoke_int_T_T_System_Collections_Generic_List_1_Demo_BudgetInfo_System_Collections_Generic_List_1_Demo_BudgetInfo
-	.long LDIFF_SYM1641
-	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
-	.align 3
-Lfde254_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_95:
-
-	.byte 5
-	.asciz "System_Comparison`1"
-
-	.byte 128,1,16
-LDIFF_SYM1642=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM1642
-	.byte 2,35,0,0,7
-	.asciz "System_Comparison`1"
-
-LDIFF_SYM1643=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1643
-LTDIE_95_POINTER:
-
-	.byte 13
-LDIFF_SYM1644=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1644
-LTDIE_95_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1645=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1645
+LDIFF_SYM1670=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1670
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Demo.DirectDebits>:invoke_int_T_T"
 	.asciz "wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits
-	.quad Lme_100
+	.quad Lme_104
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1646=LTDIE_95_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1646
+LDIFF_SYM1671=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1671
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1647=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1647
+LDIFF_SYM1672=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1672
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1648=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1648
+LDIFF_SYM1673=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1673
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1649=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1649
+LDIFF_SYM1674=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1674
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM1650=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1650
+LDIFF_SYM1675=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1675
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1651=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1651
+LDIFF_SYM1676=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1676
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1652=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1652
+LDIFF_SYM1677=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1677
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1653=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1653
+LDIFF_SYM1678=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1678
 	.byte 1,103,11
 	.asciz "V_5"
 
-LDIFF_SYM1654=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1654
+LDIFF_SYM1679=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1679
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1655=Lfde255_end - Lfde255_start
-	.long LDIFF_SYM1655
-Lfde255_start:
+LDIFF_SYM1680=Lfde259_end - Lfde259_start
+	.long LDIFF_SYM1680
+Lfde259_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits
 
-LDIFF_SYM1656=Lme_100 - wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits
-	.long LDIFF_SYM1656
+LDIFF_SYM1681=Lme_104 - wrapper_delegate_invoke_System_Comparison_1_Demo_DirectDebits_invoke_int_T_T_Demo_DirectDebits_Demo_DirectDebits
+	.long LDIFF_SYM1681
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde255_end:
+Lfde259_end:
 
 .section __DWARF, __debug_info,regular,debug
 

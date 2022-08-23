@@ -173,7 +173,8 @@ namespace Demo
             {
                 return weekSort[te].Count;
             }
-            return BudgetInfo.Count;
+            //return BudgetInfo.Count;
+            return 1;
         }
 
         /// <summary>

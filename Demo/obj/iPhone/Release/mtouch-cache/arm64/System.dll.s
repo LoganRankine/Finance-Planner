@@ -31306,7 +31306,7 @@ System_ReadOnlySpan_1_T_CHAR_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -31331,7 +31331,7 @@ System_ReadOnlySpan_1_T_CHAR_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -32131,7 +32131,7 @@ System_Span_1_T_CHAR_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -32156,7 +32156,7 @@ System_Span_1_T_CHAR_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -32892,7 +32892,7 @@ System_ReadOnlySpan_1_T_UINT16_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -32917,7 +32917,7 @@ System_ReadOnlySpan_1_T_UINT16_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -33370,7 +33370,7 @@ bl _p_274
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 26 568 0
-.word 0xd2891500
+.word 0xd2891580
 bl _p_239
 .word 0xf90037a0
 .word 0xb9800320
@@ -33396,7 +33396,7 @@ bl _p_3
 .word 0xf94037a0
 bl _p_275
 .word 0xf90033a0
-.word 0xd2891c80
+.word 0xd2891d00
 bl _p_239
 .word 0xaa0003e2
 .word 0xf94033a1
@@ -33592,7 +33592,7 @@ ldr x15, [x16, #2320]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 26 596 0
-.word 0xd2891500
+.word 0xd2891580
 bl _p_239
 .word 0xf90027a0
 .word 0xb9800300
@@ -33618,7 +33618,7 @@ bl _p_3
 .word 0xf94027a0
 bl _p_275
 .word 0xf90023a0
-.word 0xd2891c80
+.word 0xd2891d00
 bl _p_239
 .word 0xaa0003e2
 .word 0xf94023a1
@@ -34717,7 +34717,7 @@ System_Span_1_T_UINT16_Equals_object:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd287b220
+.word 0xd287b2a0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -34742,7 +34742,7 @@ System_Span_1_T_UINT16_GetHashCode:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd287c540
+.word 0xd287c5c0
 bl _p_239
 .word 0xaa0003e1
 .word 0xd28013c0
@@ -38688,7 +38688,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 181,145,208,29,216,254,181,153,133,81,139,99,148,101,153,66
+	.byte 133,248,119,114,199,4,0,121,164,22,122,179,221,121,124,37
 	.globl _mono_aot_module_System_info
 	.align 3
 _mono_aot_module_System_info:
