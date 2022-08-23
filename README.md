@@ -12,10 +12,11 @@ Functionality added so far
 - Delete all trackers
 - Displays how much money they have
 - List view of expenses added to tracker
+- List view of expenses split into weeks (19/08/2022)
+- Display how much money spent each week (19/08/2022)
+- Add optional toggle to display how much money you can spent a week until next payment (19/08/2022)
 
 Functionality that I want to implement
-- List view of expenses split into weeks
-- Display how much money spent each week
-- Add optional toggle to display how much money you can spent a week until next payment
+- Add optional toggle to display how much money you can spent a week until next payment (Partially done- Displays how much money can be spent a week)
 - Ability to edit a expense in case it was inputted incorrectly
 - Ability to show expenses graphically over set period of time
