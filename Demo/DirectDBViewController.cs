@@ -138,8 +138,6 @@ namespace Demo
 
             float totalCost = times * directDebit.m_cost;
               
-
-
             using (SQLiteConnection connection = new SQLiteConnection(AppDelegate.FilePath))
             {
 

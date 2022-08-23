@@ -250,8 +250,10 @@ namespace Demo
             DateTime startweek = FindWeekDate(DateTime.Parse(lowestDate.m_Date));
             DateTime endweek = startweek.AddDays(6);
             List<BudgetInfo> tempweek = new List<BudgetInfo>();
+            int times = 0;
             for (int i = 0; i < BudgetInfo.Count; i++)
             {
+
                 DateTime convertInfo = DateTime.Parse(BudgetInfo[i].m_Date);
                 if ((DateTime.Compare(startweek, convertInfo) < 0 || DateTime.Compare(startweek, convertInfo) == 0) && (DateTime.Compare(convertInfo, endweek) < 0 || DateTime.Compare(endweek, convertInfo) == 0))
                 {
@@ -260,21 +262,33 @@ namespace Demo
                 //last one
                 if (BudgetInfo.Count == i + 1)
                 {
-                    weekSort.Add(tempweek);
+                    if (weekSort.Contains(tempweek) == false)
+                    {
+                        weekSort.Add(tempweek);
+                    }
+                    
                 }
-                else if (DateTime.Compare(convertInfo, endweek) > 0)
+                if (DateTime.Compare(convertInfo, endweek) > 0)
                 {
+
                     List<BudgetInfo> temptemp = new List<BudgetInfo>();
                     foreach (BudgetInfo infoo in tempweek)
                     {
                         temptemp.Add(infoo);
                     }
-                    weekSort.Add(temptemp);
-                    tempweek.RemoveRange(0, tempweek.Count);
+                    bool hi = weekSort.Contains(temptemp);
+                    if (weekSort.Count != 0 && weekSort[weekSort.Count - 1][0] != temptemp[0])
+                    {
+                        weekSort.Add(temptemp);
+                    }
+
+                    tempweek = new List<BudgetInfo>();
 
                     DateTime newWeek = FindWeekDate(convertInfo);
                     startweek = newWeek;
                     endweek = newWeek.AddDays(6);
+
+                    
 
                     if ((DateTime.Compare(startweek, convertInfo) < 0 || DateTime.Compare(startweek, convertInfo) == 0) && (DateTime.Compare(convertInfo, endweek) < 0 || DateTime.Compare(endweek, convertInfo) == 0))
                     {
@@ -283,7 +297,11 @@ namespace Demo
                     //last one
                     if (BudgetInfo.Count == i + 1)
                     {
-                        weekSort.Add(tempweek);
+                        if(weekSort.Contains(tempweek) == false)
+                        {
+                            weekSort.Add(tempweek);
+                        }
+                        
                     }
                 }
 
