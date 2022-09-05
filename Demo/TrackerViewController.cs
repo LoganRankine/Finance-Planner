@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using SQLite;
 using Foundation;
 using UIKit;
+using CoreGraphics;
 
 namespace Demo
 {
@@ -23,6 +24,19 @@ namespace Demo
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            var gradient = new CoreAnimation.CAGradientLayer();
+            gradient.Frame = View.Bounds;
+            UIColor color = UIColor.FromRGB(175, 229, 252);
+
+            CoreGraphics.CGColor[] colour = { UIColor.Blue.CGColor, color.CGColor };
+            gradient.Colors = colour;
+            gradient.StartPoint = new CGPoint(0, 0);
+            gradient.EndPoint = new CGPoint(1, 1);
+            View.Layer.InsertSublayer(gradient, 0);
+
+            //ShowSpent.BackgroundColor = gradient;
+
             connectToPeople();
 
             //View.BackgroundColor = UIColor.Blue;
@@ -40,6 +54,8 @@ namespace Demo
             configure();
             NavigationItem.RightBarButtonItem.Clicked += RightBarButtonItem_Clicked;
             NavigationItem.RightBarButtonItems[1].Clicked += RefreshClicked;
+            NavigationItem.RightBarButtonItem.TintColor = UIColor.Black;
+            NavigationItem.RightBarButtonItems[1].TintColor = UIColor.Black;
             //NavigationItem.RightBarButtonItem.
 
         }

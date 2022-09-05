@@ -7,6 +7,7 @@ using UIKit;
 using System.Collections.Generic;
 using System.Linq;
 using static CoreFoundation.DispatchSource;
+using CoreGraphics;
 
 namespace Demo
 {
@@ -21,6 +22,16 @@ namespace Demo
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            var gradient = new CoreAnimation.CAGradientLayer();
+            gradient.Frame = View.Bounds;
+            UIColor color = UIColor.FromRGB(175, 229, 252);
+
+            CoreGraphics.CGColor[] colour = { UIColor.Blue.CGColor, color.CGColor };
+            gradient.Colors = colour;
+            gradient.StartPoint = new CGPoint(0, 0);
+            gradient.EndPoint = new CGPoint(1, 1);
+            View.Layer.InsertSublayer(gradient, 0);
 
             Title = "Add Direct Debits";
             update(currentUser.Id);

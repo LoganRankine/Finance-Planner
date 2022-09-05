@@ -15177,7 +15177,7 @@ bl _p_120
 .word 0xf94023a0
 bl _p_166
 .word 0xaa0003e1
-.word 0xd2805f80
+.word 0xd2805fa0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_3
@@ -25524,7 +25524,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 251,103,55,40,188,18,226,191,19,119,99,189,250,216,161,90
+	.byte 60,116,104,75,115,222,161,166,16,171,229,71,144,196,77,236
 	.globl _mono_aot_module_SQLitePCLRaw_core_info
 	.align 3
 _mono_aot_module_SQLitePCLRaw_core_info:

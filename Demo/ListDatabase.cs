@@ -54,6 +54,7 @@ namespace Demo
             //cell.TextLabel.Text = tableItems[indexPath.Row];
             //heloo
             cell.TextLabel.Text = People[indexPath.Row].m_Name;
+            
             var InfoButton = new UIButton(UIButtonType.DetailDisclosure);
             //edit
             InfoButton.TouchDown += InfoButton_TouchDown;

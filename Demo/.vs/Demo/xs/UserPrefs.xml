@@ -1,10 +1,20 @@
+<<<<<<< Updated upstream
 ﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ListSpent.cs">
+=======
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+>>>>>>> Stashed changes
     <Files>
       <File FileName="CreateViewController.cs" Line="192" Column="14" IsPinned="True" />
       <File FileName="TrackerViewController.cs" Line="76" Column="36" IsPinned="True" />
-      <File FileName="Main.cs" Line="14" Column="1" />
+      <File FileName="Main.cs" Line="16" Column="6" />
       <File FileName="ViewController.cs" Line="64" Column="51" />
       <File FileName="ExistingViewController.cs" Line="98" Column="22" />
       <File FileName="ListDatabase.cs" Line="35" Column="13" />
@@ -35,6 +45,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
+<<<<<<< Updated upstream
       <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/ListSpent.cs" relfile="ListSpent.cs" line="258" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -42,4 +53,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
+=======
+      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/DirectDBViewController.cs" relfile="DirectDBViewController.cs" line="112" column="1" />
+      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/DirectDBViewController.cs" relfile="DirectDBViewController.cs" line="110" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+>>>>>>> Stashed changes
 </Properties>
