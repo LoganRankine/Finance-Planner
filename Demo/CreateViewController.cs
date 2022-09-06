@@ -15,6 +15,14 @@ namespace Demo
         partial void Switch_Clicked(UISwitch sender)
         {
             direct = Switch_DirectDebit.On;
+            if(direct == true)
+            {
+                SaveTracker.SetTitle("Add Direct Debits", UIControlState.Normal);
+            }
+            else
+            {
+                SaveTracker.SetTitle("Save Tracker", UIControlState.Normal);
+            }
         }
         
 		public CreateViewController (IntPtr handle) : base (handle)

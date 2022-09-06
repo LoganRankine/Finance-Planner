@@ -96,89 +96,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budget Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRk-Bs-1YT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRk-Bs-1YT">
                                 <rect key="frame" x="20" y="155" width="124" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Date for budget:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-CY-AOC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date for budget:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-CY-AOC">
                                 <rect key="frame" x="20" y="228" width="189" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Date for budget:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-J5-NBv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date for budget:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-J5-NBv">
                                 <rect key="frame" x="20" y="303" width="180" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-jH-XB7">
-                                <rect key="frame" x="249" y="224" width="99" height="31"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-jH-XB7">
+                                <rect key="frame" x="249" y="224" width="103" height="31"/>
                                 <connections>
                                     <action selector="StartDate:" destination="N4d-Cg-IB3" eventType="valueChanged" id="78L-TW-u6E"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much money you currently have?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCW-ro-LZc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much money you currently have?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCW-ro-LZc">
                                 <rect key="frame" x="20" y="374" width="330" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="£1000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uio-Oa-o4D">
-                                <rect key="frame" x="20" y="434" width="147" height="28.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="£1000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uio-Oa-o4D">
+                                <rect key="frame" x="20" y="434" width="69.5" height="28.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="TotalMoney:" destination="N4d-Cg-IB3" eventType="editingDidEnd" id="GBY-my-7F7"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you have direct debits?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrg-gd-FlG">
-                                <rect key="frame" x="20" y="505" width="230" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have direct debits?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrg-gd-FlG">
+                                <rect key="frame" x="20" y="505" width="229.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Brianna's Tracker" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjK-0a-w8n">
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Brianna's Tracker" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjK-0a-w8n">
                                 <rect key="frame" x="210" y="152" width="140" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="TotalMoney:" destination="N4d-Cg-IB3" eventType="editingDidEnd" id="fDZ-AT-EaI"/>
                                 </connections>
                             </textField>
-                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="zB2-0D-lRh">
-                                <rect key="frame" x="249" y="296" width="99" height="37"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="zB2-0D-lRh">
+                                <rect key="frame" x="249" y="296" width="103" height="31"/>
                                 <connections>
                                     <action selector="StartDate:" destination="N4d-Cg-IB3" eventType="valueChanged" id="Vt1-A4-psf"/>
                                 </connections>
                             </datePicker>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sUQ-Zx-dLR">
-                                <rect key="frame" x="20" y="561" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sUQ-Zx-dLR">
+                                <rect key="frame" x="20" y="561" width="51" height="31"/>
                                 <connections>
                                     <action selector="Switch_Clicked:" destination="11K-hf-tWk" eventType="valueChanged" id="RKb-wZ-NKw"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3T-Sp-cQP">
+                                <rect key="frame" x="20" y="786" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="LO5-rL-1bV"/>
+                                    <constraint firstAttribute="width" constant="374" id="h0v-aj-oRe"/>
+                                    <constraint firstAttribute="width" secondItem="V3T-Sp-cQP" secondAttribute="height" multiplier="187:23" id="tdZ-VK-JLD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save Tracker">
+                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63429831860748775" green="0.90781071927275736" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="V3T-Sp-cQP" firstAttribute="trailing" secondItem="wLt-eY-wVC" secondAttribute="trailingMargin" id="91G-eE-NKF"/>
+                            <constraint firstItem="DCW-ro-LZc" firstAttribute="top" secondItem="LTV-J5-NBv" secondAttribute="bottom" constant="48" id="Db3-Yw-awP"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="DCW-ro-LZc" secondAttribute="leading" id="FvD-kU-Cp8"/>
+                            <constraint firstItem="GRk-Bs-1YT" firstAttribute="centerY" secondItem="xjK-0a-w8n" secondAttribute="centerY" id="Gc9-o0-kFJ"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="QN5-CY-AOC" secondAttribute="leading" id="HHa-cT-eub"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="LTV-J5-NBv" secondAttribute="leading" id="Iub-qk-ljP"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="Jrg-gd-FlG" secondAttribute="leading" id="J4W-RL-WnT"/>
+                            <constraint firstItem="zB2-0D-lRh" firstAttribute="top" secondItem="gcW-jH-XB7" secondAttribute="bottom" constant="41" id="L2N-8m-tZq"/>
+                            <constraint firstItem="V3T-Sp-cQP" firstAttribute="top" secondItem="sUQ-Zx-dLR" secondAttribute="bottom" constant="194" id="Nth-YC-DAI"/>
+                            <constraint firstItem="DCW-ro-LZc" firstAttribute="trailing" secondItem="xjK-0a-w8n" secondAttribute="trailing" id="O7Z-Mr-fWr"/>
+                            <constraint firstItem="YKN-W9-TYw" firstAttribute="top" secondItem="V3T-Sp-cQP" secondAttribute="bottom" constant="30" id="QqD-2H-GDW"/>
+                            <constraint firstItem="GRk-Bs-1YT" firstAttribute="top" secondItem="dqw-zh-AZ8" secondAttribute="bottom" constant="111" id="WkM-cj-yuw"/>
+                            <constraint firstItem="DCW-ro-LZc" firstAttribute="top" secondItem="zB2-0D-lRh" secondAttribute="bottom" constant="47" id="al1-dc-n56"/>
+                            <constraint firstItem="zB2-0D-lRh" firstAttribute="leading" secondItem="LTV-J5-NBv" secondAttribute="trailing" constant="49" id="c1t-8i-n09"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="GRk-Bs-1YT" secondAttribute="leading" id="dQh-mo-U6N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zB2-0D-lRh" secondAttribute="trailing" constant="42.5" id="eXu-DC-DfO"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="V3T-Sp-cQP" secondAttribute="leading" id="eoY-fL-HRJ"/>
+                            <constraint firstItem="zB2-0D-lRh" firstAttribute="leading" secondItem="gcW-jH-XB7" secondAttribute="leading" id="fBI-dA-h9p"/>
+                            <constraint firstItem="zB2-0D-lRh" firstAttribute="trailing" secondItem="gcW-jH-XB7" secondAttribute="trailing" id="gbL-c4-RPJ"/>
+                            <constraint firstItem="Uio-Oa-o4D" firstAttribute="top" secondItem="DCW-ro-LZc" secondAttribute="bottom" constant="37" id="iYw-9S-GU6"/>
+                            <constraint firstItem="DCW-ro-LZc" firstAttribute="top" secondItem="wLt-eY-wVC" secondAttribute="top" constant="374" id="mZa-9q-oL2"/>
+                            <constraint firstItem="xjK-0a-w8n" firstAttribute="leading" secondItem="GRk-Bs-1YT" secondAttribute="trailing" constant="66" id="qlE-Jh-WTD"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="top" secondItem="Jrg-gd-FlG" secondAttribute="bottom" constant="33" id="r46-9f-CmB"/>
+                            <constraint firstItem="sUQ-Zx-dLR" firstAttribute="leading" secondItem="Uio-Oa-o4D" secondAttribute="leading" id="rAu-Lx-0fT"/>
+                            <constraint firstItem="V3T-Sp-cQP" firstAttribute="leading" secondItem="wLt-eY-wVC" secondAttribute="leadingMargin" id="sss-PR-ue4"/>
+                            <constraint firstItem="QN5-CY-AOC" firstAttribute="top" secondItem="GRk-Bs-1YT" secondAttribute="bottom" constant="50" id="z1R-YI-J1W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z9h-9G-NYG"/>
                     <connections>
                         <outlet property="Budget_TextField" destination="xjK-0a-w8n" id="rcd-7e-y24"/>
                         <outlet property="EndDate" destination="zB2-0D-lRh" id="I4o-rG-hd7"/>
                         <outlet property="Money" destination="Uio-Oa-o4D" id="9rI-LM-W8J"/>
+                        <outlet property="SaveTracker" destination="V3T-Sp-cQP" id="GUJ-6H-NRl"/>
                         <outlet property="StartDate" destination="gcW-jH-XB7" id="X1W-vE-wxX"/>
                         <outlet property="Switch_DirectDebit" destination="sUQ-Zx-dLR" id="oL0-MF-vFW"/>
                     </connections>
@@ -824,6 +855,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

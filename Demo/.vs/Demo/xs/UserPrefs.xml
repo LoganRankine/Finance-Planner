@@ -1,38 +1,29 @@
-<<<<<<< Updated upstream
 ﻿<Properties StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ListSpent.cs">
-=======
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{36B9D381-EDBA-4583-8A84-3040B15EEF1C}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
->>>>>>> Stashed changes
+  <MonoDevelop.Ide.Workbench ActiveDocument="CreateViewController.cs">
     <Files>
-      <File FileName="CreateViewController.cs" Line="192" Column="14" IsPinned="True" />
-      <File FileName="TrackerViewController.cs" Line="76" Column="36" IsPinned="True" />
-      <File FileName="Main.cs" Line="16" Column="6" />
-      <File FileName="ViewController.cs" Line="64" Column="51" />
-      <File FileName="ExistingViewController.cs" Line="98" Column="22" />
-      <File FileName="ListDatabase.cs" Line="35" Column="13" />
+      <File FileName="CreateViewController.cs" Line="20" Column="1" IsPinned="True" />
+      <File FileName="TrackerViewController.cs" Line="51" Column="13" IsPinned="True" />
+      <File FileName="Main.cs" Line="12" Column="17" />
+      <File FileName="ViewController.cs" Line="31" Column="13" />
+      <File FileName="ExistingViewController.cs" Line="45" Column="52" />
+      <File FileName="ListDatabase.cs" Line="57" Column="13" />
       <File FileName="Database/BudgetInfo.cs" Line="4" Column="15" />
       <File FileName="Database/Person.cs" Line="19" Column="6" />
-      <File FileName="AddViewController.cs" Line="105" Column="23" />
-      <File FileName="ListSpent.cs" Line="14" Column="32" />
+      <File FileName="AddViewController.cs" Line="32" Column="52" />
+      <File FileName="ListSpent.cs" Line="285" Column="53" />
       <File FileName="Database/DirectDebits.cs" Line="2" Column="14" />
-      <File FileName="DirectDBViewController.cs" Line="110" Column="1" />
-      <File FileName="EditTrackerViewController.cs" Line="32" Column="10" />
+      <File FileName="DirectDBViewController.cs" Line="34" Column="52" />
+      <File FileName="EditTrackerViewController.cs" Line="32" Column="52" />
       <File FileName="Info.plist" />
+      <File FileName="ShowDirects.cs" Line="29" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
             <Node name="Demo" expanded="True">
-              <Node name="Packages" expanded="True" />
               <Node name="Database" expanded="True" />
             </Node>
           </Node>
@@ -43,20 +34,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC6EF621-6A4C-4A84-BE8A-860B06C67305" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-<<<<<<< Updated upstream
-      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/ListSpent.cs" relfile="ListSpent.cs" line="258" column="1" />
+      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/CreateViewController.cs" relfile="CreateViewController.cs" line="20" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98A7C7AC-B718-4133-A43F-E15D88D89D36" />
-=======
-      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/DirectDBViewController.cs" relfile="DirectDBViewController.cs" line="112" column="1" />
-      <Breakpoint file="/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/DirectDBViewController.cs" relfile="DirectDBViewController.cs" line="110" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
->>>>>>> Stashed changes
 </Properties>

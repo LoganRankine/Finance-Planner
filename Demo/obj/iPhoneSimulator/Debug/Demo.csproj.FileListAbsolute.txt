@@ -23,3 +23,4 @@
 /Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.CopyComplete
 /Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.exe
 /Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.pdb
+/Users/loganrankine/Documents/GitHub/Finance-Planner/Demo/obj/iPhoneSimulator/Debug/Demo.csproj.AssemblyReference.cache

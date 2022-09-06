@@ -5,10 +5,11 @@
 // Manual changes to this file may not be handled correctly.
 //
 using Foundation;
+using System.CodeDom.Compiler;
 
 namespace Demo
 {
-    [Register ("CreateViewController")]
+	[Register ("CreateViewController")]
 	partial class CreateViewController
 	{
 		[Outlet]
@@ -27,12 +28,13 @@ namespace Demo
 		UIKit.UITextField Money { get; set; }
 
 		[Outlet]
+		UIKit.UIButton SaveTracker { get; set; }
+
+		[Outlet]
 		UIKit.UIDatePicker StartDate { get; set; }
 
 		[Outlet]
 		UIKit.UISwitch Switch_DirectDebit { get; set; }
-
-		
 
 		[Action ("DirectDebitSwitch:")]
 		partial void DirectDebitSwitch (UIKit.UISwitch sender);
@@ -45,11 +47,6 @@ namespace Demo
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (Switch_DirectDebit != null) {
-				Switch_DirectDebit.Dispose ();
-				Switch_DirectDebit = null;
-			}
-
 			if (BackButton != null) {
 				BackButton.Dispose ();
 				BackButton = null;
@@ -60,7 +57,10 @@ namespace Demo
 				Budget_TextField = null;
 			}
 
-			
+			if (DirectDebit != null) {
+				DirectDebit.Dispose ();
+				DirectDebit = null;
+			}
 
 			if (EndDate != null) {
 				EndDate.Dispose ();
@@ -75,6 +75,16 @@ namespace Demo
 			if (StartDate != null) {
 				StartDate.Dispose ();
 				StartDate = null;
+			}
+
+			if (Switch_DirectDebit != null) {
+				Switch_DirectDebit.Dispose ();
+				Switch_DirectDebit = null;
+			}
+
+			if (SaveTracker != null) {
+				SaveTracker.Dispose ();
+				SaveTracker = null;
 			}
 		}
 	}
